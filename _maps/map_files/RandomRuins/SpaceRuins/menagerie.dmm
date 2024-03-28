@@ -595,6 +595,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/space)
+"PL" = (
+/obj/structure/alien/weeds/node,
+/turf/simulated/floor/engine,
+/area/space)
 "PS" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/light{
@@ -2667,7 +2671,7 @@ Mo
 as
 QL
 as
-as
+PL
 as
 Mo
 cv
