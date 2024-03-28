@@ -331,10 +331,10 @@
 /turf/simulated/floor/plasteel,
 /area/space)
 "zz" = (
-/obj/effect/mob_spawn/human/corpse{
-	outfit = datum/outfit/tadeus_researcher
-	},
 /obj/effect/decal/cleanable/blood,
+/obj/effect/mob_spawn/human/corpse/scientist{
+	outfit = /datum/outfit/tadeus_researcher
+	},
 /turf/simulated/floor/plasteel,
 /area/space)
 "zV" = (
@@ -368,6 +368,9 @@
 	name = "Animal Storage"
 	},
 /turf/simulated/floor/plasteel,
+/area/space)
+"DT" = (
+/turf/simulated/wall/mineral/titanium/nodiagonal,
 /area/space)
 "Ec" = (
 /obj/machinery/hydroponics/constructable,
@@ -516,6 +519,19 @@
 /obj/effect/mob_spawn/human/alive/skeleton,
 /turf/simulated/floor/engine,
 /area/space)
+"MO" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/engine,
+/area/space)
 "NW" = (
 /obj/machinery/floodlight,
 /turf/simulated/floor/plasteel,
@@ -633,6 +649,11 @@
 "Tq" = (
 /obj/effect/landmark/damageturf,
 /obj/machinery/shieldwallgen/on,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/simulated/floor/engine,
 /area/space)
 "UE" = (
@@ -685,6 +706,7 @@
 /area/space)
 "YQ" = (
 /obj/machinery/shieldwallgen/on,
+/obj/structure/cable,
 /turf/simulated/floor/engine,
 /area/space)
 "Zl" = (
@@ -2137,9 +2159,9 @@ cv
 cv
 Mo
 Tq
-as
-as
-as
+Kv
+MO
+Kv
 YQ
 Mo
 as
@@ -2184,7 +2206,7 @@ cv
 Mo
 Mo
 as
-as
+Fy
 as
 Mo
 As
@@ -2549,13 +2571,13 @@ cv
 cv
 Mo
 Mo
-Mo
+DT
 Jm
 as
 as
 as
 as
-Mo
+DT
 Mo
 Mo
 Mo

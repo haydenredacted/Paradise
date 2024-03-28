@@ -126,10 +126,11 @@
 	r_pocket = /obj/item/paper/crumpled/ruins/lavaland/seed_vault/discovery
 	l_pocket = /obj/item/tank/internals/emergency_oxygen/engi/empty
 
-datum/outfit/tadeus_researcher
+/datum/outfit/tadeus_researcher
 	name = "Tadeus Researcher"
-	uniform = /obj/item/clothing/under/retro/science
-	gloves = /obj/item/clothing/gloves/color/white
+	uniform = /obj/item/clothing/under/rank/rnd/scientist
+	suit = /obj/item/clothing/suit/storage/labcoat/science
 	shoes = /obj/item/clothing/shoes/black
-	l_ear = /obj/item/pen/multi/fountain
+	gloves = /obj/item/clothing/shoes/black
+	mask = /obj/item/clothing/mask/surgical
 	id = /obj/item/card/id/away/old/sci
