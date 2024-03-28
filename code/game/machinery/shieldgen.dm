@@ -611,3 +611,12 @@
 	return ..()
 
 #undef MAX_STORED_POWER
+
+/obj/machinery/shieldwallgen/on // an instance of shieldwallgen used on menagerie.dmm
+	activated = 1
+	anchored = TRUE
+	req_access = list(ACCESS_AWAY01) // this shield wall generator requires the acccess of the ID found on meagerie.dmm
+
+/obj/machinery/shieldwallgen/on/Initialize(mapload)
+	. = ..()
+	activate()

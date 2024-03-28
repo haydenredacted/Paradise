@@ -70,8 +70,8 @@
 
 	data["is_advanced"] = is_advanced
 	data["possible_levels"] = list()
-	for(var/zl in GLOB.space_manager.z_list)
-		data["possible_levels"] |= zl
+	for(var/z in 1 to world.maxz)
+		data["possible_levels"] |= z
 
 	return data
 
@@ -79,6 +79,3 @@
 	name = "Crew monitor (Observer)"
 	is_advanced = TRUE
 	ignore_sensors = TRUE
-
-/datum/ui_module/crew_monitor/ghost/ui_state(mob/user)
-	return GLOB.observer_state

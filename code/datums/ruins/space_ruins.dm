@@ -334,3 +334,11 @@
 	description = "A derelict operating base for NT engineering crew."
 	allow_duplicates = FALSE
 	cost = 1
+
+/datum/map_template/ruin/space/menagerie
+	id = "menagerie"
+	suffix = "menagerie.dmm"
+	name = "menagerie"
+	description = "An abandoned biological research station."
+	allow_duplicates = FALSE
+	cost = 1
