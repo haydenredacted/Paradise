@@ -338,7 +338,7 @@
 /datum/map_template/ruin/space/menagerie
 	id = "menagerie"
 	suffix = "menagerie.dmm"
-	name = "menagerie"
+	name = "Menagerie"
 	description = "An abandoned biological research station."
 	allow_duplicates = FALSE
 	cost = 1
