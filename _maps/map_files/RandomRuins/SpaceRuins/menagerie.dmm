@@ -1,19 +1,45 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "as" = (
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "cv" = (
 /turf/space,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"aG" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"bU" = (
+/turf/simulated/floor/carpet,
+/area/shuttle/abandoned)
+"cv" = (
+/turf/space,
+/area/space)
+"cA" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "cU" = (
 /obj/machinery/door/airlock/titanium/glass,
 /obj/structure/fans/tiny,
 /turf/simulated/floor/mineral/titanium,
+<<<<<<< Updated upstream
 /area/space)
 "df" = (
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/floor/plasteel/goonplaque/memorial,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"df" = (
+/turf/simulated/floor/plasteel/goonplaque/memorial,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "do" = (
 /obj/structure/table/reinforced,
 /obj/item/food/snacks/carrotfries,
@@ -22,11 +48,26 @@
 	pixel_y = -2
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "du" = (
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"du" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "eh" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -34,21 +75,34 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "em" = (
 /obj/machinery/door/airlock/titanium/glass,
 /obj/structure/fans/tiny,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "es" = (
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"es" = (
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "eu" = (
 /obj/machinery/door/window/classic/reversed{
 	name = "Animal Storage";
 	dir = 1
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "ez" = (
 /obj/machinery/hydroponics/constructable,
@@ -61,15 +115,39 @@
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"ez" = (
+/obj/machinery/hydroponics/constructable,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"eC" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "fQ" = (
 /obj/structure/girder,
 /obj/item/stack/sheet/mineral/titanium,
 /turf,
+<<<<<<< Updated upstream
 /area/space)
 "gl" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/grass,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"gl" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube-broken";
+	status = 2
+	},
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "gp" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -77,22 +155,43 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "gw" = (
 /obj/machinery/computer/nonfunctional{
 	dir = 1
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "gG" = (
 /obj/structure/girder,
 /turf,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"gG" = (
+/obj/structure/girder,
+/turf,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "hb" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/simulated/floor/transparent/glass,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"hm" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp,
+/turf/simulated/floor/carpet,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "hW" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -101,7 +200,11 @@
 	},
 /obj/effect/landmark/damageturf,
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "hY" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -109,6 +212,7 @@
 	},
 /obj/machinery/power/smes/magical,
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "iL" = (
 /obj/machinery/economy/vending/hydronutrients,
@@ -121,6 +225,27 @@
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/wall/mineral/titanium/interior,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"iq" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"iL" = (
+/obj/machinery/economy/vending/hydronutrients,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"iP" = (
+/turf/simulated/floor/transparent/glass,
+/area/shuttle/abandoned)
+"js" = (
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/transparent/glass,
+/area/shuttle/abandoned)
+"jv" = (
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "jA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -130,6 +255,7 @@
 	},
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "kE" = (
 /obj/machinery/seed_extractor,
@@ -138,28 +264,64 @@
 "mi" = (
 /turf,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"jN" = (
+/obj/machinery/door/window/classic/reversed{
+	name = "Animal Storage"
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"kE" = (
+/obj/machinery/seed_extractor,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"mi" = (
+/turf,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "mG" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "mH" = (
 /mob/living/simple_animal/cow,
 /turf/simulated/floor/grass,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"mH" = (
+/mob/living/simple_animal/cow,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "mJ" = (
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/mineral/plasma/fifty,
 /obj/item/stack/sheet/mineral/gold/fifty,
 /obj/item/stack/sheet/mineral/bananium/ten,
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"mM" = (
+/mob/living/simple_animal/mouse,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "nV" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "oC" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/beakers,
@@ -170,13 +332,25 @@
 	pixel_y = 2
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "oG" = (
 /obj/effect/spawner/airlock{
 	req_access_txt = 0
 	},
 /turf/simulated/wall/mineral/titanium/interior,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"pu" = (
+/obj/effect/spawner/window/reinforced,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "pI" = (
 /obj/structure/table,
 /obj/item/seeds/ambrosia/gaia{
@@ -203,12 +377,17 @@
 	pixel_y = 10
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "qo" = (
 /obj/effect/landmark/damageturf,
 /obj/machinery/shieldwallgen/on,
 /obj/structure/cable,
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "rW" = (
 /obj/structure/table/reinforced,
@@ -223,11 +402,62 @@
 /obj/structure/sign/nosmoking_1,
 /turf/simulated/wall/mineral/titanium/interior,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"qP" = (
+/obj/structure/mineral_door/wood,
+/turf/space,
+/area/shuttle/abandoned)
+"qS" = (
+/obj/structure/alien/weeds/node,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"rD" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"rF" = (
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"rW" = (
+/obj/structure/table/reinforced,
+/obj/machinery/kitchen_machine/microwave,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube-broken";
+	status = 2
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"su" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube-broken";
+	status = 2
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"sy" = (
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+"sO" = (
+/obj/structure/sign/nosmoking_1,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "tu" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
 /turf/simulated/floor/transparent/glass,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "tN" = (
 /obj/structure/closet/crate/hydroponics,
 /obj/item/plant_analyzer,
@@ -238,7 +468,17 @@
 /obj/item/cultivator,
 /obj/item/storage/bag/plants,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"um" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "uq" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -246,7 +486,11 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "us" = (
 /obj/item/stack/spacecash/c100,
 /obj/item/stack/spacecash/c100,
@@ -258,10 +502,15 @@
 	pixel_x = 4;
 	pixel_y = 8
 	},
+<<<<<<< Updated upstream
+=======
+/obj/structure/closet/crate,
+>>>>>>> Stashed changes
 /obj/item/coin/silver{
 	pixel_x = 4;
 	pixel_y = 8
 	},
+<<<<<<< Updated upstream
 /obj/structure/closet/crate,
 /obj/item/grenade/spawnergrenade/feral_cats,
 /turf/simulated/floor/engine,
@@ -274,19 +523,64 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/simulated/floor/grass,
 /area/space)
+=======
+/obj/item/grenade/spawnergrenade/feral_cats,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"uu" = (
+/obj/item/gps/ruin{
+	gpstag = "Menagerie"
+	},
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"uJ" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor/transparent/glass,
+/area/shuttle/abandoned)
+"vz" = (
+/obj/effect/spawner/random_spawners/wall_rusted_maybe,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"vE" = (
+/obj/structure/flora/tree/jungle/small,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"vI" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "vM" = (
 /obj/structure/window/reinforced{
 	dir = 1;
 	layer = 2.9
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "wo" = (
 /obj/structure/reagent_dispensers/beerkeg/nuke{
 	name = "Nanotrasen-brand nuclear fizz-sion explosive"
 	},
+<<<<<<< Updated upstream
 /turf/simulated/floor/engine,
 /area/space)
+=======
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"wz" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "wG" = (
 /obj/machinery/shieldwallgen/on,
 /obj/structure/cable{
@@ -295,6 +589,7 @@
 	pixel_y = 1
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "xm" = (
 /mob/living/simple_animal/pet/cat{
@@ -302,6 +597,13 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"xm" = (
+/obj/structure/flora/ausbushes/fernybush,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "xt" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -309,11 +611,37 @@
 	icon_state = "1-2"
 	},
 /obj/effect/landmark/damageturf,
+<<<<<<< Updated upstream
 /turf/simulated/floor/engine,
 /area/space)
 "xx" = (
 /turf/simulated/floor/grass,
 /area/space)
+=======
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"xx" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"xP" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"yG" = (
+/turf/space,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "zc" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/secure/briefcase{
@@ -321,6 +649,7 @@
 	name = "\improper Nanotrasen-brand secure briefcase exhibit"
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "zl" = (
 /obj/structure/sign/nanotrasen,
@@ -330,12 +659,24 @@
 /obj/machinery/optable,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"zl" = (
+/obj/structure/sign/nanotrasen,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"zy" = (
+/obj/machinery/optable,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "zz" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/mob_spawn/human/corpse/scientist{
 	outfit = /datum/outfit/tadeus_researcher
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "zV" = (
 /obj/structure/sign/xenobio,
@@ -345,10 +686,37 @@
 /obj/structure/sign/securearea,
 /turf/simulated/wall/mineral/titanium/interior,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"zC" = (
+/mob/living/simple_animal/mouse,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube-broken";
+	status = 2
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"zV" = (
+/obj/structure/sign/xenobio,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"As" = (
+/obj/structure/sign/securearea,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"AC" = (
+/mob/living/simple_animal/pet/cat{
+	name = "Lenny"
+	},
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "AQ" = (
 /obj/structure/sign/biohazard,
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/wall/mineral/titanium/interior,
+<<<<<<< Updated upstream
 /area/space)
 "Bt" = (
 /mob/living/simple_animal/chicken,
@@ -363,10 +731,39 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Bt" = (
+/mob/living/simple_animal/chicken,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"Cd" = (
+/obj/structure/table/reinforced,
+/obj/item/screwdriver,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"CI" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/storage/secure/safe{
+	pixel_y = 25
+	},
+/turf/simulated/floor/carpet,
+/area/shuttle/abandoned)
+"CS" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Dl" = (
 /obj/machinery/door/window/classic/reversed{
 	name = "Animal Storage"
 	},
+<<<<<<< Updated upstream
 /turf/simulated/floor/plasteel,
 /area/space)
 "DT" = (
@@ -382,13 +779,37 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"DT" = (
+/turf/simulated/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned)
+"Ec" = (
+/obj/machinery/hydroponics/constructable,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"Ei" = (
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"Em" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/fernybush,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Fa" = (
 /obj/structure/flora/ausbushes/palebush,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/grass,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Fi" = (
 /obj/structure/sink{
 	dir = 4;
@@ -396,7 +817,11 @@
 	},
 /obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Fy" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -404,7 +829,11 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "GO" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "High Risk Organisms";
@@ -415,6 +844,7 @@
 	},
 /obj/structure/fans/tiny,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "GT" = (
 /obj/machinery/computer/operating,
@@ -425,6 +855,21 @@
 /obj/item/radio/off,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"GT" = (
+/obj/machinery/computer/operating,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"GX" = (
+/obj/structure/table/reinforced,
+/obj/item/radio/off,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Hf" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin/nanotrasen,
@@ -434,11 +879,19 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "Hu" = (
 /obj/structure/sign/botany,
 /turf/simulated/wall/mineral/titanium/interior,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Hu" = (
+/obj/structure/sign/botany,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Hw" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -451,7 +904,15 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"HQ" = (
+/obj/machinery/light,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "HS" = (
 /obj/machinery/power/apc/directional/south,
 /obj/structure/cable,
@@ -466,6 +927,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "Io" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -477,10 +939,22 @@
 	},
 /turf/simulated/floor/engine,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Io" = (
+/obj/effect/mapping_helpers/airlock/access/any/science/research{
+	access = 271
+	},
+/obj/machinery/door/airlock/highsecurity,
+/obj/structure/fans/tiny,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Je" = (
 /obj/structure/table/reinforced,
 /obj/item/wrench,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "Jm" = (
 /obj/effect/landmark/damageturf,
@@ -494,6 +968,21 @@
 /obj/structure/closet/crate/can,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Jm" = (
+/obj/effect/landmark/damageturf,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"JF" = (
+/obj/effect/spawner/window/reinforced,
+/turf/simulated/floor/plating,
+/area/shuttle/abandoned)
+"Kj" = (
+/obj/structure/closet/crate/can,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Kv" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -502,11 +991,20 @@
 	tag = ""
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"KD" = (
+/obj/machinery/washing_machine,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "La" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/donkpockets,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "Mn" = (
 /mob/living/simple_animal/seal,
@@ -519,6 +1017,28 @@
 /obj/effect/mob_spawn/human/alive/skeleton,
 /turf/simulated/floor/engine,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Lw" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"Mn" = (
+/mob/living/simple_animal/seal,
+/obj/machinery/light,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"Mo" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"Mq" = (
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "MO" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -531,6 +1051,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "NW" = (
 /obj/machinery/floodlight,
@@ -544,18 +1065,48 @@
 /obj/machinery/power/terminal,
 /turf/simulated/floor/engine,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"ND" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"NW" = (
+/obj/machinery/floodlight,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"Oh" = (
+/obj/effect/landmark/damageturf,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"Ot" = (
+/obj/machinery/power/terminal,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "OE" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+<<<<<<< Updated upstream
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "OF" = (
 /obj/structure/table,
 /obj/item/food/snacks/grown/mushroom/walkingmushroom,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "OL" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/syringe,
@@ -572,7 +1123,20 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"OO" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/titanium/glass,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Pd" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -581,11 +1145,19 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "Pn" = (
 /obj/structure/sign/biohazard,
 /turf/simulated/wall/mineral/titanium/interior,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Pn" = (
+/obj/structure/sign/biohazard,
+/turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Py" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin/nanotrasen,
@@ -594,21 +1166,42 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "PL" = (
 /obj/structure/alien/weeds/node,
 /turf/simulated/floor/engine,
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "PS" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/light{
 	color = "#763C3A"
 	},
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"PX" = (
+/obj/structure/bed/dogbed,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+"Qa" = (
+/obj/structure/closet/cabinet,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+"Qh" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Qq" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+<<<<<<< Updated upstream
 /turf/simulated/floor/plasteel,
 /area/space)
 "QL" = (
@@ -623,6 +1216,30 @@
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"QL" = (
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"QM" = (
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"RI" = (
+/mob/living/simple_animal/mouse,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+"RN" = (
+/mob/living/simple_animal/goose,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"RX" = (
+/obj/structure/reagent_dispensers/watertank/high,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Su" = (
 /obj/structure/table/reinforced,
 /obj/item/paper/crumpled{
@@ -630,7 +1247,18 @@
 	name = "Tadeus Station Orders"
 	},
 /turf/simulated/floor/transparent/glass,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Sx" = (
+/obj/structure/bed,
+/obj/item/storage/secure/safe{
+	pixel_y = 25
+	},
+/turf/simulated/floor/carpet,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "SD" = (
 /obj/structure/table,
 /obj/item/seeds/plump/walkingmushroom,
@@ -644,12 +1272,20 @@
 	pixel_y = 7
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "SQ" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/white,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Tq" = (
 /obj/effect/landmark/damageturf,
 /obj/machinery/shieldwallgen/on,
@@ -659,7 +1295,19 @@
 	pixel_y = 1
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Uz" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/turf/simulated/floor/carpet,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "UE" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -672,13 +1320,33 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"UR" = (
+/obj/machinery/economy/vending/boozeomat,
+/turf/simulated/floor/wood,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Vb" = (
 /obj/structure/chair/office/light{
 	dir = 4
 	},
 /turf/simulated/floor/transparent/glass,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Vi" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/effect/spawner/random_spawners/dirt_frequent,
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Vk" = (
 /obj/item/storage/secure/briefcase{
 	desc = "A large briefcase with a digital locking system, and the Nanotrasen logo emblazoned on the sides.";
@@ -686,12 +1354,17 @@
 	},
 /obj/structure/table/reinforced,
 /turf/simulated/floor/transparent/glass,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "VT" = (
 /obj/structure/chair/office/light{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
 "WO" = (
 /obj/structure/table/reinforced,
@@ -702,29 +1375,69 @@
 /mob/living/simple_animal/pig,
 /turf/simulated/floor/grass,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"WO" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/surgical_tray,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"Xn" = (
+/mob/living/simple_animal/pig,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"Yb" = (
+/mob/living/simple_animal/turkey,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "Yr" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/yellow,
 /obj/item/clothing/mask/cigarette/pipe,
 /turf/simulated/floor/plasteel,
+<<<<<<< Updated upstream
 /area/space)
+=======
+/area/shuttle/abandoned)
+"YJ" = (
+/mob/living/simple_animal/deer,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "YQ" = (
 /obj/machinery/shieldwallgen/on,
 /obj/structure/cable,
 /turf/simulated/floor/engine,
+<<<<<<< Updated upstream
 /area/space)
 "Zl" = (
 /obj/item/toy/nuke,
 /turf/simulated/floor/engine,
 /area/space)
+=======
+/area/shuttle/abandoned)
+"Zl" = (
+/obj/item/toy/nuke,
+/turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 "ZD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
 	initialize_directions = 10
 	},
+<<<<<<< Updated upstream
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
 /turf/simulated/floor/plasteel,
 /area/space)
+=======
+/turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+>>>>>>> Stashed changes
 
 (1,1,1) = {"
 cv
@@ -1613,6 +2326,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -1620,6 +2334,15 @@ Mo
 Mo
 Mo
 Mo
+=======
+jv
+jv
+jv
+jv
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1659,6 +2382,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 es
 es
 es
@@ -1674,6 +2398,23 @@ Mo
 Mo
 Mo
 cv
+=======
+jv
+CI
+Uz
+sy
+sy
+KD
+jv
+jv
+jv
+jv
+jv
+jv
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1705,6 +2446,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 es
 es
 es
@@ -1720,6 +2462,23 @@ sy
 xx
 xx
 Mo
+=======
+pu
+bU
+bU
+AC
+sy
+sy
+jv
+Ei
+Ei
+es
+su
+Mo
+QM
+Yb
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1751,6 +2510,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 es
 es
 es
@@ -1766,6 +2526,23 @@ Dl
 QM
 xx
 Mo
+=======
+pu
+sy
+sy
+sy
+sy
+sy
+em
+Ei
+zz
+Ei
+Ei
+Dl
+QM
+QM
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1797,6 +2574,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 es
 es
 es
@@ -1815,6 +2593,26 @@ jv
 cv
 cv
 cv
+=======
+pu
+bU
+bU
+sy
+sy
+sy
+jv
+es
+Ei
+CS
+Ei
+Mo
+QM
+RN
+jv
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1843,6 +2641,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 es
 es
 es
@@ -1861,6 +2660,26 @@ Mo
 cv
 cv
 cv
+=======
+jv
+Sx
+hm
+sy
+RI
+PX
+jv
+Ei
+Ei
+Bt
+Ei
+Ei
+mG
+mG
+Mo
+QM
+YJ
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1889,6 +2708,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -1907,6 +2727,26 @@ Mo
 cv
 cv
 cv
+=======
+jv
+jv
+jv
+jv
+qP
+jv
+jv
+Ei
+es
+Ei
+Ei
+Ei
+Ei
+Ei
+jN
+QM
+QM
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1935,6 +2775,7 @@ mi
 mi
 fQ
 fQ
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -1953,6 +2794,26 @@ Mo
 cv
 cv
 cv
+=======
+jv
+jv
+jv
+Qa
+sy
+sy
+jv
+OE
+OE
+Ei
+Ei
+es
+Qq
+OE
+Mo
+QM
+QM
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -1978,6 +2839,7 @@ cv
 cv
 cv
 mi
+<<<<<<< Updated upstream
 cv
 cv
 as
@@ -1999,6 +2861,29 @@ Mo
 cv
 cv
 cv
+=======
+yG
+yG
+as
+Mq
+as
+jv
+UR
+sy
+Qh
+jv
+Xn
+QM
+Vi
+Ei
+Mo
+QM
+QM
+jv
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2024,6 +2909,7 @@ cv
 cv
 cv
 mi
+<<<<<<< Updated upstream
 cv
 cv
 as
@@ -2042,6 +2928,26 @@ Dl
 xx
 xx
 Mo
+=======
+yG
+yG
+as
+Mq
+Mq
+jv
+eC
+sy
+sy
+jv
+Oh
+QM
+eu
+Ei
+Dl
+QM
+QM
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2075,6 +2981,7 @@ as
 Mq
 Jm
 as
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -2088,6 +2995,21 @@ sy
 xx
 Mn
 Mo
+=======
+jv
+jv
+jv
+jv
+jv
+Lw
+mH
+vM
+es
+Mo
+QM
+Mn
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2117,6 +3039,7 @@ cv
 cv
 gG
 as
+<<<<<<< Updated upstream
 as
 as
 as
@@ -2135,6 +3058,26 @@ Mo
 Mo
 Mo
 Mo
+=======
+Mq
+as
+as
+Mq
+jv
+Ot
+hY
+jv
+jv
+jv
+jv
+jv
+cU
+jv
+jv
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2161,12 +3104,17 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
+=======
+jv
+>>>>>>> Stashed changes
 Tq
 Kv
 MO
 Kv
 YQ
+<<<<<<< Updated upstream
 Mo
 as
 HS
@@ -2182,13 +3130,35 @@ SQ
 GX
 Mo
 Mo
+=======
+jv
+rD
+HS
+jv
+WO
+oC
+OL
+Ei
+Ei
+Ei
+Py
+SQ
+GX
+jv
+jv
+>>>>>>> Stashed changes
 JF
 JF
 JF
 JF
 JF
+<<<<<<< Updated upstream
 Mo
 Mo
+=======
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2207,6 +3177,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 as
@@ -2235,6 +3206,36 @@ xx
 vE
 gl
 Mo
+=======
+jv
+jv
+as
+Fy
+as
+jv
+As
+jv
+OO
+jv
+zy
+Ei
+Ei
+Ei
+Ei
+es
+Ei
+VT
+gw
+jv
+xm
+iq
+xm
+iq
+QM
+vE
+gl
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2249,6 +3250,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -2283,6 +3285,42 @@ Fa
 Mo
 Mo
 Mo
+=======
+jv
+jv
+jv
+jv
+jv
+ND
+as
+uq
+eh
+du
+eh
+xt
+UE
+jv
+GT
+Ei
+iP
+iP
+iP
+iP
+iP
+Ei
+zc
+vz
+iq
+QM
+vE
+Em
+QM
+xm
+Fa
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2295,6 +3333,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Zl
 as
@@ -2304,30 +3343,60 @@ as
 as
 as
 as
+=======
+jv
+Zl
+as
+mJ
+jv
+as
+as
+as
+Mq
+>>>>>>> Stashed changes
 as
 as
 Jm
 Fy
 AQ
+<<<<<<< Updated upstream
 es
 es
 iP
+=======
+Ei
+rF
+js
+>>>>>>> Stashed changes
 uJ
 hb
 tu
 iP
+<<<<<<< Updated upstream
 du
+=======
+Ei
+>>>>>>> Stashed changes
 Kj
 zl
 mG
 mG
 mG
+<<<<<<< Updated upstream
 eC
 mG
 mG
 Pd
 Mo
 Mo
+=======
+mG
+mG
+mG
+Pd
+jv
+jv
+>>>>>>> Stashed changes
 oG
 cv
 cv
@@ -2341,13 +3410,21 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
+=======
+jv
+>>>>>>> Stashed changes
 wo
 as
 as
 Io
 as
+<<<<<<< Updated upstream
 as
+=======
+Mq
+>>>>>>> Stashed changes
 as
 as
 as
@@ -2356,12 +3433,17 @@ as
 Fy
 GO
 es
+<<<<<<< Updated upstream
 es
+=======
+Ei
+>>>>>>> Stashed changes
 iP
 Su
 PS
 uJ
 iP
+<<<<<<< Updated upstream
 es
 es
 em
@@ -2375,6 +3457,21 @@ ZD
 es
 es
 es
+=======
+Ei
+es
+em
+Ei
+Ei
+Ei
+df
+Ei
+Ei
+ZD
+Ei
+Ei
+Ei
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2387,6 +3484,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 as
 as
@@ -2398,6 +3496,19 @@ as
 Jm
 as
 as
+=======
+jv
+as
+as
+us
+jv
+as
+Mq
+as
+Jm
+as
+Mq
+>>>>>>> Stashed changes
 as
 Fy
 Pn
@@ -2408,6 +3519,7 @@ hb
 uJ
 Vk
 iP
+<<<<<<< Updated upstream
 es
 es
 zl
@@ -2421,6 +3533,21 @@ Qq
 Mo
 Mo
 Mo
+=======
+Ei
+es
+zl
+OE
+OE
+OE
+OE
+OE
+OE
+OE
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2433,6 +3560,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -2449,11 +3577,30 @@ hW
 Mo
 do
 es
+=======
+jv
+jv
+jv
+jv
+jv
+wz
+as
+gp
+eh
+xP
+eh
+eh
+hW
+jv
+do
+Ei
+>>>>>>> Stashed changes
 iP
 iP
 iP
 iP
 Vb
+<<<<<<< Updated upstream
 es
 Je
 Mo
@@ -2467,6 +3614,21 @@ vE
 Mo
 Mo
 Mo
+=======
+Ei
+Je
+jv
+aG
+QM
+cA
+iq
+vI
+QM
+vE
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2481,13 +3643,20 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
+=======
+jv
+jv
+jv
+>>>>>>> Stashed changes
 zV
 as
 Fy
 as
+<<<<<<< Updated upstream
 Mo
 As
 Mo
@@ -2511,6 +3680,31 @@ xx
 xx
 xx
 Mo
+=======
+jv
+As
+jv
+jv
+uu
+do
+Ei
+Ei
+es
+Ei
+Ei
+Ei
+mM
+gw
+vz
+iq
+QM
+vE
+vI
+QM
+cA
+xx
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2527,7 +3721,11 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
+=======
+jv
+>>>>>>> Stashed changes
 wG
 jA
 Kv
@@ -2537,6 +3735,7 @@ Kv
 Kv
 jA
 qo
+<<<<<<< Updated upstream
 Mo
 Mo
 rW
@@ -2550,13 +3749,33 @@ Yr
 Cd
 Mo
 Mo
+=======
+jv
+jv
+rW
+La
+nV
+Ei
+Ei
+Ei
+Hf
+Yr
+Cd
+jv
+jv
+>>>>>>> Stashed changes
 JF
 JF
 JF
 JF
 JF
+<<<<<<< Updated upstream
 Mo
 Mo
+=======
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2573,12 +3792,18 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
+=======
+jv
+jv
+>>>>>>> Stashed changes
 DT
 Jm
 as
 as
+<<<<<<< Updated upstream
 as
 as
 DT
@@ -2595,6 +3820,24 @@ Mo
 sO
 Mo
 Mo
+=======
+Mq
+as
+DT
+jv
+jv
+jv
+jv
+jv
+jv
+jv
+em
+Hu
+jv
+sO
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2621,6 +3864,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 as
 as
@@ -2640,6 +3884,27 @@ es
 es
 es
 Mo
+=======
+jv
+as
+Mq
+as
+as
+as
+jv
+cv
+cv
+cv
+jv
+um
+Ei
+Ei
+Ei
+Ei
+Ei
+HQ
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2667,6 +3932,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 as
 QL
@@ -2685,6 +3951,26 @@ es
 es
 ez
 es
+=======
+jv
+as
+QL
+as
+qS
+as
+jv
+cv
+cv
+cv
+jv
+Ei
+Ec
+es
+Ei
+Ei
+ez
+Ei
+>>>>>>> Stashed changes
 jv
 cv
 cv
@@ -2713,6 +3999,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 as
 as
@@ -2732,6 +4019,27 @@ es
 es
 es
 Mo
+=======
+jv
+Mq
+as
+as
+as
+Mq
+jv
+cv
+cv
+cv
+jv
+QM
+QM
+QM
+Ei
+es
+Ei
+es
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2759,6 +4067,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 Mo
 Mo
@@ -2766,16 +4075,33 @@ Mo
 Mo
 Mo
 Mo
+=======
+jv
+jv
+jv
+jv
+jv
+jv
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
 JF
 Ec
+<<<<<<< Updated upstream
 es
 es
 kE
 es
 es
+=======
+Ei
+Ei
+kE
+Ei
+Ei
+>>>>>>> Stashed changes
 ez
 JF
 cv
@@ -2817,12 +4143,21 @@ cv
 cv
 JF
 tN
+<<<<<<< Updated upstream
 es
 pI
 NW
 SD
 es
 es
+=======
+Ei
+pI
+NW
+SD
+Ei
+Ei
+>>>>>>> Stashed changes
 JF
 cv
 cv
@@ -2863,11 +4198,19 @@ cv
 cv
 JF
 ez
+<<<<<<< Updated upstream
 es
 es
 OF
 es
 xx
+=======
+Ei
+Ei
+OF
+Ei
+QM
+>>>>>>> Stashed changes
 Ec
 JF
 cv
@@ -2908,6 +4251,7 @@ cv
 cv
 cv
 jv
+<<<<<<< Updated upstream
 es
 es
 es
@@ -2916,6 +4260,16 @@ es
 es
 xx
 Mo
+=======
+Ei
+es
+Ei
+Ei
+Ei
+Ei
+QM
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -2953,6 +4307,7 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 es
 ez
@@ -2961,6 +4316,16 @@ es
 es
 ez
 es
+=======
+jv
+Ei
+ez
+Ei
+Ei
+Ei
+ez
+Ei
+>>>>>>> Stashed changes
 jv
 cv
 cv
@@ -2999,15 +4364,26 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
 es
 es
+=======
+jv
+zC
+Ei
+>>>>>>> Stashed changes
 RX
 iL
 Fi
 es
+<<<<<<< Updated upstream
 es
 Mo
+=======
+HQ
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
@@ -3046,13 +4422,21 @@ cv
 cv
 cv
 cv
+<<<<<<< Updated upstream
 Mo
+=======
+jv
+>>>>>>> Stashed changes
 JF
 JF
 JF
 JF
 JF
+<<<<<<< Updated upstream
 Mo
+=======
+jv
+>>>>>>> Stashed changes
 cv
 cv
 cv
