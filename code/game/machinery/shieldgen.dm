@@ -319,6 +319,14 @@
 	var/locked = TRUE
 	var/list/active_shields
 	var/stored_power = 0
+	// Dumb hack to allow for shield walls to start on (that is, at game start)
+	// but before the queued power in the regional powernet has been dispersed.
+	// It only requires one extra tick for queued power to become available
+	// so if we go two ticks without power, *then* we shut down.
+	//
+	// TODO: The correct way to solve this is to make shieldwallgen a subtype
+	// of /obj/machinery/power, akin to /obj/machinery/power/emitter.
+	var/ticks_without_power = 0
 
 /obj/machinery/shieldwallgen/Initialize(mapload)
 	. = ..()
@@ -338,13 +346,11 @@
 	var/datum/regional_powernet/PN = C?.powernet // find the powernet of the connected cable
 
 	if(!PN)
-		deactivate()
 		return FALSE
 
 	var/surplus = max(PN.available_power - PN.power_demand, 0)
 	var/shieldload = min(rand(50, 200), surplus)
 	if(!shieldload && stored_power <= 0)		// no cable or no power, and no power stored
-		deactivate()
 		return FALSE
 
 	stored_power += min(shieldload, MAX_STORED_POWER - stored_power)
@@ -377,10 +383,13 @@
 
 /obj/machinery/shieldwallgen/process()
 	if(!try_charge_shields_power())
-		visible_message("<span class='warning'>[name] shuts down due to lack of power!</span>", \
-				"You hear heavy droning fade out")
-		deactivate()
-		update_icon(UPDATE_ICON_STATE)
+		ticks_without_power += 1
+		if(ticks_without_power >= 2)
+			ticks_without_power = 0 // Reset
+			visible_message("<span class='warning'>[name] shuts down due to lack of power!</span>", \
+					"You hear heavy droning fade out.")
+			deactivate()
+			update_icon(UPDATE_ICON_STATE)
 
 
 /obj/machinery/shieldwallgen/proc/activate()
@@ -455,6 +464,14 @@
 	stored_power -= Proj.damage
 	..()
 	return
+
+/obj/machinery/shieldwallgen/on // an instance of shieldwallgen used on menagerie.dmm
+	anchored = TRUE
+	req_access = list(ACCESS_AWAY01) // this shield wall generator requires the acccess of the ID found on meagerie.dmm
+
+/obj/machinery/shieldwallgen/on/Initialize(mapload)
+	. = ..()
+	activate()
 
 
 ////////////// Containment Field START
@@ -611,12 +628,3 @@
 	return ..()
 
 #undef MAX_STORED_POWER
-
-/obj/machinery/shieldwallgen/on // an instance of shieldwallgen used on menagerie.dmm
-	activated = 1
-	anchored = TRUE
-	req_access = list(ACCESS_AWAY01) // this shield wall generator requires the acccess of the ID found on meagerie.dmm
-
-/obj/machinery/shieldwallgen/on/Initialize(mapload)
-	. = ..()
-	activate()
