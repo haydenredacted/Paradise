@@ -3,8 +3,20 @@
 /obj/item/poster/random_contraband,
 /turf/simulated/floor/carpet/royalblue,
 /area/shuttle/abandoned)
+"ad" = (
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "purple"
+	},
+/area/shuttle/abandoned)
 "as" = (
 /turf/simulated/floor/engine,
+/area/shuttle/abandoned)
+"aG" = (
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "aI" = (
 /obj/structure/table/wood,
@@ -36,7 +48,10 @@
 /obj/item/stack/sheet/mineral/plasma/fifty,
 /obj/item/stack/sheet/mineral/gold/fifty,
 /obj/item/stack/sheet/mineral/bananium/ten,
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "ck" = (
 /obj/machinery/button/windowtint{
@@ -44,7 +59,9 @@
 	id = "process";
 	pixel_y = -24
 	},
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "cl" = (
 /obj/machinery/light/small,
@@ -52,7 +69,10 @@
 /area/shuttle/abandoned)
 "cp" = (
 /obj/machinery/computer/operating,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "cv" = (
 /turf/template_noop,
@@ -75,7 +95,10 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "cR" = (
 /obj/machinery/power/terminal{
@@ -206,7 +229,10 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "hk" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
@@ -278,7 +304,10 @@
 "kz" = (
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "kD" = (
 /obj/machinery/recharge_station,
@@ -321,7 +350,10 @@
 "ll" = (
 /obj/structure/table,
 /obj/item/paper_bin/nanotrasen,
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "me" = (
 /obj/structure/table,
@@ -332,7 +364,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "mx" = (
 /obj/structure/flora/ausbushes/leafybush,
@@ -589,7 +624,10 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "vX" = (
 /obj/effect/turf_decal/stripes/line,
@@ -606,6 +644,13 @@
 	activated = 1
 	},
 /turf/space,
+/area/shuttle/abandoned)
+"wF" = (
+/obj/structure/curtain/medical,
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "wL" = (
 /obj/structure/chair/office/light{
@@ -645,7 +690,10 @@
 /obj/machinery/economy/vending/medical{
 	req_access_txt = null
 	},
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "xw" = (
 /obj/structure/chair/wood/wings{
@@ -776,7 +824,10 @@
 	locked = 0
 	},
 /obj/effect/turf_decal/delivery/white/hollow,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "CT" = (
 /obj/effect/turf_decal/stripes/line{
@@ -814,7 +865,10 @@
 /area/shuttle/abandoned)
 "EB" = (
 /obj/structure/decorative_structures/metal/statue/moon,
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "EG" = (
 /obj/structure/cable{
@@ -861,7 +915,10 @@
 	dir = 2
 	},
 /obj/effect/turf_decal/delivery/white/hollow,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "Hu" = (
 /obj/structure/sign/botany,
@@ -920,6 +977,12 @@
 	gpstag = "Menagerie"
 	},
 /turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"KB" = (
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "KG" = (
 /obj/structure/railing,
@@ -986,6 +1049,11 @@
 	anchored = 1
 	},
 /turf/simulated/floor/transparent/glass,
+/area/shuttle/abandoned)
+"LN" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "Mo" = (
 /obj/structure/lattice/catwalk,
@@ -1057,6 +1125,15 @@
 	},
 /turf/space,
 /area/shuttle/abandoned)
+"Of" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "purple"
+	},
+/area/shuttle/abandoned)
 "Oo" = (
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp,
@@ -1115,7 +1192,9 @@
 	},
 /obj/item/clothing/gloves/color/latex,
 /obj/item/storage/box/masks,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "Rn" = (
 /obj/structure/sign/nosmoking_1{
@@ -1124,11 +1203,20 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "Rp" = (
 /obj/effect/spawner/window/reinforced/polarized/grilled,
 /turf/simulated/floor/plasteel/white,
+/area/shuttle/abandoned)
+"RP" = (
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "RQ" = (
 /obj/structure/closet/cabinet,
@@ -1169,6 +1257,17 @@
 	status = 2
 	},
 /turf/simulated/floor/grass,
+/area/shuttle/abandoned)
+"SC" = (
+/obj/item/kirbyplants,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "SD" = (
 /obj/machinery/door/airlock/medical,
@@ -1314,13 +1413,26 @@
 	pixel_y = 2
 	},
 /obj/machinery/light,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "WW" = (
 /obj/structure/sign/directions/medical{
 	dir = 1
 	},
 /turf/simulated/wall/mineral/titanium/interior,
+/area/shuttle/abandoned)
+"WY" = (
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "purple"
+	},
+/area/shuttle/abandoned)
+"Xf" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "Xh" = (
 /obj/effect/spawner/window/reinforced/grilled,
@@ -1347,7 +1459,10 @@
 "Xs" = (
 /obj/machinery/bodyscanner,
 /obj/effect/turf_decal/delivery/white/hollow,
-/turf/simulated/floor/plasteel/white,
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "whiteblue"
+	},
 /area/shuttle/abandoned)
 "Xw" = (
 /obj/structure/lattice/catwalk,
@@ -1411,6 +1526,12 @@
 	icon_state = "cafeteria"
 	},
 /area/shuttle/abandoned)
+"YK" = (
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "whiteblue"
+	},
+/area/shuttle/abandoned)
 "YV" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/grass,
@@ -1418,7 +1539,10 @@
 "Zt" = (
 /obj/structure/table,
 /obj/item/hand_labeler,
-/turf/simulated/floor/plasteel,
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "purple"
+	},
 /area/shuttle/abandoned)
 "Zv" = (
 /obj/structure/table/glass,
@@ -2150,12 +2274,12 @@ cv
 cv
 jv
 EB
-xm
+aG
 bN
 Zt
 ll
-xm
-JL
+aG
+Of
 WW
 xm
 iP
@@ -2183,7 +2307,7 @@ cv
 cv
 cv
 jv
-xm
+WY
 mJ
 yO
 fA
@@ -2251,7 +2375,7 @@ cv
 cv
 cv
 jv
-xm
+WY
 Dp
 ME
 ej
@@ -2285,13 +2409,13 @@ cv
 cv
 cv
 jv
+WY
 xm
 xm
 xm
 xm
 xm
-xm
-xm
+LN
 nO
 xm
 iP
@@ -2319,12 +2443,12 @@ cv
 cv
 cv
 jv
+WY
 xm
 xm
 xm
-xm
-xm
-xm
+KB
+KB
 mg
 jv
 eq
@@ -2353,10 +2477,10 @@ cv
 cv
 cv
 jv
+WY
 xm
 xm
-xm
-xm
+ad
 jv
 jv
 jv
@@ -2387,9 +2511,9 @@ cv
 cv
 cv
 jv
+WY
 xm
-xm
-xm
+LN
 jv
 jv
 cv
@@ -2421,7 +2545,7 @@ cv
 cv
 cv
 jv
-cx
+SC
 xm
 cx
 jv
@@ -2488,8 +2612,8 @@ cv
 cv
 jv
 gS
-Ev
-pG
+YK
+wF
 Ev
 kz
 jv
@@ -2559,7 +2683,7 @@ jv
 jv
 CR
 Ev
-Ev
+Xf
 jv
 cv
 cv
@@ -2659,8 +2783,8 @@ cv
 cv
 jv
 Hg
-Ev
-Ev
+RP
+RP
 Xs
 jv
 cv
