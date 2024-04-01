@@ -251,13 +251,6 @@
 	},
 /turf/simulated/floor/grass,
 /area/shuttle/abandoned)
-"hs" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/vomit/green,
-/turf/simulated/floor/engine,
-/area/shuttle/abandoned)
 "hY" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -628,11 +621,6 @@
 	dir = 1;
 	icon_state = "whiteblue"
 	},
-/area/shuttle/abandoned)
-"vX" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/decal/cleanable/vomit/green,
-/turf/simulated/floor/engine,
 /area/shuttle/abandoned)
 "wt" = (
 /obj/structure/lattice/catwalk,
@@ -1226,10 +1214,6 @@
 	},
 /turf/simulated/floor/carpet/royalblue,
 /area/shuttle/abandoned)
-"RS" = (
-/obj/structure/reagent_dispensers/watertank/high,
-/turf/simulated/wall/mineral/titanium/interior,
-/area/shuttle/abandoned)
 "RU" = (
 /obj/effect/spawner/window/reinforced/grilled,
 /obj/structure/cable,
@@ -1781,7 +1765,7 @@ jv
 jv
 jv
 jv
-RS
+jv
 jv
 cv
 cv
@@ -2688,7 +2672,7 @@ jv
 cv
 cv
 pZ
-hs
+CT
 as
 as
 as
@@ -2760,7 +2744,7 @@ CT
 QL
 as
 as
-vX
+vP
 pZ
 cv
 pI
