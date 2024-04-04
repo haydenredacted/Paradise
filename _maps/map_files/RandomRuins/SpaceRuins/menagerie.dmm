@@ -10,7 +10,7 @@
 	},
 /area/shuttle/abandoned)
 "as" = (
-/turf/simulated/floor/engine,
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "aG" = (
 /turf/simulated/floor/plasteel{
@@ -128,6 +128,12 @@
 	},
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
+"el" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/simulated/floor/engine/airless,
+/area/shuttle/abandoned)
 "em" = (
 /obj/machinery/door/airlock/titanium{
 	name = "Tadeus Research Station"
@@ -182,7 +188,6 @@
 /turf/simulated/floor/grass,
 /area/shuttle/abandoned)
 "eZ" = (
-/obj/structure/table/reinforced,
 /obj/structure/table/reinforced,
 /obj/structure/table/reinforced,
 /obj/machinery/computer/nonfunctional,
@@ -484,7 +489,6 @@
 /turf/space,
 /area/shuttle/abandoned)
 "qd" = (
-/obj/effect/spawner/window/reinforced/grilled,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -494,6 +498,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/effect/spawner/window/reinforced/plasma/grilled,
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
 "qf" = (
@@ -504,6 +509,12 @@
 /obj/item/hatchet,
 /obj/machinery/light/small,
 /turf/simulated/floor/plasteel,
+/area/shuttle/abandoned)
+"qi" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "qN" = (
 /obj/structure/table/reinforced,
@@ -557,6 +568,12 @@
 /obj/structure/sign/electricshock,
 /turf/simulated/wall/mineral/titanium/interior,
 /area/shuttle/abandoned)
+"uY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/simulated/floor/engine/airless,
+/area/shuttle/abandoned)
 "vn" = (
 /obj/structure/chair/wood/wings,
 /turf/simulated/floor/wood,
@@ -596,7 +613,7 @@
 /area/shuttle/abandoned)
 "vP" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/simulated/floor/engine,
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "vT" = (
 /obj/structure/rack,
@@ -786,11 +803,21 @@
 /obj/machinery/chem_master,
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
+"BB" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/simulated/floor/engine/airless,
+/area/shuttle/abandoned)
 "BJ" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
 	},
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
@@ -879,7 +906,7 @@
 /area/space/nearstation)
 "Gd" = (
 /obj/structure/alien/weeds/node,
-/turf/simulated/floor/engine,
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "Gn" = (
 /obj/machinery/door/airlock/public/glass,
@@ -894,8 +921,12 @@
 /turf/simulated/floor/wood,
 /area/shuttle/abandoned)
 "GD" = (
-/obj/effect/spawner/window/reinforced/grilled,
 /obj/structure/cable,
+/obj/effect/spawner/window/reinforced/plasma/grilled,
+/obj/machinery/door/poddoor/multi_tile/three_tile_ver{
+	name = "Organism Containment Control";
+	id_tag = "xenocontrol"
+	},
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
 "Hg" = (
@@ -994,7 +1025,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/simulated/floor/engine,
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "Lw" = (
 /obj/effect/turf_decal/caution{
@@ -1035,6 +1066,10 @@
 	pixel_x = -6;
 	pixel_y = 3;
 	anchored = 1
+	},
+/obj/item/paper/crumpled{
+	name = "Tadeus Research Station Assignment";
+	info = "<center><logo><b>Glory to Nanotrasen</b> <br>2988-09-15, 06:17<i><center><station>Epsilion Eridani</center></i><h3>Tadeus Research Objectives</h3></center><hr>From: Rupert Reynold, Nanotrasen Field Officer<hr>To The Tadeus Station Research Team,<br>You have been assigned to the Tadeus Research Station and have been tasked with studying the behaviors and interactions of the provided plants and animals. It is imperative to document observations, focusing on individual and group behaviors. Collaborate with your fellow researchers and regularly report findings for further analysis. Your dedication to this endeavor is crucial for advancing Nanotrasen's interests. Your adherence to this mission is vital and if we discover any sway in your alliegence, <i> you will be dealt with.</i><br><br><small><i>Good luck, <br></small></i><small><i>Rupert Reynolds, Nanotrasen Field Officer</i></small><hr><small><i>*This fax message and any accompanying documents are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, any disclosure, reproduction, distribution, or other use of this information is strictly prohibited.If you have received this message in error, please notify the sender immediately and permanently delete the original and any copies from your system.Death to the Syndicate.Glory to Nanotrasen."
 	},
 /turf/simulated/floor/transparent/glass,
 /area/shuttle/abandoned)
@@ -1108,6 +1143,12 @@
 /obj/item/food/snacks/grown/wheat,
 /turf/simulated/floor/grass,
 /area/shuttle/abandoned)
+"NP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/simulated/floor/engine/airless,
+/area/shuttle/abandoned)
 "NW" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -1167,7 +1208,7 @@
 /area/shuttle/abandoned)
 "QL" = (
 /mob/living/simple_animal/hostile/alien/drone,
-/turf/simulated/floor/engine,
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "QM" = (
 /mob/living/simple_animal/goose,
@@ -1220,13 +1261,13 @@
 /turf/simulated/floor/carpet/royalblue,
 /area/shuttle/abandoned)
 "RU" = (
-/obj/effect/spawner/window/reinforced/grilled,
 /obj/structure/cable,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/window/reinforced/plasma/grilled,
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
 "Sg" = (
@@ -1495,7 +1536,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/simulated/floor/engine,
+/turf/simulated/floor/engine/airless,
 /area/shuttle/abandoned)
 "YD" = (
 /mob/living/simple_animal/butterfly,
@@ -2643,11 +2684,11 @@ jv
 cv
 cv
 pZ
-mJ
+uY
 Yl
 Yl
 Yl
-fA
+BB
 pZ
 cv
 rQ
@@ -2677,7 +2718,7 @@ jv
 cv
 cv
 pZ
-CT
+el
 as
 as
 as
@@ -2711,7 +2752,7 @@ jv
 cv
 cv
 Is
-CT
+el
 as
 Gd
 as
@@ -2745,7 +2786,7 @@ jv
 cv
 cv
 pZ
-CT
+el
 QL
 as
 as
@@ -2779,11 +2820,11 @@ jv
 cv
 cv
 pZ
-Dp
+NP
 Lk
 Lk
 Lk
-ej
+qi
 pZ
 cv
 pg
