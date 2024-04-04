@@ -1093,6 +1093,11 @@
 	},
 /turf/simulated/floor/engine,
 /area/shuttle/abandoned)
+"MZ" = (
+/obj/machinery/hydroponics/soil,
+/obj/item/food/snacks/grown/mushroom/walkingmushroom,
+/turf/simulated/floor/grass,
+/area/shuttle/abandoned)
 "Np" = (
 /turf/simulated/floor/plasteel/stairs,
 /area/shuttle/abandoned)
@@ -2486,7 +2491,7 @@ xx
 QI
 xx
 xx
-yZ
+MZ
 jv
 "}
 (29,1,1) = {"
@@ -2753,7 +2758,7 @@ xm
 xm
 jv
 xx
-yZ
+MZ
 xx
 vM
 YD
