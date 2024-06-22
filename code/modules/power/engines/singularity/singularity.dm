@@ -418,13 +418,11 @@
 
 
 /obj/singularity/proc/event()
-	var/numb = rand(1, 4)
+	var/numb = rand(1, 3)
 	switch(numb)
-		if(1) //EMP
-			emp_area()
-		if(2) //Stun mobs who lack optic scanners
+		if(1) //Stun mobs who lack optic scanners
 			mezzer()
-		if(3, 4) //Sets all nearby mobs on fire
+		if(2, 3) //Sets all nearby mobs on fire
 			if(current_size < STAGE_SIX)
 				return 0
 			combust_mobs()
@@ -469,11 +467,6 @@
 		M.Stun(6 SECONDS)
 		M.visible_message("<span class='danger'>[M] stares blankly at [src]!</span>", \
 						"<span class='userdanger'>You look directly into [src] and feel weak.</span>")
-
-
-/obj/singularity/proc/emp_area()
-	empulse(src, 8, 10)
-	return
 
 /obj/singularity/proc/update_warp()
 	if(!warp)
