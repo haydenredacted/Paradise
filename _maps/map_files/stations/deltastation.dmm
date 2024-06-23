@@ -38126,11 +38126,11 @@
 /turf/simulated/floor/plating/airless,
 /area/station/engineering/control)
 "cdc" = (
-/obj/machinery/power/grounding_rod{
-	anchored = 1
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
+	},
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
 /turf/simulated/floor/plating/airless,
 /area/station/engineering/control)
@@ -39745,15 +39745,11 @@
 /turf/simulated/floor/plating,
 /area/station/engineering/control)
 "cic" = (
-/obj/structure/cable/yellow{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/tesla_coil{
-	anchored = 1
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
 	},
 /turf/simulated/floor/plating/airless,
-/area/station/engineering/control)
+/area/space)
 "cid" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/turf_decal/stripes/line{
@@ -39803,27 +39799,18 @@
 	},
 /area/station/engineering/control)
 "cii" = (
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/turf_decal/stripes/line{
-	dir = 1
+	dir = 4
 	},
 /obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
 	d2 = 4;
-	icon_state = "1-4"
+	icon_state = "0-4"
 	},
-/obj/structure/grille,
+/obj/machinery/power/tesla_coil{
+	anchored = 1
+	},
 /turf/simulated/floor/plating/airless,
-/area/station/engineering/control)
+/area/space)
 "cij" = (
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -40352,13 +40339,9 @@
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation)
 "cjK" = (
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation)
@@ -40376,25 +40359,14 @@
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation)
 "cjM" = (
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
-/obj/effect/turf_decal/stripes/line,
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/grille,
 /turf/simulated/floor/plating/airless,
-/area/station/engineering/control)
+/area/space/nearstation)
 "cjN" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -42002,10 +41974,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/simulated/floor/plating/airless,
+/obj/structure/lattice/catwalk,
+/turf/space,
 /area/space/nearstation)
 "coc" = (
 /obj/structure/cable/yellow{
@@ -42353,7 +42323,7 @@
 	},
 /area/station/hallway/primary/central/west)
 "cpg" = (
-/obj/item/wrench,
+/obj/effect/turf_decal/box,
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation)
 "cph" = (
@@ -44113,12 +44083,12 @@
 /turf/simulated/floor/plasteel/dark,
 /area/station/service/library)
 "ctY" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/cable/yellow{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/lattice/catwalk,
 /turf/space,
 /area/space/nearstation)
 "cua" = (
@@ -44528,10 +44498,8 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/simulated/floor/plating/airless,
+/obj/structure/lattice/catwalk,
+/turf/space,
 /area/space/nearstation)
 "cuQ" = (
 /obj/machinery/field/generator{
@@ -47132,11 +47100,11 @@
 	},
 /area/holodeck/alphadeck)
 "cCf" = (
-/obj/machinery/power/grounding_rod{
-	anchored = 1
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
+	},
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
 /turf/simulated/floor/plating/airless,
 /area/station/engineering/control)
@@ -48298,10 +48266,6 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/structure/cable/yellow,
-/obj/machinery/power/tesla_coil{
-	anchored = 1
-	},
 /turf/simulated/floor/plating/airless,
 /area/station/engineering/control)
 "cFN" = (
@@ -49086,12 +49050,12 @@
 	},
 /area/station/maintenance/port)
 "cHt" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/cable/yellow{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/lattice/catwalk,
 /turf/space,
 /area/space/nearstation)
 "cHy" = (
@@ -51502,12 +51466,12 @@
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/port2)
 "cPX" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/lattice/catwalk,
 /turf/space,
 /area/space/nearstation)
 "cPY" = (
@@ -59051,10 +59015,6 @@
 /area/station/public/construction)
 "dtI" = (
 /obj/effect/turf_decal/stripes/corner,
-/obj/structure/cable/yellow,
-/obj/machinery/power/tesla_coil{
-	anchored = 1
-	},
 /turf/simulated/floor/plating/airless,
 /area/station/engineering/control)
 "dtJ" = (
@@ -64531,13 +64491,15 @@
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation)
 "dUF" = (
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/turf_decal/stripes/line{
-	dir = 6
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/tesla_coil{
+	anchored = 1
 	},
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation)
@@ -70474,6 +70436,20 @@
 	icon_state = "darkredfull"
 	},
 /area/station/security/warden)
+"gOQ" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/lattice/catwalk,
+/turf/space,
+/area/space/nearstation)
 "gPc" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -75727,6 +75703,15 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/hallway/secondary/exit)
+"kfJ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/machinery/power/grounding_rod{
+	anchored = 1
+	},
+/turf/simulated/floor/plating/airless,
+/area/space/nearstation)
 "kfT" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -98540,6 +98525,20 @@
 /obj/effect/spawner/window/reinforced/grilled,
 /turf/simulated/floor/plating,
 /area/station/security/range)
+"xyx" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/lattice/catwalk,
+/turf/space,
+/area/space/nearstation)
 "xyI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -121262,7 +121261,7 @@ cbe
 cxG
 aaa
 czw
-cjI
+cjM
 abj
 aaa
 acF
@@ -121272,7 +121271,7 @@ acF
 acF
 aaa
 abj
-dvU
+cjK
 czw
 aaa
 cCg
@@ -121515,7 +121514,7 @@ bUc
 aTl
 bXU
 bXU
-cjM
+eIJ
 cFL
 acF
 czw
@@ -121532,8 +121531,8 @@ acF
 dvU
 czw
 acF
-cic
-cii
+cbb
+cNn
 bXU
 bXU
 cWn
@@ -122029,7 +122028,7 @@ bUe
 wOE
 bXU
 bXU
-cjM
+eIJ
 dtI
 acF
 czw
@@ -122046,8 +122045,8 @@ dQC
 dvU
 czw
 acF
-cic
-cii
+cbb
+cNn
 bXU
 bXU
 cFS
@@ -122290,7 +122289,7 @@ cdb
 cxG
 aaa
 czw
-cjI
+cjM
 abj
 aaa
 acF
@@ -122300,7 +122299,7 @@ acF
 acF
 aaa
 abj
-dvU
+cjK
 czw
 aaa
 cCg
@@ -123061,17 +123060,17 @@ cbb
 cxG
 abj
 czw
-cjI
-cif
-aaa
-aaa
-acF
-aaa
-cif
-aaa
-aaa
-cif
-dvU
+cqO
+cqQ
+cii
+cic
+dUF
+cic
+dUF
+cic
+cii
+cqQ
+kfJ
 czw
 abj
 cCg
@@ -123318,17 +123317,17 @@ esw
 cgB
 aaa
 cHt
-cjK
 cob
 cob
+xyx
 cob
-cob
+xyx
 cuP
+gOQ
+cob
+gOQ
 cob
 cob
-cob
-cob
-dUF
 cPX
 aaa
 dqQ
