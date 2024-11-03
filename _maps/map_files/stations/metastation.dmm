@@ -211,8 +211,7 @@
 	},
 /obj/machinery/alarm/directional/west,
 /obj/machinery/computer/prisoner{
-	dir = 4;
-	req_access = list(2)
+	dir = 4
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "cult"
@@ -19868,9 +19867,7 @@
 	},
 /area/station/service/barber)
 "buI" = (
-/obj/structure/closet/secure_closet/bar{
-	req_access = list(25)
-	},
+/obj/structure/closet/secure_closet/bar,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -39386,9 +39383,7 @@
 /area/station/science/toxins/launch)
 "cOA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/bar{
-	req_access = list(25)
-	},
+/obj/structure/closet/secure_closet/bar,
 /obj/machinery/light_switch{
 	name = "north bump";
 	pixel_y = 24
@@ -61014,7 +61009,6 @@
 /area/station/supply/office)
 "kFF" = (
 /obj/structure/table,
-/obj/item/key/security,
 /obj/machinery/door_control{
 	id = "innerbrig";
 	name = "Brig Interior Door Control";
@@ -61022,6 +61016,7 @@
 	pixel_x = -6;
 	pixel_y = 7
 	},
+/obj/item/key/security,
 /obj/machinery/door_control{
 	id = "outerbrig";
 	name = "Brig Exterior Door Control";
@@ -61036,6 +61031,7 @@
 	pixel_y = -3;
 	req_access = list(1)
 	},
+/obj/item/paper/armory,
 /turf/simulated/floor/plasteel,
 /area/station/security/warden)
 "kFY" = (
@@ -82316,8 +82312,7 @@
 /area/station/security/permabrig)
 "tAF" = (
 /obj/machinery/computer/prisoner{
-	dir = 1;
-	req_access = list(2)
+	dir = 1
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "cult"
@@ -88772,8 +88767,7 @@
 /area/station/maintenance/fsmaint)
 "wAJ" = (
 /obj/machinery/computer/prisoner{
-	dir = 8;
-	req_access = list(2)
+	dir = 8
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;

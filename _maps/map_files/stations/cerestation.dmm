@@ -5875,6 +5875,7 @@
 	},
 /obj/item/paper/armory,
 /obj/item/clipboard,
+/obj/item/paper/armory,
 /turf/simulated/floor/plasteel{
 	icon_state = "darkred"
 	},

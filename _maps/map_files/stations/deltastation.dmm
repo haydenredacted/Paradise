@@ -36398,9 +36398,7 @@
 /turf/simulated/floor/wood,
 /area/station/legal/lawoffice)
 "caM" = (
-/obj/machinery/computer/prisoner{
-	req_access = list(2)
-	},
+/obj/machinery/computer/prisoner,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -66253,6 +66251,7 @@
 	dir = 8
 	},
 /obj/item/clipboard,
+/obj/item/paper/armory,
 /obj/item/toy/figure/crew/warden,
 /turf/simulated/floor/plasteel{
 	dir = 8;
