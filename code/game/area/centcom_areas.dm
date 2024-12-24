@@ -50,6 +50,21 @@
 	name = "\improper Central Command Docks"
 	icon_state = "centcom"
 
+/area/centcom/evac_unlit
+	name = "\improper Unlit Centcom Emergency Shuttle"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
+
+/area/centcom/hallway_unlit
+	name = "\improper Unlit Centcom Hallway"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
+
+/area/centcom/medbay_unlit
+	name = "\improper Unlit Centcom Medbay"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
+
 // Admin areas
 
 /area/admin
