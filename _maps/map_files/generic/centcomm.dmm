@@ -1394,7 +1394,6 @@
 /area/holodeck/source_basketball)
 "eD" = (
 /obj/structure/table/glass/reinforced,
-/obj/structure/table/glass/reinforced,
 /obj/machinery/door/window/reinforced/normal{
 	dir = 1
 	},
@@ -1710,6 +1709,31 @@
 /turf/simulated/floor/plasteel{
 	dir = 1;
 	icon_state = "whitebluecorner"
+	},
+/area/centcom/medbay_unlit)
+"fB" = (
+/obj/structure/table/wood/fancy/royalblue,
+/obj/item/reagent_containers/glass/bottle/epinephrine{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/glass/bottle/charcoal{
+	pixel_x = 7;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/bottle/iodine,
+/obj/item/reagent_containers/glass/bottle/saline{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/bottle/sacid{
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/glass/bottle/potassium_iodide{
+	pixel_x = -9;
+	pixel_y = 6
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "whitebluefull"
 	},
 /area/centcom/medbay_unlit)
 "fC" = (
@@ -2953,6 +2977,13 @@
 	},
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/transport)
+"iW" = (
+/obj/item/kirbyplants,
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "whiteblue"
+	},
+/area/centcom/medbay_unlit)
 "iX" = (
 /obj/machinery/suit_storage_unit/syndicate/secure,
 /turf/simulated/floor/mineral/plastitanium/red,
@@ -5272,6 +5303,14 @@
 /obj/item/pen,
 /turf/simulated/floor/wood,
 /area/centcom/evac_unlit)
+"py" = (
+/obj/machinery/door/airlock/medical{
+	name = "Morgue"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "pz" = (
 /obj/item/flag/syndi,
 /turf/simulated/floor/plasteel{
@@ -6067,6 +6106,13 @@
 /obj/structure/fans/tiny/invisible,
 /turf/simulated/floor/plating,
 /area/centcom/specops)
+"rD" = (
+/obj/machinery/light,
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "darkblue"
+	},
+/area/centcom/hallway_unlit)
 "rE" = (
 /turf/simulated/wall/indestructible/riveted,
 /area/start)
@@ -7640,6 +7686,13 @@
 	},
 /area/centcom/evac_unlit)
 "wr" = (
+/obj/structure/shelf/medbay,
+/obj/item/robot_parts/l_arm,
+/obj/item/robot_parts/l_arm,
+/obj/item/robot_parts/r_arm,
+/obj/item/robot_parts/r_arm,
+/obj/item/robot_parts/l_leg,
+/obj/item/robot_parts/l_leg,
 /turf/simulated/floor/plasteel{
 	dir = 5;
 	icon_state = "whiteblue"
@@ -7672,12 +7725,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/admin)
-"wv" = (
-/obj/structure/table/glass/reinforced/plasma,
-/obj/structure/table/glass/reinforced/plasma,
-/obj/item/ashtray/bronze,
-/turf/simulated/floor/wood,
-/area/centcom/evac_unlit)
 "ww" = (
 /obj/machinery/recharger/wallcharger/upgraded{
 	pixel_x = 30
@@ -8537,6 +8584,15 @@
 	dir = 1
 	},
 /area/centcom/medbay_unlit)
+"yX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "whiteblue"
+	},
+/area/centcom/medbay_unlit)
 "yY" = (
 /obj/structure/table/glass/reinforced,
 /obj/effect/spawner/random/food_or_drink/dinner,
@@ -8862,6 +8918,15 @@
 	icon_state = "cafeteria"
 	},
 /area/ghost_bar)
+"zZ" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "darkblue"
+	},
+/area/centcom/evac_unlit)
 "Aa" = (
 /obj/machinery/iv_drip,
 /turf/simulated/floor/plasteel/dark,
@@ -9167,15 +9232,6 @@
 	},
 /turf/simulated/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/supply)
-"AS" = (
-/obj/machinery/light/spot{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel{
-	dir = 6;
-	icon_state = "whiteblue"
-	},
-/area/centcom/medbay_unlit)
 "AT" = (
 /obj/item/kirbyplants,
 /turf/simulated/floor/plasteel{
@@ -9962,7 +10018,6 @@
 /area/centcom/medbay_unlit)
 "CW" = (
 /obj/structure/table/glass/reinforced/plasma,
-/obj/structure/table/glass/reinforced/plasma,
 /obj/item/desk_bell,
 /turf/simulated/floor/wood,
 /area/centcom/evac_unlit)
@@ -10112,7 +10167,6 @@
 /turf/simulated/floor/wood,
 /area/centcom/evac_unlit)
 "Dt" = (
-/obj/structure/table/glass/reinforced/plasma,
 /obj/structure/table/glass/reinforced/plasma,
 /obj/item/reagent_containers/drinks/shaker,
 /turf/simulated/floor/wood,
@@ -10280,6 +10334,12 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/ghost_bar)
+"DU" = (
+/obj/effect/spawner/window/reinforced/polarized{
+	id = "Surgery 1"
+	},
+/turf/space,
+/area/centcom/medbay_unlit)
 "DV" = (
 /obj/effect/mapping_helpers/airlock/access/all/centcomm/commander,
 /obj/machinery/door/airlock/centcom{
@@ -10633,6 +10693,13 @@
 /turf/simulated/floor/carpet,
 /area/centcom/control)
 "EX" = (
+/obj/structure/shelf/medbay,
+/obj/item/robot_parts/r_leg,
+/obj/item/robot_parts/r_leg,
+/obj/item/robot_parts/head,
+/obj/item/robot_parts/head,
+/obj/item/robot_parts/chest,
+/obj/item/robot_parts/chest,
 /turf/simulated/floor/plasteel{
 	dir = 10;
 	icon_state = "whiteblue"
@@ -10684,8 +10751,8 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel{
-	icon_state = "white";
-	dir = 8
+	dir = 4;
+	icon_state = "whiteblue"
 	},
 /area/centcom/medbay_unlit)
 "Fg" = (
@@ -13012,6 +13079,15 @@
 /area/tdome/tdomeadmin)
 "LD" = (
 /obj/structure/table/wood/fancy/royalblue,
+/obj/item/storage/box/syringes{
+	pixel_x = -3
+	},
+/obj/item/storage/box/beakers{
+	pixel_y = 8
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = 3
+	},
 /turf/simulated/floor/plasteel{
 	icon_state = "whitebluefull"
 	},
@@ -15173,17 +15249,6 @@
 	icon_state = "darkred"
 	},
 /area/centcom/control)
-"RH" = (
-/obj/machinery/door/airlock/medical{
-	name = "Operating Theatre Storage"
-	},
-/obj/machinery/door/airlock/medical{
-	name = "Operating Theatre Storage"
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "showroomfloor"
-	},
-/area/centcom/medbay_unlit)
 "RI" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
@@ -15670,7 +15735,6 @@
 /area/centcom/control)
 "Tm" = (
 /obj/structure/table,
-/obj/structure/table,
 /obj/item/storage/surgical_tray,
 /turf/simulated/floor/plasteel{
 	icon_state = "showroomfloor"
@@ -15713,10 +15777,6 @@
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
 "Ts" = (
-/obj/machinery/door/airlock/medical/glass{
-	id_tag = "medbayfoyerport";
-	name = "Medbay Entrance"
-	},
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "medbayfoyerport";
 	name = "Medbay Entrance"
@@ -16164,11 +16224,6 @@
 	dir = 8
 	},
 /area/centcom/medbay_unlit)
-"UD" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/space,
-/area/space/centcomm)
 "UE" = (
 /obj/machinery/computer/operating,
 /turf/simulated/floor/plasteel/freezer,
@@ -16304,16 +16359,6 @@
 	icon_state = "darkred"
 	},
 /area/centcom/specops)
-"Va" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/light/spot{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "white";
-	dir = 8
-	},
-/area/centcom/medbay_unlit)
 "Vb" = (
 /obj/structure/chair/stool/holostool{
 	dir = 8
@@ -16328,8 +16373,8 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel{
-	icon_state = "white";
-	dir = 8
+	dir = 10;
+	icon_state = "whiteblue"
 	},
 /area/centcom/medbay_unlit)
 "Ve" = (
@@ -53041,10 +53086,10 @@ Ld
 Cc
 Mw
 Cc
-Va
-sP
-Qp
-UC
+Mw
+Cc
+yX
+yz
 Vc
 rv
 aN
@@ -53303,7 +53348,7 @@ AN
 UC
 UC
 ja
-rv
+DU
 aN
 aN
 aN
@@ -53549,7 +53594,7 @@ oK
 UC
 ja
 GD
-LD
+fB
 BJ
 LD
 eP
@@ -53560,7 +53605,7 @@ AN
 AN
 UC
 ja
-rv
+py
 aN
 aN
 aN
@@ -53817,7 +53862,7 @@ AN
 UC
 UC
 ja
-rv
+DU
 aN
 aN
 aN
@@ -54062,18 +54107,18 @@ jE
 jE
 Tc
 cM
-ja
+UC
 oZ
 yz
 HG
-ja
+UC
+UC
+UC
+UC
+UC
 UC
 ja
-UC
-UC
-UC
-ja
-UC
+GD
 rv
 aN
 aN
@@ -54320,17 +54365,17 @@ eq
 XO
 bQ
 cM
-ja
-ja
-ja
+UC
+UC
+UC
 UC
 yN
-AS
-ja
-ja
-ja
 Ff
-tT
+IL
+IL
+IL
+Ff
+iW
 rv
 aN
 aN
@@ -54554,7 +54599,7 @@ Th
 zA
 zA
 fH
-rA
+rD
 tI
 tI
 aN
@@ -54586,7 +54631,7 @@ XO
 aJ
 UL
 PL
-XO
+rv
 XO
 rv
 aN
@@ -55600,7 +55645,7 @@ TE
 Ym
 XO
 XO
-RH
+Bs
 XO
 rv
 aN
@@ -56865,7 +56910,7 @@ FI
 FI
 UX
 Dt
-wv
+Ti
 CW
 qQ
 UG
@@ -59424,11 +59469,11 @@ CC
 CC
 CC
 ze
+zZ
 Fz
 Fz
 Fz
-Fz
-Fz
+zZ
 BU
 CC
 CE
@@ -61474,7 +61519,7 @@ HK
 HK
 HK
 HK
-UD
+HK
 HK
 FI
 Xi
@@ -61724,7 +61769,7 @@ aN
 aN
 aN
 HK
-UD
+HK
 aN
 aN
 aN
