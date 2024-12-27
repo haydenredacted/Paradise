@@ -16,6 +16,7 @@
 	var/power_efficiency = 1
 	var/obj/machinery/quantumpad/linked_pad = null
 	var/preset_target = null
+	var/cc_beacon = FALSE
 
 /obj/machinery/quantumpad/cere/cargo_arrivals
 	preset_target = /obj/machinery/quantumpad/cere/arrivals_cargo

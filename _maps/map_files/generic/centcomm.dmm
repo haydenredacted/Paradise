@@ -590,6 +590,21 @@
 /obj/machinery/economy/vending/boozeomat,
 /turf/simulated/floor/plasteel/freezer,
 /area/ninja/holding)
+"bZ" = (
+/obj/item/camera/autopsy{
+	pixel_y = 3;
+	pixel_x = 3
+	},
+/obj/item/autopsy_scanner,
+/obj/item/storage/box/bodybags{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/structure/shelf/medbay,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "ca" = (
 /turf/simulated/floor/holofloor{
 	dir = 6;
@@ -1583,6 +1598,14 @@
 "fg" = (
 /turf/simulated/wall/indestructible/wood,
 /area/ninja/holding)
+"fh" = (
+/obj/effect/turf_decal/delivery/white/partial{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "fi" = (
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plating,
@@ -2445,6 +2468,7 @@
 /turf/simulated/floor/wood,
 /area/wizard_station)
 "hz" = (
+/obj/effect/turf_decal/stripes/box,
 /turf/simulated/floor/plasteel{
 	icon_state = "darkbluefull"
 	},
@@ -2693,6 +2717,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/syndicate_sit)
+"hZ" = (
+/obj/structure/morgue{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery/blue/hollow,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "ia" = (
 /obj/machinery/cooker/deepfryer/upgraded,
 /turf/simulated/floor/plasteel{
@@ -5018,6 +5051,14 @@
 	icon_state = "bar"
 	},
 /area/syndicate_mothership)
+"oH" = (
+/obj/effect/turf_decal/delivery/white/partial{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "oI" = (
 /obj/effect/spawner/random/traders/civilian,
 /obj/structure/closet,
@@ -6449,6 +6490,15 @@
 	icon_state = "whitegreen"
 	},
 /area/centcom/medbay_unlit)
+"sI" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "sK" = (
 /turf/simulated/floor/plasteel/stairs/left,
 /area/syndicate_mothership)
@@ -7189,6 +7239,7 @@
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/trade/sol)
 "uQ" = (
+/obj/effect/turf_decal/stripes/box,
 /turf/simulated/floor/plasteel{
 	icon_state = "darkredfull"
 	},
@@ -7875,6 +7926,14 @@
 	icon_state = "cafeteria"
 	},
 /area/ghost_bar)
+"wO" = (
+/obj/effect/turf_decal/delivery/white/partial{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "wP" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "darkblue";
@@ -8536,6 +8595,14 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/grass,
 /area/centcom/control)
+"yR" = (
+/obj/effect/turf_decal/caution{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/evac_unlit)
 "yS" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -8813,10 +8880,15 @@
 /turf/simulated/floor/plasteel,
 /area/admin)
 "zH" = (
+/obj/effect/turf_decal/stripes/box,
 /turf/simulated/floor/plasteel{
 	icon_state = "whitebluefull"
 	},
 /area/centcom/evac_unlit)
+"zI" = (
+/obj/structure/fans/tiny,
+/turf/simulated/floor/plasteel,
+/area/centcom/evac)
 "zJ" = (
 /turf/simulated/floor/transparent/glass/reinforced,
 /area/centcom/hallway_unlit)
@@ -9557,6 +9629,7 @@
 	id_tag = "emergency_away";
 	name = "Arrival Airlock"
 	},
+/obj/structure/fans/tiny,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -10334,12 +10407,6 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/ghost_bar)
-"DU" = (
-/obj/effect/spawner/window/reinforced/polarized{
-	id = "Surgery 1"
-	},
-/turf/space,
-/area/centcom/medbay_unlit)
 "DV" = (
 /obj/effect/mapping_helpers/airlock/access/all/centcomm/commander,
 /obj/machinery/door/airlock/centcom{
@@ -10597,6 +10664,10 @@
 	icon_state = "whiteblue"
 	},
 /area/centcom/medbay_unlit)
+"EC" = (
+/obj/machinery/crema_switch,
+/turf/simulated/wall/indestructible/riveted,
+/area/centcom/medbay_unlit)
 "ED" = (
 /obj/machinery/prize_counter,
 /turf/simulated/floor/carpet/arcade,
@@ -10646,6 +10717,14 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/admin)
+"EM" = (
+/obj/machinery/door/window/reinforced/normal{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "EN" = (
 /obj/machinery/economy/vending/cola,
 /turf/simulated/floor/mineral/plastitanium/red,
@@ -11792,6 +11871,12 @@
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/grass,
 /area/centcom/evac)
+"Ie" = (
+/obj/structure/closet/wardrobe/coroner,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "If" = (
 /obj/structure/chair,
 /obj/effect/landmark/spawner/tdomeobserve,
@@ -13793,12 +13878,6 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
 /area/tdome/tdomeobserve)
-"Nt" = (
-/obj/machinery/crema_switch{
-	pixel_y = -25
-	},
-/turf/space,
-/area/space/centcomm)
 "Nu" = (
 /obj/structure/chair{
 	dir = 4
@@ -14651,6 +14730,12 @@
 /obj/item/lighter,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"PT" = (
+/obj/machinery/bodyscanner,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/medbay_unlit)
 "PU" = (
 /obj/effect/turf_decal/delivery,
 /turf/simulated/floor/plasteel/dark,
@@ -15648,20 +15733,6 @@
 	icon_state = "whiteblue"
 	},
 /area/centcom/medbay_unlit)
-"SX" = (
-/obj/structure/bed,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/item/bedsheet/medical,
-/obj/machinery/iv_drip,
-/obj/effect/mapping_helpers/turfs/damage,
-/turf/simulated/floor/plasteel{
-	dir = 4;
-	icon_state = "whiteblue"
-	},
-/area/centcom/medbay_unlit)
 "SY" = (
 /obj/structure/table/holotable,
 /obj/item/clothing/suit/armor/riot/knight/blue,
@@ -15983,7 +16054,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/evac)
 "TV" = (
-/obj/structure/bonfire/lit,
+/obj/structure/bonfire/lit{
+	burning = 1
+	},
 /turf/simulated/floor/engine,
 /area/centcom/evac_unlit)
 "TW" = (
@@ -16222,6 +16295,12 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "white";
 	dir = 8
+	},
+/area/centcom/medbay_unlit)
+"UD" = (
+/obj/machinery/optable,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
 	},
 /area/centcom/medbay_unlit)
 "UE" = (
@@ -16601,6 +16680,11 @@
 	icon_state = "white"
 	},
 /area/shuttle/escape)
+"VN" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "darkbluefull"
+	},
+/area/centcom/medbay_unlit)
 "VO" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -16651,6 +16735,12 @@
 	icon_state = "brown"
 	},
 /area/shuttle/escape)
+"VV" = (
+/obj/effect/turf_decal/caution,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/centcom/evac_unlit)
 "VX" = (
 /obj/item/bikehorn/rubberducky,
 /obj/structure/window/basic{
@@ -17891,7 +17981,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
 "Zo" = (
-/obj/structure/bonfire/lit,
+/obj/structure/bonfire/lit{
+	burning = 1
+	},
 /turf/simulated/floor/plating/asteroid/snow,
 /area/centcom/evac_unlit)
 "Zp" = (
@@ -48657,7 +48749,7 @@ Ny
 Ny
 Ny
 uO
-UA
+zI
 aN
 aN
 aN
@@ -52570,7 +52662,7 @@ Lr
 sN
 yN
 Eg
-XO
+pk
 Ks
 XO
 to
@@ -52835,13 +52927,13 @@ yP
 Pz
 XO
 rv
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+rv
+rv
+rv
+rv
+rv
+rv
+rv
 aN
 aN
 aN
@@ -53092,13 +53184,13 @@ yX
 yz
 Vc
 rv
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Ie
+VN
+pk
+rv
+pk
+wO
+rv
 aN
 aN
 aN
@@ -53348,14 +53440,14 @@ AN
 UC
 UC
 ja
-DU
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Bi
+VN
+VN
+VN
+sI
+fh
+hZ
+rv
 aN
 aN
 aN
@@ -53606,13 +53698,13 @@ AN
 UC
 ja
 py
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+pk
+VN
+pk
+EM
+fh
+hZ
+rv
 aN
 aN
 aN
@@ -53862,14 +53954,14 @@ AN
 UC
 UC
 ja
-DU
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Bi
+pk
+pk
+pk
+sI
+fh
+hZ
+rv
 aN
 aN
 aN
@@ -54120,13 +54212,13 @@ UC
 ja
 GD
 rv
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+PT
+UD
+bZ
+sI
+pk
+oH
+rv
 aN
 aN
 aN
@@ -54377,13 +54469,13 @@ IL
 Ff
 iW
 rv
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+rv
+rv
+rv
+rv
+rv
+rv
+rv
 aN
 aN
 aN
@@ -54880,7 +54972,7 @@ XO
 XO
 xG
 jj
-SX
+hu
 jj
 hu
 Zg
@@ -56123,7 +56215,7 @@ aN
 FI
 FV
 CC
-CC
+yR
 uQ
 FI
 aN
@@ -56379,7 +56471,7 @@ aN
 aN
 FI
 hz
-CC
+VV
 CC
 pQ
 FI
@@ -56420,7 +56512,7 @@ XF
 yy
 rv
 aN
-Nt
+aN
 aN
 aN
 aN
@@ -56637,7 +56729,7 @@ aN
 FI
 FV
 CC
-CC
+yR
 zH
 FI
 aN
@@ -60022,7 +60114,7 @@ aN
 aN
 rv
 rv
-rv
+EC
 rv
 rv
 aN
