@@ -71,3 +71,12 @@
 
 /obj/item/reagent_containers/drinks/drinkingglass/jungle_vox
 	list_reagents = list("junglevox" = 50)
+
+obj/item/reagent_containers/drinks/drinkingglass/sontse
+	list_reagents = list("sontse" = 50)
+	
+obj/item/reagent_containers/drinks/drinkingglass/gargleblaster
+	list_reagents = list("gargleblaster" = 50)
+	
+obj/item/reagent_containers/drinks/drinkingglass/adminfreeze
+	list_reagents = list("adminfreeze" = 50)

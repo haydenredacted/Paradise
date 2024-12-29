@@ -50,7 +50,14 @@
 	preset_target = /obj/machinery/quantumpad/cere/service_cargo
 /obj/machinery/quantumpad/cere/service_cargo
 	preset_target = /obj/machinery/quantumpad/cere/cargo_service
-
+	
+// Central Command
+/obj/machinery/quantumpad/cc/arrivals_medbay
+	preset_target = /obj/machinery/quantumpad/cc/medbay_arrivals
+	cc_beacon = TRUE
+/obj/machinery/quantumpad/cc/medbay_arrivals
+	preset_target = /obj/machinery/quantumpad/cc/arrivals_medbay
+	cc_beacon = TRUE
 
 /obj/machinery/quantumpad/Initialize(mapload)
 	. = ..()
@@ -73,6 +80,16 @@
 	// No parts in Cere telepads, just hardcode the efficiencies
 	power_efficiency = 4
 	teleport_speed = 10
+	teleport_cooldown = 0
+	
+/obj/machinery/quantumpad/cc/Initialize(mapload)
+	. = ..()
+	linked_pad = locate(preset_target)
+
+/obj/machinery/quantumpad/cc/PopulateParts()
+	// No parts in Central Command telepads, just hardcode the efficiencies
+	power_efficiency = 4
+	teleport_speed = 5
 	teleport_cooldown = 0
 
 /obj/machinery/quantumpad/Destroy()

@@ -64,7 +64,28 @@
 	name = "\improper Unlit Centcom Medbay"
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	luminosity = 0
+	
+/area/centcom/library_unlit
+	name = "\improper Unlit Centcom Library"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
 
+/area/centcom/kitchen_unlit
+	name = "\improper Unlit Centcom Kitchen"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
+	
+/area/centcom/maint_unlit
+	name = "\improper Unlit Centcom Maintenance"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
+	requires_power = TRUE
+	
+/area/centcom/dorms_unlit
+	name =  "/improper Unlit Centcom Dorms"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	luminosity = 0
+	
 // Admin areas
 
 /area/admin
