@@ -12626,6 +12626,18 @@
 	icon_state = "darkblue"
 	},
 /area/centcom/supply_unlit)
+"oXi" = (
+/obj/machinery/door/airlock/external{
+	id_tag = "s_docking_airlock";
+	name = "Shuttle Hatch"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/structure/fans/tiny,
+/obj/docking_port/mobile/supply{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/supply)
 "oXs" = (
 /obj/structure/statue/uranium/nuke,
 /turf/simulated/floor/plating/asteroid/snow/airless,
@@ -45775,7 +45787,7 @@ ghU
 ghU
 ghU
 eJt
-suT
+oXi
 cSb
 gBf
 cSb
