@@ -13,9 +13,12 @@
 	speaking_name = "Hayden"
 
 /obj/structure/environmental_storytelling_holopad/eon_lab/entrance
-	things_to_say = list("W-wait, a visitor?!? If I knew I'd have visitors I'd turn off that turret... maybe.", "This place offers nothing of use to you. This is not a place of pride, but rather shame.")
+	things_to_say = list("W-wait, a visitor?! If I knew I'd have visitors I'd turn off that turret... maybe.", "This place offers nothing of use to you. This is not a place of pride, but rather shame.")
 	loop_sleep_time = 5 SECONDS
 
+/obj/structure/environmental_storytelling_holopad/eon_lab/office
+	things_to_say = list("Welcome to my office. This is where I got most of my paperwork done. Higher-ups wanted lots of reports for funding, I'm sure you understand.", "Now, hopefully you'll respect my privacy and leave my humble domicile.")
+	loop_sleep_time = 5 SECONDS
 
 // custom weaponry
 /obj/machinery/porta_turret/syndicate/eon_lab
