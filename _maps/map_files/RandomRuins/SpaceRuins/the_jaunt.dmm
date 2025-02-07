@@ -28,6 +28,7 @@
 /turf/simulated/floor/plasteel,
 /area/space)
 "by" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
 	icon_state = "black";
 	dir = 4
@@ -37,6 +38,14 @@
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 1
 	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plasteel,
+/area/space)
+"cd" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
 /area/space)
 "cf" = (
@@ -55,6 +64,7 @@
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/space)
 "df" = (
@@ -74,8 +84,19 @@
 	dir = 4
 	},
 /area/space)
+"gu" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/turf/simulated/floor/plasteel{
+	icon_state = "black";
+	dir = 9
+	},
+/area/space)
 "gI" = (
 /turf/simulated/wall/r_wall,
+/area/space)
+"hf" = (
+/obj/structure/environmental_storytelling_holopad/eon_lab/office,
+/turf/simulated/floor/carpet/royalblue,
 /area/space)
 "hH" = (
 /obj/structure/table,
@@ -86,8 +107,14 @@
 /obj/item/book/manual/research_and_development{
 	pixel_x = 7
 	},
-/obj/item/storage/pill_bottle,
+/obj/item/storage/pill_bottle/painkillers,
 /turf/simulated/floor/wood,
+/area/space)
+"je" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "black";
+	dir = 5
+	},
 /area/space)
 "jj" = (
 /obj/structure/sink{
@@ -104,8 +131,13 @@
 	icon_state = "freezerfloor"
 	},
 /area/space)
+"jk" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/space)
 "jt" = (
 /obj/machinery/door/airlock/command,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plasteel/dark,
 /area/space)
 "kk" = (
@@ -117,14 +149,31 @@
 /obj/structure/sign/poster/official/obey{
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
+/area/space)
+"lQ" = (
+/obj/structure/chair/comfy/corp{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "black";
+	dir = 4
+	},
 /area/space)
 "mF" = (
 /obj/machinery/door/airlock,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/wood,
+/area/space)
+"ou" = (
+/obj/machinery/firealarm/directional/west,
+/turf/simulated/floor/plasteel{
+	icon_state = "neutralfull"
+	},
 /area/space)
 "oV" = (
 /obj/machinery/suit_storage_unit/standard_unit,
@@ -150,6 +199,10 @@
 	icon_state = "neutralfull"
 	},
 /area/space)
+"qS" = (
+/obj/structure/closet/crate/can,
+/turf/simulated/floor/transparent/glass/reinforced/plasma,
+/area/space)
 "ta" = (
 /turf/simulated/floor/carpet/royalblue,
 /area/space)
@@ -158,7 +211,16 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
+/area/space)
+"uf" = (
+/obj/machinery/firealarm/directional/north,
+/turf/simulated/floor/wood,
+/area/space)
+"ut" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel,
 /area/space)
 "vv" = (
 /obj/structure/cable{
@@ -168,6 +230,10 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/plasteel,
+/area/space)
+"vD" = (
+/obj/effect/mapping_helpers/turfs/rust,
+/turf/simulated/wall/r_wall,
 /area/space)
 "vF" = (
 /obj/structure/cable{
@@ -190,6 +256,9 @@
 	},
 /area/space)
 "wN" = (
+/obj/machinery/camera/tracking_head/eon_lab{
+	dir = 8
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/space)
 "xp" = (
@@ -211,6 +280,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plasteel,
 /area/space)
 "yy" = (
@@ -239,7 +309,10 @@
 /area/space)
 "Af" = (
 /obj/structure/table/glass/reinforced/plastitanium,
-/turf/space,
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "black"
+	},
 /area/space)
 "AC" = (
 /obj/structure/table,
@@ -249,11 +322,28 @@
 /obj/structure/fans/tiny,
 /turf/simulated/floor/plating,
 /area/space)
+"CU" = (
+/turf/simulated/floor/transparent/glass/reinforced/plasma,
+/area/space)
+"Df" = (
+/obj/machinery/firealarm/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/space)
+"Ff" = (
+/obj/machinery/firealarm/directional/south,
+/turf/simulated/floor/plasteel,
+/area/space)
+"Fk" = (
+/obj/item/kirbyplants/large/plant3,
+/turf/simulated/floor/carpet/royalblue,
+/area/space)
 "Fy" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/wood,
 /area/space)
 "FA" = (
@@ -273,9 +363,14 @@
 "GW" = (
 /obj/machinery/photocopier,
 /obj/effect/decal/cleanable/cobweb2,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralfull"
 	},
+/area/space)
+"HH" = (
+/obj/machinery/firealarm/directional/north,
+/turf/simulated/floor/carpet/royalblue,
 /area/space)
 "HL" = (
 /obj/structure/cable{
@@ -292,18 +387,39 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"IC" = (
+/obj/structure/safe/floor,
+/obj/item/stack/spacecash/c500,
+/turf/simulated/floor/carpet/royalblue,
+/area/space)
+"IU" = (
+/obj/structure/table,
+/obj/item/paper/fluff/ruins/eon_lab/anthonys_diary{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/storage/pill_bottle,
+/turf/simulated/floor/wood,
+/area/space)
 "JE" = (
 /obj/structure/chair/office/dark,
 /obj/machinery/porta_turret/syndicate/eon_lab,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralfull"
 	},
 /area/space)
 "Ku" = (
-/obj/machinery/camera/tracking_head{
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/tracking_head/eon_lab{
 	dir = 1
 	},
 /turf/simulated/floor/plasteel,
+/area/space)
+"LI" = (
+/obj/structure/filingcabinet,
+/obj/item/paper/fluff/ruins/eon_lab/funding_report,
+/turf/simulated/floor/carpet/royalblue,
 /area/space)
 "Mj" = (
 /obj/structure/cable{
@@ -311,11 +427,19 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/space)
+"Op" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/turf/simulated/floor/plasteel{
+	icon_state = "black";
+	dir = 6
+	},
+/area/space)
 "OD" = (
-/obj/structure/chair/comfy/corp{
+/obj/structure/table/glass/reinforced/plastitanium,
+/turf/simulated/floor/plasteel{
+	icon_state = "black";
 	dir = 8
 	},
-/turf/space,
 /area/space)
 "OE" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -330,6 +454,13 @@
 	icon_state = "neutralfull"
 	},
 /area/space)
+"Pc" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/space)
 "PH" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -337,7 +468,7 @@
 /turf/simulated/floor/plasteel,
 /area/space)
 "QM" = (
-/obj/machinery/camera/tracking_head,
+/obj/machinery/camera/tracking_head/eon_lab,
 /turf/simulated/floor/plasteel,
 /area/space)
 "RQ" = (
@@ -347,6 +478,10 @@
 	icon_state = "neutralfull"
 	},
 /area/space)
+"SG" = (
+/obj/item/kirbyplants/large/alien,
+/turf/simulated/floor/carpet/royalblue,
+/area/space)
 "TI" = (
 /obj/structure/railing,
 /turf/simulated/floor/plasteel/stairs{
@@ -354,10 +489,11 @@
 	},
 /area/space)
 "Um" = (
-/obj/machinery/camera/tracking_head,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/tracking_head/eon_lab,
 /turf/simulated/floor/plasteel,
 /area/space)
 "Vd" = (
@@ -389,6 +525,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralfull"
 	},
@@ -402,6 +539,13 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutralfull"
+	},
+/area/space)
+"Zf" = (
+/obj/machinery/computer/nonfunctional,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralfull"
 	},
@@ -712,7 +856,7 @@ yy
 yy
 yy
 yy
-gI
+vD
 FA
 FA
 FA
@@ -769,7 +913,7 @@ CB
 CB
 gI
 gI
-gI
+vD
 "}
 (8,1,1) = {"
 yy
@@ -868,7 +1012,7 @@ yy
 yy
 yy
 yy
-gI
+vD
 Um
 vR
 vR
@@ -920,11 +1064,11 @@ yy
 yy
 yy
 yy
-gI
+vD
 zE
 vR
 vR
-vR
+ut
 gI
 "}
 (11,1,1) = {"
@@ -976,7 +1120,7 @@ gI
 gI
 gI
 kJ
-vR
+ut
 gI
 "}
 (12,1,1) = {"
@@ -1025,11 +1169,11 @@ yy
 yy
 gI
 RQ
-qR
+ou
 cf
 vR
 vR
-gI
+vD
 "}
 (13,1,1) = {"
 yy
@@ -1080,7 +1224,7 @@ OP
 JE
 wu
 vR
-vR
+Ff
 gI
 "}
 (14,1,1) = {"
@@ -1127,13 +1271,13 @@ yy
 yy
 yy
 yy
-gI
-OP
+vD
+Zf
 qR
 cf
-vR
+ut
 Ku
-gI
+vD
 "}
 (15,1,1) = {"
 yy
@@ -1179,12 +1323,12 @@ yy
 yy
 yy
 yy
-gI
+vD
 GW
 Yt
 WE
 vF
-vR
+ut
 gI
 "}
 (16,1,1) = {"
@@ -1226,18 +1370,18 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
+vR
+vR
+vR
 gI
 gI
+gI
+vD
 gI
 gI
 xz
 bV
-gI
+vD
 "}
 (17,1,1) = {"
 yy
@@ -1278,18 +1422,18 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
 vR
 vR
 vR
+ut
 vR
 vR
 vR
+ut
+ut
 pg
 vR
-gI
+vD
 "}
 (18,1,1) = {"
 yy
@@ -1330,9 +1474,9 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
+vR
+vR
+vR
 vR
 vR
 FB
@@ -1382,18 +1526,18 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
 vR
 vR
+vR
+ut
+ut
 pg
 vR
+ut
 vR
 vR
 vR
-vR
-gI
+vD
 "}
 (20,1,1) = {"
 yy
@@ -1434,16 +1578,16 @@ yy
 yy
 yy
 gI
-gI
+vD
 gI
 gI
 gI
 vR
 pg
-vR
+Ff
 gI
-gI
-gI
+vD
+vD
 gI
 gI
 "}
@@ -1488,8 +1632,8 @@ yy
 gI
 GD
 yO
-AC
-gI
+IU
+vD
 QM
 pg
 vR
@@ -1542,11 +1686,11 @@ tD
 HL
 HO
 mF
-Mj
+cd
 vv
 Mj
 Fy
-HO
+Pc
 HL
 dh
 gI
@@ -1589,17 +1733,17 @@ yy
 yy
 yy
 yy
-gI
+vD
 qd
 qd
-qd
-gI
+Df
+vD
 vR
 vR
-vR
+ut
 gI
-qd
-qd
+uf
+jk
 qd
 gI
 "}
@@ -1648,7 +1792,7 @@ qd
 gI
 vR
 vR
-vR
+ut
 gI
 qd
 zp
@@ -1697,7 +1841,7 @@ gI
 gI
 gI
 Vd
-gI
+vD
 vR
 vR
 vR
@@ -1749,7 +1893,7 @@ yy
 gI
 jj
 kk
-gI
+vD
 eo
 by
 Ve
@@ -1797,7 +1941,7 @@ yy
 yy
 yy
 yy
-yy
+vR
 gI
 kk
 xp
@@ -1805,7 +1949,7 @@ gI
 ad
 wN
 TI
-gI
+vD
 am
 kk
 gI
@@ -1857,8 +2001,8 @@ gI
 jt
 gI
 jt
-gI
-gI
+vD
+vD
 gI
 gI
 yy
@@ -1904,13 +2048,13 @@ yy
 yy
 yy
 yy
-yy
-yy
+gI
+gI
 ta
 df
 ta
-yy
-yy
+gI
+gI
 yy
 yy
 yy
@@ -1955,15 +2099,15 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
+gI
+gI
+SG
 ta
 ta
 ta
-yy
-yy
-yy
+Fk
+gI
+gI
 yy
 yy
 "}
@@ -2007,15 +2151,15 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-Af
-Af
-Af
-yy
-yy
-yy
+gI
+ta
+ta
+CU
+hf
+CU
+ta
+ta
+gI
 yy
 yy
 "}
@@ -2059,15 +2203,15 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
+gI
+ta
+qS
+gu
 OD
 Af
-yy
-yy
-yy
+CU
+ta
+gI
 yy
 yy
 "}
@@ -2111,15 +2255,15 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
+gI
+HH
+CU
+je
+lQ
+Op
+CU
+ta
+gI
 yy
 yy
 "}
@@ -2163,15 +2307,15 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
+gI
+LI
+ta
+CU
+IC
+CU
+ta
+ta
+gI
 yy
 yy
 "}
@@ -2215,15 +2359,15 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
+gI
+gI
+gI
+gI
+gI
+gI
+gI
+gI
+gI
 yy
 yy
 "}

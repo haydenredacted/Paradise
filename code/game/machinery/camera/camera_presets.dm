@@ -109,6 +109,10 @@
 	non_chunking_camera = TRUE
 	network = list("DVORAK") //Shouldn't show on any camera net, be it camera bugs or station or AI.
 
+/obj/machinery/camera/tracking_head/eon_lab
+	non_chunking_camera = TRUE
+	network = list("EON") // no spying syndies or AI allowed here
+
 // This camera type automatically sets it's name to whatever the area that it's in is called.
 /obj/machinery/camera/autoname/Initialize(mapload)
 	var/static/list/autonames_in_areas = list()
