@@ -168,6 +168,12 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/space)
+"eD" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
 "eI" = (
 /obj/structure/window/plasmareinforced{
 	dir = 4
@@ -267,6 +273,16 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plasteel/dark,
 /area/space)
+"jB" = (
+/obj/structure/window/plasmareinforced,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/simulated/floor/engine,
+/area/space)
 "jM" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "greencorner";
@@ -360,6 +376,24 @@
 "qd" = (
 /turf/simulated/floor/wood,
 /area/space)
+"qp" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/simulated/floor/engine,
+/area/space)
+"qB" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/simulated/floor/engine,
+/area/space)
 "qR" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralfull"
@@ -388,6 +422,20 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
+/area/space)
+"tQ" = (
+/obj/machinery/door/airlock/titanium,
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"tT" = (
+/obj/structure/window/plasmareinforced,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/simulated/floor/engine,
 /area/space)
 "uf" = (
 /obj/machinery/firealarm/directional/north,
@@ -430,6 +478,13 @@
 /area/space)
 "vR" = (
 /turf/simulated/floor/plasteel,
+/area/space)
+"vV" = (
+/turf/simulated/wall/mineral/plastitanium,
+/area/space)
+"wt" = (
+/obj/machinery/computer/nonfunctional,
+/turf/simulated/floor/mineral/titanium,
 /area/space)
 "wu" = (
 /obj/structure/table/reinforced,
@@ -540,6 +595,10 @@
 "AC" = (
 /obj/structure/table,
 /turf/simulated/floor/wood,
+/area/space)
+"BA" = (
+/obj/effect/spawner/window/plastitanium,
+/turf/simulated/floor/plating,
 /area/space)
 "CB" = (
 /obj/structure/fans/tiny,
@@ -705,6 +764,10 @@
 	dir = 8
 	},
 /area/space)
+"LO" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/wall/mineral/plastitanium,
+/area/space)
 "Mj" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -847,6 +910,9 @@
 	icon_state = "greencorner";
 	dir = 1
 	},
+/area/space)
+"So" = (
+/turf/simulated/floor/mineral/titanium,
 /area/space)
 "SG" = (
 /obj/item/kirbyplants/large/alien,
@@ -1296,8 +1362,8 @@ yy
 yy
 yy
 yy
-yy
-yy
+gI
+gI
 gI
 DI
 ya
@@ -1348,7 +1414,7 @@ yy
 yy
 yy
 yy
-yy
+gI
 gT
 PY
 Mr
@@ -1400,7 +1466,7 @@ yy
 yy
 yy
 yy
-yy
+gI
 PK
 vR
 eu
@@ -1608,7 +1674,7 @@ yy
 yy
 yy
 yy
-yy
+gI
 PK
 vR
 CQ
@@ -1660,7 +1726,7 @@ yy
 yy
 yy
 yy
-yy
+gI
 Gq
 nU
 nU
@@ -1712,14 +1778,14 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
-yy
+gI
+gI
+gI
+gI
+gI
+gI
+gI
+gI
 gI
 gI
 TO
@@ -2015,11 +2081,11 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
+vV
+vV
+vV
+vV
+vV
 yy
 yy
 yy
@@ -2066,12 +2132,12 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
+BA
+vV
+So
+qB
+jB
+LO
 yy
 yy
 yy
@@ -2118,12 +2184,12 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
+BA
+wt
+eD
+So
+So
+tQ
 yy
 yy
 yy
@@ -2170,12 +2236,12 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
-yy
+BA
+vV
+So
+qp
+tT
+LO
 yy
 yy
 yy
@@ -2223,11 +2289,11 @@ yy
 yy
 yy
 yy
-yy
-yy
-yy
-yy
-yy
+vV
+vV
+vV
+vV
+vV
 yy
 yy
 yy
@@ -2346,7 +2412,7 @@ yy
 yy
 yy
 yy
-vR
+yy
 gI
 kk
 xp
