@@ -1,9 +1,13 @@
 use crate::milla::constants::*;
 use crate::milla::model::*;
+use byondapi::global_call::call_global;
 use byondapi::map::ByondXYZ;
+use byondapi::prelude::ByondValue;
+use core::f32;
 use eyre::eyre;
 use scc::Bag;
 use std::collections::HashSet;
+use std::f32::consts::E;
 
 pub(crate) fn find_walls(next: &mut ZLevel) {
     for my_index in 0..MAP_SIZE * MAP_SIZE {
@@ -373,6 +377,8 @@ pub(crate) fn post_process(
                 react(my_next_tile, true);
             }
 
+            do_turf_effects(my_next_tile, x, y, z);
+
             // Sanitize the tile, to avoid negative/NaN/infinity spread.
             sanitize(my_next_tile, my_tile);
         }
@@ -645,8 +651,8 @@ pub(crate) fn react(my_next_tile: &mut Tile, hotspot_step: bool) {
         my_next_tile.fuel_burnt += plasma_burnt;
     }
 
-	// Hydrogen BURNING, also know as Knallgas, which is Swedish. The more you know.
-	if cached_temperature > HYDROGEN_MIN_IGNITE_TEMP
+    // Hydrogen BURNING, also know as Knallgas, which is Swedish. The more you know.
+    if cached_temperature > HYDROGEN_MIN_IGNITE_TEMP
         && my_next_tile.gases.hydrogen() > 0.0
         && my_next_tile.gases.oxygen() > 0.0
     {
@@ -661,22 +667,26 @@ pub(crate) fn react(my_next_tile: &mut Tile, hotspot_step: bool) {
         let burnable_hydrogen = my_next_tile.gases.hydrogen();
 
         // Actual burn amount.
-        let mut hydrogen_burnt = efficiency * 2.0 * PLASMA_BURN_MAX_RATIO * hotspot_boost * burnable_hydrogen;
+        let mut hydrogen_burnt =
+            efficiency * 2.0 * PLASMA_BURN_MAX_RATIO * hotspot_boost * burnable_hydrogen;
         if hydrogen_burnt < PLASMA_BURN_MIN_MOLES {
             // Boost up to the minimum.
             hydrogen_burnt = PLASMA_BURN_MIN_MOLES.min(burnable_hydrogen);
         }
-        if hydrogen_burnt * HYDROGEN_BURN_OXYGEN_PER_HYDROGEN > fraction * my_next_tile.gases.oxygen() {
+        if hydrogen_burnt * HYDROGEN_BURN_OXYGEN_PER_HYDROGEN
+            > fraction * my_next_tile.gases.oxygen()
+        {
             // Restrict based on available oxygen.
-            hydrogen_burnt = fraction * my_next_tile.gases.oxygen() / HYDROGEN_BURN_OXYGEN_PER_HYDROGEN;
+            hydrogen_burnt =
+                fraction * my_next_tile.gases.oxygen() / HYDROGEN_BURN_OXYGEN_PER_HYDROGEN;
         }
 
         my_next_tile
             .gases
             .set_hydrogen(my_next_tile.gases.hydrogen() - hydrogen_burnt);
-        my_next_tile
-            .gases
-            .set_oxygen(my_next_tile.gases.oxygen() * 0.5 - hydrogen_burnt * HYDROGEN_BURN_OXYGEN_PER_HYDROGEN);
+        my_next_tile.gases.set_oxygen(
+            my_next_tile.gases.oxygen() * 0.5 - hydrogen_burnt * HYDROGEN_BURN_OXYGEN_PER_HYDROGEN,
+        );
 
         // Recalculate existing thermal energy to account for the change in heat capacity.
         cached_heat_capacity = fraction * my_next_tile.heat_capacity();
@@ -689,25 +699,28 @@ pub(crate) fn react(my_next_tile: &mut Tile, hotspot_step: bool) {
         my_next_tile.fuel_burnt += hydrogen_burnt;
     }
 
-	// Hydrogen and oxygen making water vapor
-	if cached_temperature > WATER_VAPOR_FORMATION_TEMP
-		&& my_next_tile.gases.hydrogen() > 0.0
-		&& my_next_tile.gases.oxygen() > 0.0
-	{
-		let reaction_moles = my_next_tile.gases.hydrogen().min(my_next_tile.gases.oxygen());
-		let water_vapor_produced = reaction_moles;
+    // Hydrogen and oxygen making water vapor
+    if cached_temperature > WATER_VAPOR_FORMATION_TEMP
+        && my_next_tile.gases.hydrogen() > 0.0
+        && my_next_tile.gases.oxygen() > 0.0
+    {
+        let reaction_moles = my_next_tile
+            .gases
+            .hydrogen()
+            .min(my_next_tile.gases.oxygen());
+        let water_vapor_produced = reaction_moles;
 
-		my_next_tile
-			.gases
-			.set_water_vapor(my_next_tile.gases.water_vapor() + water_vapor_produced);
-		my_next_tile
-			.gases
-			.set_hydrogen(my_next_tile.gases.hydrogen() - reaction_moles * 2.0);
-		my_next_tile
-			.gases
-			.set_oxygen(my_next_tile.gases.oxygen() - reaction_moles);
+        my_next_tile
+            .gases
+            .set_water_vapor(my_next_tile.gases.water_vapor() + water_vapor_produced);
+        my_next_tile
+            .gases
+            .set_hydrogen(my_next_tile.gases.hydrogen() - reaction_moles * 2.0);
+        my_next_tile
+            .gases
+            .set_oxygen(my_next_tile.gases.oxygen() - reaction_moles);
 
-		// Recalculate existing thermal energy to account for the change in heat capacity.
+        // Recalculate existing thermal energy to account for the change in heat capacity.
         cached_heat_capacity = fraction * my_next_tile.heat_capacity();
         thermal_energy = cached_temperature * cached_heat_capacity;
         // THEN we can add in the new thermal energy.
@@ -716,13 +729,50 @@ pub(crate) fn react(my_next_tile: &mut Tile, hotspot_step: bool) {
         // (or we would, but this is the last reaction)
         //cached_temperature = thermal_energy / cached_heat_capacity;
 
-		my_next_tile.fuel_burnt += reaction_moles;
-	}
+        my_next_tile.fuel_burnt += reaction_moles;
+    }
 
     if hotspot_step {
         adjust_hotspot(my_next_tile, thermal_energy - initial_thermal_energy);
     } else {
         my_next_tile.thermal_energy += thermal_energy - initial_thermal_energy;
+    }
+}
+
+/// Apply the effects of the gas onto the turf itself
+pub(crate) fn do_turf_effects(my_next_tile: &mut Tile, x: i32, y: i32, z: i32) {
+    let cached_temperature = my_next_tile.thermal_energy / my_next_tile.heat_capacity();
+    // Calculate the water saturation pressure using the buck equation
+    let saturation_pressure: f32 = 0.61121
+        * E.powf(
+            (18.678 - cached_temperature / 234.5)
+                * (cached_temperature / cached_temperature + 257.14),
+        );
+    let relative_humidity: f32 =
+        (my_next_tile.gases.water_vapor() * R_IDEAL_GAS_EQUATION * cached_temperature
+            / TILE_VOLUME)
+            / saturation_pressure;
+    if relative_humidity > 1.0 && my_next_tile.gases.water_vapor() > 0.0 {
+        // Condense all the water we cannot hold
+        let condensed_water: f32 =
+            my_next_tile.gases.water_vapor() - my_next_tile.gases.water_vapor() / relative_humidity;
+        my_next_tile
+            .gases
+            .set_water_vapor(my_next_tile.gases.water_vapor() - condensed_water);
+        // Make the floor wet
+        call_global(
+            "condense_water",
+            &[
+                if cached_temperature > T0C {
+                    ByondValue::from(1.0)
+                } else {
+                    ByondValue::from(3.0)
+                },
+                ByondValue::from((x + 1) as f32),
+                ByondValue::from((y + 1) as f32),
+                ByondValue::from((z + 1) as f32),
+            ],
+        );
     }
 }
 
@@ -754,8 +804,9 @@ pub(crate) fn apply_tile_mode(
             if my_next_tile.temperature() > SPACE_COOLING_THRESHOLD {
                 let excess_thermal_energy = my_next_tile.thermal_energy
                     - SPACE_COOLING_THRESHOLD * my_next_tile.heat_capacity();
-                let cooling = (SPACE_COOLING_FLAT + SPACE_COOLING_TEMPERATURE_RATIO * my_next_tile.temperature())
-                    .min(excess_thermal_energy);
+                let cooling = (SPACE_COOLING_FLAT
+                    + SPACE_COOLING_TEMPERATURE_RATIO * my_next_tile.temperature())
+                .min(excess_thermal_energy);
                 my_next_tile.thermal_energy -= cooling;
             }
         }
