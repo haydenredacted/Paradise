@@ -742,11 +742,11 @@ pub(crate) fn react(my_next_tile: &mut Tile, hotspot_step: bool) {
 /// Apply the effects of the gas onto the turf itself
 pub(crate) fn do_turf_effects(my_next_tile: &mut Tile, x: i32, y: i32, z: i32) {
     let cached_temperature = my_next_tile.thermal_energy / my_next_tile.heat_capacity();
-    // Calculate the water saturation pressure using the buck equation
+    // Calculate the water saturation pressure using the Arden Buck equation
     let saturation_pressure: f32 = 0.61121
         * E.powf(
-            (18.678 - cached_temperature / 234.5)
-                * (cached_temperature / cached_temperature + 257.14),
+            (18.678 - ((cached_temperature - T0C) / 234.5))
+                * ((cached_temperature - T0C) / (cached_temperature + 257.14 - T0C)),
         );
     let relative_humidity: f32 =
         (my_next_tile.gases.water_vapor() * R_IDEAL_GAS_EQUATION * cached_temperature
@@ -759,6 +759,8 @@ pub(crate) fn do_turf_effects(my_next_tile: &mut Tile, x: i32, y: i32, z: i32) {
         my_next_tile
             .gases
             .set_water_vapor(my_next_tile.gases.water_vapor() - condensed_water);
+        //We lose gas, so we lose the thermal energy it had
+        my_next_tile.thermal_energy = cached_temperature * my_next_tile.heat_capacity();
         // Make the floor wet
         call_global(
             "condense_water",
