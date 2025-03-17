@@ -8,21 +8,20 @@
 	anchored = TRUE
 	max_integrity = 100
 
-// The test UPP shipping container
-/obj/structure/cargo_container/UPP_shipping_container
-	name = "UPP shipping container"
-	desc = "A large shipping container with a logo on it. You feel like it's originally from a different system..."
+/obj/structure/cargo_container/althland_shipping_container
+	name = "Althland Shipping Container"
+	desc = "A large shipping container with the words 'Althland Mining Company: Farragus Mining and Research' painted on the side. It looks rusted and it hasn't been touched in years."
 	icon = 'icons/obj/cargo_container.dmi'
-	icon_state = "upp_m"
+	icon_state = "alth_m"
 	density = TRUE
 	anchored = TRUE
 	max_integrity = 100
 
-/obj/structure/cargo_container/UPP_shipping_container/left
-	icon_state = "upp_l"
+/obj/structure/cargo_container/althland_shipping_container/left
+	icon_state = "alth_l"
 
-/obj/structure/cargo_container/UPP_shipping_container/middle
-	icon_state = "upp_m"
+/obj/structure/cargo_container/althland_shipping_container/middle
+	icon_state = "alth_m"
 
-/obj/structure/cargo_container/UPP_shipping_container/right
-	icon_state = "upp_r"
+/obj/structure/cargo_container/althland_shipping_container/right
+	icon_state = "alth_r"
