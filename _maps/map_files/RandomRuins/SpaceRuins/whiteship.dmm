@@ -239,6 +239,7 @@
 /area/shuttle/abandoned)
 "yF" = (
 /obj/machinery/light/small,
+/obj/machinery/bluespace_beacon,
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/abandoned)
 "zH" = (
