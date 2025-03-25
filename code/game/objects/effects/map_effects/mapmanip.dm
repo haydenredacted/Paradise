@@ -58,5 +58,13 @@
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/rocky_motel/drunk_accident
 	name = "Drunken Wreck"
 
+// Rocky Motel mapmanips
 /obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/rocky_motel/drunk_accident
 	name = "Drunken Wreck"
+
+// Chrono Lab mapmanips
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/kitchen_stage
+    name = "Kitchen Stage"
+
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/kitchen_stage
+	name = "Kitchen Stage"

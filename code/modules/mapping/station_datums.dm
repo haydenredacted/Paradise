@@ -39,3 +39,8 @@
 	technical_name = "test_tiny"
 	map_path = "_maps/map_files/test_tiny/test_tiny.dmm"
 	voteable = FALSE
+
+/datum/map/chrono_lab
+	fluff_name = "Chrono Lab"
+	technical_name = "Chrono Lab"
+	map_path = "_maps/map_files/RandomRuins/SpaceRuins/chrono_lab.dmm"
