@@ -1,13 +1,24 @@
 [
-    {
-        // Chrono Lab Kitchen Stage
-        "type": "SubmapExtractInsert",
-        "submap_size_x": 6,
-        "submap_size_y": 3,
+	{
+		// Chrono Lab Kitchen Stage
+		"type": "SubmapExtractInsert",
+		"submap_size_x": 6,
+		"submap_size_y": 3,
 		"submap_size_z": 1,
-        "submaps_dmm": "submaps/chrono_lab_submap.dmm",
-        "marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/kitchen_stage",
+		"submaps_dmm": "submaps/chrono_lab_submap.dmm",
+		"marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/kitchen_stage",
 		"marker_insert": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/kitchen_stage",
-        "submaps_can_repeat": true // doesn't matter, as there's only one insert marker
-    }
+		"submaps_can_repeat": true
+	},
+	{
+		// Chrono Lab Front Desk
+		"type": "SubmapExtractInsert",
+		"submap_size_x": 5,
+		"submap_size_y": 4,
+		"submap_size_z": 1,
+		"submaps_dmm": "submaps/chrono_lab_submap.dmm",
+		"marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/front_desk",
+		"marker_insert": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/front_desk",
+		"submaps_can_repeat": true
+	}
 ]

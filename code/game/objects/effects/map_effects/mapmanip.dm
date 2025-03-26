@@ -68,3 +68,8 @@
 
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/kitchen_stage
 	name = "Kitchen Stage"
+
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/front_desk
+	name = "Front Desk"
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/front_desk
+	name = "Front Desk"

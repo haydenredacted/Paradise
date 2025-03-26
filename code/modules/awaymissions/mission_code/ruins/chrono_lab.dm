@@ -33,8 +33,10 @@
 ///obj/effect/step_trigger
 ///datum/spell/aoe/blindness
 // attack_action_types = list(/datum/action/innate/megafauna_attack/dash)
+// telecomms_outpost.dmm on aurora
 
 // step triggers, basically the horror stuff
+
 
 
 /obj/effect/step_trigger/thrower/chrono_lab/north_three

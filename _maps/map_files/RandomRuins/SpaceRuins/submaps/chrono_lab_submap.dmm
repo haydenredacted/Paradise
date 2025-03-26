@@ -5,47 +5,65 @@
 "c" = (
 /obj/item/grown/bananapeel,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "f" = (
 /obj/item/toy/figure/crew/mime{
 	pixel_x = -5;
 	pixel_y = 17
 	},
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "i" = (
 /mob/living/simple_animal/hostile/retaliate/clown,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "j" = (
 /mob/living/simple_animal/hostile/retaliate/mime,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
+"m" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/med_data/laptop{
+	dir = 4
+	},
+/turf/template_noop,
+/area/ruin/space/powered)
+"t" = (
+/obj/structure/barricade/wooden/crude,
+/turf/template_noop,
+/area/ruin/space/powered)
+"u" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/mob/living/carbon/human/shadow/chrono_lab,
+/turf/template_noop,
+/area/ruin/space/powered)
 "v" = (
 /obj/item/toy/figure/crew/clown{
 	pixel_x = -5;
 	pixel_y = 17
 	},
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "y" = (
 /obj/effect/spawner/random/loot/outfit/mime,
 /obj/item/clothing/shoes/mime,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "A" = (
 /obj/item/grown/bananapeel/mimanapeel,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "B" = (
 /obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/kitchen_stage,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "D" = (
 /obj/item/clothing/shoes/clown_shoes,
 /obj/item/grenade/clown_grenade,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "E" = (
 /obj/item/coin/clown{
 	pixel_x = -5;
@@ -56,7 +74,14 @@
 	pixel_y = -3
 	},
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
+"F" = (
+/turf/template_noop,
+/area/ruin/space/powered)
+"H" = (
+/obj/machinery/porta_turret/syndicate/chrono_lab,
+/turf/template_noop,
+/area/ruin/space/powered)
 "M" = (
 /obj/item/toy/crayon/mime{
 	pixel_x = 4;
@@ -67,25 +92,29 @@
 	pixel_y = 4
 	},
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "P" = (
 /obj/item/flag/mime,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "S" = (
 /obj/item/flag/clown,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "V" = (
 /obj/item/storage/backpack/clown/syndie,
 /obj/item/bedsheet/clown,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
 "Y" = (
 /obj/item/bedsheet/mime,
 /obj/item/storage/backpack/mime,
 /turf/template_noop,
-/area/space)
+/area/ruin/space/powered)
+"Z" = (
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/front_desk,
+/turf/template_noop,
+/area/ruin/space/powered)
 
 (1,1,1) = {"
 a
@@ -124,15 +153,15 @@ a
 (2,1,1) = {"
 a
 a
-a
-a
+F
+F
 B
 a
 a
-a
-a
-a
-a
+F
+t
+F
+Z
 a
 a
 a
@@ -159,14 +188,14 @@ a
 a
 a
 M
+F
+F
 a
 a
-a
-a
-a
-a
-a
-a
+F
+F
+F
+F
 a
 a
 a
@@ -194,13 +223,13 @@ a
 a
 f
 j
+F
 a
 a
-a
-a
-a
-a
-a
+F
+F
+u
+F
 a
 a
 a
@@ -227,14 +256,14 @@ a
 a
 a
 y
+F
+F
 a
 a
-a
-a
-a
-a
-a
-a
+F
+F
+F
+F
 a
 a
 a
@@ -261,14 +290,14 @@ a
 a
 a
 Y
-a
+F
 P
 a
 a
-a
-a
-a
-a
+F
+F
+F
+F
 a
 a
 a
@@ -294,9 +323,9 @@ a
 (7,1,1) = {"
 a
 a
-a
+F
 A
-a
+F
 a
 a
 a
@@ -333,10 +362,10 @@ a
 a
 a
 a
-a
-a
-a
-a
+F
+F
+F
+Z
 a
 a
 a
@@ -367,10 +396,10 @@ a
 a
 a
 a
-a
-a
-a
-a
+F
+F
+m
+F
 a
 a
 a
@@ -396,15 +425,15 @@ a
 (10,1,1) = {"
 a
 a
-a
-a
+F
+F
 B
 a
 a
-a
-a
-a
-a
+F
+F
+H
+F
 a
 a
 a
@@ -431,14 +460,14 @@ a
 a
 a
 E
+F
+F
 a
 a
-a
-a
-a
-a
-a
-a
+F
+F
+F
+F
 a
 a
 a
@@ -466,13 +495,13 @@ a
 a
 v
 i
+F
 a
 a
-a
-a
-a
-a
-a
+F
+F
+F
+F
 a
 a
 a
@@ -499,8 +528,8 @@ a
 a
 a
 D
-a
-a
+F
+F
 a
 a
 a
@@ -533,7 +562,7 @@ a
 a
 a
 V
-a
+F
 S
 a
 a
@@ -566,9 +595,9 @@ a
 (15,1,1) = {"
 a
 a
-a
+F
 c
-a
+F
 a
 a
 a

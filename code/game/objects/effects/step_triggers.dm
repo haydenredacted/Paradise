@@ -5,6 +5,7 @@
 	var/stopper = TRUE // stops throwers
 	var/mobs_only = FALSE
 	invisibility = INVISIBILITY_ABSTRACT // nope cant see this shit
+	icon = 'icons/effects/mapping_helpers.dmi'
 
 /obj/effect/step_trigger/Initialize(mapload)
 	. = ..()
@@ -33,6 +34,19 @@
 
 /obj/effect/step_trigger/singularity_pull()
 	return
+
+/* Blinds a mob*/
+
+/obj/effect/step_trigger/blindness
+	mobs_only = TRUE
+	name = "Blindness"
+	icon_state = "blindness"
+
+/obj/effect/step_trigger/blindness/Trigger(mob/living/carbon/M)
+	if(M)
+		M.EyeBlind(30) // measured in deciseconds so blinds for 3 seconds
+		to_chat(M, "<span class='danger'>Your vision suddenly goes dark!</span>")
+		qdel(src)
 
 /* Sends a message to mob when triggered*/
 
