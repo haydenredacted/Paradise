@@ -62,6 +62,7 @@
 "D" = (
 /obj/item/clothing/shoes/clown_shoes,
 /obj/item/grenade/clown_grenade,
+/obj/effect/spawner/random/loot/outfit/clown,
 /turf/template_noop,
 /area/ruin/space/powered)
 "E" = (

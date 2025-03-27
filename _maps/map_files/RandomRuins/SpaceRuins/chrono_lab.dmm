@@ -28,22 +28,6 @@
 	},
 /turf/simulated/floor/plating/asteroid/ancient,
 /area/space)
-"dt" = (
-/obj/structure/table,
-/obj/item/seeds/coffee/robusta{
-	pixel_x = -3;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/drinks/coffee{
-	pixel_x = 5;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/drinks/tea{
-	pixel_x = 7;
-	pixel_y = 1
-	},
-/turf/simulated/floor/plasteel,
-/area/space)
 "dT" = (
 /obj/structure/table,
 /turf/simulated/floor/plasteel{
@@ -175,6 +159,14 @@
 	icon_state = "caution";
 	dir = 8
 	},
+/area/ruin/space/powered)
+"kX" = (
+/obj/item/kirbyplants/large,
+/obj/structure/extinguisher_cabinet{
+	name = "south bump";
+	pixel_y = -30
+	},
+/turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
 "kZ" = (
 /turf/simulated/floor/plasteel{
@@ -347,10 +339,6 @@
 	dir = 6
 	},
 /area/ruin/space/powered)
-"tQ" = (
-/obj/item/chair/light,
-/turf/simulated/floor/plasteel,
-/area/space)
 "ua" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -367,10 +355,8 @@
 	},
 /area/ruin/space/powered)
 "uq" = (
-/obj/structure/table,
-/obj/machinery/chem_dispenser/soda{
-	pixel_y = 8;
-	dir = 1
+/obj/item/chair/light{
+	dir = 4
 	},
 /turf/simulated/floor/plasteel,
 /area/space)
@@ -446,12 +432,6 @@
 	dir = 4
 	},
 /area/ruin/space/powered)
-"zL" = (
-/obj/structure/table,
-/obj/item/trash/plate,
-/obj/effect/spawner/random/food_or_drink,
-/turf/simulated/floor/plasteel,
-/area/space)
 "zX" = (
 /turf/simulated/mineral,
 /area/ruin/space/powered)
@@ -494,12 +474,6 @@
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
-"Fe" = (
-/obj/structure/chair/light{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel,
-/area/space)
 "Fi" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -637,12 +611,22 @@
 "ND" = (
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"NT" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
 "NU" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
 	icon_state = "tube-broken";
 	status = 2;
 	dir = 8
+	},
+/obj/item/radio/intercom{
+	name = "north bump";
+	pixel_y = 28
 	},
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
@@ -824,6 +808,11 @@
 	},
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"UF" = (
+/obj/structure/table,
+/obj/effect/spawner/random/loot,
+/turf/simulated/floor/plasteel,
+/area/space)
 "Vx" = (
 /obj/effect/decal/remains/human,
 /turf/simulated/floor/plating/asteroid/ancient,
@@ -983,13 +972,13 @@ nW
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
+ek
+ek
+ek
+ek
+ek
+ek
+ek
 nW
 nW
 nW
@@ -1038,7 +1027,7 @@ nW
 nW
 nW
 nW
-nW
+ek
 nW
 nW
 nW
@@ -1087,7 +1076,7 @@ nW
 nW
 nW
 nW
-nW
+ek
 nW
 nW
 nW
@@ -1130,13 +1119,13 @@ nW
 nW
 nW
 nW
+ek
+ek
+ek
 nW
 nW
 nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1178,9 +1167,9 @@ nW
 nW
 nW
 nW
-ek
-ek
-ek
+nW
+nW
+nW
 ek
 nW
 nW
@@ -1226,10 +1215,10 @@ nW
 nW
 nW
 nW
-ek
-ek
-nC
-nC
+nW
+nW
+nW
+nW
 ek
 nW
 nW
@@ -1275,11 +1264,11 @@ nW
 nW
 nW
 nW
+nW
+nW
 ek
-ed
-nC
-nC
-SU
+ek
+ek
 nW
 nW
 nW
@@ -1324,11 +1313,11 @@ nW
 nW
 nW
 nW
+nW
 ek
-Fe
-nC
-nC
 ek
+nC
+SU
 nW
 nW
 nW
@@ -1373,10 +1362,10 @@ nW
 nW
 nW
 nW
+nW
 ek
-zL
+NT
 nC
-dt
 ek
 nW
 nW
@@ -1422,8 +1411,8 @@ nW
 nW
 nW
 nW
+nW
 ek
-tQ
 nC
 uq
 ek
@@ -1471,10 +1460,10 @@ nW
 nW
 nW
 nW
-ek
+nW
 ek
 nC
-nC
+UF
 TP
 TP
 OJ
@@ -1523,11 +1512,11 @@ nW
 nW
 ek
 nC
-nC
+ed
 TP
 NU
 qY
-kr
+kX
 TP
 nW
 TP
