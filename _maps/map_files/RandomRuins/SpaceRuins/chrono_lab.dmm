@@ -28,6 +28,22 @@
 	},
 /turf/simulated/floor/plating/asteroid/ancient,
 /area/space)
+"dt" = (
+/obj/structure/table,
+/obj/item/seeds/coffee/robusta{
+	pixel_x = -3;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/drinks/coffee{
+	pixel_x = 5;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/drinks/tea{
+	pixel_x = 7;
+	pixel_y = 1
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
 "dT" = (
 /obj/structure/table,
 /turf/simulated/floor/plasteel{
@@ -49,6 +65,13 @@
 	},
 /obj/item/tank/internals/emergency_oxygen,
 /turf/simulated/floor/plating/asteroid/ancient,
+/area/space)
+"ed" = (
+/obj/machinery/economy/vending/snack/free,
+/turf/simulated/floor/plasteel,
+/area/space)
+"ek" = (
+/turf/simulated/wall/indestructible/riveted,
 /area/space)
 "eC" = (
 /turf/simulated/floor/plasteel{
@@ -183,6 +206,9 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
+/area/space)
+"nC" = (
+/turf/simulated/floor/plasteel,
 /area/space)
 "nO" = (
 /obj/structure/mopbucket/full,
@@ -321,6 +347,10 @@
 	dir = 6
 	},
 /area/ruin/space/powered)
+"tQ" = (
+/obj/item/chair/light,
+/turf/simulated/floor/plasteel,
+/area/space)
 "ua" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -336,6 +366,14 @@
 	icon_state = "black"
 	},
 /area/ruin/space/powered)
+"uq" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/soda{
+	pixel_y = 8;
+	dir = 1
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
 "uF" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -408,6 +446,12 @@
 	dir = 4
 	},
 /area/ruin/space/powered)
+"zL" = (
+/obj/structure/table,
+/obj/item/trash/plate,
+/obj/effect/spawner/random/food_or_drink,
+/turf/simulated/floor/plasteel,
+/area/space)
 "zX" = (
 /turf/simulated/mineral,
 /area/ruin/space/powered)
@@ -450,6 +494,12 @@
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"Fe" = (
+/obj/structure/chair/light{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
 "Fi" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -687,6 +737,10 @@
 	},
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"SU" = (
+/obj/machinery/door/airlock/highsecurity,
+/turf/simulated/floor/plasteel,
+/area/space)
 "Ta" = (
 /obj/machinery/door/airlock{
 	name = "Custodial Storage"
@@ -1124,14 +1178,14 @@ nW
 nW
 nW
 nW
+ek
+ek
+ek
+ek
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1172,15 +1226,15 @@ nW
 nW
 nW
 nW
+ek
+ek
+nC
+nC
+ek
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1221,15 +1275,15 @@ nW
 nW
 nW
 nW
+ek
+ed
+nC
+nC
+SU
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1270,15 +1324,15 @@ nW
 nW
 nW
 nW
+ek
+Fe
+nC
+nC
+ek
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1319,15 +1373,15 @@ nW
 nW
 nW
 nW
+ek
+zL
+nC
+dt
+ek
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1368,15 +1422,15 @@ nW
 nW
 nW
 nW
+ek
+tQ
+nC
+uq
+ek
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
+ek
 nW
 nW
 nW
@@ -1417,13 +1471,13 @@ nW
 nW
 nW
 nW
-nW
-nW
-nW
-nW
+ek
+ek
+nC
+nC
 TP
 TP
-TP
+OJ
 TP
 TP
 nW
@@ -1467,9 +1521,9 @@ nW
 nW
 nW
 nW
-nW
-nW
-nW
+ek
+nC
+nC
 TP
 NU
 qY
