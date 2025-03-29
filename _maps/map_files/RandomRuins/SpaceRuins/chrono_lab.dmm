@@ -92,6 +92,10 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/simulated/floor/wood,
 /area/ruin/space/powered)
+"gK" = (
+/obj/effect/step_trigger/break_lights,
+/turf/simulated/floor/transparent/glass/reinforced,
+/area/ruin/space/powered)
 "hC" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -246,6 +250,7 @@
 /area/space)
 "oE" = (
 /obj/effect/decal/cleanable/cobweb2,
+/obj/machinery/power/apc/directional/north,
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
 "oY" = (
@@ -258,6 +263,12 @@
 	},
 /obj/machinery/recharger/wallcharger{
 	pixel_y = 35
+	},
+/turf/simulated/floor/engine/airless,
+/area/ruin/space/powered)
+"pJ" = (
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
@@ -1609,7 +1620,7 @@ nW
 nW
 nW
 TP
-ND
+pJ
 ND
 sC
 qY
@@ -1662,7 +1673,7 @@ pB
 ND
 Up
 qY
-qY
+gK
 qY
 qY
 TP

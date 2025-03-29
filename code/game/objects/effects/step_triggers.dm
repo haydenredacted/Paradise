@@ -48,6 +48,18 @@
 		to_chat(M, "<span class='danger'>Your vision suddenly goes dark!</span>")
 		qdel(src)
 
+/* Breaks all the lights in an area */
+
+/obj/effect/step_trigger/break_lights
+	mobs_only = TRUE // as funny as it'd be to have ghosts trigger this
+	name = "Lights Out"
+	icon_state = "lights_out"
+
+/obj/effect/step_trigger/break_lights/Trigger(mob/living/carbon/M)
+	if(M)
+		for(var/obj/machinery/power/apc/temp_apc in src)
+			INVOKE_ASYNC(temp_apc, TYPE_PROC_REF(/obj/machinery/power/apc, overload_lighting))
+
 /* Sends a message to mob when triggered*/
 
 /obj/effect/step_trigger/message
