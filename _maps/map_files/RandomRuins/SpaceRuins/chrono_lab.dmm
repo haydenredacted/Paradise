@@ -53,7 +53,7 @@
 "ed" = (
 /obj/machinery/economy/vending/snack/free,
 /turf/simulated/floor/plasteel,
-/area/space)
+/area/ruin/space/powered)
 "ek" = (
 /turf/simulated/wall/indestructible/riveted,
 /area/space)
@@ -92,10 +92,6 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/simulated/floor/wood,
 /area/ruin/space/powered)
-"gK" = (
-/obj/effect/step_trigger/break_lights,
-/turf/simulated/floor/transparent/glass/reinforced,
-/area/ruin/space/powered)
 "hC" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -127,6 +123,14 @@
 	icon_state = "showroomfloor"
 	},
 /area/ruin/space/powered)
+"jK" = (
+/obj/machinery/door/airlock{
+	name = "Unit 2"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "jM" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "blackcorner"
@@ -156,6 +160,12 @@
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "blackcorner"
+	},
+/area/ruin/space/powered)
+"kB" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral";
+	dir = 10
 	},
 /area/ruin/space/powered)
 "kO" = (
@@ -194,7 +204,9 @@
 	},
 /area/ruin/space/powered)
 "mP" = (
-/obj/machinery/economy/vending/autodrobe,
+/obj/machinery/economy/vending/autodrobe{
+	ads_list = list("Come dress for your funeral!")
+	},
 /turf/simulated/floor/wood,
 /area/ruin/space/powered)
 "nz" = (
@@ -202,9 +214,6 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/space)
-"nC" = (
-/turf/simulated/floor/plasteel,
 /area/space)
 "nO" = (
 /obj/structure/mopbucket/full,
@@ -250,7 +259,6 @@
 /area/space)
 "oE" = (
 /obj/effect/decal/cleanable/cobweb2,
-/obj/machinery/power/apc/directional/north,
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
 "oY" = (
@@ -266,12 +274,6 @@
 	},
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
-"pJ" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
 "pP" = (
 /turf/open/floor/plating,
 /area/space)
@@ -279,9 +281,21 @@
 /obj/structure/fans/tiny,
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"qr" = (
+/obj/machinery/door/airlock{
+	name = "Unit 1"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "qC" = (
 /obj/structure/lattice/catwalk/mining,
 /turf/simulated/floor/bluespace_river,
+/area/ruin/space/powered)
+"qW" = (
+/obj/machinery/tcomms/broadcaster,
+/turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
 "qY" = (
 /turf/simulated/floor/transparent/glass/reinforced,
@@ -292,6 +306,9 @@
 /area/ruin/space/powered)
 "rp" = (
 /obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2;
 	dir = 8
 	},
 /turf/simulated/floor/plasteel{
@@ -350,6 +367,19 @@
 	dir = 6
 	},
 /area/ruin/space/powered)
+"tx" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/obj/structure/mirror{
+	icon_state = "mirror_broke";
+	pixel_x = 32
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "ua" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -370,7 +400,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
-/area/space)
+/area/ruin/space/powered)
 "uF" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -462,6 +492,11 @@
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"BY" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "Ci" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
@@ -491,11 +526,21 @@
 	icon_state = "black"
 	},
 /area/ruin/space/powered)
+"Fq" = (
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/aft_port,
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "neutralcorner"
+	},
+/area/ruin/space/powered)
 "Gh" = (
 /turf/simulated/mineral/random/high_chance/space,
 /area/space)
 "GG" = (
 /obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2;
 	dir = 4
 	},
 /turf/simulated/floor/plasteel{
@@ -627,7 +672,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel,
-/area/space)
+/area/ruin/space/powered)
 "NU" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
@@ -716,10 +761,21 @@
 /area/ruin/space/powered)
 "Rp" = (
 /obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2;
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
 /area/ruin/space/powered)
+"Ry" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "Sr" = (
 /obj/structure/railing{
 	dir = 4
@@ -732,10 +788,19 @@
 	},
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/powered)
+"SD" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/item/bikehorn/rubberducky,
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "SU" = (
 /obj/machinery/door/airlock/highsecurity,
 /turf/simulated/floor/plasteel,
-/area/space)
+/area/ruin/space/powered)
 "Ta" = (
 /obj/machinery/door/airlock{
 	name = "Custodial Storage"
@@ -823,7 +888,15 @@
 /obj/structure/table,
 /obj/effect/spawner/random/loot,
 /turf/simulated/floor/plasteel,
-/area/space)
+/area/ruin/space/powered)
+"Vp" = (
+/obj/machinery/door/airlock{
+	name = "Unisex Restrooms"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/space/powered)
 "Vx" = (
 /obj/effect/decal/remains/human,
 /turf/simulated/floor/plating/asteroid/ancient,
@@ -905,6 +978,14 @@
 	icon_state = "black"
 	},
 /area/ruin/space/powered)
+"Zx" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/space)
 "ZM" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -958,6 +1039,104 @@ oo
 oo
 oo
 oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+"}
+(2,1,1) = {"
+nW
+nW
+nW
+nW
+nW
+nW
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+nW
+nW
+nW
+nW
+nW
+nW
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+"}
+(3,1,1) = {"
+nW
+nW
+nW
+nW
+nW
+nW
+TP
+xn
+xn
+xn
+xn
+xn
+Fq
+TP
+ek
+ek
+ek
+ek
+nW
+nW
+oo
+oo
+oo
+oo
+QJ
+sw
+sw
+oo
+oo
+oo
+oo
 vk
 iK
 iK
@@ -975,104 +1154,6 @@ TW
 oo
 oo
 "}
-(2,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-ek
-ek
-ek
-ek
-ek
-ek
-ek
-nW
-nW
-nW
-nW
-nW
-nW
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-nz
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-lD
-oo
-oo
-"}
-(3,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
-ek
-nW
-nW
-nW
-nW
-nW
-nW
-oo
-oo
-oo
-oo
-QJ
-sw
-sw
-oo
-oo
-oo
-oo
-nz
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-pP
-lD
-oo
-oo
-"}
 (4,1,1) = {"
 nW
 nW
@@ -1080,18 +1161,18 @@ nW
 nW
 nW
 nW
-nW
-nW
-nW
-nW
-nW
-nW
-nW
+TP
+ZN
+ZN
+ZN
+kB
+gb
+ua
+TP
+Zx
 ek
-nW
-nW
-nW
-nW
+SD
+ek
 nW
 nW
 oo
@@ -1129,18 +1210,18 @@ nW
 nW
 nW
 nW
-nW
+TP
+TP
+TP
+TP
+TN
+gb
+ua
+TP
+qr
 ek
+jK
 ek
-ek
-nW
-nW
-nW
-ek
-nW
-nW
-nW
-nW
 nW
 nW
 oo
@@ -1181,15 +1262,15 @@ nW
 nW
 nW
 nW
+TP
+TN
+gb
+ua
+Vp
+BY
+Ry
+BY
 ek
-nW
-nW
-nW
-ek
-nW
-nW
-nW
-nW
 nW
 nW
 oo
@@ -1203,7 +1284,7 @@ aG
 oo
 oo
 oo
-Ys
+nz
 pP
 pP
 pP
@@ -1216,7 +1297,7 @@ pP
 pP
 pP
 pP
-nS
+lD
 oo
 oo
 "}
@@ -1230,15 +1311,15 @@ nW
 nW
 nW
 nW
+TP
+TN
+gb
+ua
+TP
+BY
+BY
+BY
 ek
-nW
-nW
-nW
-ek
-nW
-nW
-nW
-nW
 nW
 nW
 oo
@@ -1277,17 +1358,17 @@ nW
 nW
 nW
 nW
+TP
+TP
+TP
+TN
+gb
+ua
+Vp
+BY
+tx
+tx
 ek
-ek
-ek
-nW
-nW
-nW
-ek
-nW
-nW
-nW
-nW
 nW
 nW
 oo
@@ -1301,7 +1382,7 @@ oo
 oo
 oo
 oo
-nz
+Ys
 pP
 pP
 pP
@@ -1314,7 +1395,7 @@ pP
 pP
 pP
 pP
-lD
+nS
 oo
 oo
 "}
@@ -1325,18 +1406,18 @@ nW
 nW
 nW
 nW
-ek
-ek
-nC
+TP
+TP
+gb
 SU
-nW
-nW
-nW
+TN
+gb
+ua
+TP
 ek
-nW
-nW
-nW
-nW
+ek
+ek
+ek
 nW
 nW
 oo
@@ -1374,14 +1455,14 @@ nW
 nW
 nW
 nW
-ek
+TP
 NT
-nC
-ek
-nW
-nW
-nW
-ek
+gb
+TP
+TN
+gb
+ua
+TP
 nW
 nW
 nW
@@ -1404,7 +1485,7 @@ pP
 pP
 pP
 pP
-LY
+pP
 pP
 pP
 pP
@@ -1423,14 +1504,14 @@ nW
 nW
 nW
 nW
-ek
-nC
+SU
+gb
 uq
-ek
-nW
-nW
-nW
-ek
+TP
+TN
+gb
+ua
+TP
 nW
 nW
 nW
@@ -1448,7 +1529,7 @@ oo
 QJ
 oo
 oo
-Ys
+nz
 pP
 pP
 pP
@@ -1461,7 +1542,7 @@ pP
 pP
 pP
 pP
-IO
+lD
 oo
 oo
 "}
@@ -1472,8 +1553,8 @@ nW
 nW
 nW
 nW
-ek
-nC
+TP
+gb
 UF
 TP
 TP
@@ -1502,7 +1583,7 @@ pP
 pP
 pP
 pP
-pP
+LY
 pP
 pP
 pP
@@ -1521,8 +1602,8 @@ nW
 nW
 nW
 nW
-ek
-nC
+TP
+gb
 ed
 TP
 NU
@@ -1546,7 +1627,7 @@ oo
 oo
 oo
 oo
-nz
+Ys
 pP
 pP
 pP
@@ -1559,7 +1640,7 @@ pP
 pP
 pP
 pP
-lD
+IO
 oo
 oo
 "}
@@ -1620,12 +1701,12 @@ nW
 nW
 nW
 TP
-pJ
+ND
 ND
 sC
 qY
 qY
-ND
+qW
 ZY
 EJ
 rD
@@ -1673,7 +1754,7 @@ pB
 ND
 Up
 qY
-gK
+qY
 qY
 qY
 TP
@@ -1693,7 +1774,7 @@ bI
 oo
 oo
 oo
-Ys
+nz
 pP
 pP
 pP
@@ -1706,7 +1787,7 @@ pP
 pP
 pP
 pP
-nS
+lD
 oo
 oo
 "}
@@ -1791,7 +1872,7 @@ oo
 oo
 oo
 oo
-nz
+Ys
 pP
 pP
 pP
@@ -1804,7 +1885,7 @@ pP
 pP
 pP
 pP
-lD
+nS
 oo
 oo
 "}
@@ -1938,20 +2019,20 @@ sw
 QJ
 Vx
 oo
-rB
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-fQ
+nz
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+lD
 oo
 oo
 "}
@@ -1987,20 +2068,20 @@ sw
 TE
 TE
 oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
+nz
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+lD
 oo
 oo
 "}
@@ -2036,20 +2117,20 @@ bd
 sw
 QJ
 oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
-oo
+rB
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+Cx
+fQ
 oo
 oo
 "}

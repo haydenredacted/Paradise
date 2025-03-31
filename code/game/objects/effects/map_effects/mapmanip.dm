@@ -73,3 +73,8 @@
 	name = "Front Desk"
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/front_desk
 	name = "Front Desk"
+
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/aft_port
+	name = "Aft Port Hallway"
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/aft_port
+	name = "Aft Port Hallway"

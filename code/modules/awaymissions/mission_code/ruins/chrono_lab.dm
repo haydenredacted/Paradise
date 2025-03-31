@@ -34,5 +34,11 @@
 // attack_action_types = list(/datum/action/innate/megafauna_attack/dash)
 // telecomms_outpost.dmm on aurora
 
+// old telecoms stuff, they don't actually do anything
+/obj/machinery/tcomms/broadcaster
+	name = "subspace broadcaster"
+	desc = "A dish-shaped machine used to broadcast processed subspace signals. It looks old and worn out, looking like it could fall apart at any moment..."
+	icon_state = "broadcaster"
+
 // shadow person that disappears when you enter
 
