@@ -39,6 +39,13 @@
 	password_bypass = TRUE // No one can steal this anyway.
 	active = TRUE
 
+/// Chrono Lab Relay
+/obj/machinery/tcomms/relay/chrono_lab
+	network_id = "LEGACY_RELAY" // yes I'm ripping off qwerty, but like come on you can never escape legacy systems. we're on the byond system. come on.
+	autolink_id = "STATION-CORE"
+	hidden_link = TRUE
+	active = TRUE
+
 GLOBAL_VAR(cc_tcomms_relay_uid)
 /obj/machinery/tcomms/relay/cc/Initialize(mapload)
 	. = ..()

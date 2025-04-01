@@ -29,16 +29,45 @@
 	eshot_sound = 'sound/weapons/laser.ogg'
 	emp_vulnerable = TRUE // it's an older, run down version of it and i'll show a BIT of kindness to explorers. can't belive i wrote that, i must be sick.
 
-///obj/effect/step_trigger
-///datum/spell/aoe/blindness
 // attack_action_types = list(/datum/action/innate/megafauna_attack/dash)
 // telecomms_outpost.dmm on aurora
 
 // old telecoms stuff, they don't actually do anything
-/obj/machinery/tcomms/broadcaster
-	name = "subspace broadcaster"
-	desc = "A dish-shaped machine used to broadcast processed subspace signals. It looks old and worn out, looking like it could fall apart at any moment..."
+
+/obj/machinery/tcomms/chrono_lab/broadcaster
+	name = "broadcaster"
+	desc = "A dish-shaped machine that was used to broadcast processed subspace signals. It looks old and worn out, looking like it could fall apart at any moment..."
 	icon_state = "broadcaster"
+
+/obj/machinery/tcomms/chrono_lab/reciever
+	name = "subspace reciever"
+	desc = "This machine has a dish-like shape and green lights. It was designed to detect and process radio activity. It looks old and worn out, looking like it could fall apart at any moment..."
+	icon_state = "broadcast receiver"
+
+/obj/machinery/tcomms/chrono_lab/server
+	name = "telecommunications server"
+	desc = "A machine that was used to store data and network statistics. It looks old and worn out, looking like it could fall apart at any moment..."
+	icon_state = "comm_server"
+
+/obj/machinery/tcomms/chrono_lab/bus
+	name = "bus mainframe"
+	desc = "A mighty piece of hardware that was used to send massive amounts of data quickly. It looks old and worn out, looking like it could fall apart at any moment..."
+	icon_state = "bus"
+
+/obj/machinery/tcomms/chrono_lab/hub
+	name = "telecommunication hub"
+	desc = "A mighty piece of hardware that was once used to send or receive massive amounts of data."
+	icon_state = "hub"
+
+/obj/machinery/tcomms/chrono_lab/processor
+	name = "processor unit"
+	desc = "This machine is was originally used to process large quantities of information."
+	icon_state = "processor"
+
+/obj/machinery/tcomms/chrono_lab/announcement_system // yea i don't think this is how it ORIGINALLY was but it's 2025 and i wasn't around
+	name = "\improper Automated Announcement System"
+	desc = "An automated announcement system that handles minor announcements over the radio. It looks old and worn out, looking like it could fall apart at any moment..."
+	icon_state = "AAS_On"
 
 // shadow person that disappears when you enter
 

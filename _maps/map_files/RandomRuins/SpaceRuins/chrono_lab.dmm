@@ -2,7 +2,7 @@
 "ag" = (
 /obj/effect/landmark/start/chief_engineer,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "aG" = (
 /obj/structure/table,
 /obj/item/stack/ore/bluespace_crystal/refined,
@@ -12,7 +12,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "bd" = (
 /obj/item/shovel,
 /turf/simulated/floor/plating/asteroid/ancient,
@@ -21,7 +21,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "stairs"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "cd" = (
 /obj/item/chair/light{
 	dir = 4
@@ -34,7 +34,7 @@
 	dir = 4;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "dY" = (
 /obj/structure/rack{
 	dir = 1
@@ -53,25 +53,22 @@
 "ed" = (
 /obj/machinery/economy/vending/snack/free,
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
-"ek" = (
-/turf/simulated/wall/indestructible/riveted,
-/area/space)
+/area/ruin/space/chrono_lab)
 "eC" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "eG" = (
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "eY" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /turf/simulated/floor/plating,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "fQ" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line{
@@ -79,19 +76,22 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"fW" = (
+/turf/simulated/wall/indestructible/riveted,
+/area/ruin/space/chrono_lab/telecomms)
 "ga" = (
 /obj/structure/railing{
 	dir = 6
 	},
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "gb" = (
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "gD" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "hC" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -100,11 +100,11 @@
 	icon_state = "darkgreencorners";
 	dir = 1
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "hJ" = (
 /obj/structure/sign/poster/official/soul,
 /turf/simulated/wall/indestructible/riveted,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "iK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -116,13 +116,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "jA" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "jK" = (
 /obj/machinery/door/airlock{
 	name = "Unit 2"
@@ -130,50 +130,53 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "jM" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "blackcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "jV" = (
 /turf/simulated/floor/plasteel{
 	dir = 5;
 	icon_state = "caution"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "jW" = (
 /obj/structure/chair{
 	dir = 1
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "kj" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "kr" = (
 /obj/item/kirbyplants/large,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "kz" = (
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "blackcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "kB" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "neutral";
 	dir = 10
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
+"kN" = (
+/turf/space,
+/area/ruin/space/chrono_lab)
 "kO" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "caution";
 	dir = 8
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "kX" = (
 /obj/item/kirbyplants/large,
 /obj/structure/extinguisher_cabinet{
@@ -181,13 +184,13 @@
 	pixel_y = -30
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "kZ" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "black";
 	dir = 10
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "lD" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
@@ -197,18 +200,18 @@
 	dir = 8;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "mM" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "mP" = (
 /obj/machinery/economy/vending/autodrobe{
 	ads_list = list("Come dress for your funeral!")
 	},
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "nz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -221,7 +224,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "darkgreencorners"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "nS" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line,
@@ -240,7 +243,7 @@
 	dir = 8;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "oi" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -253,14 +256,14 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "blackcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "oo" = (
 /turf/simulated/floor/plating/asteroid/ancient,
 /area/space)
 "oE" = (
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "oY" = (
 /obj/item/pickaxe,
 /turf/simulated/floor/plating/asteroid/ancient,
@@ -273,14 +276,14 @@
 	pixel_y = 35
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "pP" = (
 /turf/open/floor/plating,
 /area/space)
 "pZ" = (
 /obj/structure/fans/tiny,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "qr" = (
 /obj/machinery/door/airlock{
 	name = "Unit 1"
@@ -288,22 +291,18 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "qC" = (
 /obj/structure/lattice/catwalk/mining,
 /turf/simulated/floor/bluespace_river,
-/area/ruin/space/powered)
-"qW" = (
-/obj/machinery/tcomms/broadcaster,
-/turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "qY" = (
 /turf/simulated/floor/transparent/glass/reinforced,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "re" = (
 /obj/structure/sign/poster/random,
 /turf/simulated/wall/indestructible/riveted,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "rp" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
@@ -315,7 +314,7 @@
 	dir = 9;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "rB" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line{
@@ -331,14 +330,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "sw" = (
 /turf/simulated/mineral,
 /area/space)
 "sC" = (
 /obj/effect/spawner/window/plastitanium,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "sF" = (
 /obj/structure/railing{
 	dir = 4
@@ -347,17 +346,17 @@
 	dir = 4
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "sI" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "caution";
 	dir = 9
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "sQ" = (
 /obj/structure/table,
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "tq" = (
 /obj/machinery/economy/vending/dinnerware{
 	ads_list = list("You don't belong here.")
@@ -366,7 +365,7 @@
 	icon_state = "black";
 	dir = 6
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "tx" = (
 /obj/structure/sink{
 	dir = 4;
@@ -379,13 +378,13 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "ua" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
 	icon_state = "neutral"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "up" = (
 /obj/structure/sink/kitchen{
 	dir = 1;
@@ -394,13 +393,13 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "uq" = (
 /obj/item/chair/light{
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "uF" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -410,13 +409,13 @@
 	},
 /obj/structure/fans/tiny,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "uI" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "caution";
 	dir = 10
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "uK" = (
 /obj/structure/railing/cap{
 	dir = 10
@@ -425,11 +424,11 @@
 	icon_state = "caution";
 	dir = 4
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "uX" = (
 /obj/structure/railing,
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "vk" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line{
@@ -445,25 +444,25 @@
 	dir = 10;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "vK" = (
 /obj/structure/sign/securearea{
 	name = "\improper STAY CLEAR: ANOMALOUS BLUESPACE MATTER";
 	desc = "A warning sign which reads 'STAY CLEAR'."
 	},
 /turf/simulated/wall/indestructible/riveted,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "xn" = (
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "neutral"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "yV" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "caution"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "yW" = (
 /obj/structure/railing{
 	dir = 8
@@ -472,31 +471,31 @@
 	icon_state = "caution";
 	dir = 4
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "zX" = (
 /turf/simulated/mineral,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "AT" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "cautioncorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Bu" = (
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "cautioncorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "BR" = (
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "BY" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "Ci" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
@@ -505,7 +504,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Cx" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -519,20 +518,20 @@
 "EJ" = (
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Fi" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Fq" = (
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/aft_port,
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "neutralcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Gh" = (
 /turf/simulated/mineral/random/high_chance/space,
 /area/space)
@@ -547,7 +546,7 @@
 	dir = 6;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "GW" = (
 /obj/structure/railing{
 	dir = 8
@@ -559,7 +558,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Hv" = (
 /obj/machinery/light{
 	dir = 4
@@ -568,18 +567,18 @@
 	dir = 5;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "HJ" = (
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "neutralcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Is" = (
 /obj/structure/railing/corner,
 /obj/effect/turf_decal/stripes/corner,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "IO" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line,
@@ -589,7 +588,7 @@
 "Jt" = (
 /obj/structure/rack,
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "JN" = (
 /obj/machinery/shower{
 	dir = 4
@@ -597,14 +596,14 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Ka" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/plasteel{
 	dir = 1;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Kf" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -615,25 +614,25 @@
 	dir = 4;
 	icon_state = "blackcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Kg" = (
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/kitchen_stage,
 /turf/simulated/floor/plasteel{
 	icon_state = "stairs"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "KE" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "darkgreencorners";
 	dir = 8
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "KT" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "caution";
 	dir = 6
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "KW" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -642,7 +641,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "LY" = (
 /obj/effect/landmark{
 	icon = 'icons/effects/spawner_icons.dmi';
@@ -651,28 +650,33 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"Ma" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/ruin/space/chrono_lab/telecomms)
 "MA" = (
 /obj/machinery/economy/vending/cigarette,
 /turf/simulated/floor/plasteel{
 	dir = 10;
 	icon_state = "caution"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "MI" = (
 /turf/simulated/floor/bluespace_river,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Nl" = (
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "ND" = (
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "NT" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "NU" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
@@ -685,7 +689,7 @@
 	pixel_y = 28
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "NX" = (
 /obj/structure/railing/cap{
 	dir = 1
@@ -697,13 +701,13 @@
 	icon_state = "caution";
 	dir = 4
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "On" = (
 /obj/structure/railing{
 	dir = 10
 	},
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "OA" = (
 /obj/machinery/light{
 	dir = 4
@@ -713,14 +717,14 @@
 	dir = 4;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "OJ" = (
 /obj/machinery/door/airlock/highsecurity,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "OS" = (
 /turf/simulated/mineral/random/low_chance/space,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Po" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -730,15 +734,15 @@
 	dir = 4;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Pq" = (
 /obj/structure/chair,
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Qk" = (
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/front_desk,
 /turf/simulated/wall/indestructible/riveted,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Qo" = (
 /obj/structure/table,
 /obj/structure/table,
@@ -747,7 +751,7 @@
 	dir = 1;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "QJ" = (
 /obj/item/stack/ore/glass,
 /turf/simulated/floor/plating/asteroid/ancient,
@@ -758,7 +762,7 @@
 	dir = 6;
 	icon_state = "caution"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Rp" = (
 /obj/machinery/light{
 	active_power_consumption = 0;
@@ -767,7 +771,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Ry" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -775,7 +779,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "Sr" = (
 /obj/structure/railing{
 	dir = 4
@@ -787,7 +791,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "SD" = (
 /obj/structure/toilet{
 	dir = 4
@@ -796,17 +800,17 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "SU" = (
 /obj/machinery/door/airlock/highsecurity,
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Ta" = (
 /obj/machinery/door/airlock{
 	name = "Custodial Storage"
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Tp" = (
 /obj/structure/rack,
 /obj/item/kitchen/rollingpin{
@@ -825,13 +829,13 @@
 	dir = 9;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Tw" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "neutral";
 	dir = 6
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "TE" = (
 /turf/simulated/mineral/random/low_chance/space,
 /area/space)
@@ -841,15 +845,15 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "TN" = (
 /turf/simulated/floor/plasteel{
 	icon_state = "neutral"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "TP" = (
 /turf/simulated/wall/indestructible/riveted,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "TW" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line{
@@ -863,7 +867,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
+"Uu" = (
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/front_desk,
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/ruin/space/chrono_lab/telecomms)
 "UB" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -874,7 +884,7 @@
 	dir = 1;
 	icon_state = "blackcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "UE" = (
 /obj/structure/railing{
 	dir = 8
@@ -883,12 +893,12 @@
 	dir = 8
 	},
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "UF" = (
 /obj/structure/table,
 /obj/effect/spawner/random/loot,
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Vp" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
@@ -896,7 +906,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Vx" = (
 /obj/effect/decal/remains/human,
 /turf/simulated/floor/plating/asteroid/ancient,
@@ -907,7 +917,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Wl" = (
 /obj/structure/shelf,
 /obj/item/soap,
@@ -918,7 +928,7 @@
 	icon_state = "darkgreencorners";
 	dir = 4
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Wy" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -932,31 +942,28 @@
 	dir = 8;
 	icon_state = "blackcorner"
 	},
-/area/ruin/space/powered)
-"Xo" = (
-/turf/simulated/floor/plating/asteroid/ancient,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Xz" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/plasteel,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "XB" = (
 /obj/item/kirbyplants/large,
 /turf/simulated/floor/plasteel/goonplaque/nosey,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "XM" = (
 /obj/structure/rack,
 /obj/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "XW" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
 	icon_state = "neutralcorner"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Ys" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/line{
@@ -969,7 +976,7 @@
 	dir = 1;
 	icon_state = "caution"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Zi" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave,
@@ -977,7 +984,7 @@
 	dir = 4;
 	icon_state = "black"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "Zx" = (
 /obj/structure/toilet{
 	dir = 4
@@ -985,7 +992,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
-/area/space)
+/area/ruin/space/chrono_lab)
 "ZM" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -995,17 +1002,17 @@
 	},
 /obj/structure/fans/tiny,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "ZN" = (
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutral"
 	},
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 "ZY" = (
 /obj/effect/step_trigger/blindness,
 /turf/simulated/floor/engine/airless,
-/area/ruin/space/powered)
+/area/ruin/space/chrono_lab)
 
 (1,1,1) = {"
 nW
@@ -1120,10 +1127,10 @@ xn
 xn
 Fq
 TP
-ek
-ek
-ek
-ek
+TP
+TP
+TP
+TP
 nW
 nW
 oo
@@ -1170,9 +1177,9 @@ gb
 ua
 TP
 Zx
-ek
+TP
 SD
-ek
+TP
 nW
 nW
 oo
@@ -1219,9 +1226,9 @@ gb
 ua
 TP
 qr
-ek
+TP
 jK
-ek
+TP
 nW
 nW
 oo
@@ -1270,7 +1277,7 @@ Vp
 BY
 Ry
 BY
-ek
+TP
 nW
 nW
 oo
@@ -1319,7 +1326,7 @@ TP
 BY
 BY
 BY
-ek
+TP
 nW
 nW
 oo
@@ -1353,10 +1360,10 @@ oo
 (8,1,1) = {"
 nW
 nW
-nW
-nW
-nW
-nW
+fW
+fW
+fW
+fW
 nW
 TP
 TP
@@ -1368,7 +1375,7 @@ Vp
 BY
 tx
 tx
-ek
+TP
 nW
 nW
 oo
@@ -1402,10 +1409,10 @@ oo
 (9,1,1) = {"
 nW
 nW
-nW
-nW
-nW
-nW
+fW
+Ma
+Ma
+Uu
 TP
 TP
 gb
@@ -1414,10 +1421,10 @@ TN
 gb
 ua
 TP
-ek
-ek
-ek
-ek
+TP
+TP
+TP
+TP
 nW
 nW
 oo
@@ -1451,10 +1458,10 @@ oo
 (10,1,1) = {"
 nW
 nW
-nW
-nW
-nW
-nW
+fW
+Ma
+Ma
+Ma
 TP
 NT
 gb
@@ -1500,10 +1507,10 @@ oo
 (11,1,1) = {"
 nW
 nW
-nW
-nW
-nW
-nW
+fW
+Ma
+Ma
+Ma
 SU
 gb
 uq
@@ -1549,10 +1556,10 @@ oo
 (12,1,1) = {"
 nW
 nW
-nW
-nW
-nW
-nW
+fW
+fW
+Ma
+fW
 TP
 gb
 UF
@@ -1596,12 +1603,12 @@ oo
 oo
 "}
 (13,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
+fW
+fW
+fW
+Ma
+Ma
+Ma
 TP
 gb
 ed
@@ -1645,12 +1652,12 @@ oo
 oo
 "}
 (14,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
+fW
+Ma
+Ma
+Ma
+Ma
+Ma
 TP
 OJ
 TP
@@ -1694,19 +1701,19 @@ oo
 oo
 "}
 (15,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
+fW
+Ma
+Ma
+Ma
+Ma
+Ma
 TP
 ND
 ND
 sC
 qY
 qY
-qW
+ND
 ZY
 EJ
 rD
@@ -1743,12 +1750,12 @@ oo
 oo
 "}
 (16,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
+fW
+fW
+Ma
+Ma
+Ma
+fW
 TP
 pB
 ND
@@ -1792,12 +1799,12 @@ oo
 oo
 "}
 (17,1,1) = {"
-nW
-nW
-nW
-nW
-nW
-nW
+fW
+Ma
+Ma
+Ma
+Ma
+Ma
 TP
 oE
 kj
@@ -1841,12 +1848,12 @@ oo
 oo
 "}
 (18,1,1) = {"
-nW
-TP
-TP
-TP
-TP
-TP
+fW
+fW
+fW
+fW
+fW
+fW
 TP
 TP
 TP
@@ -2059,7 +2066,7 @@ zX
 zX
 MI
 MI
-Xo
+oo
 oo
 oo
 oo
@@ -2203,7 +2210,7 @@ MI
 MI
 zX
 zX
-sw
+zX
 zX
 MI
 MI
@@ -2296,8 +2303,8 @@ ZN
 ZN
 XW
 TP
-sw
-sw
+zX
+zX
 nW
 nW
 nW
@@ -2425,8 +2432,8 @@ MI
 MI
 MI
 zX
-TE
-sw
+OS
+zX
 "}
 (30,1,1) = {"
 TP
@@ -2674,7 +2681,7 @@ nW
 nW
 "}
 (35,1,1) = {"
-nW
+kN
 TP
 TP
 TP

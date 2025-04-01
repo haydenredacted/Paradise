@@ -31,5 +31,16 @@
 		"marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/aft_port",
 		"marker_insert": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/aft_port",
 		"submaps_can_repeat": true
+	},
+	{
+		// Chrono Lab Telecommunications Room
+		"type": "SubmapExtractInsert",
+		"submap_size_x": 8,
+		"submap_size_y": 4,
+		"submap_size_z": 1,
+		"submaps_dmm": "submaps/chrono_lab_submap.dmm",
+		"marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/telecomms",
+		"marker_insert": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/telecomms",
+		"submaps_can_repeat": true
 	}
 ]

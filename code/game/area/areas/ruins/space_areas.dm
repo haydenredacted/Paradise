@@ -289,3 +289,12 @@
 	there_can_be_many = FALSE
 	requires_power = FALSE
 	ambientsounds = list("sound/ambience/reebe_ambience_1.ogg", "sound/ambience/reebe_ambience_2.ogg", "sound/ambience/reebe_ambience_3.ogg")
+
+/area/ruin/space/chrono_lab
+	name = "\improper Chrono Lab"
+	icon_state = "chrono_lab"
+	requires_power = FALSE
+
+/area/ruin/space/chrono_lab/telecomms
+	name = "\improper Chrono Lab Telecomms"
+	requires_power = FALSE
