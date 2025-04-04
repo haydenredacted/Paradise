@@ -1,60 +1,43 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aw" = (
-/obj/machinery/tcomms/chrono_lab/reciever,
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
+	dir = 9
 	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "aW" = (
-/obj/machinery/light{
-	active_power_consumption = 0;
-	icon_state = "tube-broken";
-	status = 2
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "cz" = (
 /obj/structure/closet/crate/miningcar,
 /obj/effect/spawner/random/loot/good_times,
 /turf/simulated/floor/plating/asteroid/basalt,
 /area/ruin/space/chrono_lab)
-"cB" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/space/chrono_lab/telecomms)
 "dR" = (
 /mob/living/simple_animal/hostile/retaliate/clown,
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
-"ep" = (
-/mob/living/simple_animal/hostile/ash_walker,
-/turf/simulated/floor/plating/asteroid/basalt,
-/area/ruin/space/chrono_lab)
-"fH" = (
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 5
+"ej" = (
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/ruin/space/chrono_lab/telecomms)
+"ep" = (
+/mob/living/simple_animal/hostile/ash_walker,
+/turf/simulated/floor/plating/asteroid/basalt,
+/area/ruin/space/chrono_lab)
 "fS" = (
-/obj/machinery/tcomms/chrono_lab/bus,
+/obj/machinery/tcomms/chrono_lab/hub,
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 6
+	dir = 10
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/bluegrid,
 /area/ruin/space/chrono_lab/telecomms)
 "fZ" = (
 /obj/item/toy/figure/crew/mime{
@@ -63,8 +46,16 @@
 	},
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
-"hG" = (
-/obj/machinery/atmospherics/unary/tank/oxygen_agent_b,
+"hT" = (
+/obj/structure/showcase{
+	density = 0;
+	dir = 8;
+	icon = 'icons/mob/robots.dmi';
+	icon_state = "robot_old";
+	name = "Cyborg Statue";
+	pixel_x = 9;
+	pixel_y = 2
+	},
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -74,61 +65,12 @@
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
 "kg" = (
-/obj/machinery/computer/message_monitor{
-	dir = 4
-	},
-/obj/machinery/light{
+/obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
-"kT" = (
-/obj/item/grown/bananapeel,
-/turf/template_noop,
-/area/ruin/space/chrono_lab)
-"md" = (
-/mob/living/simple_animal/hostile/retaliate/mime,
-/turf/template_noop,
-/area/ruin/space/chrono_lab)
-"nn" = (
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/plating/asteroid/basalt,
-/area/ruin/space/chrono_lab)
-"nQ" = (
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 10
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/space/chrono_lab/telecomms)
-"pI" = (
-/obj/machinery/tcomms/chrono_lab/hub,
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 10
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/space/chrono_lab/telecomms)
-"qa" = (
-/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/front_desk,
-/turf/template_noop,
-/area/ruin/space/chrono_lab)
-"tF" = (
-/obj/item/toy/crayon/mime{
-	pixel_x = 4;
-	pixel_y = -2
-	},
-/obj/item/coin/mime{
-	pixel_x = -8;
-	pixel_y = 4
-	},
-/turf/template_noop,
-/area/ruin/space/chrono_lab)
-"tK" = (
+"kG" = (
 /obj/structure/table/wood,
 /obj/item/paper/tcommskey{
 	pixel_x = -6;
@@ -142,9 +84,72 @@
 	pixel_x = -5;
 	pixel_y = 6
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/telecomms,
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"kT" = (
+/obj/item/grown/bananapeel,
+/turf/template_noop,
+/area/ruin/space/chrono_lab)
+"md" = (
+/mob/living/simple_animal/hostile/retaliate/mime,
+/turf/template_noop,
+/area/ruin/space/chrono_lab)
+"mJ" = (
+/obj/machinery/blackbox_recorder,
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"nn" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/plating/asteroid/basalt,
+/area/ruin/space/chrono_lab)
+"qa" = (
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/front_desk,
+/turf/template_noop,
+/area/ruin/space/chrono_lab)
+"sb" = (
+/obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2
 	},
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/chrono_lab/telecomms)
+"to" = (
+/obj/item/kirbyplants/large,
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"tF" = (
+/obj/item/toy/crayon/mime{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/coin/mime{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab)
+"tK" = (
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"tM" = (
+/obj/structure/showcase{
+	density = 0;
+	dir = 8;
+	icon = 'icons/mob/robots.dmi';
+	icon_state = "robot_old";
+	name = "Cyborg Statue";
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"uO" = (
+/obj/machinery/atmospherics/unary/thermomachine/freezer/on/server{
+	dir = 1
+	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "vm" = (
 /obj/item/clothing/shoes/clown_shoes,
@@ -171,40 +176,34 @@
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
 "xL" = (
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Telecommunication Server Room"
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging,
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"xM" = (
+/obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/ruin/space/chrono_lab/telecomms)
 "xS" = (
-/obj/machinery/tcomms/chrono_lab/server,
+/obj/machinery/tcomms/chrono_lab/processor,
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 5
+	dir = 9
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/space/chrono_lab/telecomms)
-"xX" = (
-/obj/machinery/computer/nonfunctional{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/bluegrid,
 /area/ruin/space/chrono_lab/telecomms)
 "ya" = (
 /turf/simulated/floor/lava,
 /area/ruin/space/chrono_lab)
-"yi" = (
-/obj/structure/chair/office/dark{
-	dir = 8
+"yy" = (
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
+	dir = 5
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "yU" = (
 /obj/machinery/light{
@@ -213,6 +212,12 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
+/area/ruin/space/chrono_lab/telecomms)
+"zz" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid,
 /area/ruin/space/chrono_lab/telecomms)
 "zF" = (
 /obj/item/storage/backpack/clown/syndie,
@@ -232,27 +237,25 @@
 /obj/item/spear/bonespear,
 /turf/simulated/floor/plating/asteroid/basalt,
 /area/ruin/space/chrono_lab)
-"Dx" = (
-/obj/machinery/tcomms/chrono_lab/announcement_system,
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+"DO" = (
+/obj/structure/rack,
+/obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "Fk" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 6
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "Fl" = (
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 9
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
+	dir = 8
 	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "FZ" = (
 /obj/effect/spawner/random/loot/outfit/mime,
@@ -268,6 +271,10 @@
 /obj/structure/table/wood,
 /turf/simulated/floor/plating/asteroid/basalt,
 /area/ruin/space/chrono_lab)
+"Gh" = (
+/obj/machinery/tcomms/relay/chrono_lab,
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/chrono_lab/telecomms)
 "Gk" = (
 /obj/item/coin/clown{
 	pixel_x = -5;
@@ -279,29 +286,15 @@
 	},
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
-"Gu" = (
-/obj/machinery/tcomms/chrono_lab/processor,
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 9
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+"Gz" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"HG" = (
+/obj/machinery/atmospherics/unary/tank/oxygen_agent_b,
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "If" = (
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/space/chrono_lab/telecomms)
-"IJ" = (
-/obj/machinery/atmospherics/unary/thermomachine/freezer/on/server{
-	dir = 1
-	},
-/obj/machinery/light{
-	active_power_consumption = 0;
-	icon_state = "tube-broken";
-	status = 2
-	},
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -317,30 +310,45 @@
 /obj/item/cultivator/rake,
 /turf/simulated/floor/plating/asteroid/basalt,
 /area/ruin/space/chrono_lab)
+"Jj" = (
+/obj/machinery/tcomms/chrono_lab/bus,
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
+	dir = 6
+	},
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/chrono_lab/telecomms)
 "Mg" = (
 /obj/machinery/porta_turret/syndicate/chrono_lab,
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
+"NA" = (
+/obj/machinery/tcomms/chrono_lab/broadcaster,
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
+	dir = 5
+	},
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/chrono_lab/telecomms)
+"NF" = (
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Telecommunication Server Room"
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
 "NX" = (
 /obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/kitchen_stage,
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
-"Ol" = (
-/obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/space/chrono_lab/telecomms)
 "Pd" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/mob_spawn/human/corpse/damaged,
 /turf/simulated/floor/plating/asteroid/basalt,
 /area/ruin/space/chrono_lab)
 "Pt" = (
-/obj/machinery/tcomms/chrono_lab/broadcaster,
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
+/obj/machinery/tcomms/chrono_lab/server,
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
+	dir = 4
 	},
+/turf/simulated/floor/bluegrid,
 /area/ruin/space/chrono_lab/telecomms)
 "PJ" = (
 /turf/template_noop,
@@ -350,6 +358,54 @@
 /obj/item/storage/backpack/mime,
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
+"Rx" = (
+/obj/machinery/computer/nonfunctional{
+	dir = 4
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"Sk" = (
+/obj/machinery/computer/message_monitor{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"Tc" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/computer/nonfunctional{
+	dir = 4
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
+"UR" = (
+/obj/machinery/tcomms/chrono_lab/reciever,
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
+	dir = 6
+	},
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/chrono_lab/telecomms)
+"Wt" = (
+/obj/structure/table/wood,
+/obj/item/paper/tcommskey{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/telecomms,
+/obj/item/pen{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/item/radio/headset{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
 "WF" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/med_data/laptop{
@@ -360,6 +416,10 @@
 "Xr" = (
 /turf/simulated/mineral/random/volcanic,
 /area/ruin/space/chrono_lab)
+"Yn" = (
+/obj/machinery/tcomms/chrono_lab/announcement_system,
+/turf/template_noop,
+/area/ruin/space/chrono_lab/telecomms)
 "YI" = (
 /obj/item/grown/bananapeel/mimanapeel,
 /turf/template_noop,
@@ -368,15 +428,15 @@
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
 "ZH" = (
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 6
+/obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2
 	},
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 9
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
+	dir = 8
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
+/turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
 "ZW" = (
 /turf/simulated/wall/indestructible/riveted,
@@ -442,10 +502,10 @@ PJ
 PJ
 PJ
 PJ
-ZW
-ZW
-ZW
-ZW
+tK
+Rx
+Sk
+kG
 PJ
 PJ
 PJ
@@ -476,8 +536,8 @@ PJ
 PJ
 PJ
 PJ
-ZW
-xX
+tK
+tK
 kg
 tK
 PJ
@@ -499,9 +559,9 @@ Zy
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
+Zy
+Zy
+Zy
 nn
 ep
 vW
@@ -510,10 +570,10 @@ PJ
 PJ
 PJ
 PJ
-ZW
-If
-yi
-If
+tK
+Yn
+tK
+tM
 PJ
 PJ
 PJ
@@ -535,7 +595,7 @@ PJ
 PJ
 PJ
 PJ
-PJ
+Zy
 zY
 zY
 zY
@@ -544,10 +604,10 @@ PJ
 PJ
 PJ
 PJ
-ZW
-Dx
-If
-If
+tK
+tK
+NF
+tK
 PJ
 PJ
 PJ
@@ -569,19 +629,19 @@ PJ
 PJ
 PJ
 PJ
-PJ
+Zy
 CI
 zY
 cz
 PJ
 PJ
 PJ
-PJ
-PJ
-ZW
-ZW
+tK
+tK
+tK
+UR
 xL
-ZW
+NA
 PJ
 PJ
 PJ
@@ -601,20 +661,20 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
+Zy
+Zy
+Zy
 nn
 zY
 zY
 PJ
 PJ
 PJ
-ZW
-ZW
-ZW
+tK
+Jj
+xL
 aw
-If
+tK
 Pt
 PJ
 PJ
@@ -635,19 +695,19 @@ qa
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
+Zy
+Zy
+Zy
 zY
 zY
 Jc
 PJ
 PJ
 PJ
-ZW
+tK
 fS
-Fk
-fH
+yy
+tK
 Fk
 xS
 PJ
@@ -669,21 +729,21 @@ Zy
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
+Zy
+Zy
+Zy
 Ga
 zY
 Pd
 PJ
 PJ
 PJ
-ZW
-pI
+tK
+tK
 Fl
-nQ
+tK
 ZH
-Gu
+ZW
 PJ
 PJ
 PJ
@@ -703,21 +763,21 @@ Zy
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
+Zy
+Zy
+Zy
 zY
 zY
 zY
 PJ
 PJ
 PJ
-ZW
-ZW
-yU
-If
+tK
+HG
 aW
-ZW
+Gz
+aW
+uO
 PJ
 PJ
 PJ
@@ -746,12 +806,12 @@ PJ
 PJ
 PJ
 PJ
-ZW
-hG
-Ol
-Ol
-cB
-IJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
 PJ
 PJ
 PJ
@@ -782,10 +842,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+Rx
+Tc
+Wt
 PJ
 PJ
 PJ
@@ -816,10 +876,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+tK
+kg
+tK
 PJ
 PJ
 PJ
@@ -850,10 +910,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+DO
+tK
+tM
 PJ
 PJ
 PJ
@@ -884,10 +944,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+ZW
+NF
+ZW
 PJ
 PJ
 PJ
@@ -916,12 +976,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+ZW
+ZW
+to
+tK
+to
 PJ
 PJ
 PJ
@@ -950,12 +1010,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+mJ
+tK
+tK
+tK
+tK
 PJ
 PJ
 PJ
@@ -984,12 +1044,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+mJ
+tK
+tK
+tK
+tK
 PJ
 PJ
 PJ
@@ -1018,12 +1078,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+ZW
+zz
+tK
+sb
+ZW
 PJ
 PJ
 PJ
@@ -1052,12 +1112,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+tK
+tK
+Gh
+tK
+tK
 PJ
 PJ
 PJ
@@ -1122,10 +1182,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+If
+ej
+If
 PJ
 PJ
 PJ
@@ -1156,10 +1216,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+If
+If
+If
 PJ
 PJ
 PJ
@@ -1190,10 +1250,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+If
+If
+hT
 PJ
 PJ
 PJ
@@ -1224,10 +1284,10 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+ZW
+If
+ZW
 PJ
 PJ
 PJ
@@ -1256,12 +1316,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+ZW
+ZW
+If
+If
+If
 PJ
 PJ
 PJ
@@ -1290,12 +1350,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+If
+If
+If
+If
+If
 PJ
 PJ
 PJ
@@ -1324,12 +1384,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+If
+If
+If
+If
+If
 PJ
 PJ
 PJ
@@ -1358,12 +1418,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+ZW
+yU
+If
+xM
+ZW
 PJ
 PJ
 PJ
@@ -1392,12 +1452,12 @@ PJ
 PJ
 PJ
 PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
+ZW
+If
+If
+If
+If
+If
 PJ
 PJ
 PJ

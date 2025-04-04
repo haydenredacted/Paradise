@@ -334,6 +334,11 @@
 "sw" = (
 /turf/simulated/mineral,
 /area/space)
+"sB" = (
+/obj/structure/table,
+/obj/effect/spawner/random/toy/carp_plushie,
+/turf/simulated/floor/plasteel,
+/area/ruin/space/chrono_lab)
 "sC" = (
 /obj/effect/spawner/window/plastitanium,
 /turf/simulated/floor/engine/airless,
@@ -869,7 +874,7 @@
 /turf/simulated/floor/engine/airless,
 /area/ruin/space/chrono_lab)
 "Uu" = (
-/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/front_desk,
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/telecomms,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -896,7 +901,7 @@
 /area/ruin/space/chrono_lab)
 "UF" = (
 /obj/structure/table,
-/obj/effect/spawner/random/loot,
+/obj/effect/spawner/random/pool/spaceloot,
 /turf/simulated/floor/plasteel,
 /area/ruin/space/chrono_lab)
 "Vp" = (
@@ -989,6 +994,7 @@
 /obj/structure/toilet{
 	dir = 4
 	},
+/obj/effect/spawner/random/toy/mech_figure,
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
@@ -2542,7 +2548,7 @@ YJ
 Pq
 sQ
 re
-sQ
+sB
 jW
 AT
 QV
