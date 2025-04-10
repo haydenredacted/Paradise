@@ -741,6 +741,14 @@
 	M.Jitter(10 SECONDS)
 	return ..()
 
+/datum/chemical_reaction/rewriter
+	name = "Rewriter"
+	id = "rewriter"
+	result = "rewriter"
+	required_reagents = list("spacemountainwind" = 1, "coffee" = 1)
+	result_amount = 2
+	mix_sound = 'sound/goonstation/misc/drinkfizz.ogg'
+
 /datum/reagent/consumable/drink/arnold_palmer
 	name = "Arnold Palmer"
 	id = "arnold_palmer"
