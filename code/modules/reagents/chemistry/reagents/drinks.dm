@@ -1,6 +1,7 @@
 // Consolidated all drinks into this file instead of drinks_reactions.dm and alcohol.dm
 // This makes it easier to find drinks and add them
-// File follows the format of defining the drink description/color/alcohol contents, followed by any effects it may have on a mob, and finally the recipe to make it
+// File follows the format of defining the drink description/color/alcohol contents, followed by any effects it may have on a mob, and finally the recipe to make it.
+// Don't forget to add any new drinks to reagents_list.dm!
 
 /datum/reagent/consumable/drink
 	name = "Drink"
@@ -3751,3 +3752,29 @@
 		if(!(NO_BLOOD in H.dna.species.species_traits) && (H.blood_volume < BLOOD_VOLUME_NORMAL))
 			H.blood_volume += 0.4
 	return ..()
+
+/datum/reagent/consumable/ethanol/narsour
+	name = "Nar'Sour"
+	description = "Side effects may include incomprehensible muttering and plasteel hoarding."
+	id = "narsour"
+	color = "" // rgb:158, 15, 15
+	alcohol_perc = 0.3
+	dizzy_adj = 4 SECONDS
+	drink_icon = "narsour"
+	drink_name = "Nar'Sour"
+	drink_desc = "Originating from the darker parts of the sector, this hit new cocktail will have you slurring in no time!"
+	taste_description = "blood"
+
+/datum/reagent/consumable/ethanol/narsour/on_mob_life(mob/living/M)
+	. = ..()
+	M.CultSlur(5 SECONDS)
+
+/datum/chemical_reaction/narsour
+	name = "Nar'Sour"
+	id = "narsour"
+	result = "narsour"
+	required_reagents = list("blood" = 1, "bloodymary" = 1, "lemonjuice" = 1)
+	result_amount = 2
+	mix_message = "The drink emits an ominous glow."
+	mix_sound = 'sound/goonstation/misc/drinkfizz.ogg'
+
