@@ -133,7 +133,7 @@
 				adjustToxLoss(-3)
 
 		T = get_step(T, dir)
-		if(is_blocked_turf(T))
+		if(T.is_blocked_turf())
 			break
 
 /mob/living/carbon/gib()
@@ -513,9 +513,12 @@ GLOBAL_LIST_INIT(ventcrawl_machinery, list(/obj/machinery/atmospherics/unary/ven
 	if(!client)
 		return
 #endif
-	if(!do_after(src, ventcrawl_delay, target = src))
-		return
-
+	if(ismorph(src))
+		if(!do_after(src, ventcrawl_delay, target = src, hidden = TRUE))
+			return
+	else
+		if(!do_after(src, ventcrawl_delay, target = src))
+			return
 	if(!vent_found.can_crawl_through())
 		to_chat(src, "<span class='warning'>You can't vent crawl through that!</span>")
 		return
@@ -1171,17 +1174,21 @@ GLOBAL_LIST_INIT(ventcrawl_machinery, list(/obj/machinery/atmospherics/unary/ven
 		to_chat(src, "<span class='notice'>You don't feel like eating any more junk food at the moment.</span>")
 		return FALSE
 
+	var/list/reaction_msg = list()
 	if(fullness <= 50)
-		to_chat(src, "<span class='warning'>You hungrily chew out a piece of [to_eat] and gobble it!</span>")
+		reaction_msg += "You hungrily chew out a piece of [to_eat] and gobble it!"
+		to_chat(src, "<span class='warning'></span>")
 	else if(fullness > 50 && fullness < 150)
-		to_chat(src, "<span class='notice'>You hungrily begin to eat [to_eat].</span>")
+		reaction_msg += "You hungrily begin to eat [to_eat]."
 	else if(fullness > 150 && fullness < 500)
-		to_chat(src, "<span class='notice'>You take a bite of [to_eat].</span>")
+		reaction_msg += "You take a bite of [to_eat]."
 	else if(fullness > 500 && fullness < 600)
-		to_chat(src, "<span class='notice'>You unwillingly chew a bit of [to_eat].</span>")
+		reaction_msg += "You unwillingly chew a bit of [to_eat]."
 	else if(fullness > (600 * (1 + overeatduration / 2000))) // The more you eat - the more you can eat
 		to_chat(src, "<span class='warning'>You cannot force any more of [to_eat] to go down your throat.</span>")
 		return FALSE
+
+	to_chat(src, "<span class='notice'>[jointext(reaction_msg, " ")]</span>")
 
 	return TRUE
 
@@ -1231,13 +1238,10 @@ so that different stomachs can handle things in different ways VB*/
 		. |= LH.GetAccess()
 
 /mob/living/carbon/proc/can_breathe_gas()
-	if(!wear_mask)
-		return TRUE
+	if(wear_mask?.flags & BLOCK_GAS_SMOKE_EFFECT || head?.flags & BLOCK_GAS_SMOKE_EFFECT || internal)
+		return FALSE
 
-	if(!(wear_mask.flags & BLOCK_GAS_SMOKE_EFFECT) && internal == null)
-		return TRUE
-
-	return FALSE
+	return TRUE
 
 //to recalculate and update the mob's total tint from tinted equipment it's wearing.
 /mob/living/carbon/proc/update_tint()
@@ -1418,3 +1422,6 @@ so that different stomachs can handle things in different ways VB*/
 	if(wear_suit && wear_suit.UID() == thing.UID())
 		return FALSE
 	return TRUE
+
+/mob/living/carbon/proc/get_thermal_protection() // Xenos got nothin
+	return 0

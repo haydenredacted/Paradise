@@ -87,6 +87,12 @@
 	icon_state = "water_high" //I was gonna clean my room...
 	tank_volume = 100000
 
+/obj/structure/reagent_dispensers/watertank/firetank
+	name = "firefighting foam tank"
+	desc = "A firefighting foam tank."
+	icon_state = "firetank"
+	reagent_id = "firefighting_foam"
+	tank_volume = 8000
 
 /obj/structure/reagent_dispensers/oil
 	name = "oil tank"
@@ -275,7 +281,7 @@
 	reagent_id = "beer"
 
 /obj/structure/reagent_dispensers/beerkeg/blob_act(obj/structure/blob/B)
-	explosion(loc, 0, 3, 5, 7, 10)
+	explosion(loc, 0, 3, 5, 7, 10, cause = "Blob caused [src] to explode.")
 	if(!QDELETED(src))
 		qdel(src)
 

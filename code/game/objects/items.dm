@@ -182,6 +182,8 @@ GLOBAL_DATUM_INIT(welding_sparks, /mutable_appearance, mutable_appearance('icons
 	var/bit_failure_rate = 0
 	/// Efficiency modifier for tools that use energy or fuel
 	var/bit_efficiency_mod = 1
+	/// Productivity modifier for tools
+	var/bit_productivity_mod = 1
 
 	///////////////////////////
 	// MARK: item hover FX
@@ -298,9 +300,6 @@ GLOBAL_DATUM_INIT(welding_sparks, /mutable_appearance, mutable_appearance('icons
 	if(length(attached_bits))
 		. += "<span class='notice'>Has [length(attached_bits)] bits attached.</span>"
 		. += "<span class='notice'>Bits can be removed with Alt-Click.</span>"
-
-	if(HAS_TRAIT(src, TRAIT_BUTCHERS_HUMANS))
-		. += "<span class='warning'>Can be used to butcher dead people into meat while on harm intent.</span>"
 
 /obj/item/burn()
 	if(!QDELETED(src))
@@ -663,11 +662,6 @@ GLOBAL_DATUM_INIT(welding_sparks, /mutable_appearance, mutable_appearance('icons
 	if(isalien(M) || isslime(M)) // Aliens don't have eyes, slimes also don't have eyes!
 		to_chat(user, "<span class='warning'>You cannot locate any eyes on this creature!</span>")
 		return
-
-	if(!iscarbon(user))
-		M.LAssailant = null
-	else
-		M.LAssailant = user
 
 	src.add_fingerprint(user)
 
