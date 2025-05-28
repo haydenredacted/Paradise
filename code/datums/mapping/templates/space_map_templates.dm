@@ -400,3 +400,9 @@
 	name = "Nanotrasen Bluespace Relay"
 	description = "Nanotrasen uses relays like these to further extend telecommunications around an area of space, as well as long range beacons for easier deployment in the future. \
 		Unfortunately, the anomalous activity around Epsilon Eridani, along with orbital debris and space-faring hostiles, has rendered many of these relay stations inoperable, leaving their communications and teleportation systems offline."
+
+/datum/map_template/ruin/space/chrono_lab
+	id = "Chrono Lab"
+	suffix = "chrono_lab.dmm"
+	name = "Chrono Lab"
+	description = "ARGHHHH PING ME IF THIS IS STILL HERE"

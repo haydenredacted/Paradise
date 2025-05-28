@@ -420,6 +420,10 @@
 /obj/machinery/tcomms/chrono_lab/announcement_system,
 /turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
+"Yq" = (
+/obj/structure/sink/kitchen,
+/turf/template_noop,
+/area/ruin/space/chrono_lab)
 "YI" = (
 /obj/item/grown/bananapeel/mimanapeel,
 /turf/template_noop,
@@ -756,7 +760,7 @@ Zy
 NX
 PJ
 PJ
-Zy
+Yq
 Zy
 Mg
 Zy
