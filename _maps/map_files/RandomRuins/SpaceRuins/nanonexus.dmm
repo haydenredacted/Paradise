@@ -1,0 +1,3363 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"as" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/chair/sofa/bench/right{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "darkgreen"
+	},
+/area/space)
+"at" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/drinks/bottle/whiskey{
+	pixel_x = -7;
+	pixel_y = 20
+	},
+/obj/item/ashtray/glass{
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/item/clothing/mask/cigarette/cigar/havana{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"aN" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"aR" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/obj/effect/spawner/random/plushies,
+/obj/machinery/light,
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"bQ" = (
+/obj/structure/table,
+/obj/item/toy/figure/crew/borg{
+	pixel_x = 1;
+	pixel_y = 16
+	},
+/obj/item/toy/figure/crew/hos{
+	pixel_x = 10;
+	pixel_y = 15
+	},
+/obj/item/toy/figure/crew/ninja{
+	pixel_x = -10;
+	pixel_y = 15
+	},
+/obj/item/toy/figure/mech/marauder{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/toy/figure/owl{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"cO" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/simulated/floor/plasteel,
+/area/space)
+"dl" = (
+/obj/machinery/newscaster/directional/west,
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "red"
+	},
+/area/space)
+"dv" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "red"
+	},
+/area/space)
+"dV" = (
+/obj/docking_port/stationary/whiteship{
+	dir = 8;
+	id = "whiteship_sieged_lab";
+	name = "NanoNexus"
+	},
+/turf/space,
+/area/space)
+"ef" = (
+/obj/machinery/light/floor,
+/obj/structure/sign/poster/contraband/smoke/directional/north,
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/area/space)
+"eu" = (
+/obj/machinery/atmospherics/refill_station/plasma,
+/turf/simulated/floor/plasteel,
+/area/space)
+"eQ" = (
+/obj/structure/shelf,
+/obj/item/toy/figure/crew/wizard,
+/obj/item/toy/figure/crew/chemist,
+/obj/item/toy/figure/crew/borg,
+/obj/item/toy/figure/crew/assistant,
+/obj/item/toy/figure/crew/detective,
+/obj/item/toy/figure/crew/captain,
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"fc" = (
+/obj/structure/extinguisher_cabinet{
+	name = "east bump";
+	pixel_x = 27
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"fi" = (
+/obj/structure/railing/corner,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreencorners"
+	},
+/area/space)
+"fK" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/chair/sofa/bench{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "darkgreen"
+	},
+/area/space)
+"ha" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/map_effect/dynamic_airlock/door/exterior,
+/turf/simulated/floor/plating,
+/area/space)
+"hO" = (
+/obj/structure/chair/sofa/bench/right{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "neutralcorner"
+	},
+/area/space)
+"ii" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 1
+	},
+/obj/machinery/light,
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/space)
+"ix" = (
+/obj/structure/table,
+/obj/effect/spawner/random/toy/therapy_doll{
+	pixel_x = 1;
+	pixel_y = -12
+	},
+/obj/effect/spawner/random/toy{
+	pixel_x = -3;
+	pixel_y = 17
+	},
+/obj/item/ai_module/toy_ai{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"iI" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/chair/sofa/bench{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen";
+	dir = 8
+	},
+/area/space)
+"kd" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen";
+	dir = 1
+	},
+/area/space)
+"kv" = (
+/obj/machinery/light,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"lk" = (
+/obj/structure/marker_beacon/dock_marker,
+/obj/structure/lattice/catwalk,
+/turf/space,
+/area/space)
+"lS" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/space)
+"my" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 6
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
+"mL" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"nd" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/random/maintenance,
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"no" = (
+/obj/effect/spawner/window/shuttle,
+/turf/simulated/floor/plating,
+/area/space)
+"nt" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreencorners";
+	dir = 8
+	},
+/area/space)
+"nw" = (
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"oh" = (
+/turf/space,
+/area/space)
+"ot" = (
+/obj/structure/shelf,
+/obj/item/toy/figure/crew/hop,
+/obj/item/toy/figure/crew/syndie,
+/obj/item/toy/figure/crew/explorer,
+/obj/item/toy/figure/crew/mime,
+/obj/item/toy/figure/crew/qm,
+/obj/item/toy/figure/crew/cmo,
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"oF" = (
+/turf/simulated/wall/r_wall,
+/area/space)
+"oJ" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/dock_marker,
+/turf/space,
+/area/space)
+"pb" = (
+/obj/machinery/door/window/reinforced/reversed{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
+"pn" = (
+/turf/simulated/floor/plasteel,
+/area/space)
+"pI" = (
+/obj/machinery/light,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"qb" = (
+/obj/machinery/economy/vending/cigarette,
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "neutralcorner"
+	},
+/area/space)
+"qL" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/chair/sofa/bench/right{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen";
+	dir = 8
+	},
+/area/space)
+"re" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreencorners";
+	dir = 1
+	},
+/area/space)
+"tt" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
+"tI" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/security,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plasteel,
+/area/space)
+"uw" = (
+/obj/effect/spawner/window/reinforced/grilled,
+/turf/simulated/floor/plating,
+/area/space)
+"uX" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/lattice/catwalk,
+/turf/space,
+/area/space)
+"uZ" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/item/toy/plushie/nianplushie/moonfly,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/status_display{
+	layer = 4;
+	pixel_y = -32
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"vo" = (
+/obj/machinery/economy/vending/coffee/free,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "neutral"
+	},
+/area/space)
+"vD" = (
+/obj/effect/spawner/window/plastitanium,
+/turf/simulated/floor/plating,
+/area/space)
+"wl" = (
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "neutral"
+	},
+/area/space)
+"wm" = (
+/obj/structure/table,
+/obj/effect/spawner/random/toy/action_figure{
+	pixel_x = 11;
+	pixel_y = 6
+	},
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"wp" = (
+/obj/machinery/power/apc/directional/west,
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "red"
+	},
+/area/space)
+"wq" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/area/space)
+"xN" = (
+/turf/simulated/wall/mineral/plastitanium,
+/area/space)
+"yo" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "red"
+	},
+/area/space)
+"yy" = (
+/turf/simulated/floor/plating,
+/area/space)
+"yz" = (
+/obj/machinery/atmospherics/refill_station/oxygen,
+/turf/simulated/floor/plasteel,
+/area/space)
+"Ak" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 1
+	},
+/obj/machinery/airlock_controller/air_cycler/directional/north,
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/space)
+"Al" = (
+/obj/structure/flora/tree/jungle,
+/turf/simulated/floor/grass,
+/area/space)
+"AC" = (
+/turf/simulated/wall/mineral/titanium,
+/area/space)
+"AL" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 8
+	},
+/obj/machinery/access_button/offset/north,
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/area/space)
+"Ce" = (
+/obj/machinery/computer/crew{
+	dir = 8
+	},
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 25
+	},
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "red"
+	},
+/area/space)
+"Co" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/chair/sofa/bench/left{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen";
+	dir = 8
+	},
+/area/space)
+"Da" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 8
+	},
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/space)
+"Ds" = (
+/obj/machinery/door/airlock/titanium,
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"Dy" = (
+/turf/simulated/floor/grass,
+/area/space)
+"DC" = (
+/obj/structure/table,
+/obj/item/toy/figure/crew/clown{
+	pixel_x = 9;
+	pixel_y = 9
+	},
+/obj/item/toy/figure/crew/ce{
+	pixel_y = 15
+	},
+/obj/item/toy/figure/crew/virologist{
+	pixel_x = -9;
+	pixel_y = 12
+	},
+/obj/item/toy/figure/mech/ripley{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/toy/figure/xeno{
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"DQ" = (
+/obj/machinery/computer/nonfunctional{
+	dir = 1
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"FB" = (
+/obj/machinery/atmospherics/portable/canister/air,
+/obj/machinery/atmospherics/unary/portables_connector{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel,
+/area/space)
+"FY" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/space)
+"Gg" = (
+/obj/structure/closet/walllocker/emerglocker/directional/west,
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"Gk" = (
+/obj/machinery/economy/vending/snack,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "neutralcorner"
+	},
+/area/space)
+"Gw" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen";
+	dir = 8
+	},
+/area/space)
+"Gx" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/chair/sofa/bench/left{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "darkgreen"
+	},
+/area/space)
+"GX" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "darkgreen"
+	},
+/area/space)
+"Is" = (
+/obj/effect/map_effect/dynamic_airlock/door/interior,
+/obj/machinery/door/airlock/external/glass,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"JO" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/space)
+"JV" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/item/kirbyplants/large,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen";
+	dir = 1
+	},
+/area/space)
+"Kt" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8
+	},
+/turf/simulated/wall/mineral/plastitanium,
+/area/space)
+"Kz" = (
+/obj/structure/lattice,
+/obj/structure/lattice,
+/turf/space,
+/area/space)
+"KR" = (
+/turf/simulated/floor/plasteel{
+	dir = 6;
+	icon_state = "red"
+	},
+/area/space)
+"KY" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/space)
+"Lc" = (
+/obj/item/eftpos/register,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"Lh" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "red"
+	},
+/area/space)
+"LE" = (
+/obj/effect/map_effect/dynamic_airlock/door/interior,
+/obj/machinery/door/airlock/external/glass,
+/turf/simulated/floor/plating,
+/area/space)
+"Mq" = (
+/obj/structure/sign/poster/contraband/fun_police/directional/north,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "red"
+	},
+/area/space)
+"MO" = (
+/obj/item/toy/plushie/lizardplushie{
+	name = "Hides-In-Brush"
+	},
+/turf/simulated/floor/grass,
+/area/space)
+"Ob" = (
+/turf/simulated/floor/carpet/arcade,
+/area/space)
+"OK" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/map_effect/dynamic_airlock/door/exterior,
+/obj/machinery/access_button/offset/southwest,
+/turf/simulated/floor/plating,
+/area/space)
+"Pj" = (
+/obj/structure/lattice,
+/turf/space,
+/area/space)
+"PU" = (
+/obj/structure/railing,
+/obj/item/kirbyplants/large,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen"
+	},
+/area/space)
+"Qv" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/area/space)
+"QH" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreencorners";
+	dir = 4
+	},
+/area/space)
+"Rn" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 1
+	},
+/obj/machinery/airlock_controller/air_cycler/directional/south,
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/space)
+"RL" = (
+/obj/item/radio/intercom{
+	name = "west bump";
+	pixel_x = -28
+	},
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "red"
+	},
+/area/space)
+"SA" = (
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "neutral"
+	},
+/area/space)
+"SM" = (
+/obj/machinery/door/airlock/multi_tile/glass/directional/east,
+/turf/simulated/floor/plasteel,
+/area/space)
+"TS" = (
+/obj/structure/chair/sofa/bench/left{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutralcorner"
+	},
+/area/space)
+"Ur" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 1
+	},
+/turf/simulated/wall/mineral/titanium,
+/area/space)
+"Vs" = (
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "neutral"
+	},
+/area/space)
+"VF" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "hydrofloor"
+	},
+/area/space)
+"Wy" = (
+/obj/effect/spawner/window/reinforced/grilled,
+/turf/simulated/floor/plasteel,
+/area/space)
+"Xu" = (
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/space)
+"XK" = (
+/obj/structure/lattice/catwalk,
+/turf/space,
+/area/space)
+"Zl" = (
+/obj/structure/railing,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgreen"
+	},
+/area/space)
+"ZL" = (
+/obj/structure/table/reinforced,
+/obj/item/pen/multi/fountain{
+	pixel_x = -6;
+	pixel_y = -1
+	},
+/obj/item/folder/red{
+	pixel_x = 9
+	},
+/obj/item/storage/fancy/donut_box{
+	pixel_x = 1;
+	pixel_y = 14
+	},
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "red"
+	},
+/area/space)
+
+(1,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(2,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(3,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oJ
+Pj
+Pj
+Pj
+lk
+Pj
+Pj
+Pj
+Pj
+lk
+Pj
+Pj
+Pj
+oJ
+oh
+oh
+oh
+"}
+(4,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(5,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(6,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(7,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(8,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(9,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(10,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(11,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(12,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+lk
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+lk
+oh
+oh
+oh
+"}
+(13,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Kz
+oh
+oh
+oh
+"}
+(14,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+lk
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+lk
+oh
+oh
+oh
+"}
+(15,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oF
+oF
+oF
+oF
+oF
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(16,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+dl
+yo
+wp
+RL
+oF
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(17,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+Mq
+tt
+pn
+Lh
+oF
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(18,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+Ce
+dv
+ZL
+KR
+oF
+oF
+oF
+oF
+oF
+oF
+oF
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(19,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+Wy
+pb
+Wy
+tI
+oF
+yz
+eu
+oF
+TS
+hO
+uw
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(20,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+pn
+pn
+pn
+pn
+pn
+pn
+pn
+pn
+SM
+Qv
+wl
+uw
+oh
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(21,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+fi
+GX
+as
+fK
+Gx
+GX
+QH
+pn
+pn
+Qv
+wl
+uw
+uw
+Pj
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(22,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+Zl
+Dy
+Dy
+Dy
+Dy
+Dy
+kd
+pn
+oF
+Qv
+Vs
+qb
+uw
+Pj
+oh
+oh
+oh
+oh
+oh
+dV
+oh
+oh
+oh
+oh
+oh
+oh
+Pj
+oh
+oh
+oh
+"}
+(23,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+PU
+lS
+Dy
+Dy
+MO
+Al
+JV
+pn
+oF
+ef
+VF
+vo
+uw
+oJ
+Pj
+Pj
+Pj
+lk
+Pj
+Pj
+Pj
+Pj
+lk
+Pj
+Pj
+Pj
+XK
+oh
+oh
+oh
+"}
+(24,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+Zl
+Al
+JO
+Dy
+lS
+Dy
+kd
+pn
+oF
+Qv
+SA
+Gk
+uw
+oh
+oh
+oh
+oh
+oh
+oh
+XK
+XK
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(25,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+nt
+Gw
+Co
+iI
+qL
+Gw
+re
+pn
+SM
+Qv
+wl
+uw
+uw
+oh
+oh
+oh
+oh
+oh
+oh
+XK
+XK
+oh
+AC
+AC
+AC
+AC
+oh
+oh
+oh
+oh
+"}
+(26,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+pn
+pn
+pn
+pn
+pn
+pn
+pn
+pn
+my
+cO
+wq
+wl
+uw
+oh
+oh
+oh
+AC
+no
+AC
+oh
+XK
+XK
+Ur
+AC
+nd
+pI
+AC
+AC
+AC
+oh
+oh
+"}
+(27,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oF
+oF
+oF
+oF
+FB
+oF
+AL
+wl
+uw
+oh
+oh
+oh
+AC
+uZ
+AC
+oh
+XK
+XK
+Ds
+Gg
+nw
+nw
+nw
+at
+no
+oh
+oh
+"}
+(28,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oh
+oh
+oh
+oF
+oF
+oF
+Is
+LE
+oF
+oh
+oh
+oh
+AC
+mL
+AC
+oh
+XK
+XK
+Ds
+fc
+nw
+nw
+aN
+DQ
+no
+oh
+oh
+"}
+(29,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oF
+Ak
+ii
+oF
+oF
+oh
+oh
+AC
+Ds
+AC
+oh
+XK
+XK
+Ur
+AC
+mL
+kv
+AC
+AC
+AC
+oh
+oh
+"}
+(30,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oh
+oh
+oh
+oh
+oh
+oF
+Da
+Xu
+Xu
+OK
+XK
+XK
+uX
+XK
+XK
+uX
+uX
+uX
+oh
+AC
+AC
+AC
+AC
+oh
+oh
+oh
+oh
+"}
+(31,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oF
+oF
+oh
+oh
+oh
+oF
+Da
+Xu
+Xu
+ha
+XK
+XK
+uX
+XK
+XK
+XK
+XK
+uX
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(32,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+ix
+wm
+oF
+oF
+oh
+oh
+oF
+FY
+Rn
+oF
+oF
+oh
+oh
+oh
+oh
+Kt
+Ds
+Kt
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(33,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Ob
+Ob
+ot
+oF
+oh
+oh
+oF
+oF
+oF
+oF
+oh
+oh
+oh
+oh
+oh
+xN
+KY
+xN
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(34,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Ob
+Ob
+bQ
+oF
+oh
+oh
+yy
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+xN
+aR
+xN
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(35,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Ob
+Ob
+DC
+oF
+oh
+oh
+yy
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+xN
+vD
+xN
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(36,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Ob
+Ob
+eQ
+oF
+oh
+oh
+yy
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(37,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+Lc
+Ob
+oF
+oF
+oh
+oh
+oF
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(38,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oF
+oF
+oh
+oh
+oF
+oF
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(39,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oh
+oh
+yy
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(40,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oh
+oh
+yy
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(41,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oh
+oh
+yy
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(42,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oF
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(43,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(44,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(45,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(46,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(47,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(48,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(49,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
+(50,1,1) = {"
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+oh
+"}
