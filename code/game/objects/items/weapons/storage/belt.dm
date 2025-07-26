@@ -311,6 +311,7 @@
 		/obj/item/grenade/barrier,
 		/obj/item/grenade/flashbang,
 		/obj/item/grenade/chem_grenade/teargas,
+		/obj/item/grenade/frag/stinger,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/restraints/handcuffs,
 		/obj/item/flash,
@@ -1036,7 +1037,8 @@
 		/obj/item/organ/internal/regenerative_core,
 		/obj/item/wormhole_jaunter,
 		/obj/item/storage/bag/plants,
-		/obj/item/stack/marker_beacon)
+		/obj/item/stack/marker_beacon,
+		/obj/item/grenade/plastic/miningcharge)
 
 /obj/item/storage/belt/mining/vendor/Initialize(mapload)
 	. = ..()
