@@ -49,6 +49,19 @@
 /area/centcom/docks
 	name = "\improper Central Command Docks"
 
+/area/centcom/recieving_dock
+	name = "\improper Centcom Recieving Dock"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/centcom/medical
+	name = "\improper Centcom Medical"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/centcom/maintenance
+	name = "\improper Centcom Maintenance"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+
 // Admin areas
 
 /area/admin
