@@ -61,6 +61,14 @@
 	name = "\improper Centcom Maintenance"
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
+/area/centcom/main_hallway
+	name = "\improper Centcom Main Hallway"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/centcom/diner
+	name = "\improper Centcom Diner"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
 
 // Admin areas
 
