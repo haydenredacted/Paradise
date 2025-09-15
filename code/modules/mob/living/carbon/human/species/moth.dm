@@ -81,6 +81,8 @@
 	..()
 	var/datum/action/innate/cocoon/cocoon = new()
 	cocoon.Grant(H)
+	var/datum/action/innate/wing_cape/wing_cape = new()
+	wing_cape.Grant(H)
 	RegisterSignal(H, COMSIG_LIVING_FIRE_TICK, PROC_REF(check_burn_wings))
 	RegisterSignal(H, COMSIG_LIVING_AHEAL, PROC_REF(on_aheal))
 	RegisterSignal(H, COMSIG_HUMAN_CHANGE_BODY_ACCESSORY, PROC_REF(on_change_body_accessory))
@@ -237,9 +239,40 @@
 	owner.UpdateAppearance()
 	return ..()
 
+/datum/status_effect/gothic_wings
+	id = "gothic_wings"
+	alert_type = null
+
+/datum/status_effect/gothic_wings/on_creation(mob/living/new_owner, ...)
+	var/mob/living/carbon/human/H = new_owner
+	if(istype(H))
+		H.change_body_accessory("Gothic Wings")
+	return ..()
+
+datum/status_effect/gothic_wings/on_remove()
+	owner.UpdateAppearance()
+	return ..()
+
 /datum/status_effect/cocooned
 	id = "cocooned"
 	alert_type = null
+
+/datum/action/innate/wing_cape
+	name = "Wing Cape"
+	desc = "Cover yourself with your wings."
+	check_flags = AB_CHECK_RESTRAINED|AB_CHECK_STUNNED|AB_CHECK_CONSCIOUS|AB_CHECK_TURF
+	button_icon = 'icons/effects/effects.dmi'
+	button_icon_state = "wave3"
+
+/datum/action/innate/wing_cape/Activate()
+	var/mob/living/carbon/human/moth/H = owner
+	if(H.has_status_effect(STATUS_EFFECT_BURNT_WINGS))
+		to_chat(H, "<span class='warning'>Your wings are burnt off!</span>")
+		return
+	if(H.has_status_effect(STATUS_EFFECT_NIAN_GOTHIC))
+		to_chat(H, "<span class='warning'>You wrap your wings around you!</span>")
+		return
+
 
 #undef COCOON_HARM_AMOUNT
 #undef COCOON_NUTRITION_AMOUNT

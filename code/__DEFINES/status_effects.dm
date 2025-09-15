@@ -160,6 +160,9 @@
 /// Whether a moth's wings are burnt
 #define STATUS_EFFECT_BURNT_WINGS /datum/status_effect/burnt_wings
 
+// Which type of wings a nian has
+#define STATUS_EFFECT_NIAN_GOTHIC /datum/status_effect/gothic_wings
+
 /// If a moth is in a cocoon
 #define STATUS_EFFECT_COCOONED /datum/status_effect/cocooned
 
