@@ -1,6 +1,8 @@
 #define COCOON_HARM_AMOUNT 50
 #define COCOON_NUTRITION_AMOUNT -200
 
+#define STATUS_EFFECT_GOTHIC_WINGS "gothic_wings"
+
 /datum/species/moth
 	name = "Nian"
 	name_plural = "Nianae"
@@ -269,7 +271,7 @@ datum/status_effect/gothic_wings/on_remove()
 	if(H.has_status_effect(STATUS_EFFECT_BURNT_WINGS))
 		to_chat(H, "<span class='warning'>Your wings are burnt off!</span>")
 		return
-	if(H.has_status_effect(STATUS_EFFECT_NIAN_GOTHIC))
+	if(H.has_status_effect(STATUS_EFFECT_GOTHIC_WINGS))
 		to_chat(H, "<span class='warning'>You wrap your wings around you!</span>")
 		return
 
