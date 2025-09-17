@@ -69,6 +69,14 @@
 	name = "\improper Centcom Diner"
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
+/area/centcom/checkpoint
+	name = "\improper Centcom Checkpoint"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/centcom/cargo
+	name = "\improper Centcom Cargo Bay"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
 
 // Admin areas
 
