@@ -373,6 +373,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
 "axV" = (
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/plasteel{
 	dir = 6;
 	icon_state = "darkblue"
@@ -5763,6 +5766,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/maintenance)
 "gkD" = (
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/plasteel{
 	dir = 10;
 	icon_state = "darkblue"
@@ -10993,6 +10999,13 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate)
+"lSr" = (
+/obj/item/kirbyplants/large,
+/turf/simulated/floor/plasteel{
+	icon_regular_floor = "yellowsiding";
+	icon_state = "tranquillite"
+	},
+/area/centcom/diner)
 "lSs" = (
 /turf/simulated/floor/plasteel/grimy,
 /area/ninja/outpost)
@@ -37403,7 +37416,7 @@ gYw
 wDH
 cyF
 tVO
-mKM
+lSr
 rxp
 lWf
 kux
