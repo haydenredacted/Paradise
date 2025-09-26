@@ -144,7 +144,7 @@
 /obj/machinery/keycard_auth/proc/broadcast_request()
 	update_icon()
 	set_light(1, LIGHTING_MINIMUM_POWER)
-	for(var/obj/machinery/keycard_auth/KA in GLOB.machines)
+	for(var/obj/machinery/keycard_auth/KA in SSmachines.get_by_type(/obj/machinery/keycard_auth))
 		if(KA == src)
 			continue
 		KA.receive_request(src)
@@ -205,7 +205,7 @@
 				return
 
 			ERT_Announce(ert_reason, triggered_by, repeat_warning = FALSE)
-			addtimer(CALLBACK(src, PROC_REF(remind_admins), ert_reason, triggered_by), 15 MINUTES)
+			addtimer(CALLBACK(src, PROC_REF(remind_admins), ert_reason, triggered_by), 5 MINUTES)
 			ert_reason = null
 
 /obj/machinery/keycard_auth/proc/remind_admins(old_reason, the_triggerer) // im great at naming variables

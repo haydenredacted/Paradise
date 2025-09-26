@@ -14,17 +14,24 @@
 		linked_pos = null
 	return ..()
 
-/obj/machinery/economy/vending/custom/locked()
-	return isnull(linked_pos) || linked_pos.transaction_locked
+/obj/machinery/economy/vending/custom/locked(mob/user)
+	if(isnull(linked_pos))
+		return VENDOR_LOCKED
+	if(!linked_pos.transaction_locked)
+		return VENDOR_UNLOCKED
+	// We check loc instead of calling is_holding so that it works in a pocket.
+	if(linked_pos.loc == user)
+		return VENDOR_LOCKED_FOR_OTHERS
+	return VENDOR_LOCKED
 
 /obj/machinery/economy/vending/custom/get_vendor_account()
 	return linked_pos?.linked_account || ..()
 
 /obj/machinery/economy/vending/custom/item_interaction(mob/living/user, obj/item/used, list/modifiers)
-	if(user.a_intent == INTENT_HARM)
+	if(user.a_intent == INTENT_HARM || (used.flags & ABSTRACT))
 		return ..()
 
-	if(istype(used, /obj/item/eftpos))
+	if((isnull(linked_pos) || locked(user) != VENDOR_LOCKED) && istype(used, /obj/item/eftpos))
 		visible_message("<span class='notice'>[src] beeps as [user] links it to [used].</span>", "<span class='notice'>You hear something beep.</span>")
 		if(!isnull(linked_pos))
 			linked_pos.linked_vendors -= src
@@ -35,7 +42,7 @@
 	else if(isnull(linked_pos))
 		to_chat(user, "<span class='warning'>You need to link a point of sale device first!</span>")
 		return ITEM_INTERACT_COMPLETE
-	else if(locked())
+	else if(locked(user) == VENDOR_LOCKED)
 		return ..()
 
 	try_add_stock(user, used)
@@ -43,6 +50,10 @@
 
 /// Tries to add something to the vendor. can_wait returns INSERT_NEEDS_INPUT if it would wait for user input, quiet suppresses success messages, and bag is used when the item is being transferred from a storage item.
 /obj/machinery/economy/vending/custom/proc/try_add_stock(mob/living/user, obj/item/used, can_wait = TRUE, quiet = FALSE, obj/item/storage/bag = null)
+	if(istype(used, /obj/item/holder))
+		to_chat(user, "<span class='warning'>[used] wriggles out of your hands!</span>")
+		user.drop_item_to_ground(used)
+		return INSERT_FAIL
 	if(isnull(bag) && !user.canUnEquip(used, FALSE))
 		to_chat(user, "<span class='warning'>\The [used] is stuck to your hand!</span>")
 		return INSERT_FAIL
@@ -69,7 +80,7 @@
 					user.unequip(used)
 				else
 					bag.remove_from_storage(used)
-				used.moveToNullspace()
+				used.forceMove(src)
 				if(!quiet)
 					user.visible_message("<span class='notice'>[user] puts [used] into [src].</span>", "<span class='notice>'You put [used] into [src].</span>")
 				return INSERT_DONE
@@ -107,12 +118,14 @@
 		user.unequip(used)
 	else
 		bag.remove_from_storage(used)
-	used.moveToNullspace()
+	used.forceMove(src)
 	if(!quiet)
 		user.visible_message("<span class='notice'>[user] puts [used] into [src].</span>", "<span class='notice'>You put [used] into [src].</span>")
 	return INSERT_DONE
 
 /obj/machinery/economy/vending/custom/MouseDrop_T(atom/dragged, mob/user, params)
+	if(locked(user) == VENDOR_LOCKED)
+		return ..()
 	if(!istype(dragged, /obj/item/storage))
 		return ..()
 
@@ -143,8 +156,14 @@
 	return TRUE
 
 /obj/machinery/economy/vending/custom/crowbar_act(mob/user, obj/item/I)
-	if(!isnull(linked_pos) && linked_pos.transaction_locked)
-		user.visible_message("<span class='notice'>[user] tries to pry [src] apart, but fails.</span>", "<span class='notice'>The lock on [src] resists your efforts to pry it apart.</span>")
+	if(!isnull(linked_pos) && locked(user) == VENDOR_LOCKED)
+		user.visible_message("<span class='notice'>[user] tries to pry [src] apart, but fails.</span>", "<span class='warning'>The lock on [src] resists your efforts to pry it apart.</span>")
+		return TRUE
+	return ..()
+
+/obj/machinery/economy/vending/custom/wrench_act(mob/user, obj/item/I)
+	if(!isnull(linked_pos) && locked(user) == VENDOR_LOCKED)
+		user.visible_message("<span class='notice'>[user] tries to loosen the bolts on [src], but fails.</span>", "<span class='warning'>The lock on [src] is covering its bolts.</span>")
 		return TRUE
 	return ..()
 

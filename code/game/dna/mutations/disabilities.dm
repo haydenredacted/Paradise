@@ -100,7 +100,6 @@
 	..()
 	M.update_blind_effects()
 
-
 /datum/mutation/disability/colourblindness
 	name = "Colourblindness"
 	activation_messages = list("You feel a peculiar prickling in your eyes while your perception of colour changes.")
@@ -228,6 +227,18 @@
 /datum/mutation/disability/mute/on_say(mob/M, message)
 	return ""
 
+/datum/mutation/disability/paraplegic
+	name = "Paraplegic"
+	desc = "Your legs don't work, even with prosthetics."
+	activation_messages = list("MY LEG!")
+	deactivation_messages = list("You can feel your legs again.")
+	instability = -GENE_INSTABILITY_MAJOR
+	traits_to_add = list(TRAIT_PARAPLEGIC)
+
+/datum/mutation/disability/paraplegic/New()
+	..()
+	block = GLOB.paraplegicblock
+
 ////////////////////////////////////////
 // MARK: Harmful to everyone
 ////////////////////////////////////////
@@ -254,7 +265,7 @@
 	return TRUE
 
 /datum/mutation/disability/radioactive/on_life(mob/living/carbon/human/H)
-	radiation_pulse(H, 20)
+	radiation_pulse(H, 80, ALPHA_RAD)
 
 /datum/mutation/disability/radioactive/on_draw_underlays(mob/M, g)
 	return "rads_s"
@@ -471,8 +482,6 @@
 	base_cooldown = 600
 
 	clothes_req = FALSE
-	stat_allowed = CONSCIOUS
-	invocation_type = "none"
 	var/list/compatible_mobs = list(/mob/living/carbon/human)
 
 	action_icon_state = "genetic_incendiary"

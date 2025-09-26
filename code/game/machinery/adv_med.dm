@@ -251,7 +251,7 @@
 		var/found_disease = FALSE
 		for(var/thing in occupant.viruses)
 			var/datum/disease/D = thing
-			if(D.visibility_flags & HIDDEN_SCANNER || D.visibility_flags & HIDDEN_PANDEMIC)
+			if(D.visibility_flags & VIRUS_HIDDEN_SCANNER || D.visibility_flags & VIRUS_HIDDEN_PANDEMIC)
 				continue
 			if(istype(D, /datum/disease/critical))
 				continue
@@ -364,6 +364,7 @@
 		occupantData["blind"] = HAS_TRAIT(occupant, TRAIT_BLIND)
 		occupantData["colourblind"] = HAS_TRAIT(occupant, TRAIT_COLORBLIND)
 		occupantData["nearsighted"] = HAS_TRAIT(occupant, TRAIT_NEARSIGHT)
+		occupantData["paraplegic"] = HAS_TRAIT(occupant, TRAIT_PARAPLEGIC)
 
 	data["occupant"] = occupantData
 	return data
@@ -440,7 +441,7 @@
 		var/found_disease = FALSE
 		for(var/thing in occupant.viruses)
 			var/datum/disease/D = thing
-			if(D.visibility_flags & HIDDEN_SCANNER || D.visibility_flags & HIDDEN_PANDEMIC)
+			if(D.visibility_flags & VIRUS_HIDDEN_SCANNER || D.visibility_flags & VIRUS_HIDDEN_PANDEMIC)
 				continue
 			found_disease = TRUE
 			break
@@ -453,6 +454,8 @@
 			dat += "<font color='red'>Photoreceptor abnormalities detected.</font><br>"
 		if(HAS_TRAIT(occupant, TRAIT_NEARSIGHT))
 			dat += "<font color='red'>Retinal misalignment detected.</font><br>"
+		if(HAS_TRAIT(occupant, TRAIT_PARAPLEGIC))
+			dat += "<font color='red'>Lumbar nerves damaged.</font><br>"
 
 		dat += "<hr>"
 		dat += "<table border='1' style='width:100%'>"

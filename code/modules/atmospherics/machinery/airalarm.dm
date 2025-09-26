@@ -104,6 +104,9 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 
 	var/report_danger_level = TRUE
 
+	/// Which MILLA tick were we initialized at?
+	var/init_tick
+
 /obj/machinery/alarm/monitor
 	report_danger_level = FALSE
 
@@ -217,7 +220,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 		if(direction)
 			setDir(direction)
 
-		buildstage = 0
+		buildstage = AIR_ALARM_FRAME
 		wiresexposed = TRUE
 		set_pixel_offsets_from_dir(24, -24, 24, -24)
 
@@ -231,6 +234,8 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 
 	if(!building)
 		first_run()
+
+	init_tick = SSair.milla_tick
 
 /obj/machinery/alarm/Destroy()
 	SStgui.close_uis(wires)
@@ -246,7 +251,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 	GLOB.air_alarm_repository.update_cache(src)
 
 /obj/machinery/alarm/process()
-	if((stat & (NOPOWER|BROKEN)) || shorted || buildstage != 2)
+	if((stat & (NOPOWER|BROKEN)) || shorted || buildstage != AIR_ALARM_READY || init_tick == SSair.milla_tick)
 		return
 
 	var/turf/simulated/location = loc
@@ -553,7 +558,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 ///////////////
 
 /obj/machinery/alarm/attack_ai(mob/user)
-	if(buildstage != 2)
+	if(buildstage != AIR_ALARM_READY)
 		return
 
 	add_hiddenprint(user)
@@ -569,7 +574,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 	return interact(user)
 
 /obj/machinery/alarm/interact(mob/user)
-	if(buildstage != 2)
+	if(buildstage != AIR_ALARM_READY)
 		return
 
 	if(wiresexposed)
@@ -773,12 +778,17 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 	return thresholds
 
 /obj/machinery/alarm/ui_state(mob/user)
-	if(is_ai(user))
-		var/mob/living/silicon/ai/AI = user
-		if(!AI.lacks_power() || AI.apc_override)
-			return GLOB.always_state
+	if(issilicon(user))
+		if(is_ai(user))
+			var/mob/living/silicon/ai/AI = user
+			if(!AI.lacks_power() || AI.apc_override)
+				return GLOB.always_state
+		else
+			for(var/obj/machinery/computer/atmoscontrol/AC in view(user.client.maxview(), user))
+				if(!AC.stat)
+					return GLOB.always_state
 
-	else if(ishuman(user))
+	if(ishuman(user))
 		for(var/obj/machinery/computer/atmoscontrol/AC in range(1, user))
 			if(!AC.stat)
 				return GLOB.always_state
@@ -804,7 +814,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 		return !locked
 
 /obj/machinery/alarm/ui_status(mob/user, datum/ui_state/state)
-	if(buildstage != 2)
+	if(buildstage != AIR_ALARM_READY)
 		return UI_CLOSE
 
 	if(aidisabled && (is_ai(user) || isrobot(user)))
@@ -1037,7 +1047,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 				to_chat(user, "<span class='notice'>You insert [used] into [src].</span>")
 				playsound(get_turf(src), used.usesound, 50, TRUE)
 				qdel(used)
-				buildstage = 1
+				buildstage = AIR_ALARM_UNWIRED
 				update_icon(UPDATE_ICON_STATE)
 				return ITEM_INTERACT_COMPLETE
 	return ..()
@@ -1143,6 +1153,8 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 		if(AIR_ALARM_READY)
 			if(wiresexposed)
 				. += "<span class='notice'>The wiring could be <i>cut and removed</i> or panel could <b>screwed</b> closed.</span>"
+			else
+				. += "<span class='notice'>You can unlock an Air Alarm by using an ID with the required access on it (shortcut: <b>Alt-click</b>), or ask a local synthetic.</span>"
 
 /obj/machinery/alarm/proc/unshort_callback()
 	if(shorted)
@@ -1179,7 +1191,6 @@ Just an object used in constructing air alarms
 	w_class = WEIGHT_CLASS_SMALL
 	materials = list(MAT_METAL = 100, MAT_GLASS = 100)
 	origin_tech = "engineering=2;programming=1"
-	toolspeed = 1
 	usesound = 'sound/items/deconstruct.ogg'
 
 #undef AALARM_PRESET_HUMAN

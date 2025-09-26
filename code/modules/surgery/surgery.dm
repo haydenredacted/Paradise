@@ -49,6 +49,14 @@
 	/// How likely it should be for the surgery to cause infection: 0-1
 	var/germ_prevention_quality = 0
 
+/**
+ * Create a new surgery.
+ *
+ * Arguments:
+ * * surgery_target - The atom the target is being performed on.
+ * * surgery_location - The body zone that the surgery is being performed on.
+ * * surgery_bodypart - The body part that the surgery is being performed on.
+ */
 /datum/surgery/New(atom/surgery_target, surgery_location, surgery_bodypart)
 	..()
 	if(!surgery_target)
@@ -320,6 +328,7 @@
 	surgery.step_in_progress = TRUE
 
 	var/speed_mod = 1
+	var/fail_mod = 1
 	var/advance = FALSE
 	var/retry = FALSE
 	var/prob_success = 100
@@ -341,6 +350,8 @@
 
 	if(tool)
 		speed_mod = tool.toolspeed
+		for(var/obj/item/smithed_item/tool_bit/bit in tool.attached_bits)
+			fail_mod -= (bit.failure_rate / 100)
 
 	// Using an unoptimal tool slows down your surgery
 	var/implement_speed_mod = 1
@@ -348,7 +359,8 @@
 		implement_speed_mod = allowed_tools[implement_type] / 100.0
 
 	// They also have some interesting ways that surgery success/fail prob get evaluated, maybe worth looking at
-	speed_mod /= (get_location_modifier(target) * 1 + surgery.speed_modifier) * implement_speed_mod
+	if(!istype(surgery, /datum/surgery/dissect))
+		speed_mod /= (get_location_modifier(target) * 1 + surgery.speed_modifier) * implement_speed_mod
 	var/modded_time = time * speed_mod
 
 	if(slowdown_immune(user))
@@ -356,15 +368,20 @@
 
 	if(implement_type)	// If this is set, we aren't in an allow_hand or allow_any_item step.
 		prob_success = allowed_tools[implement_type]
-	prob_success *= get_location_modifier(target)
+	if(!istype(surgery, /datum/surgery/dissect))
+		prob_success *= get_location_modifier(target)
 
 	if(!do_after(user, modded_time, target = target))
 		surgery.step_in_progress = FALSE
 		return SURGERY_INITIATE_INTERRUPTED
 
+	if(tool && HAS_TRAIT(tool, TRAIT_SURGICAL_CANNOT_FAIL))
+		prob_success = 100 // going to snowflake this in otherwise dissections fail repeatedtly with "proper" tools.
+
 	var/chem_check_result = chem_check(target)
 	var/pain_mod = deal_pain(user, target, target_zone, tool, surgery)
 	prob_success *= pain_mod
+	prob_success *= fail_mod
 
 	var/step_result
 
@@ -393,6 +410,9 @@
 			surgery.complete(target)
 
 	surgery.step_in_progress = FALSE
+	if(tool)
+		for(var/obj/item/smithed_item/tool_bit/bit in tool.attached_bits)
+			bit.damage_bit()
 	if(advance)
 		INVOKE_ASYNC(src, PROC_REF(play_success_sound), user, target, target_zone, tool, surgery)
 		return SURGERY_INITIATE_SUCCESS
@@ -466,6 +486,8 @@
 			if(SURGERY_BLOODSPREAD_FULLBODY)
 				target.visible_message("<span class='notice'>A spray of blood coats [user].</span>")
 				H.bloody_body(target)
+	SEND_SIGNAL(tool, COMSIG_MOB_REAGENT_EXCHANGE, target)
+	tool.AddComponent(/datum/component/viral_contamination, target.viruses)
 
 /**
  * Finish a surgery step, performing anything that runs on the tail-end of a successful surgery.
@@ -494,7 +516,7 @@
  * *
  */
 /datum/surgery_step/proc/get_step_information(datum/surgery/surgery, with_tools = FALSE)
-	if(!with_tools)
+	if(!with_tools || accept_any_item || accept_hand)
 		return name
 
 	var/list/tools = list()

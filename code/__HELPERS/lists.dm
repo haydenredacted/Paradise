@@ -115,6 +115,27 @@
 
 		return "[output][and_text][input[index]]"
 
+// Returns a map in plain english as a string
+/proc/english_map(list/input, nothing_text = "nothing", and_text = " and ", comma_text = ", ", final_comma_text = "" )
+	var/total = length(input)
+	if(!total)
+		return "[nothing_text]"
+	else if(total == 1)
+		return "[input[1]]"
+	else if(total == 2)
+		return "[input[1]][and_text][input[2]]"
+	else
+		var/output = ""
+		var/index = 1
+		while(index < total)
+			if(index == total - 1)
+				comma_text = final_comma_text
+
+			output += "[input[index]] : [input[input[index]]][comma_text]"
+			index++
+
+		return "[output][and_text][input[index]] : [input[input[index]]]"
+
 //Returns list element or null. Should prevent "index out of bounds" error.
 /proc/listgetindex(list/list, index)
 	if(istype(list) && length(list))
@@ -143,6 +164,14 @@
 		return FALSE
 	for(var/type in L)
 		if(istype(D, type))
+			return TRUE
+	return FALSE
+
+/proc/is_path_in_list(P, list/L)
+	if(!L || !length(L) || !P)
+		return FALSE
+	for(var/type in L)
+		if(ispath(P, type))
 			return TRUE
 	return FALSE
 
@@ -739,6 +768,19 @@
 	LAZYINITLIST(lazy_list); \
 	LAZYINITLIST(lazy_list[key]); \
 	lazy_list[key] |= value;
+
+///Ensures the length of a list is at least I, prefilling it with V if needed. if V is a proc call, it is repeated for each new index so that list() can just make a new list for each item.
+#define LISTASSERTLEN(L, I, V...) \
+	if(length(L) < I) { \
+		var/_OLD_LENGTH = length(L); \
+		L.len = I; \
+		/* Convert the optional argument to a if check */ \
+		for(var/_USELESS_VAR in list(V)) { \
+			for(var/_INDEX_TO_ASSIGN_TO in _OLD_LENGTH+1 to I) { \
+				L[_INDEX_TO_ASSIGN_TO] = V; \
+			} \
+		} \
+	}
 
 //same, but returns nothing and acts on list in place
 /proc/shuffle_inplace(list/L)

@@ -12,7 +12,7 @@
 
 	if(length(turfs)) //Pick a turf to spawn at if we can
 		var/turf/T = pick(turfs)
-		var/obj/structure/spacevine_controller/SC = new /obj/structure/spacevine_controller(T, null, rand(30,70),rand(5,2)) //spawn a controller at turf
+		var/obj/structure/spacevine_controller/SC = new /obj/structure/spacevine_controller(T, null, rand(30, 100), rand(3, 1)) //spawn a controller at turf
 
 		// Make the event start fun - give the vine a random hostile mutation
 		if(length(SC.vines))
@@ -217,7 +217,7 @@
 		return TRUE
 
 /datum/spacevine_mutation/explosive/on_death(obj/structure/spacevine/holder, mob/hitter, obj/item/I)
-	explosion(holder.loc, 0, 0, severity, 0, 0)
+	explosion(holder.loc, 0, 0, severity, 0, 0, cause = "Explosive Spacevines")
 
 /datum/spacevine_mutation/fire_proof
 	name = "fire proof"
@@ -273,7 +273,7 @@
 	quality = SPACEVINE_MUTATION_POSITIVE
 
 /datum/spacevine_mutation/transparency/on_grow(obj/structure/spacevine/holder)
-	holder.set_opacity(0)
+	holder.set_opacity(FALSE)
 	holder.alpha = 125
 
 /datum/spacevine_mutation/thorns
@@ -393,12 +393,12 @@
 	icon = 'icons/effects/spacevines.dmi'
 	icon_state = "Light1"
 	anchored = TRUE
-	density = FALSE
 	layer = SPACEVINE_LAYER
 	mouse_opacity = MOUSE_OPACITY_OPAQUE //Clicking anywhere on the turf is good enough
 	pass_flags = PASSTABLE | PASSGRILLE
 	max_integrity = 50
 	unbuckle_time = 5 SECONDS
+	cares_about_temperature = TRUE
 	var/energy = 0
 	var/obj/structure/spacevine_controller/master = null
 	var/list/mutations = list()
@@ -446,7 +446,7 @@
 			qdel(master)
 	master = null
 	mutations.Cut()
-	set_opacity(0)
+	set_opacity(FALSE)
 	if(has_buckled_mobs())
 		unbuckle_all_mobs(force = TRUE)
 	return ..()
@@ -482,7 +482,7 @@
 			eater.say("Nom")
 		wither()
 
-/obj/structure/spacevine/attacked_by__legacy__attackchain(obj/item/I, mob/living/user)
+/obj/structure/spacevine/attacked_by(obj/item/I, mob/living/user)
 	var/damage_dealt = I.force
 	if(istype(I, /obj/item/scythe))
 		var/obj/item/scythe/S = I
@@ -643,7 +643,7 @@
 	if(!energy)
 		icon_state = pick("Med1", "Med2", "Med3")
 		energy = 1
-		set_opacity(1)
+		set_opacity(TRUE)
 	else
 		icon_state = pick("Hvy1", "Hvy2", "Hvy3")
 		energy = 2
@@ -701,7 +701,7 @@
 	if(!i && prob(100/severity))
 		wither()
 
-/obj/structure/spacevine/temperature_expose(null, temp, volume)
+/obj/structure/spacevine/temperature_expose(temp, volume)
 	..()
 	var/override = 0
 	for(var/SM_type in mutations)

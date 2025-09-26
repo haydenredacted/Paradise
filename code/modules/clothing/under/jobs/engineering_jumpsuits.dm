@@ -1,42 +1,46 @@
 /obj/item/clothing/under/rank/engineering
 	icon = 'icons/obj/clothing/under/engineering.dmi'
-
+	worn_icon = 'icons/mob/clothing/under/engineering.dmi'
+	inhand_icon_state = "engi_suit"
 	sprite_sheets = list(
-		"Human" = 'icons/mob/clothing/under/engineering.dmi',
 		"Vox" = 'icons/mob/clothing/species/vox/under/engineering.dmi',
 		"Drask" = 'icons/mob/clothing/species/drask/under/engineering.dmi',
 		"Grey" = 'icons/mob/clothing/species/grey/under/engineering.dmi',
 		"Kidan" = 'icons/mob/clothing/species/kidan/under/engineering.dmi'
-		)
+	)
 
 /obj/item/clothing/under/rank/engineering/chief_engineer
-	name = "chief engineer's jumpsuit"
-	desc = "It's a high visibility jumpsuit given to those engineers insane enough to achieve the rank of \"Chief engineer\". It has minor radiation shielding."
-	icon_state = "chief_engineer"
-	item_state = "chief_engineer"
-	item_color = "chief_engineer"
+	name = "chief engineer's uniform"
+	desc = "It's a yellow dress shirt and black slacks given to those engineers insane enough to achieve the rank of \"Chief engineer\". It has minor radiation shielding."
+	icon_state = "ce"
+	item_color = "ce"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, RAD = 5, FIRE = 200, ACID = 35)
 	resistance_flags = NONE
 
 /obj/item/clothing/under/rank/engineering/chief_engineer/skirt
-	name = "chief engineer's jumpskirt"
-	desc = "It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of \"Chief engineer\". It has minor radiation shielding."
-	icon_state = "chief_engineer_skirt"
-	item_color = "chief_engineer_skirt"
+	name = "chief engineer's skirt"
+	desc = "It's a yellow dress shirt and black skirt given to those engineers insane enough to achieve the rank of \"Chief engineer\". It has minor radiation shielding."
+	icon_state = "ce_skirt"
+	item_color = "ce_skirt"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	dyeable = TRUE
 	dyeing_key = DYE_REGISTRY_JUMPSKIRT
+
+/obj/item/clothing/under/rank/engineering/chief_engineer/turtleneck
+	name = "chief engineer's turtleneck"
+	desc = "A fancy turtleneck designed to keep the wearer cozy in a cold engineering lobby. Due to budget cuts, the material does not offer any external protection."
+	icon_state = "ce_turtle"
+	item_color = "ce_turtle"
 
 /obj/item/clothing/under/rank/engineering/atmospheric_technician
 	name = "atmospheric technician's jumpsuit"
 	desc = "It's a jumpsuit worn by atmospheric technicians."
 	icon_state = "atmos"
-	item_state = "atmos"
+	inhand_icon_state = "atmos_suit"
 	item_color = "atmos"
 	resistance_flags = NONE
 
 /obj/item/clothing/under/rank/engineering/atmospheric_technician/contortionist
-	name = "atmospheric technician's jumpsuit"
 	desc = "A light jumpsuit useful for squeezing through narrow vents."
 	resistance_flags = FIRE_PROOF
 
@@ -74,7 +78,6 @@
 	name = "engineer's jumpsuit"
 	desc = "It's an orange high visibility jumpsuit worn by engineers. It has minor radiation shielding."
 	icon_state = "engineer"
-	item_state = "engineer"
 	item_color = "engineer"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, RAD = 5, FIRE = 75, ACID = 10)
 	resistance_flags = NONE

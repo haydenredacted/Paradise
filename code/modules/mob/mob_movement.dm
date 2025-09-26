@@ -144,13 +144,7 @@
 
 	var/diagonal_factor = 1
 	if(IS_DIR_DIAGONAL(direct))
-		// For some reason, LONG_GLIDE mobs need to slow down here, but other mobs need to speed up.
-		// I'd expect one or the other to change, not both.
-		// If you can figure out why, please update this comment.
-		if(mob.appearance_flags & LONG_GLIDE)
-			diagonal_factor = sqrt(2)
-		else
-			diagonal_factor = 1 / sqrt(2)
+		diagonal_factor = sqrt(2)
 	mob.set_glide_size(DELAY_TO_GLIDE_SIZE(add_delay * diagonal_factor)) // set it now in case of pulled objects
 
 	//If the move was recent, count using old_move_delay
@@ -187,28 +181,21 @@
 
 	. = ..()
 
-	var/new_glide_size = 0
 	// Only adjust for diagonal movement if the move was *actually* diagonal
 	if(mob.loc == new_loc)
 		// Similar to the glide size calculation above, LONG_GLIDE mobs need to slow down and other mobs speed up.
 		// Unline before, we also want to calculate the new movement delay, which is increased for LONG_GLIDE mobs, and unchanged for other mobs.
 		mob.last_movement = world.time
-		if(IS_DIR_DIAGONAL(direct) && (mob.appearance_flags & LONG_GLIDE))
+		if(IS_DIR_DIAGONAL(direct))
 			add_delay *= sqrt(2)
 
-		if(visual_delay)
-			new_glide_size = visual_delay
-		else
-			new_glide_size = DELAY_TO_GLIDE_SIZE(add_delay)
-
-		if(IS_DIR_DIAGONAL(direct) && !(mob.appearance_flags & LONG_GLIDE))
-			new_glide_size *= sqrt(2)
-
-		mob.set_glide_size(new_glide_size)
-	else if(visual_delay)
-		mob.set_glide_size(visual_delay)
+	var/new_glide_size = 0
+	if(visual_delay)
+		new_glide_size = visual_delay
 	else
-		mob.set_glide_size(DELAY_TO_GLIDE_SIZE(add_delay))
+		new_glide_size = DELAY_TO_GLIDE_SIZE(add_delay)
+
+	mob.set_glide_size(new_glide_size)
 
 	move_delay += add_delay
 
@@ -353,6 +340,7 @@
 	if(continuous_move || !istype(backup) || !movement_dir || backup.anchored)
 		return TRUE
 
+	last_pushoff = world.time
 	var/opposite_dir = turn(movement_dir, 180)
 	if(backup.newtonian_move(opposite_dir)) //You're pushing off something movable, so it moves
 		to_chat(src, "<span class='notice'>You push off of [backup] to propel yourself.</span>")
@@ -392,8 +380,12 @@
 			continue
 		if(continuous_move && !pass_allowed)
 			var/datum/move_loop/move/rebound_engine = GLOB.move_manager.processing_on(rebound, SSspacedrift)
-			// If you're moving toward it and you're both going the same direction, stop
-			if(moving_direction == get_dir(src, pushover) && rebound_engine && moving_direction == rebound_engine.direction)
+			// If us and the rebound object are both drifting in the same
+			// direction, we can't push off of it. We do not check
+			// get_dir(src, pushover) because two objects drifting in the same
+			// direction may potentially occupy the same turf at some point
+			// during processing.
+			if(rebound_engine && moving_direction == rebound_engine.direction)
 				continue
 		else if(!pass_allowed)
 			if(moving_direction == get_dir(src, pushover)) // Can't push "off" of something that you're walking into

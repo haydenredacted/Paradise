@@ -83,7 +83,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 /datum/controller/master/New()
 	if(!random_seed)
-		#ifdef GAME_TESTS
+		#ifdef TEST_RUNNER
 		random_seed = 29051994
 		#else
 		random_seed = rand(1, 1e9)
@@ -255,7 +255,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 	log_startup_progress("Initializations complete within [time] second[time == 1 ? "" : "s"]!")
 
 	if(GLOB.configuration.system.toast_on_init_complete)
-		rustg_create_toast("Paradise SS13", "Server initialization complete")
+		rustlibs_create_toast("Paradise SS13", "Server initialization complete")
 
 	if(GLOB.configuration.general.developer_express_start)
 		SSticker.force_start = TRUE
