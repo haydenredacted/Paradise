@@ -81,3 +81,7 @@
 /area/ruin/lavaland_relay/Initialize(mapload)
 	name = "Nanotrasen Lavaland Relay #[rand(1, 1000)]" //Give it a random relay name
 	return ..()
+
+/area/ruin/lavaland_labryrinth
+	name = "Lavaland Labyrinth"
+	icon_state = "labyrinth"
