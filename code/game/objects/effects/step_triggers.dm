@@ -1,3 +1,10 @@
+#warn perhaps the teleport trigger could knock out the player and teleport them by making the var '[src] + 5' or something
+#warn a PDA message maybe with their ID number
+#warn typical hallucination code
+
+
+
+
 /* Simple object type, calls a proc when "stepped" on by something */
 
 /obj/effect/step_trigger
