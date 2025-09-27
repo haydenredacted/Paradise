@@ -42,5 +42,16 @@
 		"marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/telecomms",
 		"marker_insert": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/telecomms",
 		"submaps_can_repeat": true
+	},
+	{
+		"type": "MazegenHauberk",
+		"allowed_area": "/area/ruin/space/chrono_lab/mazegen",
+		"default_floor": "/turf/simulated/floor/engine",
+		"winding_percent": 20,
+		"extra_connector_chance": 20,
+		"hallway_horizontal_marker": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/hallway_horizontal",
+		"hallway_vertical_marker": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/hallway_vertical",
+		"hallway_node_marker": "/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/hallway_floor",
+		"room_configs": []
 	}
 ]

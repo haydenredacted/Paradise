@@ -318,3 +318,7 @@
 /area/ruin/space/chrono_lab/telecomms
 	name = "\improper Chrono Lab Telecomms"
 	requires_power = FALSE
+
+/area/ruin/space/chrono_lab/mazegen
+	name = "\improper Chrono Lab Maze"
+	icon_state = "chrono_lab_maze"

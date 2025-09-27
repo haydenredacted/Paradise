@@ -111,3 +111,19 @@
 	name = "Telecommunications Room"
 /obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/telecomms
 	name = "Telecommunications Room"
+
+/obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/chrono_lab/mazegen
+	name = "Chrono Lab Test Room"
+	color = COLOR_ASSEMBLY_GOLD
+
+/obj/effect/map_effect/marker/mapmanip/submap/insert/space_ruin/chrono_lab/mazegen
+	name = "Chrono Lab Test Room"
+	color = COLOR_ASSEMBLY_GOLD
+
+/obj/effect/map_effect/marker/mapmanip/submap/extract/chrono_lab/hallway_vertical
+	name = "Chrono Lab vertical hallway"
+	color = COLOR_TEAL
+
+/obj/effect/map_effect/marker/mapmanip/submap/insert/chrono_lab/hallway_vertical
+	name = "Chrono Lab vertical hallway"
+	color = COLOR_TEAL

@@ -196,6 +196,20 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/ruin/space/chrono_lab/telecomms)
+"xW" = (
+/obj/structure/showcase{
+	density = 0;
+	dir = 8;
+	icon = 'icons/mob/robots.dmi';
+	icon_state = "robot_old";
+	name = "Cyborg Statue";
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/space)
 "ya" = (
 /turf/simulated/floor/lava,
 /area/ruin/space/chrono_lab)
@@ -231,6 +245,11 @@
 /obj/structure/barricade/wooden/crude,
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
+"AJ" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/space)
 "CI" = (
 /obj/structure/spear_rack,
 /obj/item/spear/bonespear,
@@ -242,6 +261,16 @@
 /obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
 /turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
+"Ef" = (
+/obj/machinery/light{
+	active_power_consumption = 0;
+	icon_state = "tube-broken";
+	status = 2
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/space)
 "Fk" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 6
@@ -290,6 +319,9 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/template_noop,
 /area/ruin/space/chrono_lab/telecomms)
+"GP" = (
+/turf/simulated/wall/indestructible/riveted,
+/area/space)
 "HG" = (
 /obj/machinery/atmospherics/unary/tank/oxygen_agent_b,
 /turf/template_noop,
@@ -299,6 +331,14 @@
 	icon_state = "dark"
 	},
 /area/ruin/space/chrono_lab/telecomms)
+"IM" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/space)
 "IR" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -321,6 +361,14 @@
 /obj/machinery/porta_turret/syndicate/chrono_lab,
 /turf/template_noop,
 /area/ruin/space/chrono_lab)
+"MW" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/space)
 "NA" = (
 /obj/machinery/tcomms/chrono_lab/broadcaster,
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -483,6 +531,346 @@ PJ
 (2,1,1) = {"
 PJ
 PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+AJ
+MW
+AJ
+PJ
+PJ
+PJ
+"}
+(3,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+AJ
+AJ
+AJ
+PJ
+PJ
+PJ
+"}
+(4,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+AJ
+AJ
+xW
+PJ
+PJ
+PJ
+"}
+(5,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+GP
+AJ
+GP
+PJ
+PJ
+PJ
+"}
+(6,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+GP
+GP
+AJ
+AJ
+AJ
+PJ
+PJ
+PJ
+"}
+(7,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+AJ
+AJ
+AJ
+AJ
+AJ
+PJ
+PJ
+PJ
+"}
+(8,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+AJ
+AJ
+AJ
+AJ
+AJ
+PJ
+PJ
+PJ
+"}
+(9,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+GP
+IM
+AJ
+Ef
+GP
+PJ
+PJ
+PJ
+"}
+(10,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+GP
+AJ
+AJ
+AJ
+AJ
+AJ
+PJ
+PJ
+PJ
+"}
+(11,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+"}
+(12,1,1) = {"
+PJ
+PJ
 Zy
 Zy
 NX
@@ -514,7 +902,7 @@ PJ
 PJ
 PJ
 "}
-(3,1,1) = {"
+(13,1,1) = {"
 PJ
 PJ
 tF
@@ -548,7 +936,7 @@ PJ
 PJ
 PJ
 "}
-(4,1,1) = {"
+(14,1,1) = {"
 PJ
 PJ
 fZ
@@ -582,7 +970,7 @@ PJ
 PJ
 PJ
 "}
-(5,1,1) = {"
+(15,1,1) = {"
 PJ
 PJ
 FZ
@@ -616,7 +1004,7 @@ PJ
 PJ
 PJ
 "}
-(6,1,1) = {"
+(16,1,1) = {"
 PJ
 PJ
 PT
@@ -650,7 +1038,7 @@ PJ
 PJ
 PJ
 "}
-(7,1,1) = {"
+(17,1,1) = {"
 PJ
 PJ
 Zy
@@ -684,7 +1072,7 @@ PJ
 PJ
 PJ
 "}
-(8,1,1) = {"
+(18,1,1) = {"
 PJ
 PJ
 PJ
@@ -718,7 +1106,7 @@ PJ
 PJ
 PJ
 "}
-(9,1,1) = {"
+(19,1,1) = {"
 PJ
 PJ
 PJ
@@ -752,7 +1140,7 @@ PJ
 PJ
 PJ
 "}
-(10,1,1) = {"
+(20,1,1) = {"
 PJ
 PJ
 Zy
@@ -786,7 +1174,7 @@ PJ
 PJ
 PJ
 "}
-(11,1,1) = {"
+(21,1,1) = {"
 PJ
 PJ
 Gk
@@ -820,7 +1208,7 @@ PJ
 PJ
 PJ
 "}
-(12,1,1) = {"
+(22,1,1) = {"
 PJ
 PJ
 xq
@@ -854,7 +1242,7 @@ PJ
 PJ
 PJ
 "}
-(13,1,1) = {"
+(23,1,1) = {"
 PJ
 PJ
 vm
@@ -888,7 +1276,7 @@ PJ
 PJ
 PJ
 "}
-(14,1,1) = {"
+(24,1,1) = {"
 PJ
 PJ
 zF
@@ -922,7 +1310,7 @@ PJ
 PJ
 PJ
 "}
-(15,1,1) = {"
+(25,1,1) = {"
 PJ
 PJ
 Zy
@@ -956,7 +1344,7 @@ PJ
 PJ
 PJ
 "}
-(16,1,1) = {"
+(26,1,1) = {"
 PJ
 PJ
 PJ
@@ -990,7 +1378,7 @@ PJ
 PJ
 PJ
 "}
-(17,1,1) = {"
+(27,1,1) = {"
 PJ
 PJ
 PJ
@@ -1024,7 +1412,7 @@ PJ
 PJ
 PJ
 "}
-(18,1,1) = {"
+(28,1,1) = {"
 PJ
 PJ
 PJ
@@ -1058,7 +1446,7 @@ PJ
 PJ
 PJ
 "}
-(19,1,1) = {"
+(29,1,1) = {"
 PJ
 PJ
 PJ
@@ -1092,7 +1480,7 @@ PJ
 PJ
 PJ
 "}
-(20,1,1) = {"
+(30,1,1) = {"
 PJ
 PJ
 PJ
@@ -1122,346 +1510,6 @@ tK
 Gh
 tK
 tK
-PJ
-PJ
-PJ
-"}
-(21,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-"}
-(22,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-If
-ej
-If
-PJ
-PJ
-PJ
-"}
-(23,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-If
-If
-If
-PJ
-PJ
-PJ
-"}
-(24,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-If
-If
-hT
-PJ
-PJ
-PJ
-"}
-(25,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-ZW
-If
-ZW
-PJ
-PJ
-PJ
-"}
-(26,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-ZW
-ZW
-If
-If
-If
-PJ
-PJ
-PJ
-"}
-(27,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-If
-If
-If
-If
-If
-PJ
-PJ
-PJ
-"}
-(28,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-If
-If
-If
-If
-If
-PJ
-PJ
-PJ
-"}
-(29,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-ZW
-yU
-If
-xM
-ZW
-PJ
-PJ
-PJ
-"}
-(30,1,1) = {"
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-PJ
-ZW
-If
-If
-If
-If
-If
 PJ
 PJ
 PJ
@@ -1501,6 +1549,312 @@ PJ
 PJ
 "}
 (32,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+If
+ej
+If
+PJ
+PJ
+PJ
+"}
+(33,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+If
+If
+If
+PJ
+PJ
+PJ
+"}
+(34,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+If
+If
+hT
+PJ
+PJ
+PJ
+"}
+(35,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+ZW
+If
+ZW
+PJ
+PJ
+PJ
+"}
+(36,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+ZW
+ZW
+If
+If
+If
+PJ
+PJ
+PJ
+"}
+(37,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+If
+If
+If
+If
+If
+PJ
+PJ
+PJ
+"}
+(38,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+If
+If
+If
+If
+If
+PJ
+PJ
+PJ
+"}
+(39,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+ZW
+yU
+If
+xM
+ZW
+PJ
+PJ
+PJ
+"}
+(40,1,1) = {"
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+PJ
+ZW
+If
+If
+If
+If
+If
+PJ
+PJ
+PJ
+"}
+(41,1,1) = {"
 PJ
 PJ
 PJ
