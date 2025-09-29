@@ -1,4 +1,4 @@
-#warn perhaps the teleport trigger could knock out the player and teleport them by making the var '[src] + 5' or something
+#warn perhaps the teleport trigger could knock out the player and teleport them by making the var 'src + 5' or something
 #warn a PDA message maybe with their ID number
 #warn typical hallucination code
 
