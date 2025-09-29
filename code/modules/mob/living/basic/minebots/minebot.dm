@@ -35,6 +35,8 @@
 		/datum/pet_command/free/minebot,
 		/datum/pet_command/follow,
 		/datum/pet_command/attack/minebot,
+		/datum/pet_command/flip,
+		/datum/pet_command/spin
 	)
 
 /mob/living/basic/mining_drone/Initialize(mapload)

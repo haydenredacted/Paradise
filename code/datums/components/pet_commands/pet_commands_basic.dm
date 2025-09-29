@@ -221,3 +221,25 @@
 
 /datum/pet_command/move/retrieve_command_text(atom/living_pet, atom/target)
 	return "signals [living_pet] to move!"
+
+/datum/pet_command/flip
+	command_name = "flip"
+	command_desc = "Command your pet to spin!"
+	speech_commands = list("flip", "style on them")
+	command_feedback = "flips!"
+
+/datum/pet_command/flip/execute_action(datum/ai_controller/controller)
+	controller.pawn.SpinAnimation(5, 1)
+	controller.clear_blackboard_key(BB_ACTIVE_PET_COMMAND)
+	return SUBTREE_RETURN_FINISH_PLANNING
+
+/datum/pet_command/spin
+	command_name = "Spin"
+	command_desc = "Command your pet to spin!"
+	speech_commands = list("spin", "twirl")
+	command_feedback = "spins!"
+
+/datum/pet_command/spin/execute_action(datum/ai_controller/controller)
+	controller.pawn.spin(20, 1)
+	controller.clear_blackboard_key(BB_ACTIVE_PET_COMMAND)
+	return SUBTREE_RETURN_FINISH_PLANNING
