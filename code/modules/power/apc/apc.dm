@@ -11,7 +11,6 @@
 	name = "area power controller"
 	desc = "A control terminal for the area electrical systems."
 	icon_state = "apc0"
-	max_integrity = 200
 	integrity_failure = 50
 	resistance_flags = FIRE_PROOF
 	req_access = list(ACCESS_ENGINE_EQUIP)
@@ -23,6 +22,8 @@
 	// These exist here and not as defines in `apc_defines.dm` so they can be modified for `test_apc_construction.dm`.
 	var/apc_frame_welding_time = 2 SECONDS
 	var/apc_terminal_wiring_time = 2 SECONDS
+	var/frame_type = /obj/item/mounted/frame/apc_frame
+	var/sheet_type = /obj/item/stack/sheet/metal
 
 	// set so that APCs aren't found as powernet nodes //Hackish, Horrible, was like this before I changed it :(
 	powernet = 0
@@ -189,7 +190,7 @@
 	electronics_state = APC_ELECTRONICS_INSTALLED
 	// is starting with a power cell installed, create it and set its charge level
 	if(cell_type)
-		cell = new /obj/item/stock_parts/cell/upgraded(src)
+		cell = new /obj/item/stock_parts/cell(src)
 		cell.maxcharge = cell_type	// cell_type is maximum charge (old default was 1000 or 2500 (values one and two respectively)
 		cell.charge = start_charge * cell.maxcharge / 100 		// (convert percentage to actual value)
 
@@ -227,6 +228,7 @@
 				. += "Electronics installed but not wired."
 			else /* if(!has_electronics() && !terminal) */
 				. += "There are no electronics nor connected wires."
+			. += shock_proof ? "There is additional plastic insulation" : "There is a place to put in some plastic insulation"
 		else
 			if(stat & MAINT)
 				. += "The cover is closed. Something wrong with it: it doesn't work."
@@ -234,7 +236,7 @@
 				. += "The cover is broken. It may be hard to force it open."
 			else
 				. += "The cover is closed."
-	. += "<span class='notice'>This powerful, yet small, device powers the entire room in which it is located. From lighting, airlocks, and equipment, an APC is able to power it all! You can unlock an APC by using an ID with the required access on it, or by a local synthetic.</span>"
+	. += "<span class='notice'>This powerful, yet small, device powers the entire room in which it is located. Of lighting, airlocks, and equipment, an APC is able to power it all! You can unlock an APC by using an ID with the required access on it (shortcut: <b>Alt-click</b>), or ask a local synthetic.</span>"
 	. += "<span class='notice'>The enviroment setting controls the gas and airlock power.</span>"
 	. += "<span class='notice'>The lighting setting controls the power of all the lighting of the room.</span>"
 	. += "<span class='notice'>The equipment setting controls the power of all machines and computers in the room.</span>"
@@ -331,8 +333,33 @@
 	// Adding APC electronics.
 	if(istype(used, /obj/item/apc_electronics) && opened)
 		if(has_electronics())
-			to_chat(user, "<span class='warning'>[src] already contains APC electronics!</span>")
-			return ITEM_INTERACT_COMPLETE
+			if(user.mind && HAS_TRAIT(user.mind, TRAIT_ELECTRICAL_SPECIALIST))
+				if(stat & BROKEN)
+					to_chat(user, "<span class='warning'>[src] is damaged! You must repair the frame before you can install [used]!</span>")
+					return ITEM_INTERACT_COMPLETE
+				if(malfhack)
+					malfai = null
+					malfhack = FALSE
+					user.visible_message(\
+						"<span class='notice'>[name] has discarded the strangely programmed APC electronics from [src]!</span>",
+						"<span class='notice'>You discarded the strangely programmed board.</span>",
+						"<span class='warning'>You hear metallic levering.</span>"
+						)
+				else
+					user.visible_message(
+							"<span class='notice'>[user] exchanges out broken the APC electronics inside [src]!</span>",
+							"<span class='notice'>You carefully remove the charred electronics, replacing it with a functional board.</span>",
+							"<span class='warning'>You hear metallic levering and a crack, followed by a gentle click.</span>")
+				playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
+				qdel(used)
+				electronics_state = APC_ELECTRONICS_INSTALLED
+				locked = FALSE
+				stat &= ~MAINT
+				update_icon()
+				return ITEM_INTERACT_COMPLETE
+			else
+				to_chat(user, "<span class='warning'>[src] already contains APC electronics!</span>")
+				return ITEM_INTERACT_COMPLETE
 
 		if(stat & BROKEN)
 			to_chat(user, "<span class='warning'>[src] is damaged! You must repair the frame before you can install [used]!</span>")
@@ -352,7 +379,7 @@
 		return ITEM_INTERACT_COMPLETE
 
 	// APC frame repair. Instant, but you consume 2 metal instead of doing it for free.
-	if(istype(used, /obj/item/mounted/frame/apc_frame) && opened)
+	if(istype(used, frame_type) && opened)
 		if(!(stat & BROKEN || opened == APC_COVER_OFF || obj_integrity < max_integrity))
 			to_chat(user, "<span class='warning'>[src] has no damage to fix!</span>")
 			return ITEM_INTERACT_COMPLETE
@@ -368,7 +395,7 @@
 			update_icon()
 			return ITEM_INTERACT_COMPLETE
 
-		if(has_electronics())
+		if(has_electronics() && user.mind && !HAS_TRAIT(user.mind, TRAIT_ELECTRICAL_SPECIALIST))
 			to_chat(user, "<span class='warning'>You cannot repair [src] until you remove the electronics!</span>")
 			return ITEM_INTERACT_COMPLETE
 
@@ -382,6 +409,26 @@
 		if(opened == APC_COVER_OFF)
 			opened = APC_OPENED
 		update_icon()
+		return ITEM_INTERACT_COMPLETE
+
+	if(istype(used, /obj/item/stack/sheet/plastic))
+		var/obj/item/stack/sheet/plastic/plastic_stack = used
+		if(!opened)
+			to_chat(user, "<span class='warning'>You can't add insulation with the cover closed!</span>")
+			return ITEM_INTERACT_COMPLETE
+
+		if(shock_proof)
+			to_chat(user, "<span class='warning'>[src] already has extra insulation installed!</span>")
+			return ITEM_INTERACT_COMPLETE
+
+		if(plastic_stack.get_amount() < 10)
+			to_chat(user, "<span class='warning'>You need ten sheets of plastic to add insulation to [src]!</span>")
+			return ITEM_INTERACT_COMPLETE
+
+		plastic_stack.use(10)
+		to_chat(user, "<span class='notice'>You add extra insulation to [src].</span>")
+		shock_proof = TRUE
+
 		return ITEM_INTERACT_COMPLETE
 
 	return ..()
@@ -417,6 +464,11 @@
 			cell = null
 			charging = APC_NOT_CHARGING
 			update_icon()
+		else if(shock_proof)
+			to_chat(user, "<span class='info'>You remove the insulation from [src]</span>")
+			var/obj/item/stack/sheet/plastic/plastic_stack = new(loc, 10)
+			user.put_in_hands(plastic_stack)
+			shock_proof = FALSE
 		return
 
 	if(stat & (BROKEN|MAINT))
@@ -835,8 +887,10 @@
 	if(obj_integrity > integrity_failure || opened != APC_COVER_OFF)
 		return
 	var/drop_loc = drop_location()
-	new /obj/item/stack/sheet/metal(drop_loc, 3) // Metal from the frame
+	new sheet_type(drop_loc, 3) // Metal from the frame
 	new /obj/item/stack/cable_coil(drop_loc, 10) // wiring from the terminal and the APC, some lost due to explosion
+	if(shock_proof)
+		new /obj/item/stack/sheet/plastic(drop_loc, 10)
 	QDEL_NULL(terminal) // We don't want floating terminals
 	qdel(src)
 
@@ -1107,6 +1161,17 @@
 /obj/machinery/power/apc/critical
 	cell_type = 25000
 
+/// Can handle any amount of power. Made with plasteel frames and is found in maints and other high power areas.
+/obj/machinery/power/apc/reinforced
+	shock_proof = TRUE
+
+/obj/machinery/power/apc/reinforced/important
+	cell_type = 10000
+
+/obj/machinery/power/apc/reinforced/critical
+	cell_type = 25000
+
+
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc, 24, 24)
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/syndicate, 24, 24)
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/syndicate/off, 24, 24)
@@ -1115,6 +1180,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/critical, 24, 24)
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/off_station, 24, 24)
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/off_station/empty_charge, 24, 24)
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/worn_out, 24, 24)
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/reinforced, 24, 24)
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/reinforced/important, 24, 24)
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/reinforced/critical, 24, 24)
 
 
 /obj/item/apc_electronics
@@ -1122,9 +1190,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/worn_out, 24, 24)
 	desc = "Heavy-duty switching circuits for power control."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "power_mod"
+	inhand_icon_state = "electronic"
 	w_class = WEIGHT_CLASS_SMALL
 	origin_tech = "engineering=2;programming=1"
-	item_state = "electronic"
 	flags = CONDUCT
 	usesound = 'sound/items/deconstruct.ogg'
-	toolspeed = 1

@@ -264,8 +264,8 @@
 	user.next_move_modifier *= BERSERK_ATTACK_SPEED_MODIFIER
 	user.add_atom_colour(BERSERK_COLOUR, TEMPORARY_COLOUR_PRIORITY)
 	ADD_TRAIT(user, TRAIT_CHUNKYFINGERS, BERSERK_TRAIT)
-	flags |= NODROP
-	suit.flags |= NODROP
+	set_nodrop(TRUE)
+	suit.set_nodrop(TRUE, loc)
 	berserk_active = TRUE
 	START_PROCESSING(SSobj, src)
 
@@ -284,8 +284,8 @@
 	user.next_move_modifier /= BERSERK_ATTACK_SPEED_MODIFIER
 	user.remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, BERSERK_COLOUR)
 	REMOVE_TRAIT(user, TRAIT_CHUNKYFINGERS, BERSERK_TRAIT)
-	flags &= ~NODROP
-	suit.flags &= ~NODROP
+	set_nodrop(FALSE)
+	suit.set_nodrop(FALSE)
 	STOP_PROCESSING(SSobj, src)
 
 /datum/action/item_action/berserk_mode
@@ -377,7 +377,7 @@
 	..()
 	if(!activated || QDELETED(src))
 		return
-	addtimer(CALLBACK(src, PROC_REF(try_attach_to_owner)), 0) // Do this once the drop call stack is done. The holding limb might be getting removed
+	END_OF_TICK(CALLBACK(src, PROC_REF(try_attach_to_owner))) // Do this once the drop call stack is done. The holding limb might be getting removed
 
 /obj/item/rod_of_asclepius/proc/try_attach_to_owner()
 	if(!ishuman(owner) || QDELETED(owner))
@@ -396,7 +396,7 @@
 		qdel(src) // Oh no! Oh well a new rod will be made from the STATUS_EFFECT_HIPPOCRATIC_OATH
 		return
 
-	flags |= NODROP // Readd the nodrop
+	set_nodrop(TRUE, loc)
 	var/mob/living/carbon/human/H = owner
 	var/limb_regrown = FALSE
 
@@ -523,8 +523,8 @@
 	lefthand_file = 'icons/mob/inhands/weapons_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons_righthand.dmi'
 	force = 15
-	armour_penetration_percentage = 40
-	armour_penetration_flat = 10
+	armor_penetration_percentage = 40
+	armor_penetration_flat = 10
 	sharp = TRUE
 	w_class = WEIGHT_CLASS_HUGE
 	attack_verb = list("attack", "slash", "stab", "slice", "tear", "lacerate", "rip", "dice", "cut")

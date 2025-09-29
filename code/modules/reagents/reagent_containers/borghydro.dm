@@ -3,7 +3,6 @@
 /obj/item/reagent_containers/borghypo
 	name = "Cyborg Hypospray"
 	desc = "An advanced chemical synthesizer and injection system, designed for heavy-duty medical equipment."
-	item_state = "hypo"
 	icon = 'icons/obj/hypo.dmi'
 	icon_state = "borghypo"
 	possible_transfer_amounts = list(1, 2, 3, 4, 5, 10, 15, 20, 25, 30)
@@ -85,21 +84,19 @@
 			return TRUE
 	return FALSE
 
-/obj/item/reagent_containers/borghypo/interact_with_atom(atom/target, mob/living/user, list/modifiers)
-	if(ishuman(target))
-		var/mob/living/carbon/human/mob = target
-		if(!reagent_ids[reagent_selected])
-			to_chat(user, "<span class='warning'>The injector is empty.</span>")
-			return ITEM_INTERACT_COMPLETE
-		if(!mob.can_inject(user, TRUE, user.zone_selected, penetrate_thick))
-			return ITEM_INTERACT_COMPLETE
-
+/obj/item/reagent_containers/borghypo/mob_act(mob/target, mob/living/user)
+	if(!ishuman(target))
+		return
+	if(!reagent_ids[reagent_selected])
+		to_chat(user, "<span class='warning'>The injector is empty.</span>")
+		return
+	var/mob/living/carbon/human/mob = target
+	if(mob.can_inject(user, TRUE, user.zone_selected, penetrate_thick))
 		to_chat(user, "<span class='notice'>You inject [mob] with [src].</span>")
 		to_chat(mob, "<span class='notice'>You feel a tiny prick!</span>")
 		var/reagents_to_transfer = min(amount_per_transfer_from_this, reagent_ids[reagent_selected])
 		mob.reagents.add_reagent(reagent_selected, reagents_to_transfer)
 		reagent_ids[reagent_selected] -= reagents_to_transfer
-		user.changeNext_move(CLICK_CD_MELEE)
 		START_PROCESSING(SSobj, src) // start processing so we can refill hypo
 		if(play_sound)
 			playsound(loc, 'sound/goonstation/items/hypo.ogg', 80, FALSE)
@@ -108,10 +105,6 @@
 			var/contained = injected.name
 			add_attack_logs(user, mob, "Injected with [name] containing [contained], transfered [reagents_to_transfer] units", injected.harmless ? ATKLOG_ALMOSTALL : null)
 			to_chat(user, "<span class='notice'>[reagents_to_transfer] units injected. [reagent_ids[reagent_selected]] units remaining.</span>")
-		return ITEM_INTERACT_COMPLETE
-
-	if(isliving(target)) // ignore non-human mobs
-		return ITEM_INTERACT_COMPLETE
 
 /obj/item/reagent_containers/borghypo/proc/get_radial_contents()
 	return reagent_icons & reagent_ids
@@ -128,10 +121,10 @@
 	to_chat(user, "<span class='notice'>Synthesizer is now dispensing [R.name].</span>")
 	reagent_selected = selected_reagent
 
-/obj/item/reagent_containers/borghypo/examine(mob/user)
-	. = ..()
+/// Overriding because this is not really a reagent container
+/obj/item/reagent_containers/borghypo/build_reagent_description(mob/user)
 	var/datum/reagent/get_reagent_name = GLOB.chemical_reagents_list[reagent_selected]
-	. |= "<span class='notice'>Contains [reagent_ids[reagent_selected]] units of [get_reagent_name.name].</span>"
+	return "<span class='notice'>Contains [reagent_ids[reagent_selected]] units of [get_reagent_name.name].</span>"
 
 /obj/item/reagent_containers/borghypo/emag_act(mob/user)
 	if(!emagged)

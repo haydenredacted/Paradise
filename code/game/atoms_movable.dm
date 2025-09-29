@@ -102,6 +102,8 @@
 			render_target = ref(src)
 			em_block = new(src, render_target)
 			add_overlay(list(em_block))
+	if(opacity)
+		AddElement(/datum/element/light_blocking)
 
 /atom/movable/proc/update_emissive_block()
 	if(!em_block && !QDELETED(src))
@@ -110,7 +112,6 @@
 	add_overlay(list(em_block))
 
 /atom/movable/Destroy()
-	var/turf/T = loc
 	unbuckle_all_mobs(force = TRUE)
 	QDEL_NULL(em_block)
 
@@ -131,11 +132,8 @@
 			qdel(move_packet)
 		move_packet = null
 
-	if(opacity && istype(T))
-		var/old_has_opaque_atom = T.has_opaque_atom
-		T.recalc_atom_opacity()
-		if(old_has_opaque_atom != T.has_opaque_atom)
-			T.reconsider_lights()
+	if(opacity)
+		RemoveElement(/datum/element/light_blocking)
 
 //Returns an atom's power cell, if it has one. Overload for individual items.
 /atom/movable/proc/get_cell()
@@ -239,6 +237,7 @@
 /// To be removed on step_ conversion.
 /// All this work to prevent a second bump.
 /atom/movable/Move(atom/newloc, direction, glide_size_override = 0, update_dir = TRUE, momentum_change = TRUE)
+	CAN_BE_REDEFINED(TRUE)
 	. = FALSE
 	if(!newloc || newloc == loc)
 		return
@@ -960,14 +959,6 @@
 /// Easy way to remove the component when the fun has been played out
 /atom/movable/proc/stop_deadchat_plays()
 	DeleteComponent(/datum/component/deadchat_control)
-
-/atom/movable/vv_get_dropdown()
-	. = ..()
-	if(!GetComponent(/datum/component/deadchat_control))
-		.["Give deadchat control"] = "byond://?_src_=vars;grantdeadchatcontrol=[UID()]"
-	else
-		.["Remove deadchat control"] = "byond://?_src_=vars;removedeadchatcontrol=[UID()]"
-
 
 //Update the screentip to reflect what we're hovering over
 /atom/movable/MouseEntered(location, control, params)

@@ -1,3 +1,4 @@
+GLOBAL_LIST_INIT(turf_rad_item_cache, list("[ALPHA_RAD]" = list(), "[BETA_RAD]" = list(), "[GAMMA_RAD]" = list()))
 #define WRAP_INDEX(index, length)((index - 1) % length + 1)
 
 /datum/radiation_wave
@@ -67,7 +68,7 @@
 		weight_right = index < (2 * steps) ? weights[WRAP_INDEX((index + offset), weight_length)] : 0
 		// The weight of the current tile the average of the weights of the tiles we checked for earlier
 		// And is reduced by irradiating things and getting blocked
-		if(weight_left + weight_center + weight_right)
+		if(current_turf && (weight_left + weight_center + weight_right))
 			new_weights += radiate(source, current_turf, (ratio) * (weight_left + weight_center + weight_right) / ((1 + (index > 1 && index < (2 * steps + 1) && steps > 1) + (index > 2 && index < (2 * steps)))), emission_type)
 		else
 			new_weights += 0
@@ -83,11 +84,11 @@
 
 /// Calls rad act on each relevant atom in the turf and returns the resulting weight for that tile after reduction by insulation
 /datum/radiation_wave/proc/radiate(atom/source, turf/current_turf, weight, emission_type)
-	var/list/turf_atoms = list()
-	if(length(current_turf.contents))
-		turf_atoms = get_rad_contents(current_turf, emission_type)
-	else
-		turf_atoms = list(current_turf)
+	// populate cache if needed
+	if(!GLOB.turf_rad_item_cache["[emission_type]"][current_turf])
+		GLOB.turf_rad_item_cache["[emission_type]"][current_turf] = get_rad_contents(current_turf, emission_type)
+
+	var/list/turf_atoms = GLOB.turf_rad_item_cache["[emission_type]"][current_turf]
 	for(var/k in turf_atoms)
 		var/atom/thing = k
 		if(QDELETED(thing))
