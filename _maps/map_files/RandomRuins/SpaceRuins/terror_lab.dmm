@@ -16,6 +16,16 @@
 /obj/structure/sign/poster/official/random/directional/south,
 /turf/simulated/floor/mineral/titanium,
 /area/space)
+"bz" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/black,
+/area/space)
 "bB" = (
 /turf/simulated/floor/plasteel{
 	dir = 9;
@@ -108,6 +118,9 @@
 /area/space)
 "jy" = (
 /obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor/carpet/black,
 /area/space)
 "kz" = (
@@ -139,6 +152,14 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "neutralcorner"
 	},
+/area/space)
+"nE" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/computer/loreconsole,
+/turf/simulated/floor/carpet/black,
 /area/space)
 "oF" = (
 /turf/simulated/floor/plasteel{
@@ -430,6 +451,13 @@
 "OI" = (
 /turf/simulated/floor/carpet/black,
 /area/space)
+"PD" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/black,
+/area/space)
 "PH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -456,9 +484,18 @@
 "Ry" = (
 /turf/simulated/wall/mineral/titanium/nodiagonal,
 /area/space)
+"SO" = (
+/turf/simulated/floor/transparent/glass,
+/area/space)
 "To" = (
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp/green,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/simulated/floor/carpet/black,
 /area/space)
 "TJ" = (
@@ -488,6 +525,13 @@
 "Vx" = (
 /obj/effect/spawner/window/reinforced/grilled,
 /turf/simulated/floor/plating,
+/area/space)
+"Wh" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/classic/reversed{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/black,
 /area/space)
 "Wy" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2700,9 +2744,9 @@ wN
 Am
 Am
 oF
-wN
-wN
-wN
+SO
+SO
+SO
 MS
 Am
 wN
@@ -2779,9 +2823,9 @@ wN
 Am
 mz
 fp
-wN
-wN
-wN
+SO
+SO
+SO
 MS
 Am
 wN
@@ -2939,7 +2983,7 @@ fp
 CC
 CC
 CC
-jy
+PD
 OI
 wN
 wN
@@ -3018,7 +3062,7 @@ Ux
 CC
 CC
 CC
-jy
+Wh
 lm
 wN
 wN
@@ -3097,8 +3141,8 @@ oF
 CC
 CC
 CC
-jy
-jy
+bz
+nE
 Am
 wN
 wN
@@ -3174,9 +3218,9 @@ wN
 Am
 sU
 Ux
-wN
-wN
-wN
+SO
+SO
+SO
 MS
 Am
 wN
@@ -3253,9 +3297,9 @@ wN
 Am
 Am
 oF
-wN
-wN
-wN
+SO
+SO
+SO
 MS
 Am
 wN
