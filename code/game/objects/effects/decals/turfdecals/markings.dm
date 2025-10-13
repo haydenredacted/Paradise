@@ -193,6 +193,9 @@
 /obj/effect/turf_decal/siding
 	icon_state = "sidingline"
 
+/obj/effect/turf_decal/siding/light_red
+	color = COLOR_RED_LIGHT
+
 /obj/effect/turf_decal/siding/end
 	icon_state = "siding_end"
 

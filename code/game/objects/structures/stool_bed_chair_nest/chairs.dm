@@ -708,3 +708,11 @@
 		user.visible_message("<span class='notice'>[user] stops [src]'s uncontrollable spinning.</span>", \
 		"<span class='notice'>You grab [src] and stop its wild spinning.</span>")
 		STOP_PROCESSING(SSfastprocess, src)
+
+/obj/structure/chair/beach
+	name = "beach chair"
+	desc = "A wooden beach chair. You could definitely fall asleep in this."
+	icon_state = "beach_chair_blue"
+
+/obj/structure/chair/beach/red
+	icon_state = "beach_chair_red"
