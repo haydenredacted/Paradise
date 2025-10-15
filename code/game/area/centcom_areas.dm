@@ -130,6 +130,7 @@
 	icon_state = "observatory"
 	requires_power = FALSE
 	hide_attacklogs = TRUE
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 
 /area/backrooms
 	name = "Backrooms"

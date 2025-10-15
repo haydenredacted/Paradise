@@ -48,6 +48,16 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 
+/turf/simulated/floor/beach/alt
+	name = "beach"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "beach_alt"
+
+/turf/simulated/floor/beach/alt/corner
+	name = "beach"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "beach_corner_alt"
+
 /turf/simulated/floor/desert_sand
 	name = "sand"
 	icon = 'icons/misc/beach.dmi'
@@ -63,6 +73,10 @@
 	name = "sand"
 	icon_state = "sand"
 	baseturf = /turf/simulated/floor/beach/sand
+
+/turf/simulated/floor/beach/sand/alt
+	name = "sand"
+	icon_state = "sand_alt"
 
 /turf/simulated/floor/beach/coastline
 	name = "coastline"
