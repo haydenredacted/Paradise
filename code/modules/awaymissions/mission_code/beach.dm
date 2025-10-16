@@ -72,7 +72,6 @@
 /turf/simulated/floor/beach/away/water
 	name = "Shallow Water"
 	icon_state = "seashallow"
-	water_overlay_image = "water_shallow"
 	var/obj/machinery/poolcontroller/linkedcontroller = null
 	baseturf = /turf/simulated/floor/beach/away/water
 	footstep = FOOTSTEP_WATER
