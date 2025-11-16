@@ -1,6 +1,7 @@
 GLOBAL_LIST_INIT(pipe_path2type, list(
 		/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction = PIPE_JUNCTION,
 		/obj/machinery/atmospherics/pipe/simple/heat_exchanging = PIPE_HE_STRAIGHT,
+		/obj/machinery/atmospherics/pipe/simple/heat_exchanging/manifold = PIPE_HEAT_EXCHANGE_MANIFOLD,
 		/obj/machinery/atmospherics/pipe/simple/visible/supply = PIPE_SUPPLY_STRAIGHT,
 		/obj/machinery/atmospherics/pipe/simple/visible/scrubbers = PIPE_SCRUBBERS_STRAIGHT,
 		/obj/machinery/atmospherics/pipe/simple/hidden/supply = PIPE_SUPPLY_STRAIGHT,
@@ -42,6 +43,7 @@ GLOBAL_LIST_INIT(pipe_path2type, list(
 		"[PIPE_JUNCTION]" = /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction,
 		"[PIPE_HE_STRAIGHT]" = /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
 		"[PIPE_HE_BENT]" = /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
+		"[PIPE_HEAT_EXCHANGE_MANIFOLD]" = /obj/machinery/atmospherics/pipe/simple/heat_exchanging/manifold
 		"[PIPE_SUPPLY_STRAIGHT]" = /obj/machinery/atmospherics/pipe/simple/visible/supply,
 		"[PIPE_SUPPLY_BENT]" = /obj/machinery/atmospherics/pipe/simple/visible/supply,
 		"[PIPE_SCRUBBERS_STRAIGHT]" = /obj/machinery/atmospherics/pipe/simple/visible/scrubbers,

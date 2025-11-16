@@ -271,6 +271,14 @@ GLOBAL_LIST_EMPTY(rpd_pipe_list)			//Some pipes we don't want to be dispensable 
 	pipe_category = RPD_HEAT_PIPING
 	rpd_dispensable = TRUE
 
+/datum/pipes/atmospheric/heat_exchange_manifold
+	pipe_name = "heat exchange manifold"
+	pipe_id = PIPE_HEAT_EXCHANGE_MANIFOLD
+	orientations = 4
+	pipe_icon = "hemanifold"
+	pipe_category = RPD_HEAT_PIPING
+	rpd_dispensable = TRUE
+
 //DISPOSALS PIPES
 
 /datum/pipes/disposal/straight

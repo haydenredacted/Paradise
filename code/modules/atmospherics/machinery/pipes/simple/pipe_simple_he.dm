@@ -132,3 +132,66 @@
 	level=1
 	plane = FLOOR_PLANE
 	layer = GAS_PIPE_HIDDEN_LAYER
+
+/////////////////////////////////
+// 3-WAY MANIFOLD
+/////////////////////////////////
+
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging/manifold
+	icon = 'icons/atmos/heat.dmi'
+	icon_state = "hepipemanifold"
+	pipe_icon = "hepipemanifold"
+
+	initialize_directions = EAST|NORTH|WEST
+
+	var/obj/machinery/atmospherics/node3
+
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging/manifold/New()
+	..()
+
+	alpha = 255
+	icon = null
+	switch(dir)
+		if(NORTH)
+			initialize_directions = EAST|SOUTH|WEST
+		if(SOUTH)
+			initialize_directions = WEST|NORTH|EAST
+		if(EAST)
+			initialize_directions = SOUTH|WEST|NORTH
+		if(WEST)
+			initialize_directions = NORTH|EAST|SOUTH
+
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging/manifold/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>A heat exchanging pipe with three ends to connect to.</span>"
+
+/obj/machinery/atmospherics/pipe/simple/heat_exchanging/manifold/atmos_init()
+    ..()
+
+    for (var/D in GLOB.cardinal)
+        if (D == dir)
+            continue
+
+        for (var/obj/machinery/atmospherics/pipe/simple/heat_exchanging/target in get_step(src, D))
+            if(!(target.initialize_directions_he & get_dir(target, src)))
+                continue
+
+            if (turn(dir, 90) == D)
+                node1 = target
+                break
+
+            if (turn(dir, 270) == D)
+                node2 = target
+                break
+
+            if (turn(dir, 180) == D)
+                node3 = target
+                break
+
+    var/turf/T = get_turf(src)
+    if(!T.transparent_floor)
+        hide(T.intact)
+
+    update_icon()
+
+
