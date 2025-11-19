@@ -361,3 +361,13 @@
 	materials = list(MAT_GLASS = 1000)
 	build_path = /obj/item/circuitboard/xenobiology
 	category = list("Computer Boards")
+
+/datum/design/pt_monitor
+	name = "Console Board (Atmospheric Graph Monitor)"
+	desc ="Allows for the construction of circuit boards used to build an Atmospheric Graph Monitor."
+	id = "pt_monitor"
+	req_tech = list("programming" = 2, "engineering" = 3)
+	build_type = IMPRINTER
+	materials = list(MAT_GLASS = 1000)
+	build_path = /obj/item/circuitboard/pt_monitor
+	category = list("Computer Boards")

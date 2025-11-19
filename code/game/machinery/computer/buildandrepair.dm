@@ -497,6 +497,12 @@
 	build_path = /obj/machinery/computer/turbine_computer
 	origin_tech = "programming=4;engineering=4;powerstorage=4"
 
+/obj/item/circuitboard/pt_monitor
+	board_name = "Atmospheric Graph Monitor"
+	icon_state = "engineering"
+	build_path = /obj/machinery/computer/general_air_control/pt_monitor
+	origin_tech = "programming=2;engineering=3"
+
 /obj/item/circuitboard/supplycomp/multitool_act(mob/living/user, obj/item/I)
 	. = TRUE
 	var/catastasis // Why is it called this
