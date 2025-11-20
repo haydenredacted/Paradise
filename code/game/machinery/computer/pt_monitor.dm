@@ -12,8 +12,7 @@
 /obj/machinery/computer/general_air_control/pt_monitor
 	name = "Atmospheric graph monitoring console"
 	desc = "Используется для мониторинга давления и температуры с помощью подключаемых мультитулом датчиков."
-	icon = 'modular_ss220/pt_monitor/icons/pt_monitor.dmi'
-	icon_screen = "screen"
+	icon_screen = "pt_monitor"
 	icon_keyboard = "atmos_key"
 	circuit = /obj/item/circuitboard/pt_monitor
 
