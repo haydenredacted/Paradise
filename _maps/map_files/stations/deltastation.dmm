@@ -10636,13 +10636,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/table/reinforced,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson{
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /obj/effect/turf_decal/tiles/dark/corner{
 	dir = 1
 	},
@@ -10652,6 +10645,7 @@
 /obj/effect/turf_decal/tiles/department/engineering/corner{
 	dir = 4
 	},
+/obj/machinery/power/electrolyzer,
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
 "aRc" = (
@@ -10675,6 +10669,11 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tiles/dark/corner,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson{
+	pixel_y = 5
+	},
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
 "aRf" = (
@@ -17425,10 +17424,6 @@
 /obj/effect/turf_decal/tiles/department/security/corner,
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/prison/cell_block/a)
-"bsF" = (
-/obj/machinery/door/poddoor/impassable/gamma,
-/turf/simulated/floor/plating,
-/area/station/security/armory/secure)
 "bsG" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 1
@@ -34802,6 +34797,9 @@
 "cEj" = (
 /obj/structure/sink/directional/west,
 /obj/effect/turf_decal/delivery/hollow,
+/obj/structure/mirror{
+	pixel_x = -28
+	},
 /turf/simulated/floor/plasteel,
 /area/station/public/toilet/lockerroom)
 "cEo" = (
@@ -40486,6 +40484,11 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/station/medical/chemistry)
+"daX" = (
+/obj/machinery/door/poddoor/impassable/gamma,
+/obj/structure/fans/tiny,
+/turf/simulated/floor/plating,
+/area/station/security/armory/secure)
 "daY" = (
 /obj/effect/turf_decal/tiles/department/chemistry/corner{
 	dir = 1
@@ -52265,8 +52268,12 @@
 /turf/simulated/floor/plasteel/white,
 /area/station/medical/medbay)
 "fhF" = (
+/obj/docking_port/stationary/gamma_armory{
+	dir = 4;
+	name = "NSS Kerberos Gamma Armory Shuttle Dock"
+	},
 /turf/space,
-/area/shuttle/gamma/station)
+/area/space)
 "fhG" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -94625,15 +94632,6 @@
 	},
 /turf/space,
 /area/space)
-"xgx" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "xgy" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -131348,7 +131346,7 @@ ueF
 qGl
 mFy
 qtk
-xgx
+qtk
 qtk
 acF
 acF
@@ -154546,8 +154544,8 @@ esj
 bhi
 boZ
 eXP
-wRa
 bnp
+wRa
 qcb
 taj
 aMq
@@ -154803,8 +154801,8 @@ esj
 ngg
 ngg
 ngg
+daX
 ngg
-bsF
 ngg
 ngg
 ngg
@@ -155057,13 +155055,13 @@ kkK
 agt
 tOM
 bNE
+aaa
+aaa
+aaa
 fhF
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
+aaa
+aaa
+aaa
 gLn
 aaa
 aaa
@@ -155314,13 +155312,13 @@ upp
 xmZ
 stH
 abj
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 abj
 aaa
 aaa
@@ -155571,13 +155569,13 @@ aaa
 aaa
 aaa
 abj
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 abj
 aaa
 aaa
@@ -155828,13 +155826,13 @@ abj
 abj
 abj
 abj
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 abj
 aaa
 aaa
@@ -156085,13 +156083,13 @@ aaa
 aaa
 aaa
 abj
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 abj
 aaa
 aaa
@@ -156342,13 +156340,13 @@ aaa
 aaa
 aaa
 abj
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
-fhF
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 abj
 aaa
 aaa
