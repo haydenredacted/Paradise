@@ -5563,6 +5563,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tiles/dark/checker,
+/obj/item/reagent_containers/drinks/mug/serv,
 /turf/simulated/floor/plasteel/white,
 /area/station/service/kitchen)
 "ayv" = (
@@ -8518,6 +8519,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/reagent_containers/drinks/mug/sci,
 /turf/simulated/floor/plasteel/dark,
 /area/station/science/rnd)
 "aKi" = (
@@ -10320,6 +10322,7 @@
 /obj/machinery/firealarm/directional/west,
 /obj/item/storage/belt/medical,
 /obj/item/storage/belt/medical,
+/obj/item/reagent_containers/drinks/mug/med,
 /turf/simulated/floor/plasteel,
 /area/station/medical/storage)
 "aSZ" = (
@@ -22315,6 +22318,9 @@
 /obj/machinery/computer/supplycomp,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/bridge)
+"gfT" = (
+/turf/simulated/floor/plating,
+/area/station/engineering/atmos)
 "gge" = (
 /obj/effect/turf_decal/tiles/department/science/side{
 	dir = 5
@@ -23310,6 +23316,7 @@
 	pixel_x = -7;
 	pixel_y = 6
 	},
+/obj/item/reagent_containers/drinks/mug/sec,
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/warden)
 "gNl" = (
@@ -26139,6 +26146,13 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/station/science/hallway)
+"imV" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/cyan,
+/turf/simulated/floor/plasteel,
+/area/station/engineering/atmos)
 "inu" = (
 /turf/simulated/floor/engine/n20,
 /area/station/engineering/atmos)
@@ -27496,6 +27510,13 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/station/science/rnd)
+"jev" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "atmoslock";
+	name = "Atmospherics Lockdown Blast door"
+	},
+/turf/simulated/floor/plating,
+/area/station/engineering/atmos)
 "jeI" = (
 /obj/machinery/firealarm/directional/west,
 /obj/structure/cable{
@@ -30705,6 +30726,7 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/meter,
+/obj/machinery/alarm/directional/west,
 /turf/simulated/floor/plasteel/dark,
 /area/station/engineering/atmos)
 "lmD" = (
@@ -30715,13 +30737,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel/dark,
-/area/station/engineering/atmos)
-"lnO" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
-/obj/machinery/alarm/directional/north,
 /turf/simulated/floor/plasteel/dark,
 /area/station/engineering/atmos)
 "lof" = (
@@ -31486,6 +31501,7 @@
 /obj/machinery/door/window/reinforced/normal,
 /obj/effect/mapping_helpers/airlock/windoor/access/any/security/general,
 /obj/effect/mapping_helpers/airlock/windoor/autoname,
+/obj/item/reagent_containers/drinks/mug/sec,
 /turf/simulated/floor/plasteel,
 /area/station/security/brig)
 "lJi" = (
@@ -34502,6 +34518,7 @@
 	},
 /obj/item/book/manual/wiki/security_space_law,
 /obj/item/crowbar/red,
+/obj/item/reagent_containers/drinks/mug/sec,
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/brig)
 "ntm" = (
@@ -35910,10 +35927,10 @@
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
 "onz" = (
-/obj/machinery/nuclear_rod_fabricator,
 /obj/effect/turf_decal/tiles/department/engineering/side{
 	dir = 6
 	},
+/obj/machinery/nuclear_rod_fabricator,
 /turf/simulated/floor/plasteel,
 /area/station/engineering/control)
 "onM" = (
@@ -36681,6 +36698,7 @@
 	name = "Atmospherics Lockdown Blast door"
 	},
 /obj/effect/spawner/window/reinforced/grilled,
+/obj/effect/spawner/airlock/s_to_n,
 /turf/simulated/floor/plating,
 /area/station/engineering/atmos)
 "oLY" = (
@@ -37708,6 +37726,16 @@
 	},
 /obj/item/reagent_containers/dropper/precision,
 /obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/engine,
 /area/station/science/misc_lab)
 "ppJ" = (
@@ -37768,6 +37796,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
+/obj/item/reagent_containers/drinks/mug/serv,
 /turf/simulated/floor/plasteel/dark,
 /area/station/service/bar)
 "psq" = (
@@ -41121,6 +41150,7 @@
 /obj/structure/closet/secure_closet/medical3,
 /obj/item/storage/belt/medical,
 /obj/item/storage/belt/medical,
+/obj/item/reagent_containers/drinks/mug/med,
 /turf/simulated/floor/plasteel,
 /area/station/medical/storage)
 "rAj" = (
@@ -41910,6 +41940,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/catwalk,
 /area/station/maintenance/aft)
+"rYL" = (
+/obj/effect/turf_decal/tiles/department/science,
+/obj/structure/closet/secure_closet/scientist,
+/obj/item/reagent_containers/drinks/mug/sci,
+/turf/simulated/floor/plasteel/white,
+/area/station/science/hallway)
 "rYZ" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
@@ -47242,6 +47278,7 @@
 /obj/effect/turf_decal/tiles/department/science/side{
 	dir = 6
 	},
+/obj/item/storage/box/beakers,
 /turf/simulated/floor/plasteel/white,
 /area/station/science/misc_lab)
 "uJb" = (
@@ -49069,6 +49106,13 @@
 	},
 /turf/simulated/floor/plating/asteroid/ancient/airless,
 /area/station/science/xenobiology)
+"vKq" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor/plasteel/dark,
+/area/station/engineering/atmos)
 "vKK" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9
@@ -49343,6 +49387,10 @@
 	},
 /turf/simulated/floor/mineral/titanium/blue,
 /area/shuttle/arrival/station)
+"vQm" = (
+/obj/effect/spawner/window/reinforced/grilled,
+/turf/simulated/floor/plating,
+/area/station/engineering/atmos)
 "vQG" = (
 /obj/effect/turf_decal/tiles/dark/corner,
 /turf/simulated/floor/plasteel,
@@ -52062,6 +52110,11 @@
 /obj/structure/girder,
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/asmaint)
+"xnM" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/economy/vending/wallmed/directional/south,
+/turf/simulated/floor/plasteel,
+/area/station/engineering/equipmentstorage)
 "xoa" = (
 /obj/structure/rack{
 	dir = 1
@@ -74702,8 +74755,8 @@ aZD
 aZD
 aZD
 aae
-aZD
-aZD
+vQm
+vQm
 oLH
 lmS
 mcJ
@@ -74959,11 +75012,11 @@ aZD
 aZD
 aZD
 aae
-aZD
-aZD
-sNM
-lmS
-mcJ
+gfT
+gfT
+jev
+vKq
+imV
 mZL
 uhz
 owu
@@ -75219,7 +75272,7 @@ sWt
 sWt
 sWt
 sWt
-lnO
+lmS
 mcJ
 naw
 ohr
@@ -79352,7 +79405,7 @@ cPa
 rVg
 tln
 leZ
-lAL
+xnM
 aqz
 aqz
 aqz
@@ -93765,7 +93818,7 @@ gLJ
 jcm
 uyc
 lGr
-awJ
+rYL
 sZr
 cnd
 pRY
