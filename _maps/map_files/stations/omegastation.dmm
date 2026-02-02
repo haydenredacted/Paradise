@@ -14820,6 +14820,24 @@
 /obj/machinery/dnaforensics,
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/detective)
+"bUD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/extra_insulated{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/fpmaint2)
 "bVs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -28480,6 +28498,7 @@
 	name = "Bathroom"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/step_trigger/flicker_lights,
 /turf/simulated/floor/plasteel/freezer,
 /area/station/maintenance/fpmaint2)
 "jGg" = (
@@ -34019,10 +34038,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/aft)
-"ndL" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/plating,
-/area/station/maintenance/fpmaint2)
 "ndS" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -78950,7 +78965,7 @@ aSO
 uFc
 eTc
 cTN
-ndL
+tSU
 lfS
 hyB
 ihc
@@ -79976,7 +79991,7 @@ bLQ
 aJX
 dHj
 lfS
-fub
+bUD
 bbL
 bbL
 bbL
