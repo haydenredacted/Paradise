@@ -194,7 +194,6 @@
 /obj/effect/step_trigger/flicker_lights
 	mobs_only = TRUE // as funny as it'd be to have ghosts trigger this
 	name = "Flicker Lights"
-	icon_state = "lights_out"
 
 /obj/effect/step_trigger/flicker_lights/Trigger(mob/living/carbon/M, atom/movable/A)
 	var/turf/T = get_turf(A)
