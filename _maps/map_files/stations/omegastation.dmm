@@ -246,6 +246,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/directional/north,
+/obj/item/bedsheet/hop,
 /turf/simulated/floor/wood,
 /area/station/command/office/hop)
 "abx" = (
@@ -5962,6 +5963,24 @@
 /obj/item/stack/sheet/mineral/silver,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/vault)
+"aAe" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	dir = 6
+	},
+/turf/simulated/floor/plasteel,
+/area/station/hallway/primary/port/south)
 "aAh" = (
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp,
@@ -15376,9 +15395,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/bluegrid{
-	nitrogen = 100;
-	oxygen = 0;
+/turf/simulated/floor/plasteel/dark/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
@@ -17013,7 +17030,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/electrical/aft_port)
 "deB" = (
-/obj/effect/spawner/window/reinforced,
+/obj/effect/spawner/window/reinforced/plasma,
 /turf/simulated/floor/plating,
 /area/station/science/xenobiology)
 "deF" = (
@@ -18005,7 +18022,7 @@
 "dGF" = (
 /obj/machinery/firealarm/directional/north,
 /obj/effect/turf_decal/delivery/hollow,
-/obj/machinery/atmospherics/unary/thermomachine/freezer/on/coldroom,
+/obj/machinery/atmospherics/unary/thermomachine/freezer/on/server,
 /turf/simulated/floor/plasteel/dark,
 /area/station/science/xenobiology)
 "dHj" = (
@@ -18136,7 +18153,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/station/public/dorms)
 "dKl" = (
-/turf/simulated/floor/engine/xenobio,
+/turf/simulated/floor/plasteel/dark/nitrogen{
+	temperature = 80
+	},
 /area/station/science/xenobiology)
 "dKA" = (
 /obj/effect/turf_decal/stripes/line,
@@ -18198,7 +18217,9 @@
 	external_pressure_bound = 120;
 	name = "server vent"
 	},
-/turf/simulated/floor/engine/xenobio,
+/turf/simulated/floor/plasteel/dark/nitrogen{
+	temperature = 80
+	},
 /area/station/science/xenobiology)
 "dLP" = (
 /obj/effect/turf_decal/tiles/department/security/corner{
@@ -30982,14 +31003,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/hallway/secondary/entry/south)
-"ltj" = (
-/obj/machinery/door/airlock/external/glass{
-	id_tag = "trader_home";
-	name = "Port Bay 4 Airlock"
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/turf/space,
-/area/station/hallway/secondary/entry/south)
 "lto" = (
 /obj/effect/mapping_helpers/airlock/access/all/service/crematorium,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -37377,7 +37390,9 @@
 	c_tag = "Xenobiology Chamber 6";
 	network = list("Research","SS13")
 	},
-/turf/simulated/floor/engine/xenobio,
+/turf/simulated/floor/plasteel/dark/nitrogen{
+	temperature = 80
+	},
 /area/station/science/xenobiology)
 "pgw" = (
 /obj/structure/chair{
@@ -41814,7 +41829,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/engine/xenobio,
+/turf/simulated/floor/plasteel/dark/nitrogen{
+	temperature = 80
+	},
 /area/station/science/xenobiology)
 "rRo" = (
 /obj/effect/turf_decal/plaque{
@@ -48149,24 +48166,6 @@
 	icon_state = "chapel"
 	},
 /area/station/service/chapel)
-"vgr" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/camera/autoname{
-	dir = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel,
-/area/station/hallway/primary/port/south)
 "vgG" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -51992,9 +51991,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/spawner/rev,
-/turf/simulated/floor/bluegrid{
-	nitrogen = 100;
-	oxygen = 0;
+/turf/simulated/floor/plasteel/dark/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
@@ -84183,7 +84180,7 @@ vCB
 mZO
 xwl
 iif
-ltj
+mZO
 aZD
 aZD
 aZD
@@ -84440,7 +84437,7 @@ uvT
 mZO
 pCG
 urc
-ltj
+mZO
 qtX
 aZD
 aZD
@@ -84894,7 +84891,7 @@ aJu
 dmO
 vsJ
 eOO
-vgr
+mKO
 khg
 qoj
 aRO
@@ -85151,7 +85148,7 @@ qqw
 aMU
 wUF
 qqw
-mKO
+aAe
 fbF
 gZE
 aUT
