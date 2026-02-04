@@ -13938,7 +13938,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/economy/vending/tool,
+/obj/machinery/economy/vending/tool/free,
 /turf/simulated/floor/plasteel,
 /area/station/engineering/equipmentstorage)
 "buX" = (
@@ -20014,6 +20014,10 @@
 "eMe" = (
 /turf/simulated/wall/r_wall,
 /area/station/science/server/coldroom)
+"eMg" = (
+/obj/effect/spawner/random/blood/often,
+/turf/simulated/floor/plating,
+/area/station/maintenance/fpmaint2)
 "eMI" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -22067,6 +22071,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/public/restroom{
 	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/blood/tracks/mapped{
+	dir = 4
 	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/fpmaint2)
@@ -28540,6 +28547,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/step_trigger/flicker_lights,
+/obj/effect/decal/cleanable/blood/tracks/mapped{
+	dir = 4
+	},
 /turf/simulated/floor/plasteel/freezer,
 /area/station/maintenance/fpmaint2)
 "jGg" = (
@@ -79055,7 +79065,7 @@ aSO
 uFc
 eTc
 cTN
-tSU
+eMg
 lfS
 hyB
 ihc
