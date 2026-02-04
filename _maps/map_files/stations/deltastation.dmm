@@ -53278,7 +53278,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/tiles/neutral,
-/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
 "fGs" = (
@@ -95035,8 +95035,7 @@
 "wNH" = (
 /obj/effect/turf_decal/tiles/neutral,
 /obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 6;
-	level = 1
+	dir = 6
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
