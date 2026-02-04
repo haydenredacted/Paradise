@@ -28619,6 +28619,11 @@
 	c_tag = "Brig Firing Range";
 	dir = 6
 	},
+/obj/item/storage/box/flashbangs,
+/obj/item/storage/box/flashbangs{
+	pixel_x = -4;
+	pixel_y = -4
+	},
 /turf/simulated/floor/plasteel,
 /area/station/security/range)
 "cjD" = (
@@ -29351,30 +29356,28 @@
 /area/station/security/range)
 "cmG" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/flashbangs{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/storage/box/flashbangs,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel,
-/area/station/security/range)
-"cmH" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger,
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/item/gun/energy/laser/practice{
+	pixel_x = 2;
+	pixel_y = 2
 	},
 /obj/item/gun/energy/laser/practice{
 	pixel_x = -1;
 	pixel_y = -1
 	},
-/obj/item/gun/energy/laser/practice{
-	pixel_x = 2;
-	pixel_y = 2
+/turf/simulated/floor/plasteel,
+/area/station/security/range)
+"cmH" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
 /obj/machinery/recharger/wallcharger{
 	pixel_y = -27
+	},
+/obj/machinery/magnetic_controller,
+/obj/machinery/recharger/wallcharger{
+	pixel_y = -35
 	},
 /turf/simulated/floor/plasteel,
 /area/station/security/range)
