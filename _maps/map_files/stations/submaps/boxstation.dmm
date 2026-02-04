@@ -387,7 +387,13 @@
 	layer = 4;
 	pixel_y = 32
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/shelf/engineering,
+/obj/item/clothing/head/radiation,
+/obj/item/clothing/suit/radiation,
+/obj/item/geiger_counter,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/rpd,
 /turf/simulated/floor/engine,
 /area/station/engineering/control)
 "hg" = (
@@ -650,6 +656,15 @@
 	dir = 9
 	},
 /obj/structure/table/reinforced,
+/obj/item/geiger_counter,
+/obj/item/geiger_counter{
+	pixel_x = -8;
+	pixel_y = 8
+	},
+/obj/item/geiger_counter{
+	pixel_x = 9;
+	pixel_y = 12
+	},
 /turf/simulated/floor/engine,
 /area/station/engineering/control)
 "kT" = (
@@ -938,10 +953,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/control)
-"ot" = (
-/obj/structure/lattice/catwalk,
-/turf/space,
-/area/space)
 "ox" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -1096,9 +1107,6 @@
 /obj/item/rpd,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/clothing/glasses/meson/engine,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /turf/simulated/floor/engine,
 /area/station/engineering/control)
 "qx" = (
@@ -1626,6 +1634,7 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
 	},
+/obj/effect/spawner/random/plushies,
 /turf/simulated/floor/engine,
 /area/station/engineering/control)
 "xV" = (
@@ -2030,10 +2039,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/plasteel/reactor_pool,
 /area/station/engineering/engine/reactor)
-"Cz" = (
-/obj/structure/lattice,
-/turf/space,
-/area/space)
 "CA" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/caution{
@@ -2454,9 +2459,6 @@
 	},
 /obj/item/pipe_meter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/engine,
 /area/station/engineering/control)
 "JZ" = (
@@ -3123,6 +3125,13 @@
 	},
 /turf/simulated/floor/engine,
 /area/station/engineering/control)
+"Tt" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/engine,
+/area/station/engineering/control)
 "TH" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -3243,11 +3252,6 @@
 	},
 /turf/simulated/floor/engine,
 /area/station/engineering/engine/reactor)
-"Vl" = (
-/obj/structure/lattice,
-/obj/effect/map_effect/marker/mapmanip/submap/extract/station/boxstation/engine,
-/turf/space,
-/area/space)
 "Vv" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1;
@@ -4900,7 +4904,7 @@ RE
 TJ
 TJ
 TJ
-Vl
+YI
 TJ
 TJ
 "}
@@ -5142,8 +5146,8 @@ RE
 hE
 lB
 RE
-Tp
-Wz
+Tt
+Yq
 ba
 Ii
 Ia
@@ -5195,7 +5199,7 @@ RE
 FD
 RE
 gV
-Yq
+zZ
 XT
 tV
 tV
@@ -5782,9 +5786,9 @@ zi
 xd
 kZ
 RB
-ot
-ot
-Cz
+EV
+EV
+YJ
 TJ
 TJ
 "}
