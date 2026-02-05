@@ -12647,13 +12647,13 @@
 /obj/effect/turf_decal/box,
 /obj/machinery/camera{
 	c_tag = "Engine South East";
-	network = list("SS13","Engineering")
+	network = list("SS13","Engineering","engine")
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
 /turf/simulated/floor/engine,
-/area/station/engineering/engine/reactor)
+/area/station/engineering/engine)
 "aYt" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/effect/turf_decal/tiles/neutral,
@@ -14929,7 +14929,6 @@
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 4
 	},
-/obj/effect/map_effect/dynamic_airlock,
 /turf/simulated/floor/plating,
 /area/station/engineering/engine/reactor)
 "biT" = (
@@ -30150,7 +30149,7 @@
 	dir = 8;
 	layer = 4;
 	name = "NGCR Telescreen";
-	network = list("Singularity")
+	network = list("engine")
 	},
 /turf/simulated/wall/r_wall,
 /area/station/engineering/engine)
@@ -48309,7 +48308,7 @@
 /obj/machinery/camera{
 	c_tag = "Engine Storage Pool";
 	dir = 1;
-	network = list("SS13","Engineering")
+	network = list("SS13","Engineering","engine")
 	},
 /turf/simulated/floor/plasteel/reactor_pool,
 /area/station/engineering/engine/reactor)
@@ -56266,7 +56265,7 @@
 /obj/machinery/atmospherics/unary/portables_connector,
 /obj/machinery/camera{
 	c_tag = "Engine North";
-	network = list("SS13","Engineering")
+	network = list("SS13","Engineering","engine")
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -68837,7 +68836,7 @@
 /obj/machinery/camera{
 	c_tag = "Engine North West";
 	dir = 5;
-	network = list("SS13","Engineering")
+	network = list("SS13","Engineering","engine")
 	},
 /turf/simulated/floor/engine,
 /area/station/engineering/engine/reactor)
@@ -70398,7 +70397,6 @@
 /obj/item/seeds/harebell,
 /obj/item/seeds/wheat,
 /obj/item/seeds/watermelon,
-/obj/item/seeds/poppy,
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/abandoned_garden)
 "mWM" = (
@@ -71334,7 +71332,7 @@
 /obj/machinery/camera{
 	c_tag = "Engine South West";
 	dir = 4;
-	network = list("SS13","Engineering")
+	network = list("SS13","Engineering","engine")
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/engine/reactor)
