@@ -33735,13 +33735,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/asmaint)
 "mSn" = (
-/obj/structure/table,
-/obj/item/storage/toolbox/mechanical{
-	pixel_y = 5
-	},
-/obj/item/flashlight,
-/obj/item/crowbar/large,
-/obj/item/toy/figure/crew/borg,
+/obj/machinery/cryopod/robot,
 /turf/simulated/floor/plasteel/dark,
 /area/station/science/robotics/chargebay)
 "mSw" = (
@@ -39516,7 +39510,6 @@
 /turf/simulated/floor/plasteel,
 /area/station/hallway/secondary/entry)
 "qna" = (
-/obj/machinery/atmospherics/portable/canister,
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/turbine)
 "qnB" = (
@@ -44236,9 +44229,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/camera/autoname{
-	dir = 1
-	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/engineering/atmos)
 "sNr" = (
@@ -44556,6 +44546,9 @@
 "sOU" = (
 /obj/structure/sign/engineering/power{
 	pixel_y = -32
+	},
+/obj/machinery/camera/autoname{
+	dir = 9
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/engineering/atmos)
@@ -47037,12 +47030,11 @@
 /turf/simulated/wall/r_wall,
 /area/station/security/gamma_dock_access)
 "utS" = (
-/obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
 /obj/structure/extinguisher_cabinet{
 	name = "east bump";
 	pixel_x = 27
 	},
+/obj/structure/closet/secure_closet/atmos_personal,
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/turbine)
 "uuf" = (
@@ -49651,6 +49643,10 @@
 /obj/item/storage/belt/champion,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/vault)
+"vQW" = (
+/obj/machinery/economy/vending/crittercare,
+/turf/simulated/floor/plating,
+/area/station/maintenance/fsmaint2)
 "vRj" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -94527,7 +94523,7 @@ pZp
 dHT
 aoL
 qdK
-kGX
+vQW
 tiZ
 kGX
 kQr
