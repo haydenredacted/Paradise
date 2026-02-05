@@ -23240,9 +23240,13 @@
 /area/station/security/execution)
 "gHC" = (
 /obj/structure/table/wood,
-/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box{
+	pixel_x = 14;
+	pixel_y = 5
+	},
 /obj/machinery/firealarm/directional/south,
 /obj/item/melee/chainofcommand,
+/obj/item/paper_bin/nanotrasen,
 /turf/simulated/floor/carpet,
 /area/station/command/office/captain)
 "gHP" = (
