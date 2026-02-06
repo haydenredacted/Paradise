@@ -32906,6 +32906,14 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/port)
+"ewZ" = (
+/obj/machinery/magnetic_controller{
+	autolink = 1;
+	name = "Firing Range Control Console";
+	path = "w;e;e;w;s;n;n;s"
+	},
+/turf/simulated/wall,
+/area/station/security/range)
 "exh" = (
 /obj/structure/table/wood,
 /obj/item/radio/intercom{
@@ -43494,18 +43502,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/science/robotics/chargebay)
-"icj" = (
-/obj/machinery/magnetic_controller{
-	autolink = 1;
-	name = "Firing Range Control Console";
-	path = "w;e;e;w;s;n;n;s";
-	pixel_y = 28
-	},
-/obj/effect/turf_decal/tiles/department/security/side{
-	dir = 1
-	},
-/turf/simulated/floor/plasteel,
-/area/station/security/range)
 "icn" = (
 /obj/machinery/power/apc/directional/north,
 /obj/structure/cable{
@@ -121876,8 +121872,8 @@ mQs
 mQs
 mQs
 mQs
-mQs
-icj
+ewZ
+nhc
 tbQ
 hvk
 vLI
