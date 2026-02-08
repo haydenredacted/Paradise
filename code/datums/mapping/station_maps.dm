@@ -41,6 +41,7 @@
 	fluff_name = "NSS Legaria"
 	technical_name = "OmegaStation"
 	map_path = "_maps/map_files/stations/omegastation.dmm"
+	max_players_random = 40
 
 /datum/map/test_tiny
 	fluff_name = "test_tiny"

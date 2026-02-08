@@ -15538,9 +15538,9 @@
 /turf/simulated/floor/plasteel,
 /area/station/security/prisonershuttle)
 "cpc" = (
-/obj/machinery/porta_turret/ai_turret,
 /obj/effect/turf_decal/delivery/hollow,
 /obj/machinery/alarm/directional/north,
+/obj/machinery/porta_turret/ai_turret,
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
 "cpj" = (
@@ -16485,6 +16485,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
@@ -20519,6 +20522,9 @@
 /obj/effect/mapping_helpers/airlock/windoor/autoname{
 	dir = 4
 	},
+/obj/item/desk_bell{
+	anchored = 1
+	},
 /turf/simulated/floor/plasteel,
 /area/station/science/rnd)
 "fau" = (
@@ -22412,6 +22418,13 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+	},
+/obj/machinery/turretid/stun{
+	control_area = "\improper AI Satellite Antechamber";
+	name = "AI Antechamber Turret Control";
+	pixel_y = -1;
+	req_access = list(75);
+	pixel_x = -29
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
@@ -25571,11 +25584,6 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/asmaint)
 "hRD" = (
-/obj/machinery/turretid{
-	control_area = "/area/ai_monitored/turret_protected/aisat_interior";
-	name = "AI Satellite turret control";
-	pixel_x = 30
-	},
 /obj/structure/transit_tube/curved/flipped{
 	dir = 8
 	},
@@ -25796,6 +25804,16 @@
 /obj/structure/disposalpipe/segment/corner,
 /turf/simulated/floor/plasteel/white,
 /area/station/medical/reception)
+"hWR" = (
+/obj/machinery/turretid/lethal{
+	check_synth = 1;
+	name = "AI Chamber Turret Control";
+	pixel_x = 5;
+	pixel_y = -24;
+	req_access = list(75)
+	},
+/turf/simulated/wall/r_wall,
+/area/station/turret_protected/ai)
 "hWZ" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Power Transmission Laser"
@@ -26651,6 +26669,9 @@
 	id = "scilock";
 	name = "Science Lockdown Blast Door";
 	id_tag = "scilock"
+	},
+/obj/item/desk_bell{
+	anchored = 1
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/science/robotics)
@@ -27898,8 +27919,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/porta_turret/ai_turret,
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/porta_turret/ai_turret,
 /turf/simulated/floor/greengrid,
 /area/station/turret_protected/ai)
 "jnq" = (
@@ -32923,13 +32944,6 @@
 /turf/simulated/floor/plasteel,
 /area/station/public/storage/tools)
 "mtz" = (
-/obj/machinery/turretid{
-	control_area = "/area/ai_monitored/turret_protected/ai";
-	icon_state = "control_stun";
-	name = "AI Chamber turret control";
-	pixel_x = 3;
-	pixel_y = -23
-	},
 /obj/machinery/door/window{
 	dir = 4
 	},
@@ -32941,6 +32955,13 @@
 	name = "AI core shutters";
 	dir = 8;
 	id_tag = "aicorewindow"
+	},
+/obj/machinery/turretid/lethal{
+	check_synth = 1;
+	name = "AI Chamber Turret Control";
+	pixel_x = 5;
+	pixel_y = -24;
+	req_access = list(75)
 	},
 /turf/simulated/floor/greengrid,
 /area/station/turret_protected/ai)
@@ -38198,6 +38219,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/access/all/supply/vault,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/vault)
 "pzd" = (
@@ -42982,8 +43004,8 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/porta_turret/ai_turret,
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/porta_turret/ai_turret,
 /turf/simulated/floor/greengrid,
 /area/station/turret_protected/ai)
 "syG" = (
@@ -48961,9 +48983,9 @@
 /turf/simulated/floor/plasteel,
 /area/station/engineering/equipmentstorage)
 "vzs" = (
-/obj/machinery/porta_turret/ai_turret,
 /obj/effect/turf_decal/delivery/hollow,
 /obj/machinery/firealarm/directional/north,
+/obj/machinery/porta_turret/ai_turret,
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
 "vzF" = (
@@ -101555,7 +101577,7 @@ hDl
 agt
 agt
 mtz
-agt
+hWR
 eeC
 wwi
 agt
