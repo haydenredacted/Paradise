@@ -57886,7 +57886,6 @@
 /turf/simulated/floor/plasteel/dark,
 /area/station/medical/virology)
 "hDE" = (
-/obj/effect/map_effect/dynamic_airlock,
 /obj/structure/sign/vacuum/external{
 	pixel_y = 32
 	},
