@@ -17777,12 +17777,11 @@
 /turf/simulated/floor/carpet/green,
 /area/station/maintenance/abandonedbar)
 "dus" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/structure/reagent_dispensers/fueltank,
 /obj/machinery/alarm/directional/west,
-/obj/machinery/power/apc/directional/north,
+/obj/machinery/computer/cryopod/robot{
+	pixel_y = 32
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/science/robotics/chargebay)
 "duV" = (
@@ -18415,13 +18414,6 @@
 	},
 /turf/simulated/floor/engine,
 /area/station/medical/chemistry)
-"dQJ" = (
-/obj/docking_port/stationary/whiteship{
-	dir = 8;
-	name = "North East of Legaria"
-	},
-/turf/space,
-/area/space)
 "dQT" = (
 /turf/simulated/wall/r_wall,
 /area/station/maintenance/fsmaint2)
@@ -19972,9 +19964,6 @@
 /turf/simulated/wall,
 /area/station/engineering/break_room)
 "eLN" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -26284,6 +26273,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plasteel,
 /area/station/science/robotics/chargebay)
 "imq" = (
@@ -29532,10 +29524,8 @@
 /area/station/engineering/engine/reactor)
 "knV" = (
 /obj/effect/turf_decal/stripes/end,
-/obj/item/radio/intercom{
-	name = "south bump";
-	pixel_y = -28
-	},
+/obj/structure/cable,
+/obj/machinery/power/apc/directional/south,
 /turf/simulated/floor/plasteel,
 /area/station/science/robotics/chargebay)
 "koH" = (
@@ -31175,6 +31165,7 @@
 	dir = 1;
 	autolink_id = "syndishuttle_vent"
 	},
+/obj/machinery/airlock_controller/air_cycler/directional/west,
 /turf/simulated/floor/plasteel/dark,
 /area/station/hallway/secondary/entry)
 "lvf" = (
@@ -40541,6 +40532,14 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/engineering/atmos)
+"qSP" = (
+/obj/docking_port/stationary/whiteship{
+	dir = 8;
+	id = "whiteship_kerberos";
+	name = "north of Legaria"
+	},
+/turf/space,
+/area/space)
 "qTa" = (
 /obj/machinery/power/apc/reinforced/directional/north,
 /obj/effect/turf_decal/stripes/end,
@@ -41985,6 +41984,7 @@
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/map_effect/dynamic_airlock/door/interior,
 /obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/access_button/offset/west,
 /turf/simulated/floor/plasteel/dark,
 /area/station/hallway/secondary/entry)
 "rST" = (
@@ -46404,6 +46404,7 @@
 "tVH" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/map_effect/dynamic_airlock/door/exterior,
+/obj/machinery/access_button/offset/southwest,
 /turf/simulated/floor/plasteel/dark,
 /area/station/hallway/secondary/entry)
 "tVM" = (
@@ -48718,15 +48719,15 @@
 /turf/simulated/floor/plasteel,
 /area/station/hallway/primary/starboard)
 "vtj" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plasteel,
 /area/station/science/robotics/chargebay)
@@ -50356,6 +50357,9 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel,
 /area/station/science/robotics/chargebay)
@@ -98318,7 +98322,7 @@ aZD
 aZD
 aZD
 aZD
-aZD
+qSP
 aZD
 aZD
 aZD
@@ -103728,7 +103732,7 @@ aZD
 aZD
 aZD
 aZD
-dQJ
+aZD
 aZD
 aZD
 aZD
