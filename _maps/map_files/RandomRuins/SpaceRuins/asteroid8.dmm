@@ -48,6 +48,9 @@
 	dir = 1
 	},
 /obj/effect/mapping_helpers/turfs/damage,
+/obj/structure/window/plastitanium{
+	dir = 4
+	},
 /turf/simulated/floor/engine,
 /area/ruin/space/unpowered)
 "D" = (
