@@ -4542,13 +4542,6 @@
 	pixel_x = 6
 	},
 /obj/item/storage/lockbox/mindshield,
-/obj/machinery/door_control{
-	id = "Secure Armory";
-	name = "Secure Armory Shutter Control";
-	pixel_x = -5;
-	pixel_y = -27;
-	req_access = list(3)
-	},
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 24;
@@ -12318,20 +12311,7 @@
 /area/station/science/storage)
 "beO" = (
 /obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/plasteel/dark,
-/area/station/security/gamma_dock_access)
-"beP" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plasteel/dark,
-/area/station/security/gamma_dock_access)
-"beQ" = (
-/obj/machinery/power/apc/directional/north,
-/obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/gamma_dock_access)
@@ -13283,8 +13263,7 @@
 /turf/simulated/floor/wood,
 /area/station/command/office/hos)
 "bkk" = (
-/obj/machinery/bluespace_beacon/omegastation/sec2,
-/obj/effect/turf_decal/box/red,
+/obj/item/kirbyplants/large,
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/gamma_dock_access)
 "bkl" = (
@@ -13407,9 +13386,8 @@
 /turf/simulated/floor/plasteel,
 /area/station/hallway/primary/fore)
 "blh" = (
-/obj/effect/turf_decal/loading_area/red{
-	dir = 4
-	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/bluespace_beacon/omegastation/sec2,
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/gamma_dock_access)
 "bli" = (
@@ -13430,6 +13408,12 @@
 /area/station/service/chapel)
 "blm" = (
 /obj/effect/turf_decal/stripes/corner,
+/obj/machinery/door_control{
+	id = "Secure Armory";
+	name = "Secure Armory Shutter Control";
+	pixel_x = -29;
+	req_access = list(3)
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/security/armory/secure)
 "bln" = (
@@ -33251,6 +33235,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/service/starboard)
+"mCf" = (
+/obj/structure/table,
+/obj/item/storage/fancy/donut_box{
+	pixel_y = 3
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/station/security/gamma_dock_access)
 "mCl" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -53750,6 +53741,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/aft)
+"yjp" = (
+/obj/machinery/power/apc/directional/west,
+/obj/structure/cable,
+/turf/simulated/floor/plasteel/dark,
+/area/station/security/gamma_dock_access)
 "yka" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/random/maintenance,
@@ -80917,7 +80913,7 @@ aFY
 efh
 aSE
 beO
-bjI
+yjp
 bkk
 utJ
 bLQ
@@ -81173,8 +81169,8 @@ aDr
 uAN
 sXM
 azA
-beP
-bkX
+bjL
+bjI
 bkX
 bsZ
 bUb
@@ -81430,9 +81426,9 @@ jqo
 uAN
 aMA
 azA
-beQ
+bli
 blh
-blh
+bkX
 bsZ
 bWD
 daG
@@ -81687,9 +81683,9 @@ lcs
 uAN
 aMB
 azA
+mCf
 bkX
-bjL
-bli
+bkk
 utJ
 bQg
 mCl
