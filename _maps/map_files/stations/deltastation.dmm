@@ -14929,6 +14929,7 @@
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 4
 	},
+/obj/effect/map_effect/dynamic_airlock,
 /turf/simulated/floor/plating,
 /area/station/engineering/engine/reactor)
 "biT" = (
@@ -57889,6 +57890,7 @@
 /obj/structure/sign/vacuum/external{
 	pixel_y = 32
 	},
+/obj/effect/map_effect/dynamic_airlock,
 /turf/simulated/floor/plating,
 /area/station/engineering/engine/reactor)
 "hDS" = (
