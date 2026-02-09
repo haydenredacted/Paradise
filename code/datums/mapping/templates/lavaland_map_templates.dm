@@ -277,7 +277,6 @@
 	name = "Comfy Cabin"
 	description = "A small wooden cabin that was once lived in by a hermit who is now nowhere to be found."
 	allow_duplicates = FALSE
-	always_place = TRUE
 
 // MARK: Bridges
 
