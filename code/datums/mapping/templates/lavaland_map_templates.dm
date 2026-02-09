@@ -271,6 +271,14 @@
 	allow_duplicates = FALSE // Less space on lavaland. Ideally we would figure out a way to ban this from spawning the same level as the mining base
 	always_place = TRUE // Since only one can spawn for now, might as well ensure it.
 
+/datum/map_template/ruin/lavaland/comfy_cabin
+	id = "basalt_lab"
+	suffix = "lavaland_surface_wooden_cabin.dmm"
+	name = "Comfy Cabin"
+	description = "A small wooden cabin that was once lived in by a hermit who is now nowhere to be found."
+	allow_duplicates = FALSE
+	always_place = TRUE
+
 // MARK: Bridges
 
 /datum/map_template/ruin/lavaland/zlvl_bridge
