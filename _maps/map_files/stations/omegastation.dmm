@@ -591,11 +591,6 @@
 /area/station/command/office/hop)
 "adJ" = (
 /obj/structure/table/wood,
-/obj/item/folder/blue{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/item/storage/box/ids,
 /obj/machinery/newscaster/directional/north,
 /obj/item/radio/intercom{
 	name = "east bump";
@@ -2351,10 +2346,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/machinery/photocopier/faxmachine/longrange{
-	department = "NT Representative's Office"
-	},
 /obj/effect/turf_decal/tiles/department/command/checker,
+/obj/machinery/photocopier/faxmachine/longrange{
+	department = "Dignitary's Office";
+	pixel_y = 4
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/office/dignitary)
 "alm" = (
@@ -4555,14 +4551,15 @@
 /area/station/security/armory/secure)
 "ate" = (
 /obj/structure/table/wood,
-/obj/item/clipboard,
-/obj/item/stack/package_wrap,
-/obj/item/book/manual/wiki/security_space_law,
-/obj/item/hand_labeler,
 /obj/machinery/computer/guestpass/hop{
 	pixel_x = -28
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/machinery/photocopier/faxmachine/longrange{
+	department = "Head of Personnel's Office";
+	pixel_y = 4
+	},
+/obj/item/toy/figure/crew/hop,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/office/hop)
 "atg" = (
@@ -7293,7 +7290,6 @@
 /obj/effect/turf_decal/tiles/department/cargo/corner{
 	dir = 8
 	},
-/obj/machinery/photocopier/faxmachine,
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -7305,6 +7301,10 @@
 	name = "west bump";
 	pixel_x = -28
 	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Quartermaster's Office"
+	},
+/obj/item/toy/figure/crew/qm,
 /turf/simulated/floor/plasteel,
 /area/station/supply/qm)
 "aFq" = (
@@ -8724,7 +8724,7 @@
 /obj/structure/table/wood,
 /obj/machinery/firealarm/directional/south,
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "Magistrate's Office"
+	department = "Legal Office"
 	},
 /turf/simulated/floor/carpet,
 /area/station/legal/legaloffice)
@@ -9715,7 +9715,8 @@
 "aPi" = (
 /obj/structure/table/wood,
 /obj/item/folder/blue{
-	pixel_y = -3
+	pixel_y = -3;
+	pixel_x = 8
 	},
 /obj/item/flashlight/lamp{
 	pixel_y = 10;
@@ -9738,6 +9739,10 @@
 /obj/machinery/phone{
 	pixel_y = 8;
 	pixel_x = -8
+	},
+/obj/item/paper_bin/nanotrasen{
+	pixel_x = -6;
+	pixel_y = -5
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/office/dignitary)
@@ -13868,7 +13873,6 @@
 /area/station/medical/cloning)
 "buN" = (
 /obj/structure/table/glass,
-/obj/machinery/photocopier/faxmachine,
 /obj/item/toy/figure/crew/cmo,
 /obj/machinery/keycard_auth{
 	pixel_x = -24
@@ -13877,6 +13881,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tiles/department/medical/checker,
+/obj/machinery/photocopier/faxmachine{
+	department = "Chief Medical Officer's Office"
+	},
 /turf/simulated/floor/plasteel/white,
 /area/station/command/office/cmo)
 "buO" = (
@@ -14305,13 +14312,14 @@
 /turf/simulated/floor/plasteel,
 /area/station/hallway/primary/fore)
 "bzt" = (
-/obj/machinery/photocopier/faxmachine{
-	department = "Research Director's Office"
-	},
 /obj/structure/table/wood,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Research Director's Office"
+	},
+/obj/item/toy/figure/crew/rd,
 /turf/simulated/floor/wood,
 /area/station/command/office/rd)
 "bzT" = (
@@ -15989,7 +15997,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/safe,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -15998,6 +16005,9 @@
 /obj/item/lighter/zippo/nt_rep,
 /obj/item/reagent_containers/drinks/bottle/vodka/badminka,
 /obj/item/folder/documents,
+/obj/structure/safe{
+	known_by = list("captain")
+	},
 /obj/item/clothing/head/bearpelt,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/vault)
@@ -29591,6 +29601,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/disaster_counter/reactor{
+	pixel_y = 32
+	},
 /turf/simulated/floor/engine,
 /area/station/engineering/engine/reactor)
 "ksi" = (
@@ -32386,7 +32399,10 @@
 "mdz" = (
 /obj/structure/table/wood,
 /obj/machinery/firealarm/directional/west,
-/obj/machinery/photocopier/faxmachine/longrange,
+/obj/machinery/photocopier/faxmachine{
+	department = "Head of Security's Office"
+	},
+/obj/item/toy/figure/crew/hos,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/office/hos)
 "mdF" = (
@@ -36849,7 +36865,10 @@
 	pixel_x = 28;
 	dir = 5
 	},
-/obj/machinery/photocopier/faxmachine/longrange,
+/obj/machinery/photocopier/faxmachine/longrange{
+	department = "Captain's Office"
+	},
+/obj/item/toy/figure/crew/captain,
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/office/captain)
 "oKS" = (
@@ -45148,7 +45167,6 @@
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/electrical/aft_port)
 "tir" = (
-/obj/machinery/photocopier/faxmachine,
 /obj/structure/table/reinforced,
 /obj/machinery/keycard_auth{
 	pixel_x = -24
@@ -45157,6 +45175,9 @@
 	dir = 6
 	},
 /obj/item/toy/figure/crew/ce,
+/obj/machinery/photocopier/faxmachine{
+	department = "Chief Engineer's Office"
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/command/office/ce)
 "tiJ" = (
