@@ -30956,6 +30956,11 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/transmission_laser)
+"kVK" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/alarm/directional/south,
+/turf/simulated/floor/plasteel,
+/area/station/hallway/secondary/entry/south)
 "kWa" = (
 /turf/simulated/floor/wood,
 /area/station/maintenance/abandonedbar)
@@ -39238,6 +39243,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
+"pBM" = (
+/obj/machinery/alarm/directional/west,
+/turf/simulated/floor/plating,
+/area/station/maintenance/apmaint)
 "pBY" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 1
@@ -80460,7 +80469,7 @@ xVt
 dHD
 eNe
 eNe
-eNe
+pBM
 dFt
 dFt
 dFt
@@ -84069,7 +84078,7 @@ vJD
 tPg
 utV
 beX
-fLk
+kVK
 ioN
 aZD
 aZD
@@ -85609,10 +85618,10 @@ dNE
 ioN
 ioN
 dNE
-ioN
+aaV
 wdb
 fLk
-ioN
+aaV
 dNE
 dNE
 ioN
@@ -86383,7 +86392,7 @@ aae
 ioN
 mEA
 fLk
-ioN
+aaV
 ioN
 ioN
 ioN
@@ -89210,7 +89219,7 @@ daW
 aaV
 rIB
 fLk
-ioN
+aaV
 ioN
 ioN
 ioN
