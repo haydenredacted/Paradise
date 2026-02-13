@@ -37097,7 +37097,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/smes/transformer,
+/obj/machinery/power/smes/engineering,
 /turf/simulated/floor/plating,
 /area/station/maintenance/electrical/aft_port)
 "cMZ" = (
@@ -37522,7 +37522,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/power/smes/transformer,
+/obj/machinery/power/smes/engineering,
 /turf/simulated/floor/plating,
 /area/station/maintenance/electrical/aft_port)
 "cOB" = (
@@ -55555,12 +55555,12 @@
 	},
 /area/station/medical/cloning)
 "gBb" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id_tag = "genetics_shutters";
-	name = "Genetics Lab Shutters"
-	},
 /obj/effect/spawner/window/reinforced/polarized{
 	id = "genetics"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id_tag = "genetics";
+	name = "Genetics Lab Shutters"
 	},
 /turf/simulated/floor/plating,
 /area/station/science/genetics)
@@ -67627,10 +67627,10 @@
 /area/station/security/permabrig)
 "lKI" = (
 /obj/structure/cable,
+/obj/machinery/power/smes/engineering,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/machinery/power/smes/transformer,
 /turf/simulated/floor/plating,
 /area/station/maintenance/electrical/fore_starboard)
 "lKO" = (
@@ -98157,7 +98157,7 @@
 /area/station/maintenance/fsmaint)
 "yeb" = (
 /obj/structure/cable,
-/obj/machinery/power/smes/transformer,
+/obj/machinery/power/smes/engineering,
 /turf/simulated/floor/plating,
 /area/station/maintenance/electrical/aft_starboard)
 "yee" = (
