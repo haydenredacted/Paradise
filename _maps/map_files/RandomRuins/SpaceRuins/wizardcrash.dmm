@@ -184,7 +184,7 @@
 "aM" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/ruin/space/powered)
 "aN" = (
 /obj/structure/bookcase,
