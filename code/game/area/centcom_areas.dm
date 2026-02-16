@@ -136,3 +136,9 @@
 	icon_state = "yellow"
 	requires_power = FALSE
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/nct_sat
+	name = "The Nanotrasen Career Trainer Satellite"
+	icon_state = "yellow"
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED

@@ -1241,10 +1241,6 @@
 "eE" = (
 /turf/simulated/floor/beach/away/coastline,
 /area/ninja/holding)
-"eF" = (
-/obj/item/clothing/head/collectable/paper,
-/turf/simulated/floor/beach/away/coastline,
-/area/ninja/holding)
 "eG" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 8
@@ -1310,6 +1306,13 @@
 "eQ" = (
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_boxingcourt)
+"eR" = (
+/obj/machinery/light/small,
+/obj/machinery/computer/camera_advanced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "eS" = (
 /obj/item/kirbyplants/large,
 /turf/simulated/floor/pod/dark,
@@ -1655,6 +1658,22 @@
 /obj/effect/baseturf_helper/asteroid/snow,
 /turf/simulated/wall/indestructible/rock/snow,
 /area/syndicate_mothership)
+"gg" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/item/clipboard{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/obj/item/folder/white{
+	pixel_x = 8;
+	pixel_y = 13
+	},
+/obj/item/pen/blue{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "gh" = (
 /turf/simulated/wall/indestructible/opsglass,
 /area/centcom)
@@ -2032,6 +2051,11 @@
 	},
 /turf/simulated/floor/plating/abductor,
 /area/abductor_ship)
+"hu" = (
+/obj/structure/chair/comfy/black,
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "hv" = (
 /obj/structure/sign/double/map/left{
 	pixel_y = 32
@@ -2288,6 +2312,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/syndicate_sit)
+"hZ" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "ia" = (
 /obj/machinery/cooking/deepfryer/upgraded,
 /obj/effect/turf_decal/tiles/dark/checker,
@@ -2562,6 +2592,12 @@
 /obj/machinery/sleeper/syndie,
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
+"iR" = (
+/obj/structure/chair/comfy/yellow{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "iS" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -3186,6 +3222,10 @@
 "kU" = (
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership/jail)
+"kV" = (
+/obj/structure/bookcase/manuals/medical,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "kW" = (
 /obj/structure/chair/sofa{
 	dir = 8
@@ -3358,6 +3398,12 @@
 	},
 /turf/simulated/wall/mineral/plastitanium,
 /area/shuttle/syndicate)
+"lC" = (
+/obj/effect/turf_decal/plaque/nosey,
+/obj/structure/table/wood/fancy/royalblack,
+/obj/effect/spawner/random/plushies,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "lD" = (
 /obj/effect/decal/remains/human,
 /turf/simulated/floor/plasteel/dark,
@@ -3597,6 +3643,14 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/admin)
+"mh" = (
+/obj/structure/bookcase/manuals/research_and_development,
+/obj/item/candle/eternal/lit{
+	pixel_x = -9;
+	pixel_y = 13
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "mi" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/pirate_black{
@@ -3629,6 +3683,13 @@
 /obj/mecha/combat/marauder/seraph/loaded,
 /turf/simulated/floor/plasteel,
 /area/admin)
+"mn" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "mo" = (
 /obj/machinery/washing_machine,
 /turf/simulated/floor/plasteel/freezer,
@@ -4403,6 +4464,9 @@
 /obj/item/storage/fancy/crayons,
 /turf/simulated/floor/plasteel/freezer,
 /area/syndicate_mothership)
+"oI" = (
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "oJ" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/condiment/saltshaker{
@@ -4490,6 +4554,12 @@
 	},
 /turf/simulated/floor/backrooms_carpet,
 /area/backrooms)
+"pa" = (
+/obj/machinery/teleport/hub/upgraded{
+	admin_usage = 1
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "pc" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -4554,6 +4624,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/wizard_station)
+"pn" = (
+/obj/effect/mob_spawn/human/alive/nct,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "po" = (
 /turf/simulated/wall/indestructible/fakeglass,
 /area/trader_station/sol)
@@ -4689,6 +4763,13 @@
 /obj/item/radio/headset/centcom,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/gamma)
+"pQ" = (
+/obj/item/kirbyplants/large,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "pR" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -4847,6 +4928,9 @@
 /obj/structure/table/glass/reinforced/plastitanium,
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership/jail)
+"qy" = (
+/turf/simulated/wall/indestructible/fakeglass,
+/area/nct_sat)
 "qz" = (
 /obj/effect/turf_decal/tiles/department/medical/corner{
 	dir = 1
@@ -5399,6 +5483,12 @@
 "sd" = (
 /turf/simulated/floor/backrooms_carpet,
 /area/backrooms)
+"se" = (
+/obj/structure/chair/comfy/yellow{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "sf" = (
 /turf/simulated/floor/light,
 /area/centcom/specops)
@@ -5893,6 +5983,9 @@
 /obj/structure/table/glass/reinforced/plastitanium,
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
+"tY" = (
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "tZ" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external/glass{
@@ -5909,6 +6002,12 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate)
+"ub" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "ue" = (
 /obj/machinery/door/window{
 	dir = 8;
@@ -6847,6 +6946,13 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/admin)
+"xn" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/structure/decorative_structures/flammable/lava_land_display{
+	pixel_y = 15
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "xo" = (
 /turf/simulated/floor/grass/jungle,
 /area/wizard_station)
@@ -7305,6 +7411,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/ghost_bar)
+"zm" = (
+/obj/structure/bookcase/manuals/engineering,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "zn" = (
 /obj/structure/sign/bobross,
 /turf/simulated/wall/indestructible/riveted,
@@ -7817,6 +7927,18 @@
 /obj/structure/table/wood,
 /turf/simulated/floor/plating/asteroid/ancient,
 /area/ghost_bar)
+"Bi" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/item/storage/secure/briefcase{
+	pixel_x = 6;
+	pixel_y = 14
+	},
+/obj/item/flashlight/seclite{
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "Bj" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/carpet/black,
@@ -8120,6 +8242,10 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
+"Cn" = (
+/obj/structure/shelf/medbay,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "Cp" = (
 /obj/structure/sink/directional/east,
 /obj/effect/turf_decal/tiles/dark/checker,
@@ -8298,6 +8424,12 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_boxingcourt)
+"CT" = (
+/obj/structure/chair/comfy/yellow{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "CU" = (
 /obj/structure/chair/comfy/purp{
 	name = "wizard council throne";
@@ -8364,6 +8496,10 @@
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
 /area/ghost_bar)
+"Dl" = (
+/obj/structure/chair/comfy/yellow,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "Dm" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -8557,6 +8693,10 @@
 /obj/item/kirbyplants/large,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"DT" = (
+/obj/structure/chair/comfy/black,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "DV" = (
 /obj/effect/mapping_helpers/airlock/access/all/centcomm/commander,
 /obj/machinery/door/airlock/centcom{
@@ -9214,6 +9354,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/centcom/control)
+"Gu" = (
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "Gv" = (
 /obj/item/radio/intercom/syndicate{
 	pixel_x = 28
@@ -9631,12 +9775,23 @@
 	icon_state = "asteroidplating"
 	},
 /area/ghost_bar)
+"Ip" = (
+/obj/structure/shelf/engineering,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "Iq" = (
 /obj/effect/turf_decal/tiles/department/security/corner{
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/gamma)
+"Ir" = (
+/obj/machinery/computer/teleporter{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "Is" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ants,
@@ -10492,6 +10647,11 @@
 	dir = 8
 	},
 /area/ghost_bar)
+"LB" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/item/candle/eternal/lit,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "LC" = (
 /obj/structure/chair/comfy/green{
 	dir = 1
@@ -10530,6 +10690,14 @@
 /obj/item/flashlight/seclite,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"LK" = (
+/obj/machinery/teleport/station/upgraded,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "LL" = (
 /obj/structure/holowindow,
 /obj/effect/turf_decal/tiles/department/security/side{
@@ -11024,6 +11192,14 @@
 	dir = 8
 	},
 /area/ghost_bar)
+"NI" = (
+/obj/structure/bookcase/random,
+/obj/item/candle/eternal/lit{
+	pixel_x = 11;
+	pixel_y = 14
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "NJ" = (
 /turf/simulated/wall/indestructible/opsglass,
 /area/ghost_bar)
@@ -11383,6 +11559,13 @@
 /obj/effect/turf_decal/delivery/white/partial,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Pb" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "Pc" = (
 /obj/structure/sign/public/arcade,
 /turf/simulated/wall/indestructible/opsglass,
@@ -12328,6 +12511,9 @@
 /obj/machinery/economy/vending/wallmed/syndicate/directional/south,
 /turf/simulated/floor/plasteel/dark,
 /area/ghost_bar)
+"Sw" = (
+/turf/simulated/mineral/ancient/outer,
+/area/nct_sat)
 "Sx" = (
 /obj/machinery/sleeper/upgraded{
 	dir = 4
@@ -12358,6 +12544,10 @@
 /obj/structure/sign/nosmoking/alt,
 /turf/simulated/wall/indestructible/riveted,
 /area/ghost_bar)
+"SC" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "SD" = (
 /obj/structure/table,
 /obj/machinery/recharger{
@@ -12871,6 +13061,10 @@
 /obj/machinery/computer/operating,
 /turf/simulated/floor/plasteel/freezer,
 /area/admin)
+"UF" = (
+/obj/item/clothing/head/collectable/paper,
+/turf/simulated/floor/beach/away/sand,
+/area/ninja/holding)
 "UG" = (
 /obj/machinery/cryopod/offstation,
 /turf/simulated/floor/plasteel/dark,
@@ -12955,6 +13149,10 @@
 /obj/effect/turf_decal/tiles/department/security/side,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Va" = (
+/obj/structure/chair/office/dark,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "Vb" = (
 /obj/structure/chair/stool/holostool{
 	dir = 8
@@ -12964,6 +13162,13 @@
 	icon_state = "asteroid"
 	},
 /area/holodeck/source_picnicarea)
+"Vc" = (
+/obj/machinery/light/small,
+/obj/machinery/computer/crew/advanced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "Vd" = (
 /obj/structure/sign/service/library,
 /turf/simulated/wall/indestructible/syndicate/no_diagonal,
@@ -13138,6 +13343,13 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/indestructible/riveted,
 /area/centcom/specops)
+"VJ" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "VK" = (
 /obj/structure/fence,
 /turf/simulated/floor/plating/asteroid/snow,
@@ -14166,6 +14378,13 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/admin)
+"ZB" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "ZC" = (
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/control)
@@ -14223,6 +14442,10 @@
 /obj/structure/showcase,
 /turf/simulated/floor/wood,
 /area/wizard_station)
+"ZM" = (
+/obj/item/kirbyplants/large,
+/turf/simulated/floor/carpet/purple,
+/area/nct_sat)
 "ZN" = (
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
@@ -52626,11 +52849,11 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+Sw
+Sw
+Sw
 aN
 aN
 aN
@@ -52881,15 +53104,15 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+Sw
+NI
+kV
+mh
+Sw
+Sw
+Sw
 aN
 aN
 aN
@@ -53137,16 +53360,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+zm
+oI
+oI
+oI
+oI
+oI
+ZM
+Sw
 aN
 aN
 aN
@@ -53394,16 +53617,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+pQ
+oI
+tY
+tY
+tY
+Gu
+Va
+Vc
+Sw
 aN
 aN
 aN
@@ -53651,16 +53874,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+oI
+tY
+iR
+ZB
+tY
+tY
+oI
+Sw
+Sw
 aN
 aN
 aN
@@ -53907,16 +54130,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+oI
+hu
+LB
+gg
+VJ
+tY
+Ip
+qy
 aN
 aN
 aN
@@ -54164,16 +54387,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+qy
+oI
+oI
+Dl
+xn
+lC
+CT
+tY
+SC
+qy
 aN
 aN
 aN
@@ -54421,16 +54644,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+qy
+pn
+oI
+DT
+LB
+Bi
+hZ
+tY
+Cn
+qy
 aN
 aN
 aN
@@ -54678,17 +54901,17 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+qy
+oI
+oI
+Gu
+se
+ub
+tY
+Gu
+oI
+Sw
+Sw
 aN
 aN
 aN
@@ -54935,17 +55158,17 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+Pb
+oI
+Gu
+tY
+Gu
+tY
+Va
+eR
+Sw
 aN
 aN
 aN
@@ -55193,16 +55416,16 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+ZM
+oI
+oI
+oI
+oI
+mn
+ZM
+Sw
 aN
 aN
 aN
@@ -55451,15 +55674,15 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+Sw
+Sw
+Ir
+LK
+pa
+Sw
+Sw
 aN
 aN
 aN
@@ -55711,11 +55934,11 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
+Sw
+Sw
+Sw
+Sw
+Sw
 aN
 aN
 aN
@@ -55953,8 +56176,8 @@ cy
 cy
 dF
 cy
-cy
-eF
+UF
+eE
 fc
 fg
 aN
