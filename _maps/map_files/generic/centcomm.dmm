@@ -3687,7 +3687,6 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/turfs/damage,
 /turf/simulated/floor/carpet/purple,
 /area/nct_sat)
 "mo" = (
@@ -9777,6 +9776,8 @@
 /area/ghost_bar)
 "Ip" = (
 /obj/structure/shelf/engineering,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/carpet/purple,
 /area/nct_sat)
 "Iq" = (
@@ -12546,6 +12547,7 @@
 /area/ghost_bar)
 "SC" = (
 /obj/structure/table/reinforced,
+/obj/item/paper/fluff/nct_implants,
 /turf/simulated/floor/carpet/purple,
 /area/nct_sat)
 "SD" = (
@@ -53620,7 +53622,7 @@ aN
 Sw
 pQ
 oI
-tY
+Gu
 tY
 tY
 Gu
@@ -53876,10 +53878,10 @@ aN
 aN
 Sw
 oI
-tY
+Gu
 iR
 ZB
-tY
+Gu
 tY
 oI
 Sw
@@ -54137,7 +54139,7 @@ hu
 LB
 gg
 VJ
-tY
+Gu
 Ip
 qy
 aN
@@ -54394,7 +54396,7 @@ Dl
 xn
 lC
 CT
-tY
+Gu
 SC
 qy
 aN
@@ -55163,7 +55165,7 @@ Sw
 Pb
 oI
 Gu
-tY
+Gu
 Gu
 tY
 Va
