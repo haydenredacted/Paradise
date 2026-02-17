@@ -12131,6 +12131,9 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/science/genetics)
+"bcv" = (
+/turf/simulated/wall/r_wall,
+/area/station/maintenance/abandonedservers)
 "bcw" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -12911,8 +12914,7 @@
 "bhS" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/drinks/drinkingglass/shotglass,
+/obj/machinery/bottler,
 /turf/simulated/floor/carpet/green,
 /area/station/maintenance/abandonedbar)
 "bhU" = (
@@ -26639,10 +26641,6 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/station/medical/virology)
-"iif" = (
-/obj/effect/turf_decal/stripes/line,
-/turf/simulated/floor/plasteel/dark,
-/area/station/hallway/secondary/entry/south)
 "iix" = (
 /obj/effect/spawner/window/reinforced/grilled,
 /turf/simulated/floor/plating,
@@ -28408,6 +28406,12 @@
 /obj/effect/landmark/start/assistant,
 /turf/simulated/floor/carpet,
 /area/station/hallway/secondary/entry/lounge)
+"jlW" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
+/obj/structure/barricade/wooden,
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "jlX" = (
 /obj/effect/turf_decal/trimline/misc/toxins/line{
 	dir = 4
@@ -45968,6 +45972,9 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/security/prisonershuttle)
+"sYE" = (
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "sZr" = (
 /obj/structure/cable/extra_insulated{
 	icon_state = "4-8"
@@ -47819,6 +47826,8 @@
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/maintenance,
+/obj/item/reagent_containers/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/drinks/drinkingglass/shotglass,
 /turf/simulated/floor/carpet/green,
 /area/station/maintenance/abandonedbar)
 "ubv" = (
@@ -49077,6 +49086,7 @@
 	},
 /obj/item/clothing/glasses/hud/health,
 /obj/item/reagent_containers/dropper/precision,
+/obj/item/storage/belt/medical,
 /turf/simulated/floor/plasteel/white,
 /area/station/medical/virology)
 "uQC" = (
@@ -79183,16 +79193,16 @@ wBo
 sSV
 aZD
 aae
+aae
+aae
 aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aZD
 aZD
 aZD
@@ -79441,15 +79451,15 @@ kjt
 bWg
 dFt
 dFt
+aae
 aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
+aae
+bcv
+bcv
+bcv
+bcv
+bcv
+aae
 aZD
 aZD
 aZD
@@ -79698,15 +79708,15 @@ vDr
 eNe
 jXX
 dFt
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
+aae
+aae
+aae
+bcv
+sYE
+sYE
+sYE
+bcv
+aae
 aZD
 aZD
 aZD
@@ -79956,14 +79966,14 @@ fjb
 lpi
 dFt
 dFt
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
+aae
+aae
+bcv
+sYE
+sYE
+sYE
+bcv
+aae
 aZD
 aZD
 aZD
@@ -80214,13 +80224,13 @@ eNe
 nuZ
 dFt
 dFt
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
-aZD
+aae
+bcv
+sYE
+sYE
+sYE
+bcv
+aae
 aZD
 aZD
 aZD
@@ -80472,11 +80482,11 @@ eNe
 pBM
 dFt
 dFt
-dFt
-aZD
-aZD
-aZD
-dFt
+bcv
+sYE
+sYE
+sYE
+bcv
 dFt
 dFt
 dFt
@@ -80730,7 +80740,7 @@ fjb
 lrk
 lrk
 dFt
-dFt
+jlW
 dFt
 bWg
 dFt
@@ -85883,7 +85893,7 @@ vBB
 vCB
 mZO
 xwl
-iif
+hoO
 mZO
 aZD
 aZD
@@ -89738,7 +89748,7 @@ aOW
 uvT
 mZO
 xZF
-iif
+urc
 mZO
 aZD
 aZD
