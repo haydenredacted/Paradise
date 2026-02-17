@@ -15669,7 +15669,6 @@
 /area/station/security/prisonershuttle)
 "cpc" = (
 /obj/effect/turf_decal/delivery/hollow,
-/obj/machinery/alarm/directional/north,
 /obj/machinery/porta_turret/ai_turret,
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
@@ -19527,10 +19526,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
 "eoh" = (
@@ -24093,6 +24092,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
 "gUV" = (
@@ -25606,6 +25608,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/machinery/alarm/directional/east,
 /turf/simulated/floor/plating,
 /area/station/turret_protected/aisat/interior)
 "hIz" = (
@@ -26243,16 +26246,6 @@
 /obj/structure/disposalpipe/segment/corner,
 /turf/simulated/floor/plasteel/white,
 /area/station/medical/reception)
-"hWR" = (
-/obj/machinery/turretid/lethal{
-	check_synth = 1;
-	name = "AI Chamber Turret Control";
-	pixel_x = 5;
-	pixel_y = -24;
-	req_access = list(75)
-	},
-/turf/simulated/wall/r_wall,
-/area/station/turret_protected/ai)
 "hWZ" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Power Transmission Laser"
@@ -30316,6 +30309,7 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 32
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
 "kvF" = (
@@ -52145,6 +52139,9 @@
 "wyf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/wood,
 /area/station/public/dorms)
 "wys" = (
@@ -103114,7 +103111,7 @@ hDl
 agt
 agt
 mtz
-hWR
+agt
 eeC
 wwi
 agt
