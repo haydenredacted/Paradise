@@ -10038,6 +10038,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/extra_insulated{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/apmaint)
 "aQK" = (
@@ -21575,6 +21578,9 @@
 "fvG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/extra_insulated{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/apmaint)
 "fwG" = (
@@ -25292,6 +25298,9 @@
 /obj/effect/spawner/random/blood/maybe,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/extra_insulated{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/apmaint)
 "hyc" = (
@@ -25513,6 +25522,10 @@
 /obj/machinery/alarm/directional/south,
 /turf/simulated/floor/plasteel/dark,
 /area/station/engineering/gravitygenerator)
+"hFN" = (
+/obj/machinery/firealarm/directional/east,
+/turf/simulated/floor/plasteel,
+/area/station/maintenance/abandonedservers)
 "hFT" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -26022,6 +26035,17 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/plasteel/dark,
 /area/station/turret_protected/aisat/interior)
+"hRK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/circuitboard/processing_node,
+/obj/item/stack/sheet/mineral/silver,
+/obj/item/stack/sheet/mineral/silver,
+/obj/item/stack/sheet/mineral/gold,
+/obj/item/stack/sheet/mineral/gold,
+/obj/structure/machine_frame,
+/obj/machinery/alarm/directional/south,
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "hRQ" = (
 /obj/effect/turf_decal/tiles/department/medical/corner{
 	dir = 1
@@ -27113,6 +27137,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/extra_insulated{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/apmaint)
 "iyK" = (
@@ -28393,6 +28420,10 @@
 /obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /obj/structure/barricade/wooden,
+/obj/structure/cable/extra_insulated{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/maintenance/abandonedservers)
 "jlX" = (
@@ -29420,6 +29451,12 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/station/service/hydroponics)
+"jSM" = (
+/obj/item/stack/sheet/plastic{
+	amount = 10
+	},
+/turf/simulated/floor/plasteel,
+/area/station/maintenance/abandonedservers)
 "jSW" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/structure/reagent_dispensers/fueltank,
@@ -33555,6 +33592,9 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/station/science/xenobiology)
+"mpb" = (
+/turf/simulated/floor/plasteel,
+/area/station/maintenance/abandonedservers)
 "mpt" = (
 /obj/machinery/chem_heater,
 /obj/effect/turf_decal/stripes/line{
@@ -37899,6 +37939,9 @@
 /obj/effect/spawner/random/oil/maybe,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/extra_insulated{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/apmaint)
 "oOk" = (
@@ -38898,6 +38941,11 @@
 /obj/effect/landmark/spawner/rev,
 /turf/simulated/floor/plasteel/dark,
 /area/station/medical/morgue)
+"ppW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machine_frame,
+/turf/simulated/floor/plasteel,
+/area/station/maintenance/abandonedservers)
 "pqa" = (
 /obj/structure/closet/radiation,
 /obj/effect/turf_decal/delivery/hollow,
@@ -40172,6 +40220,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plasteel,
 /area/station/hallway/secondary/entry/south)
+"qdx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/ai_node/network_node,
+/turf/simulated/floor/plasteel,
+/area/station/maintenance/abandonedservers)
 "qdD" = (
 /turf/simulated/wall,
 /area/station/supply/storage)
@@ -45965,6 +46018,13 @@
 /turf/simulated/floor/plasteel,
 /area/station/security/prisonershuttle)
 "sYE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/circuitboard/processing_node,
+/obj/item/stack/sheet/mineral/silver,
+/obj/item/stack/sheet/mineral/silver,
+/obj/item/stack/sheet/mineral/gold,
+/obj/item/stack/sheet/mineral/gold,
+/obj/structure/machine_frame,
 /turf/simulated/floor/plating,
 /area/station/maintenance/abandonedservers)
 "sZr" = (
@@ -47084,6 +47144,10 @@
 /obj/effect/landmark/start/assistant,
 /turf/simulated/floor/carpet/grimey,
 /area/station/hallway/primary/aft)
+"tEK" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel,
+/area/station/maintenance/abandonedservers)
 "tEQ" = (
 /obj/effect/turf_decal/tiles/department/engineering/corner{
 	dir = 1
@@ -48447,6 +48511,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/hallway/secondary/entry/south)
+"uwc" = (
+/obj/effect/spawner/window/reinforced/grilled,
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "uwe" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -52196,6 +52264,12 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/equipmentstorage)
+"wzA" = (
+/obj/structure/cable/extra_insulated{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/apmaint)
 "wAg" = (
 /obj/machinery/camera/autoname{
 	dir = 1
@@ -52645,6 +52719,14 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/maintenance/turbine)
+"wKv" = (
+/obj/structure/cable/extra_insulated{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/step_trigger/flicker_lights,
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "wLe" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /turf/simulated/floor/plating,
@@ -54448,6 +54530,14 @@
 /obj/effect/turf_decal/tiles/department/security,
 /turf/simulated/floor/plasteel,
 /area/station/security/brig)
+"xIs" = (
+/obj/structure/cable/extra_insulated{
+	icon_state = "0-4"
+	},
+/obj/item/mounted/frame/apc_frame,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "xIz" = (
 /obj/effect/turf_decal/delivery/hollow,
 /obj/machinery/tcomms/core/station,
@@ -54767,6 +54857,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/execution)
+"xTA" = (
+/obj/structure/table,
+/obj/item/stack/cable_coil/random,
+/obj/effect/spawner/random/maintenance,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/abandonedservers)
 "xTV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash,
@@ -78147,7 +78246,7 @@ bHg
 kXf
 lZE
 gfb
-lZE
+hPz
 wBo
 nCy
 uiZ
@@ -79447,9 +79546,9 @@ aae
 aZD
 aae
 bcv
-bcv
-bcv
-bcv
+uwc
+uwc
+uwc
 bcv
 aae
 aZD
@@ -79704,8 +79803,8 @@ aae
 aae
 aae
 bcv
-sYE
-sYE
+ppW
+mpb
 sYE
 bcv
 aae
@@ -79961,9 +80060,9 @@ dFt
 aae
 aae
 bcv
-sYE
-sYE
-sYE
+xTA
+jSM
+qdx
 bcv
 aae
 aZD
@@ -80218,9 +80317,9 @@ dFt
 dFt
 aae
 bcv
-sYE
-sYE
-sYE
+xIs
+tEK
+hRK
 bcv
 aae
 aZD
@@ -80475,9 +80574,9 @@ pBM
 dFt
 dFt
 bcv
-sYE
-sYE
-sYE
+wKv
+hFN
+qdx
 bcv
 dFt
 dFt
@@ -80989,7 +81088,7 @@ xav
 xav
 eNe
 avX
-eNe
+wzA
 rSa
 dHD
 xav
