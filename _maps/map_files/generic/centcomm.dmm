@@ -3932,6 +3932,12 @@
 /obj/effect/turf_decal/tiles/jobs/bar/checker,
 /turf/simulated/floor/plasteel,
 /area/syndicate_mothership)
+"nb" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "nc" = (
 /obj/mecha/combat/marauder/mauler/loaded,
 /turf/simulated/floor/plasteel,
@@ -4664,6 +4670,11 @@
 /obj/effect/turf_decal/tiles/jobs/bar/checker,
 /turf/simulated/floor/plasteel,
 /area/syndicate_mothership)
+"pA" = (
+/turf/simulated/floor/light{
+	color = "#79986b"
+	},
+/area/space/centcomm)
 "pB" = (
 /obj/docking_port/stationary/gamma_armory/centcomm,
 /turf/space,
@@ -4857,6 +4868,14 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
+"qj" = (
+/obj/machinery/computer/cryopod/robot{
+	pixel_y = -32
+	},
+/obj/structure/table,
+/obj/effect/spawner/random/plushies,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "qm" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/storage/fancy/matches,
@@ -6168,6 +6187,10 @@
 	},
 /turf/simulated/floor/carpet,
 /area/admin)
+"uB" = (
+/obj/effect/turf_decal/tiles/department/medical,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "uC" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
@@ -6264,6 +6287,10 @@
 /obj/structure/statue/uranium/nuke,
 /turf/simulated/floor/plating/asteroid/snow,
 /area/syndicate_mothership)
+"va" = (
+/obj/machinery/cryopod/robot/offstation,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "vd" = (
 /turf/simulated/floor/carpet/green,
 /area/ghost_bar)
@@ -7479,6 +7506,10 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
+"zD" = (
+/obj/effect/spawner/window/reinforced,
+/turf/simulated/floor/plating,
+/area/space/centcomm)
 "zE" = (
 /obj/structure/sign/poster/official/random/directional/east,
 /turf/simulated/floor/carpet/black,
@@ -8028,6 +8059,12 @@
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/grass,
 /area/centcom/suppy)
+"BE" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Central Command Storage"
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "BF" = (
 /turf/simulated/floor/plating/airless,
 /area/centcom/control)
@@ -8945,6 +8982,10 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/suppy)
+"Fi" = (
+/obj/machinery/cryopod/offstation,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "Fj" = (
 /obj/machinery/computer/med_data{
 	dir = 8
@@ -9630,6 +9671,10 @@
 /obj/structure/sign/public/drop,
 /turf/simulated/wall/indestructible/syndicate/no_diagonal,
 /area/syndicate_mothership)
+"HM" = (
+/obj/effect/turf_decal/tiles/department/cargo,
+/turf/space,
+/area/space/centcomm)
 "HN" = (
 /turf/simulated/floor/indestructible/necropolis,
 /area/ruin/space/bubblegum_arena)
@@ -10296,6 +10341,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/ghost_bar)
+"Ku" = (
+/obj/machinery/door/airlock/public/glass,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "Kv" = (
 /obj/structure/chair/comfy/red,
 /turf/simulated/floor/carpet/black,
@@ -10645,6 +10694,10 @@
 /obj/effect/landmark/spawner/tdomeadmin,
 /turf/simulated/floor/plasteel/dark,
 /area/tdome/tdomeadmin)
+"LD" = (
+/obj/machinery/cryopod/offstation/right,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "LE" = (
 /obj/structure/chair/sofa/left{
 	dir = 8
@@ -10689,6 +10742,12 @@
 	},
 /turf/simulated/floor/wood,
 /area/ghost_bar)
+"LP" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "LQ" = (
 /obj/machinery/door/poddoor/impassable{
 	name = "Heavy Supply";
@@ -10720,6 +10779,14 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/centcom/evac)
+"LY" = (
+/obj/machinery/computer/cryopod{
+	pixel_y = -32
+	},
+/obj/structure/table,
+/obj/effect/spawner/random/plushies,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "Ma" = (
 /obj/machinery/economy/slot_machine,
 /obj/machinery/light/small{
@@ -11254,6 +11321,10 @@
 /obj/machinery/mecha_part_fabricator/upgraded,
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
+"Oe" = (
+/obj/effect/turf_decal/tiles/department/security,
+/turf/space,
+/area/space/centcomm)
 "Og" = (
 /obj/structure/sign/vacuum/external,
 /turf/simulated/wall/indestructible/fakeglass,
@@ -12502,6 +12573,9 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_knightarena)
+"St" = (
+/turf/simulated/floor/grass,
+/area/space/centcomm)
 "Su" = (
 /obj/structure/filingcabinet/security,
 /turf/simulated/floor/wood,
@@ -12594,6 +12668,9 @@
 "SL" = (
 /turf/simulated/wall/indestructible/necropolis,
 /area/ruin/space/bubblegum_arena)
+"SM" = (
+/turf/simulated/wall/indestructible/fakeglass,
+/area/space/centcomm)
 "SP" = (
 /turf/simulated/floor/plating,
 /area/space/centcomm)
@@ -13407,6 +13484,10 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/wizard_station)
+"VY" = (
+/obj/effect/turf_decal/tiles/department/command,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "VZ" = (
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_knightarena)
@@ -13775,6 +13856,10 @@
 	},
 /turf/simulated/wall/indestructible/fakeglass,
 /area/centcom/specops)
+"Xi" = (
+/obj/structure/closet/wardrobe/pjs,
+/turf/simulated/floor/plasteel/dark,
+/area/space/centcomm)
 "Xj" = (
 /turf/simulated/floor/transparent/glass,
 /area/centcom/specops)
@@ -34979,7 +35064,7 @@ aN
 aN
 aN
 aN
-aN
+em
 za
 za
 za
@@ -35236,7 +35321,7 @@ aN
 aN
 aN
 aN
-aN
+SP
 za
 za
 za
@@ -35493,7 +35578,7 @@ aN
 aN
 aN
 aN
-aN
+em
 za
 za
 za
@@ -38073,16 +38158,16 @@ aN
 aN
 aN
 aa
-za
+em
 SP
-za
+em
 aa
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+aa
+aa
+aa
+aa
+aa
 aN
 aN
 aN
@@ -38330,17 +38415,17 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
+St
 aa
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+va
+LD
+LD
+LD
+aa
+aa
 aN
 aN
 aN
@@ -38587,17 +38672,17 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
+St
 aa
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+em
+em
+em
+em
+LY
+aa
 aN
 aN
 aN
@@ -38844,17 +38929,17 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
+em
+BE
+em
+em
+em
+em
+Xi
 aa
-aN
-aN
-aN
-aN
-aN
-aN
-aN
 aN
 aN
 aN
@@ -39101,17 +39186,17 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
+St
 aa
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+em
+em
+em
+em
+qj
+aa
 aN
 aN
 aN
@@ -39358,17 +39443,17 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
+St
 aa
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+va
+Fi
+Fi
+Fi
+aa
+aa
 aN
 aN
 aN
@@ -39615,16 +39700,16 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
 aa
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+aa
+aa
+aa
+aa
+aa
 aN
 aN
 aN
@@ -39872,15 +39957,15 @@ aN
 aN
 aN
 aa
-za
-za
-za
+em
+em
+em
 aa
-aN
-aN
-aN
-aN
-aN
+uB
+em
+em
+Oe
+aa
 aN
 aN
 aN
@@ -40129,15 +40214,15 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+em
+em
+em
+zD
+nb
+em
+em
+nb
+SM
 aN
 aN
 aN
@@ -40386,15 +40471,15 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+em
+em
+em
+Ku
+em
+pA
+pA
+em
+SM
 aN
 aN
 aN
@@ -40643,15 +40728,15 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+em
+em
+em
+zD
+LP
+em
+em
+LP
+SM
 aN
 aN
 aN
@@ -40900,15 +40985,15 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+em
+em
+em
+aa
+HM
+em
+em
+VY
+aa
 aN
 aN
 aN
@@ -41160,12 +41245,12 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+aa
+aa
+aa
+aa
+aa
 aN
 aN
 aN
