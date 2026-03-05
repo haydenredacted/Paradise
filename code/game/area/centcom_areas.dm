@@ -49,6 +49,10 @@
 /area/centcom/docks
 	name = "\improper Central Command Docks"
 
+/area/centcom/evac_dock
+	name = "\improper Centcom Evacuation Dock"
+	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+
 // Admin areas
 
 /area/admin
