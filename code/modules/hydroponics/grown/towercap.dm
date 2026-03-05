@@ -239,7 +239,7 @@
 
 /obj/structure/lightable/bonfire/lit/Initialize(mapload)
 	. = ..()
-	StartBurning()
+	addtimer(CALLBACK(src, PROC_REF(StartBurning)), 3 MINUTES)
 
 /obj/structure/lightable/bonfire/attack_hand(mob/user)
 	if(burning)

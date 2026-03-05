@@ -88,3 +88,9 @@
 
 /obj/effect/map_effect/marker/mapmanip/submap/extract/space_ruin/white_ship/gun_room
 	name = "white_ship gun room"
+
+/obj/effect/map_effect/marker/mapmanip/submap/insert/centcomm/display
+	name = "central command display room"
+
+/obj/effect/map_effect/marker/mapmanip/submap/extract/centcomm/display
+	name = "central command display room"

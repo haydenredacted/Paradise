@@ -1,0 +1,13 @@
+[
+	{
+		// centcom goofiness
+		"type": "SubmapExtractInsert",
+		"submap_size_x": 5,
+		"submap_size_y": 5,
+		"submap_size_z": 1,
+		"submaps_dmm": "submaps/centcomm.dmm",
+		"marker_extract": "/obj/effect/map_effect/marker/mapmanip/submap/extract/centcomm/display",
+		"marker_insert": "/obj/effect/map_effect/marker/mapmanip/submap/insert/centcomm/display",
+		"submaps_can_repeat": true // doesn't matter, as there's only one insert marker
+	}
+]

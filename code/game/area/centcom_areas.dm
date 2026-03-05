@@ -51,7 +51,7 @@
 
 /area/centcom/evac_dock
 	name = "\improper Centcom Evacuation Dock"
-	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 // Admin areas
 

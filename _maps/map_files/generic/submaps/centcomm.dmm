@@ -1,0 +1,174 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"e" = (
+/obj/structure/window/reinforced/survival_pod{
+	dir = 4
+	},
+/turf/template_noop,
+/area/template_noop)
+"u" = (
+/obj/effect/map_effect/marker/mapmanip/submap/extract/centcomm/display,
+/turf/template_noop,
+/area/template_noop)
+"x" = (
+/obj/machinery/iv_drip,
+/obj/item/bedsheet/ce,
+/turf/template_noop,
+/area/template_noop)
+"O" = (
+/turf/template_noop,
+/area/template_noop)
+"Y" = (
+/obj/structure/statue/chickenstatue,
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(2,1,1) = {"
+O
+O
+O
+O
+O
+O
+u
+O
+"}
+(3,1,1) = {"
+O
+O
+O
+Y
+O
+O
+O
+O
+"}
+(4,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(5,1,1) = {"
+O
+O
+O
+O
+O
+x
+O
+O
+"}
+(6,1,1) = {"
+O
+O
+e
+e
+e
+e
+e
+O
+"}
+(7,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(8,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(9,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(10,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(11,1,1) = {"
+O
+O
+O
+O
+O
+O
+u
+O
+"}
+(12,1,1) = {"
+O
+O
+O
+O
+O
+O
+Y
+O
+"}
+(13,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(14,1,1) = {"
+O
+O
+O
+O
+O
+O
+O
+O
+"}
+(15,1,1) = {"
+O
+O
+e
+e
+e
+e
+e
+O
+"}
