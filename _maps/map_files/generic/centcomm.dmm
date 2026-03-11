@@ -6550,7 +6550,7 @@
 /turf/simulated/floor/mineral/plastitanium/red/brig,
 /area/space/centcomm)
 "ud" = (
-/obj/effect/map_effect/marker/mapmanip/submap/insert/ruin/sieged_lab/horiz_hallway,
+/obj/effect/map_effect/marker/mapmanip/submap/insert/centcomm/display,
 /turf/simulated/floor/plating,
 /area/centcom/evac_dock)
 "ue" = (
