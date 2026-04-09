@@ -1,5 +1,3 @@
-
-
 /obj/item/reagent_containers/drinks/drinkingglass
 	name = "glass"
 	desc = "Your standard drinking glass."
@@ -68,8 +66,13 @@
 		icon_state = main_reagent.drink_icon
 		if((main_reagent.id == "bubbletea" || main_reagent.id == "bubblemilktea") && length(reagents.reagent_list) > 1)
 			customize_bubble_tea()
+		if(main_reagent.id == "bacchus_blessing")
+			switch(main_reagent.volume / volume)
+				if(0.75 to 1) overlays += image(icon, "bacchusblessing_over_01")
+				if(0.25 to 0.75) overlays += image(icon, "bacchusblessing_over_02")
+				if(0.05 to 0.25) overlays += image(icon, "bacchusblessing_over_03")
 	else
-		var/image/drink_image = image(icon, "glassoverlay")
+		var/image/drink_image = image('icons/obj/reagentfillings.dmi', "drinkingglass")
 		drink_image.color = mix_color_from_reagents(reagents.reagent_list)
 		overlays += drink_image
 

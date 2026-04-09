@@ -25,9 +25,6 @@
 /obj/structure/window/reinforced,
 /turf/simulated/wall/indestructible/riveted,
 /area/space/centcomm)
-"ag" = (
-/turf/simulated/wall/indestructible/fakedoor,
-/area/ninja/holding)
 "ah" = (
 /obj/effect/mapping_helpers/airlock/access/all/centcomm/general,
 /obj/machinery/door/airlock/centcom{
@@ -107,9 +104,6 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_knightarena)
-"at" = (
-/turf/simulated/wall/indestructible/fakedoor,
-/area/ninja/outpost)
 "au" = (
 /obj/machinery/abductor/experiment{
 	team = 1
@@ -399,12 +393,6 @@
 /obj/item/hemostat/alien,
 /turf/simulated/floor/plating/abductor,
 /area/abductor_ship)
-"bz" = (
-/obj/structure/ninjatele{
-	pixel_y = 25
-	},
-/turf/simulated/floor/plasteel/dark,
-/area/ninja/outpost)
 "bB" = (
 /obj/effect/landmark/abductor/scientist,
 /turf/simulated/floor/plating/abductor,
@@ -473,13 +461,6 @@
 "bM" = (
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_emptycourt)
-"bN" = (
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
-"bO" = (
-/obj/structure/closet/secure_closet/bar,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "bP" = (
 /obj/effect/landmark/abductor/scientist{
 	team = 4
@@ -490,10 +471,6 @@
 /obj/item/crowbar/red,
 /turf/simulated/floor/plasteel/dark,
 /area/ghost_bar)
-"bR" = (
-/obj/structure/reagent_dispensers/beerkeg,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "bS" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8;
@@ -525,10 +502,6 @@
 /obj/effect/turf_decal/tiles/department/virology/side,
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_emptycourt)
-"bY" = (
-/obj/machinery/economy/vending/boozeomat,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "bZ" = (
 /obj/structure/chair/sofa/right,
 /turf/simulated/floor/carpet/black,
@@ -581,26 +554,6 @@
 "ch" = (
 /turf/simulated/floor/holofloor/space,
 /area/holodeck/source_space)
-"ci" = (
-/obj/structure/table,
-/obj/item/storage/box/donkpockets{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/box/donkpockets{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/box/donkpockets{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/box/donkpockets{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "cj" = (
 /obj/machinery/abductor/gland_dispenser,
 /turf/simulated/floor/plating/abductor,
@@ -621,12 +574,6 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_basketball)
-"co" = (
-/obj/structure/rack,
-/obj/item/camera,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
 "cp" = (
 /obj/structure/table/abductor,
 /obj/item/bonegel/alien,
@@ -646,29 +593,12 @@
 /obj/structure/bed/abductor,
 /turf/simulated/floor/plating/abductor,
 /area/abductor_ship)
-"cs" = (
-/obj/structure/rack,
-/obj/item/toy/sword,
-/obj/item/gun/projectile/revolver/capgun,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"ct" = (
-/obj/machinery/prize_counter,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
 "cu" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 8
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
-"cv" = (
-/obj/machinery/computer/arcade,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
 "cw" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 1
@@ -683,14 +613,6 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_boxingcourt)
-"cy" = (
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
-"cz" = (
-/obj/effect/overlay/palmtree_r,
-/obj/effect/overlay/coconut,
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
 "cA" = (
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/holofloor{
@@ -727,10 +649,6 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_basketball)
-"cG" = (
-/obj/effect/overlay/palmtree_l,
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
 "cH" = (
 /obj/structure/table/wood,
 /obj/item/tank/internals/emergency_oxygen/double/vox,
@@ -822,32 +740,10 @@
 	},
 /turf/simulated/floor/carpet/green,
 /area/ghost_bar)
-"cY" = (
-/obj/structure/table,
-/obj/machinery/kitchen_machine/microwave/upgraded,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
-"cZ" = (
-/obj/structure/table,
-/obj/item/clothing/head/that{
-	pixel_x = 4;
-	pixel_y = 6
-	},
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "da" = (
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"db" = (
-/obj/structure/chair/stool,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"dc" = (
-/obj/item/camera,
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
+/obj/structure/showcase,
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "dd" = (
 /obj/item/electropack{
 	pixel_x = -5
@@ -864,21 +760,6 @@
 /obj/structure/chair/office/dark,
 /turf/simulated/floor/plasteel/dark,
 /area/ghost_bar)
-"df" = (
-/turf/simulated/wall/indestructible/fakeglass,
-/area/ninja/outpost)
-"dh" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/sleeper/upgraded,
-/turf/simulated/floor/carpet/grimey,
-/area/ninja/outpost)
-"di" = (
-/obj/structure/table,
-/obj/machinery/recharger,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "dj" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 8
@@ -905,6 +786,10 @@
 /obj/structure/shelf/engineering,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"dn" = (
+/obj/effect/landmark/spawner/ninja_prison_warp,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/holding)
 "do" = (
 /obj/structure/table/abductor,
 /obj/item/surgicaldrill/alien,
@@ -937,9 +822,7 @@
 /turf/simulated/floor/plasteel/stairs/right,
 /area/syndicate_mothership)
 "du" = (
-/obj/structure/table,
-/obj/item/reagent_containers/drinks/shaker,
-/turf/simulated/floor/plasteel/freezer,
+/turf/simulated/floor/plasteel/dark,
 /area/ninja/holding)
 "dv" = (
 /obj/machinery/atmospherics/unary/cryo_cell/upgraded,
@@ -948,25 +831,6 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/centcom/control)
-"dw" = (
-/obj/structure/table,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
-"dx" = (
-/obj/structure/table,
-/obj/item/lighter/zippo,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
-"dy" = (
-/obj/structure/table,
-/obj/item/reagent_containers/drinks/cans/cola,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
-"dz" = (
-/obj/structure/table,
-/obj/item/dice/d20,
-/turf/simulated/floor/plasteel/freezer,
-/area/ninja/holding)
 "dA" = (
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/holofloor{
@@ -995,18 +859,6 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate)
-"dE" = (
-/obj/structure/chair/stool,
-/obj/item/clothing/head/bandana{
-	pixel_y = -10
-	},
-/obj/item/clothing/glasses/sunglasses,
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
-"dF" = (
-/obj/structure/chair/stool,
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
 "dG" = (
 /obj/effect/turf_decal/tiles/department/virology/side{
 	dir = 1
@@ -1050,32 +902,10 @@
 /obj/structure/closet/wardrobe/mixed,
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/ghost_bar)
-"dT" = (
-/obj/effect/landmark/spawner/ninjastart,
-/turf/simulated/floor/carpet/grimey,
-/area/ninja/outpost)
-"dU" = (
-/turf/simulated/floor/carpet/grimey,
-/area/ninja/outpost)
-"dV" = (
-/obj/structure/rack,
-/obj/item/clothing/head/that{
-	pixel_x = 4;
-	pixel_y = 6
+"dS" = (
+/turf/simulated/wall/indestructible/fakedoor{
+	name = "Spider Clan Jail Cell"
 	},
-/obj/item/clothing/under/suit/black,
-/obj/item/clothing/suit/wcoat,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"dW" = (
-/obj/structure/chair/stool/bar,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"dX" = (
-/obj/item/beach_ball,
-/turf/simulated/floor/beach/away/sand,
 /area/ninja/holding)
 "dY" = (
 /obj/effect/turf_decal/tiles/department/virology/side{
@@ -1101,12 +931,6 @@
 "ed" = (
 /turf/simulated/floor/wood,
 /area/wizard_station)
-"ee" = (
-/obj/structure/rack,
-/obj/item/storage/fancy/crayons,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
 "ef" = (
 /obj/machinery/chem_dispenser/beer,
 /obj/structure/table/reinforced,
@@ -1119,14 +943,6 @@
 /obj/effect/landmark/spawner/prisonwarp,
 /turf/simulated/floor/plating,
 /area/centcom)
-"eh" = (
-/obj/machinery/economy/vending/coffee,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
 "ei" = (
 /obj/effect/mapping_helpers/airlock/access/all/centcomm/general,
 /obj/machinery/door/airlock/centcom{
@@ -1201,25 +1017,6 @@
 /obj/structure/sign/public/cryo,
 /turf/simulated/wall/indestructible/syndicate/no_diagonal,
 /area/ghost_bar)
-"ey" = (
-/obj/structure/chair/stool,
-/obj/machinery/computer/security/telescreen{
-	desc = "Damn, they better have /tg/thechannel on these things.";
-	icon_state = "entertainment";
-	name = "Entertainment monitor";
-	pixel_y = -30
-	},
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"ez" = (
-/obj/machinery/economy/vending/snack,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
 "eA" = (
 /obj/structure/chair/stool{
 	dir = 1
@@ -1238,9 +1035,6 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_basketball)
-"eE" = (
-/turf/simulated/floor/beach/away/coastline,
-/area/ninja/holding)
 "eG" = (
 /obj/effect/turf_decal/tiles/department/security/side{
 	dir = 8
@@ -1352,33 +1146,6 @@
 /obj/effect/spawner/window/plastitanium,
 /turf/simulated/floor/plating,
 /area/shuttle/administration)
-"eY" = (
-/obj/machinery/economy/vending/cigarette,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"eZ" = (
-/obj/structure/table,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"fa" = (
-/obj/structure/chair/stool,
-/obj/machinery/light/spot,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"fb" = (
-/obj/machinery/economy/vending/cola,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
-/area/ninja/holding)
-"fc" = (
-/turf/simulated/floor/beach/away/water,
-/area/ninja/holding)
 "fd" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -1389,21 +1156,8 @@
 /obj/item/clipboard,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
-"fe" = (
-/obj/machinery/poolcontroller/invisible,
-/turf/simulated/floor/beach/away/water,
-/area/ninja/holding)
 "fg" = (
 /turf/simulated/wall/indestructible/wood,
-/area/ninja/holding)
-"fi" = (
-/obj/effect/spawner/window/reinforced,
-/turf/simulated/floor/plating,
-/area/ninja/holding)
-"fj" = (
-/obj/effect/turf_decal/delivery,
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/floor/plasteel/white,
 /area/ninja/holding)
 "fk" = (
 /obj/machinery/door/airlock/hatch/syndicate{
@@ -1457,10 +1211,6 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
-"fu" = (
-/obj/effect/landmark/spawner/holding_facility,
-/turf/simulated/floor/engine,
-/area/ninja/holding)
 "fv" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/drinks/mug/novelty,
@@ -1493,6 +1243,10 @@
 /obj/structure/sign/service/bar,
 /turf/simulated/wall/indestructible/riveted,
 /area/ghost_bar)
+"fD" = (
+/obj/machinery/economy/vending/coffee/free,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/outpost)
 "fE" = (
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
@@ -1551,6 +1305,33 @@
 "fM" = (
 /turf/simulated/floor/plasteel,
 /area/tdome/arena_source)
+"fN" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "fO" = (
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
@@ -1659,21 +1440,9 @@
 /turf/simulated/wall/indestructible/rock/snow,
 /area/syndicate_mothership)
 "gg" = (
-/obj/structure/table/wood/fancy/royalblack,
-/obj/item/clipboard{
-	pixel_x = -3;
-	pixel_y = 4
-	},
-/obj/item/folder/white{
-	pixel_x = 8;
-	pixel_y = 13
-	},
-/obj/item/pen/blue{
-	pixel_x = 6;
-	pixel_y = -1
-	},
+/obj/structure/showcase,
 /turf/simulated/floor/wood,
-/area/nct_sat)
+/area/ninja/holding)
 "gh" = (
 /turf/simulated/wall/indestructible/opsglass,
 /area/centcom)
@@ -2051,11 +1820,6 @@
 	},
 /turf/simulated/floor/plating/abductor,
 /area/abductor_ship)
-"hu" = (
-/obj/structure/chair/comfy/black,
-/obj/effect/mapping_helpers/turfs/damage,
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "hv" = (
 /obj/structure/sign/double/map/left{
 	pixel_y = 32
@@ -2180,6 +1944,30 @@
 	},
 /turf/simulated/floor/plating/abductor,
 /area/abductor_ship)
+"hI" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "hJ" = (
 /obj/machinery/abductor/pad{
 	team = 3
@@ -2325,10 +2113,10 @@
 /area/tdome/tdomeobserve)
 "ib" = (
 /obj/structure/table/wood,
+/obj/effect/turf_decal/tiles/jobs/bar/checker,
 /obj/machinery/chem_dispenser/soda{
 	dir = 8
 	},
-/obj/effect/turf_decal/tiles/jobs/bar/checker,
 /turf/simulated/floor/plasteel,
 /area/tdome/tdomeobserve)
 "ic" = (
@@ -2593,11 +2381,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
 "iR" = (
-/obj/structure/chair/comfy/yellow{
-	dir = 4
-	},
+/obj/item/clothing/head/collectable/paper,
 /turf/simulated/floor/wood,
-/area/nct_sat)
+/area/ninja/outpost)
 "iS" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -3072,6 +2858,31 @@
 /obj/item/gun/projectile/automatic/sniper_rifle/syndicate,
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
+"kx" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/obj/item/reagent_containers/cooking/sushimat,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "ky" = (
 /obj/machinery/economy/vending/syndicigs,
 /turf/simulated/floor/plasteel/dark,
@@ -3293,6 +3104,44 @@
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
 /area/ghost_bar)
+"lj" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/food/sliced/sushi_sake,
+/obj/item/food/sliced/sushi_sake,
+/obj/item/food/sliced/sushi_masago,
+/obj/item/food/sliced/sushi_masago,
+/obj/item/food/sliced/sushi_ikura,
+/obj/item/food/sliced/sushi_ikura,
+/obj/item/food/sliced/sushi_ebi,
+/obj/item/food/sliced/sushi_ebi,
+/obj/item/food/sliced/sushi_tobiko,
+/obj/item/food/sliced/sushi_tobiko,
+/obj/item/food/sliced/sushi_tai,
+/obj/item/food/sliced/sushi_tai,
+/obj/item/food/sushi_unagi,
+/obj/item/food/sushi_unagi,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "lk" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -3398,12 +3247,6 @@
 	},
 /turf/simulated/wall/mineral/plastitanium,
 /area/shuttle/syndicate)
-"lC" = (
-/obj/effect/turf_decal/plaque/nosey,
-/obj/structure/table/wood/fancy/royalblack,
-/obj/effect/spawner/random/plushies,
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "lD" = (
 /obj/effect/decal/remains/human,
 /turf/simulated/floor/plasteel/dark,
@@ -3598,6 +3441,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/admin)
+"md" = (
+/obj/structure/chair/wood,
+/turf/simulated/floor/bamboo,
+/area/ninja/outpost)
 "me" = (
 /obj/structure/rack,
 /obj/item/clothing/glasses/sunglasses{
@@ -3790,6 +3637,12 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/admin)
+"mE" = (
+/obj/structure/bed/wood,
+/obj/item/bedsheet/black,
+/obj/effect/landmark/spawner/ninja,
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "mF" = (
 /obj/structure/table,
 /obj/item/stack/sheet/glass{
@@ -4487,6 +4340,29 @@
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
 /area/tdome/tdomeobserve)
+"oK" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "oM" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/beer{
@@ -4623,10 +4499,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/wizard_station)
-"pn" = (
-/obj/effect/mob_spawn/human/alive/nct,
-/turf/simulated/floor/carpet/purple,
-/area/nct_sat)
 "po" = (
 /turf/simulated/wall/indestructible/fakeglass,
 /area/trader_station/sol)
@@ -4673,6 +4545,44 @@
 /obj/structure/toilet/directional/east,
 /turf/simulated/floor/plasteel/freezer,
 /area/ghost_bar)
+"py" = (
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/obj/structure/chair/comfy/black,
+/obj/effect/mapping_helpers/turfs/damage,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/obj/structure/table/glass/reinforced/plastitanium,
+/obj/machinery/chem_dispenser/soda{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "pz" = (
 /obj/item/flag/syndi,
 /obj/effect/turf_decal/tiles/jobs/bar/checker,
@@ -4762,13 +4672,6 @@
 /obj/item/radio/headset/centcom,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/gamma)
-"pQ" = (
-/obj/item/kirbyplants/large,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/purple,
-/area/nct_sat)
 "pR" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -4846,6 +4749,32 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/centcom/control)
+"qc" = (
+/obj/effect/turf_decal/plaque/nosey,
+/obj/structure/table/wood/fancy/royalblack,
+/obj/effect/spawner/random/plushies,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "qd" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -4858,6 +4787,30 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/ghost_bar)
+"qf" = (
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "qg" = (
 /obj/item/kirbyplants/large,
 /obj/item/storage/secure/safe{
@@ -4872,6 +4825,38 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
+"ql" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/item/storage/secure/briefcase{
+	pixel_x = 6;
+	pixel_y = 14
+	},
+/obj/item/flashlight/seclite{
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "qm" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/storage/fancy/matches,
@@ -5043,6 +5028,9 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/assault_pod)
+"qQ" = (
+/turf/simulated/floor/bamboo/tatami/black,
+/area/ninja/outpost)
 "qR" = (
 /turf/simulated/wall/indestructible,
 /area/ghost_bar)
@@ -5289,6 +5277,29 @@
 /obj/item/grenade/chem_grenade/large,
 /turf/simulated/floor/plasteel/freezer,
 /area/admin)
+"rv" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "rw" = (
 /turf/simulated/floor/carpet/arcade,
 /area/syndicate_mothership)
@@ -5465,6 +5476,52 @@
 /obj/structure/closet/crate,
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/transport)
+"rX" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
+"rY" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "rZ" = (
 /obj/item/radio/intercom/syndicate{
 	pixel_x = -28
@@ -5482,12 +5539,6 @@
 "sd" = (
 /turf/simulated/floor/backrooms_carpet,
 /area/backrooms)
-"se" = (
-/obj/structure/chair/comfy/yellow{
-	dir = 8
-	},
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "sf" = (
 /turf/simulated/floor/light,
 /area/centcom/specops)
@@ -5934,6 +5985,12 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space/nearstation/centcom)
+"tM" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/simulated/floor/bamboo,
+/area/ninja/outpost)
 "tN" = (
 /obj/machinery/door/window/classic/normal{
 	dir = 1
@@ -6001,12 +6058,6 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate)
-"ub" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "ue" = (
 /obj/machinery/door/window{
 	dir = 8;
@@ -6193,6 +6244,33 @@
 	},
 /turf/simulated/floor/carpet,
 /area/admin)
+"uB" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "uC" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
@@ -6349,6 +6427,9 @@
 	},
 /turf/simulated/floor/carpet,
 /area/admin)
+"vo" = (
+/turf/simulated/floor/carpet/black,
+/area/ninja/outpost)
 "vq" = (
 /obj/structure/chair/sofa/corp,
 /turf/simulated/floor/transparent/glass,
@@ -6945,13 +7026,30 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/admin)
-"xn" = (
-/obj/structure/table/wood/fancy/royalblack,
-/obj/structure/decorative_structures/flammable/lava_land_display{
-	pixel_y = 15
+"xm" = (
+/obj/structure/bookcase/manuals/engineering,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
 	},
 /turf/simulated/floor/wood,
-/area/nct_sat)
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "xo" = (
 /turf/simulated/floor/grass/jungle,
 /area/wizard_station)
@@ -6990,12 +7088,6 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/ghost_bar)
-"xx" = (
-/obj/machinery/photocopier/faxmachine/longrange/syndie{
-	department = "Syndicate"
-	},
-/turf/simulated/floor/plasteel,
-/area/admin)
 "xy" = (
 /obj/structure/bookcase/random,
 /obj/machinery/light/small,
@@ -7061,6 +7153,32 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"xN" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "xO" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/wizrobe/magusblue,
@@ -7170,6 +7288,9 @@
 	},
 /turf/simulated/floor/transparent/glass,
 /area/centcom/specops)
+"yi" = (
+/turf/simulated/wall/indestructible/syndicate,
+/area/ninja/holding)
 "yj" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/gun/projectile/automatic/pistol,
@@ -7410,10 +7531,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/ghost_bar)
-"zm" = (
-/obj/structure/bookcase/manuals/engineering,
-/turf/simulated/floor/carpet/purple,
-/area/nct_sat)
 "zn" = (
 /obj/structure/sign/bobross,
 /turf/simulated/wall/indestructible/riveted,
@@ -7449,6 +7566,29 @@
 /obj/effect/turf_decal/tiles/jobs/bar/checker,
 /turf/simulated/floor/plasteel,
 /area/syndicate_mothership)
+"zt" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "zu" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/gun/projectile/revolver,
@@ -7570,6 +7710,9 @@
 	},
 /turf/simulated/floor/wood,
 /area/syndicate_mothership)
+"zX" = (
+/turf/simulated/wall/indestructible/syndicate,
+/area/ninja/outpost)
 "zY" = (
 /obj/structure/table/reinforced,
 /obj/machinery/cooking/stovetop,
@@ -7926,18 +8069,6 @@
 /obj/structure/table/wood,
 /turf/simulated/floor/plating/asteroid/ancient,
 /area/ghost_bar)
-"Bi" = (
-/obj/structure/table/wood/fancy/royalblack,
-/obj/item/storage/secure/briefcase{
-	pixel_x = 6;
-	pixel_y = 14
-	},
-/obj/item/flashlight/seclite{
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "Bj" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/carpet/black,
@@ -8020,12 +8151,6 @@
 /obj/structure/stone_tile/slab/cracked,
 /turf/simulated/floor/lava/lava_land_surface,
 /area/ruin/space/bubblegum_arena)
-"Bw" = (
-/obj/structure/ninjatele{
-	pixel_x = -28
-	},
-/turf/simulated/floor/plasteel/dark,
-/area/admin)
 "Bx" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -8033,11 +8158,10 @@
 /turf/simulated/floor/carpet/arcade,
 /area/ghost_bar)
 "By" = (
-/obj/structure/ninjatele{
-	pixel_x = 28
-	},
-/turf/simulated/floor/plasteel/dark,
-/area/admin)
+/obj/structure/table/wood,
+/obj/item/reagent_containers/drinks/tea,
+/turf/simulated/floor/bamboo,
+/area/ninja/outpost)
 "Bz" = (
 /obj/machinery/door/airlock/external{
 	id_tag = "s_docking_airlock";
@@ -8047,6 +8171,33 @@
 /obj/structure/fans/tiny,
 /turf/simulated/floor/plating,
 /area/shuttle/supply)
+"BB" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/structure/decorative_structures/flammable/lava_land_display{
+	pixel_y = 15
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "BC" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/grassybush,
@@ -8110,6 +8261,32 @@
 	},
 /turf/simulated/floor/mineral/plastitanium,
 /area/shuttle/supply)
+"BR" = (
+/obj/structure/chair/comfy/yellow{
+	dir = 8
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "BT" = (
 /obj/effect/landmark/spawner/tdomeobserve,
 /turf/simulated/floor/plasteel/dark,
@@ -8423,6 +8600,29 @@
 	},
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_boxingcourt)
+"CS" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "CT" = (
 /obj/structure/chair/comfy/yellow{
 	dir = 1
@@ -8476,7 +8676,7 @@
 /area/space/centcomm)
 "Dd" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/space/space_ninja,
+/obj/item/clothing/suit/space_ninja,
 /turf/simulated/floor/engine,
 /area/admin)
 "De" = (
@@ -8490,15 +8690,16 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/suppy)
+"Dj" = (
+/obj/structure/target_stake,
+/obj/item/target,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/outpost)
 "Dk" = (
 /obj/machinery/cooking/oven/upgraded,
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
 /area/ghost_bar)
-"Dl" = (
-/obj/structure/chair/comfy/yellow,
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "Dm" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -8539,7 +8740,7 @@
 /area/ghost_bar)
 "Dv" = (
 /obj/structure/rack,
-/obj/item/clothing/head/helmet/space/space_ninja,
+/obj/item/clothing/head/helmet/space_ninja,
 /turf/simulated/floor/engine,
 /area/admin)
 "Dw" = (
@@ -8692,10 +8893,6 @@
 /obj/item/kirbyplants/large,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
-"DT" = (
-/obj/structure/chair/comfy/black,
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "DV" = (
 /obj/effect/mapping_helpers/airlock/access/all/centcomm/commander,
 /obj/machinery/door/airlock/centcom{
@@ -8840,6 +9037,42 @@
 /obj/machinery/status_display/supply_display,
 /turf/simulated/wall/indestructible/riveted,
 /area/centcom/suppy)
+"EA" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/item/clipboard{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/obj/item/folder/white{
+	pixel_x = 8;
+	pixel_y = 13
+	},
+/obj/item/pen/blue{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "EB" = (
 /obj/machinery/door/airlock/hatch/syndicate{
 	req_access = null
@@ -8857,6 +9090,30 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/admin)
+"EH" = (
+/obj/structure/chair/stool/bar,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/dark,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "EI" = (
 /obj/machinery/computer/camera_advanced{
 	dir = 4
@@ -9003,6 +9260,29 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate)
+"Fq" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Fr" = (
 /obj/machinery/economy/vending/clothing,
 /turf/simulated/floor/plasteel/dark,
@@ -9088,6 +9368,12 @@
 /obj/machinery/shower/directional/south,
 /turf/simulated/floor/plasteel/freezer,
 /area/syndicate_mothership)
+"FB" = (
+/obj/structure/mineral_door/wood{
+	name = "Main chamber"
+	},
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "FC" = (
 /obj/docking_port/stationary{
 	dir = 2;
@@ -9367,6 +9653,30 @@
 /obj/structure/fence/cut/large,
 /turf/simulated/floor/plating/asteroid/snow,
 /area/syndicate_mothership)
+"Gz" = (
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "GA" = (
 /obj/structure/sign/service/kitchen,
 /turf/simulated/wall/indestructible/riveted,
@@ -9473,12 +9783,12 @@
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
 "GV" = (
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
+/obj/item/stack/cable_coil/rcl,
+/obj/item/stack/cable_coil/rcl,
+/obj/item/stack/cable_coil/rcl,
+/obj/item/stack/cable_coil/rcl,
+/obj/item/stack/cable_coil/rcl,
+/obj/item/stack/cable_coil/rcl,
 /obj/structure/shelf/engineering,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
@@ -9517,6 +9827,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/centcom/suppy)
+"He" = (
+/turf/simulated/floor/bamboo,
+/area/ninja/outpost)
 "Hg" = (
 /turf/simulated/wall/indestructible/riveted,
 /area/centcom/evac)
@@ -9560,6 +9873,29 @@
 /obj/item/storage/lockbox/mindshield,
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
+"Ht" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Hu" = (
 /obj/structure/table/glass/reinforced/plastitanium,
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate{
@@ -9895,6 +10231,33 @@
 /obj/effect/turf_decal/tiles/department/virology/side,
 /turf/simulated/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
+"IL" = (
+/obj/item/kirbyplants/large,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "IM" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
@@ -9930,6 +10293,29 @@
 /obj/structure/sign/engineering/materials,
 /turf/simulated/wall/indestructible/riveted,
 /area/centcom/specops)
+"IV" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/fakeglass,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "IW" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8;
@@ -10045,6 +10431,30 @@
 /obj/item/flashlight/lamp,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Jw" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Jx" = (
 /obj/structure/railing{
 	dir = 10
@@ -10091,6 +10501,10 @@
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
 /area/tdome/tdomeobserve)
+"JC" = (
+/obj/structure/dresser,
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "JE" = (
 /obj/item/stack/sheet/plasmaglass/fifty,
 /obj/item/stack/sheet/plasmaglass/fifty,
@@ -10101,6 +10515,31 @@
 /obj/structure/shelf/engineering,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"JF" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/item/candle/eternal/lit,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "JG" = (
 /obj/structure/railing,
 /obj/structure/railing{
@@ -10133,6 +10572,10 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/gamma)
+"JN" = (
+/obj/structure/bed,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/holding)
 "JO" = (
 /obj/structure/sign/cargo/dock,
 /turf/simulated/wall/indestructible/riveted,
@@ -10648,11 +11091,6 @@
 	dir = 8
 	},
 /area/ghost_bar)
-"LB" = (
-/obj/structure/table/wood/fancy/royalblack,
-/obj/item/candle/eternal/lit,
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "LC" = (
 /obj/structure/chair/comfy/green{
 	dir = 1
@@ -10712,6 +11150,29 @@
 	},
 /turf/simulated/floor/wood,
 /area/ghost_bar)
+"LN" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "LQ" = (
 /obj/machinery/door/poddoor/impassable{
 	name = "Heavy Supply";
@@ -10750,6 +11211,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/ghost_bar)
+"Mc" = (
+/obj/item/kirbyplants/large,
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "Md" = (
 /obj/structure/sign/public/arcade,
 /turf/simulated/wall/indestructible/syndicate/no_diagonal,
@@ -10778,6 +11243,10 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/gamma)
+"Mi" = (
+/obj/item/throwing_star,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/outpost)
 "Mk" = (
 /obj/machinery/door_control/no_emag{
 	id = "thunderdomegen";
@@ -10802,6 +11271,36 @@
 /obj/item/storage/box/trackimp,
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
+"Mn" = (
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
+"Mp" = (
+/obj/structure/mirror{
+	pixel_x = 32
+	},
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "Mq" = (
 /obj/structure/table/glass/reinforced/plastitanium,
 /obj/machinery/computer/security/telescreen,
@@ -10828,6 +11327,32 @@
 /obj/machinery/recharge_station/upgraded,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Mw" = (
+/obj/structure/chair/comfy/yellow{
+	dir = 4
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Mx" = (
 /obj/item/flashlight/lamp,
 /obj/structure/table/wood,
@@ -10851,6 +11376,13 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/suppy)
+"MA" = (
+/obj/machinery/door/airlock/hatch{
+	desc = "Danger: May contain robustness";
+	name = "Dojo"
+	},
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "MD" = (
 /obj/machinery/door/airlock/centcom{
 	hackProof = 1;
@@ -11211,6 +11743,10 @@
 	},
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
+"NL" = (
+/obj/structure/table/wood,
+/turf/simulated/floor/bamboo,
+/area/ninja/outpost)
 "NN" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -11251,6 +11787,41 @@
 /obj/machinery/power/port_gen/pacman/super/upgraded,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"NW" = (
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/obj/effect/mob_spawn/human/alive/nct,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/obj/structure/table/glass/reinforced/plastitanium,
+/obj/item/reagent_containers/cooking/board,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "NX" = (
 /turf/simulated/floor/plating/asteroid/ancient,
 /area/ghost_bar)
@@ -11475,6 +12046,9 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"OJ" = (
+/turf/simulated/floor/wood,
+/area/ninja/holding)
 "OK" = (
 /turf/simulated/floor/plating/asteroid/ancient/airless,
 /area/space/nearstation/centcom)
@@ -11560,13 +12134,6 @@
 /obj/effect/turf_decal/delivery/white/partial,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
-"Pb" = (
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 8
-	},
-/turf/simulated/floor/carpet/purple,
-/area/nct_sat)
 "Pc" = (
 /obj/structure/sign/public/arcade,
 /turf/simulated/wall/indestructible/opsglass,
@@ -11678,6 +12245,29 @@
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
 /area/ghost_bar)
+"PA" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "PB" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/havana_cigar,
@@ -11739,6 +12329,10 @@
 /obj/structure/sign/service/bar,
 /turf/simulated/wall/indestructible/syndicate/no_diagonal,
 /area/ghost_bar)
+"PL" = (
+/obj/machinery/economy/vending/cigarette/free,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/outpost)
 "PM" = (
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/metal/fifty,
@@ -11950,6 +12544,30 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Qt" = (
+/obj/item/kirbyplants/large,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Qu" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/grassybush,
@@ -12453,6 +13071,29 @@
 /obj/structure/chair/sofa/corp/right,
 /turf/simulated/floor/plasteel,
 /area/centcom/evac)
+"Sj" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/carpet/purple,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Sk" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
@@ -12772,6 +13413,9 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker/ert,
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/specops)
+"TE" = (
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "TF" = (
 /obj/machinery/recharger/wallcharger/upgraded{
 	pixel_x = 4;
@@ -12850,6 +13494,40 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"TS" = (
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/obj/structure/chair/comfy/black,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/obj/machinery/economy/vending/boozeomat,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "TT" = (
 /obj/machinery/door_control/no_emag{
 	id = "SpecopsFerry";
@@ -12907,6 +13585,45 @@
 /obj/effect/turf_decal/tiles/department/medical/side,
 /turf/simulated/floor/plasteel/white,
 /area/centcom/control)
+"Ub" = (
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/obj/structure/chair/comfy/yellow,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/obj/structure/table/glass/reinforced/plastitanium,
+/obj/machinery/kitchen_machine/microwave/upgraded{
+	desc = "Cooks and boils stuff, somehow.";
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Uc" = (
 /obj/structure/rack,
 /obj/item/clothing/under/plasmaman/wizard,
@@ -13063,10 +13780,6 @@
 /obj/machinery/computer/operating,
 /turf/simulated/floor/plasteel/freezer,
 /area/admin)
-"UF" = (
-/obj/item/clothing/head/collectable/paper,
-/turf/simulated/floor/beach/away/sand,
-/area/ninja/holding)
 "UG" = (
 /obj/machinery/cryopod/offstation,
 /turf/simulated/floor/plasteel/dark,
@@ -13325,6 +14038,30 @@
 /obj/effect/turf_decal/delivery,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"VE" = (
+/obj/structure/chair/stool/bar,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/wall/indestructible/fakeglass,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/dark,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "VF" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
@@ -13365,6 +14102,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/centcom/evac)
+"VM" = (
+/obj/structure/toilet/directional/north,
+/turf/simulated/floor/plasteel/dark,
+/area/ninja/holding)
 "VN" = (
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plating,
@@ -13719,6 +14460,10 @@
 /obj/item/kirbyplants/large,
 /turf/simulated/floor/transparent/glass/reinforced,
 /area/centcom/control)
+"WY" = (
+/obj/structure/bookcase/random,
+/turf/simulated/floor/wood,
+/area/ninja/outpost)
 "WZ" = (
 /obj/structure/table/reinforced,
 /obj/item/crowbar/red,
@@ -13792,6 +14537,41 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/centcom/evac)
+"Xm" = (
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/obj/structure/closet/crate,
+/obj/item/storage/box/donkpockets,
+/obj/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/floor/wood,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/floor/plasteel/full,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/outpost,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Xn" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/poddoor/multi_tile/impassable/triple{
@@ -14266,6 +15046,29 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Zj" = (
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/turf/simulated/mineral/ancient/outer,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/turf/simulated/wall/indestructible/syndicate,
+/turf/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	},
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: <<<"
+	},
+/area/nct_sat,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: ---"
+	},
+/area/ninja/holding,
+/area/merge_conflict_marker{
+	name = "Merge Conflict Marker: >>>"
+	})
 "Zk" = (
 /turf/simulated/wall/indestructible/syndicate/no_diagonal,
 /area/syndicate_mothership/jail)
@@ -14380,13 +15183,6 @@
 	},
 /turf/simulated/floor/plasteel/freezer,
 /area/admin)
-"ZB" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/obj/effect/mapping_helpers/turfs/damage,
-/turf/simulated/floor/wood,
-/area/nct_sat)
 "ZC" = (
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/control)
@@ -50264,10 +51060,10 @@ aN
 aN
 aN
 aN
-ac
-df
-df
-ac
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -50521,10 +51317,10 @@ aN
 aN
 aN
 aN
-ac
-dU
-dT
-ac
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -50776,12 +51572,12 @@ aN
 aN
 aN
 aN
-ac
-at
-ac
-dh
-dU
-ac
+aN
+aN
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -51033,12 +51829,12 @@ aN
 aN
 aN
 aN
-ac
-aB
-aB
-aB
-aB
-ac
+aN
+aN
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -51290,12 +52086,12 @@ aN
 aN
 aN
 aN
-ac
-bz
-aB
-aB
-aB
-ac
+aN
+aN
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -51547,12 +52343,12 @@ aN
 aN
 aN
 aN
-ac
-aB
-aB
-aB
-aB
-ac
+aN
+aN
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -51804,12 +52600,12 @@ aN
 aN
 aN
 aN
-ac
-ac
-ac
-ac
-ac
-ac
+aN
+aN
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -52061,15 +52857,15 @@ aN
 aN
 aN
 aN
-fg
-fg
-fg
-fg
-fg
-fg
-fg
-fg
-fg
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
 aN
 aN
 aN
@@ -52317,27 +53113,27 @@ aN
 aN
 aN
 aN
-aN
-fg
-cY
-cY
-di
-dV
-ee
-ee
-eY
-fg
-fg
-fg
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
+yi
 aN
 aN
 aN
@@ -52574,27 +53370,27 @@ aN
 aN
 aN
 aN
-aN
-ae
-bN
-bN
-bN
-da
-da
-da
-da
-fi
-fu
-fu
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+yi
+VM
+dn
+JN
+yi
+VM
+dn
+JN
+yi
+VM
+dn
+JN
+yi
+VM
+dn
+JN
+yi
+VM
+dn
+JN
+yi
 aN
 aN
 aN
@@ -52831,27 +53627,27 @@ aN
 aN
 aN
 aN
-aN
-ae
-bO
-bN
+yi
 du
-dW
-da
-da
-da
-fj
-fu
-fu
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
+du
+du
+ae
+du
+du
+du
+ae
+du
+du
+du
+ae
+du
+du
+du
+ae
+du
+du
+du
+Zj
 Sw
 Sw
 Sw
@@ -53088,27 +53884,27 @@ aN
 aN
 aN
 aN
-aN
+yi
+dS
 ae
-bR
-bN
-dw
-dW
-da
-da
-da
-fj
-fu
-fu
-fg
-aN
-aN
-aN
-aN
-aN
-Sw
-Sw
-Sw
+ae
+yi
+dS
+ae
+ae
+yi
+dS
+ae
+ae
+yi
+dS
+ae
+ae
+yi
+dS
+IV
+IV
+Zj
 NI
 kV
 mh
@@ -53344,29 +54140,29 @@ aN
 aN
 aN
 aN
-aN
-aN
-ae
-bR
-bN
-dx
-dW
-da
-da
-da
-fi
-fu
-fu
+yi
 fg
-aN
-aN
-aN
-aN
-Sw
-Sw
-zm
-oI
-oI
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+rX
+rX
+xm
+Fq
+rY
 oI
 oI
 oI
@@ -53601,29 +54397,29 @@ aN
 aN
 aN
 aN
-aN
-aN
+yi
 fg
-bY
-bN
-dy
-dW
-da
-da
-db
-fg
-fg
-fg
-fg
-aN
-aN
-aN
-aN
-Sw
-pQ
-oI
-Gu
-tY
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+OJ
+gg
+OJ
+gg
+OJ
+OJ
+OJ
+OJ
+OJ
+rX
+IL
+CS
+Gz
+Ht
 tY
 Gu
 Va
@@ -53858,29 +54654,29 @@ aN
 aN
 aN
 aN
-aN
-aN
-fg
-ci
-cZ
-dz
-dW
-da
-ey
-eZ
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
-oI
-Gu
-iR
-ZB
+zX
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+MA
+ac
+ac
+ac
+ac
+ac
+ac
+LN
+Sj
+qf
+Mw
+uB
 Gu
 tY
 oI
@@ -54115,29 +54911,29 @@ aN
 aN
 aN
 aN
-aN
-aN
-fg
-co
+zX
+zX
+ac
 da
-da
-da
-da
-da
-fa
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
-Sw
-oI
-hu
-LB
-gg
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+PL
+fD
+aB
+aB
+EH
+kx
+rv
+py
+JF
+EA
 VJ
 Gu
 Ip
@@ -54373,28 +55169,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cs
-da
-da
-da
-da
-da
-db
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-qy
-oI
-oI
-Dl
-xn
-lC
+zX
+ac
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+aB
+aB
+aB
+aB
+VE
+Jw
+rv
+Ub
+BB
+qc
 CT
 Gu
 SC
@@ -54630,28 +55426,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-ct
-da
-da
-da
-da
-ey
-eZ
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-qy
-pn
-oI
-DT
-LB
-Bi
+zX
+ac
+Mc
+TE
+He
+He
+He
+He
+He
+He
+TE
+TE
+aB
+qQ
+qQ
+qQ
+VE
+NW
+rv
+TS
+JF
+ql
 hZ
 tY
 Cn
@@ -54887,28 +55683,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cv
-db
-da
-da
-da
-da
-db
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-qy
-oI
-oI
-Gu
-se
-ub
+zX
+ac
+WY
+TE
+He
+md
+By
+NL
+tM
+He
+TE
+TE
+aB
+qQ
+qQ
+qQ
+VE
+Jw
+rv
+Xm
+BR
+xN
 tY
 Gu
 oI
@@ -55144,28 +55940,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cy
-cy
-cy
-cy
-eh
-ez
-fb
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
-Sw
-Pb
-oI
-Gu
-Gu
+zX
+ac
+WY
+TE
+He
+md
+NL
+NL
+tM
+He
+TE
+TE
+aB
+qQ
+qQ
+qQ
+EH
+hI
+fN
+lj
+qf
+Mn
 Gu
 tY
 Va
@@ -55401,28 +56197,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cz
-cy
-cy
-cy
-cy
-eE
-fc
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
-Sw
-ZM
-oI
-oI
+zX
+ac
+WY
+TE
+He
+md
+NL
+By
+tM
+He
+TE
+TE
+aB
+aB
+aB
+aB
+aB
+oK
+oK
+Qt
+Sj
+zt
 oI
 oI
 mn
@@ -55658,28 +56454,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cy
-cy
-dE
-cy
-cy
-eE
-fc
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
-Sw
-Sw
-Sw
+zX
+ac
+WY
+TE
+He
+md
+By
+NL
+tM
+He
+TE
+TE
+aB
+aB
+aB
+ac
+ac
+ac
+LN
+LN
+LN
+PA
 Ir
 LK
 pa
@@ -55915,28 +56711,28 @@ aN
 aN
 aN
 aN
-aN
-ag
-cy
-dc
-cy
-dX
-cy
-eE
-fc
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-Sw
+zX
+ac
+Mc
+TE
+He
+He
+He
+He
+He
+He
+TE
+TE
+aB
+aB
+aB
+ac
+Mc
+TE
+TE
+TE
+ac
+PA
 Sw
 Sw
 Sw
@@ -56172,28 +56968,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cy
-cy
-dF
-cy
-UF
-eE
-fc
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+zX
+ac
+TE
+TE
+TE
+TE
+iR
+TE
+TE
+TE
+TE
+TE
+aB
+aB
+aB
+FB
+TE
+vo
+vo
+mE
+ac
+zX
 aN
 aN
 aN
@@ -56429,28 +57225,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-cG
-cy
-cz
-cy
-cy
-eE
-fe
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+zX
+ac
+da
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+TE
+aB
+aB
+aB
+ac
+JC
+Mp
+TE
+TE
+ac
+zX
 aN
 aN
 aN
@@ -56686,28 +57482,28 @@ aN
 aN
 aN
 aN
-aN
-fg
-fg
-fg
-fg
-fg
-fg
-fg
-fg
-fg
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+zX
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+aB
+Mi
+aB
+ac
+ac
+ac
+ac
+ac
+ac
+zX
 aN
 aN
 aN
@@ -56943,28 +57739,28 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+zX
+zX
+zX
+zX
+zX
+zX
+zX
+zX
+zX
+zX
+zX
+ac
+Mi
+Dj
+Mi
+ac
+zX
+zX
+zX
+zX
+zX
+zX
 aN
 aN
 aN
@@ -57210,13 +58006,13 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+zX
+ac
+ac
+ac
+ac
+ac
+zX
 aN
 aN
 aN
@@ -57467,13 +58263,13 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+zX
+zX
+zX
+zX
+zX
+zX
+zX
 aN
 aN
 aN
@@ -69388,7 +70184,7 @@ lZ
 lZ
 lZ
 wk
-xx
+lZ
 lZ
 lZ
 lZ
@@ -72738,7 +73534,7 @@ wk
 vK
 Bf
 Bp
-Bw
+vK
 wk
 wk
 wk
@@ -74280,7 +75076,7 @@ wk
 vK
 Bg
 Bq
-By
+vK
 wk
 wk
 wk
