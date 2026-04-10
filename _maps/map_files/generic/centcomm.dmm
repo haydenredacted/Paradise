@@ -7788,6 +7788,10 @@
 	},
 /turf/simulated/floor/mineral/plastitanium,
 /area/shuttle/supply)
+"BS" = (
+/obj/effect/mob_spawn/human/alive/nct,
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "BT" = (
 /obj/effect/landmark/spawner/tdomeobserve,
 /turf/simulated/floor/plasteel/dark,
@@ -9144,12 +9148,6 @@
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/administration)
 "GV" = (
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
-/obj/item/rcl,
 /obj/structure/shelf/engineering,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
@@ -11584,6 +11582,9 @@
 /obj/effect/landmark/spawner/roundstart_observer,
 /turf/simulated/floor/wood,
 /area/wizard_station)
+"Qk" = (
+/turf/simulated/floor/wood,
+/area/nct_sat)
 "Qm" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/space/hardsuit/syndi,
@@ -12705,6 +12706,9 @@
 	},
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/administration)
+"Uu" = (
+/turf/simulated/wall/indestructible/rock,
+/area/nct_sat)
 "Uv" = (
 /turf/simulated/floor/holofloor{
 	icon = 'icons/turf/floors/plating.dmi';
@@ -48151,10 +48155,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+Uu
+Uu
+Uu
 aN
 aN
 aN
@@ -48408,10 +48412,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+Qk
+Qk
+Uu
 aN
 aN
 aN
@@ -48665,10 +48669,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+BS
+Qk
+Uu
 aN
 aN
 aN
@@ -48922,10 +48926,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+Qk
+Qk
+Uu
 aN
 aN
 aN
@@ -49179,10 +49183,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+Qk
+Qk
+Uu
 aN
 aN
 aN
@@ -49436,10 +49440,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+Qk
+Qk
+Uu
 aN
 aN
 aN
@@ -49693,10 +49697,10 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
+Uu
+Qk
+Uu
+Uu
 aN
 aN
 aN
@@ -49950,9 +49954,9 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
+Uu
+Uu
+Uu
 aN
 aN
 aN
