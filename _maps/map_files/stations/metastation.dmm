@@ -9676,6 +9676,7 @@
 /obj/structure/table,
 /obj/effect/turf_decal/tiles/dark/checker,
 /obj/item/storage/bag/tray,
+/obj/machinery/alarm/directional/south,
 /turf/simulated/floor/plasteel/white,
 /area/station/service/kitchen)
 "bly" = (
@@ -20612,6 +20613,7 @@
 /obj/structure/closet/firecloset,
 /obj/effect/spawner/random/maintenance,
 /obj/effect/spawner/random/cobweb/right/rare,
+/obj/machinery/firealarm/directional/north,
 /turf/simulated/floor/plating,
 /area/station/maintenance/starboard)
 "cmi" = (
@@ -34301,6 +34303,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/machinery/firealarm/directional/west,
 /turf/simulated/floor/plating,
 /area/station/maintenance/starboard2)
 "eVb" = (
@@ -37502,7 +37505,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 10
 	},
-/obj/machinery/alarm/directional/north,
 /obj/effect/spawner/random/cobweb/right/frequent,
 /turf/simulated/floor/plating,
 /area/station/maintenance/starboard2)
@@ -61601,6 +61603,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
+/obj/machinery/firealarm/directional/east,
 /turf/simulated/floor/plating,
 /area/station/maintenance/starboard)
 "odO" = (
@@ -70142,6 +70145,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/service/hydroponics)
+"qZJ" = (
+/obj/machinery/alarm/directional/west,
+/turf/simulated/floor/plating,
+/area/station/maintenance/starboard2)
 "rab" = (
 /turf/simulated/floor/engine,
 /area/station/engineering/engine/reactor)
@@ -82927,6 +82934,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
 /obj/effect/spawner/random/maintenance,
+/obj/machinery/firealarm/directional/west,
 /turf/simulated/floor/plating,
 /area/station/maintenance/starboard)
 "vud" = (
@@ -126826,7 +126834,7 @@ ces
 cjZ
 cte
 igJ
-cwG
+qZJ
 cwG
 vZH
 bkp
