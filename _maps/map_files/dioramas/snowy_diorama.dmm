@@ -1,0 +1,152 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/mob/living/basic/pet/penguin/emperor,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"d" = (
+/obj/structure/window/plastitanium{
+	dir = 4
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"f" = (
+/obj/structure/window/plastitanium{
+	dir = 8
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"g" = (
+/obj/structure/diorama_sign,
+/turf/template_noop,
+/area/template_noop)
+"j" = (
+/obj/structure/flora/grass/both,
+/obj/structure/window/plastitanium{
+	dir = 1
+	},
+/obj/structure/window/plastitanium{
+	dir = 4
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"k" = (
+/mob/living/simple_animal/hostile/winter/santa{
+	AIStatus = 3
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"m" = (
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"q" = (
+/obj/structure/window/plastitanium{
+	dir = 1
+	},
+/obj/structure/window/plastitanium{
+	dir = 8
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"r" = (
+/obj/structure/flora/grass/both,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"s" = (
+/mob/living/basic/pet/penguin/baby,
+/obj/structure/window/plastitanium{
+	dir = 8
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"w" = (
+/obj/structure/window/plastitanium{
+	dir = 8
+	},
+/obj/structure/window/plastitanium,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"x" = (
+/obj/structure/window/plastitanium{
+	dir = 1
+	},
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"y" = (
+/obj/structure/lightable/bonfire/lit/dense,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"A" = (
+/obj/structure/window/plastitanium{
+	dir = 8
+	},
+/obj/structure/flora/grass/both,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"D" = (
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"G" = (
+/turf/template_noop,
+/area/template_noop)
+"M" = (
+/obj/structure/flora/tree/pine{
+	pixel_x = -31;
+	pixel_y = 4
+	},
+/obj/structure/window/plastitanium{
+	dir = 4
+	},
+/obj/structure/window/plastitanium,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+"U" = (
+/obj/structure/window/plastitanium,
+/turf/simulated/floor/plating/asteroid/snow,
+/area/ruin/powered/snow_biodome)
+
+(1,1,1) = {"
+q
+A
+f
+s
+f
+w
+G
+"}
+(2,1,1) = {"
+x
+D
+m
+D
+a
+U
+G
+"}
+(3,1,1) = {"
+x
+D
+y
+k
+r
+U
+g
+"}
+(4,1,1) = {"
+x
+r
+a
+D
+D
+U
+G
+"}
+(5,1,1) = {"
+j
+d
+d
+d
+d
+M
+G
+"}
