@@ -39,7 +39,8 @@
 			"icon_state": "captain",
 			"rarity": "Rare",
 			"level": "7",
-			"attack": "",
+			"attack": "2800",
+			"defense": "2400",
 			"effect": "Must be Special Summoned by using a Command faction card along with a card of a different faction. Once per turn, choose a Unit you control. It gains 200 ATK for each different faction you control until the end of the turn.",
 			"rules": ""
 		},
@@ -51,9 +52,9 @@
 			"icon_state": "renault",
 			"rarity": "Rare",
 			"level": "4",
-			"attack": "",
-			"defense": "",
-			"effect": "",
+			"attack": "900",
+			"defense": "1400",
+			"effect": "When this card is summoned, search your deck for a Unit card and reveal it to your opponent, then add it to your hand. ",
 			"rules": ""
 		},
 		{
@@ -64,8 +65,8 @@
 			"icon_state": "ntr",
 			"rarity": "Uncommon",
 			"level": "4",
-			"attack": "",
-			"defense": "",
+			"attack": "1200",
+			"defense": "1400",
 			"effect": "While this card is face-up, each Command Unit you control gains 300 ATK.",
 			"rules": ""
 		},
@@ -77,8 +78,8 @@
 			"icon_state": "blueshield",
 			"rarity": "Uncommon",
 			"level": "4",
-			"attack": "",
-			"defense": "",
+			"attack": "1800",
+			"defense": "2000",
 			"effect": "If one of your Command Units are attacked by your opponent, you may Special Summon this card in Defense Position.",
 			"rules": ""
 		},

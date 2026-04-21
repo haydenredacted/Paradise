@@ -108,6 +108,42 @@
 			"defense": "",
 			"effect": "Can be used to Special Summon a card with 'Cyborg' in the name.",
 			"rules": ""
+		},
+		{
+			"template": "item_single",
+			"id": "ttv_bomb",
+			"name": "Tank Transfer Valve Bomb",
+			"desc": "A mechanism that controls the flow between hot plasma and cold plasma, which leads to a very large explosion.",
+			"icon_state": "ttv_bomb",
+			"rarity": "Uncommon",
+			"effect": "You must control a Scientist card to activate this card. Flip three coins. For each heads, destroy one card on the field. If you flip all three heads, destroy all cards on the field and deal 500 Lifepoints to each player."
+		},
+		{
+			"template": "item_single",
+			"id": "monkey_recycler",
+			"name": "Monkey Recycler",
+			"desc": "A machine used to recycle monkeys into easy to store cubes.",
+			"icon_state": "monkey_recycler",
+			"rarity": "Common",
+			"effect": "Flip a coin. If heads, search your deck for two Monkey cards and add them to your hand. If tails, Special Summon a Monkey card from your Deck or Morgue."
+		},
+		{
+			"template": "item_single",
+			"id": "hand_teleporter",
+			"name": "Hand Teleporter",
+			"desc": "A small experimental teleporter that allows for on the go teleportation.",
+			"icon_state": "hand_teleporter",
+			"rarity": "Rare",
+			"effect": "This card must be placed face down before being activated and you must have an empty slot for a Unit. When one of your Units is targeted by an attack, activate this card. Negate that attack and move the targeted Unit to an empty space."
+		},
+		{
+			"template": "item_single",
+			"id": "bag_of_holding",
+			"name": "Bag of Holding",
+			"desc": "A specialized backpack that utilizes a pocket bluespace dimension to store items within it.",
+			"icon_state": "bag_of_holding",
+			"rarity": "Uncommon",
+			"effect": "You may only activate one 'Bag of Holding' effect per turn. Draw 2 cards."
 		}
 	]
 }
