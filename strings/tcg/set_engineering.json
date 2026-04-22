@@ -105,7 +105,7 @@
 			"template": "item_single",
 			"id": "fire_axe",
 			"name": "Fire Axe",
-			"desc": "A deadly weapon wielded by Atmospheric Technicians to help breach dangerous environments or breach an Atmosian invader's flesh.",
+			"desc": "A deadly weapon wielded by Atmospheric Technicians to help breach dangerous environments or breach an invader of Atmosia's flesh.",
 			"icon_state": "fire_axe",
 			"rarity": "Uncommon",
 			"effect": "When you play this card you may either: Choose a Unit you control, it gains 450 ATK; OR you may target an Environment card and send it to the Morgue."
@@ -123,7 +123,7 @@
 			"template": "item_continuous",
 			"id": "supermatter_crystal",
 			"name": "Supermatter Crystal",
-			"desc": "",
+			"desc": "A massive anamolous crystal that spews gas and radiation when shot with an emitter.",
 			"icon_state": "supermatter_crystal",
 			"rarity": "Rare",
 			"effect": "While this card is on the field, it cannot be destroyed by your opponent's card effects. If your opponent attacks you directly, negate the attack, destroy every card you control, and destroy the Unit that declared the attack."
