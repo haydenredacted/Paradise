@@ -1,0 +1,2153 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"al" = (
+/obj/structure/chair/sofa,
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"am" = (
+/obj/machinery/atmospherics/unary/tank/air,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"at" = (
+/obj/effect/spawner/window/reinforced/plasma/grilled,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"aO" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/pirx/main_chamber)
+"aT" = (
+/turf/template_noop,
+/area/template_noop)
+"aW" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/tiles/department/command/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"bN" = (
+/obj/effect/map_effect/dynamic_airlock,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/exit)
+"bW" = (
+/obj/effect/spawner/window/reinforced/plasma/grilled,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"ce" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 4
+	},
+/obj/structure/table/glass,
+/obj/item/storage/surgical_tray,
+/obj/machinery/defibrillator_mount/loaded{
+	pixel_x = 30
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"ct" = (
+/obj/effect/spawner/window/reinforced/plasma/grilled,
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"cG" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 4
+	},
+/obj/machinery/sleeper,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"cT" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"cV" = (
+/obj/machinery/computer/cryopod{
+	pixel_y = 32
+	},
+/obj/structure/table,
+/obj/effect/spawner/random/plushies,
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"cX" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/cryo)
+"dG" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/atmospherics)
+"ed" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"ev" = (
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"eF" = (
+/obj/machinery/atmospherics/unary/outlet_injector/on{
+	dir = 1;
+	autolink_id = "n2_in"
+	},
+/turf/simulated/floor/engine/n2,
+/area/ruin/space/pirx/atmospherics)
+"eJ" = (
+/obj/effect/turf_decal/tiles/department/medical/corner,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"eM" = (
+/obj/machinery/atmospherics/unary/outlet_injector/on{
+	dir = 8;
+	autolink_id = "engine-waste_out";
+	name = "atmospheric exhaust";
+	volume_rate = 200
+	},
+/obj/effect/turf_decal/stripes/box,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"eS" = (
+/obj/effect/turf_decal/tiles/department/virology/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"eY" = (
+/obj/effect/turf_decal/tiles/department/medical/side,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"eZ" = (
+/obj/effect/turf_decal/tiles/department/engineering/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"fm" = (
+/obj/effect/turf_decal/stripes/box,
+/obj/structure/marker_beacon/dock_marker,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/medical)
+"ge" = (
+/obj/structure/chair/sofa{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"gk" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/economy/vending/wallmed/directional/west,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"gy" = (
+/obj/effect/turf_decal/stripes/box,
+/obj/structure/marker_beacon/dock_marker,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/engineering)
+"gD" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"gH" = (
+/obj/structure/table/wood,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"gM" = (
+/obj/machinery/tcomms/relay/pirx,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"hb" = (
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 8
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"hf" = (
+/obj/machinery/economy/vending/wallmed/directional/east,
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"hv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"hN" = (
+/obj/machinery/atmospherics/unary/outlet_injector/on{
+	dir = 1;
+	autolink_id = "o2_in"
+	},
+/turf/simulated/floor/engine/o2,
+/area/ruin/space/pirx/atmospherics)
+"hQ" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 5
+	},
+/obj/structure/closet/crate/freezer/iv_storage,
+/obj/item/vending_refill/medical,
+/obj/item/vending_refill/medical,
+/obj/item/vending_refill/wallmed,
+/obj/item/reagent_containers/iv_bag/salglu,
+/obj/machinery/economy/vending/wallmed/directional/north,
+/obj/item/stock_parts/cell/high,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"hW" = (
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"ig" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"ix" = (
+/obj/effect/spawner/window/reinforced/plasma/grilled,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"iV" = (
+/obj/structure/table/reinforced,
+/obj/item/megaphone{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/machinery/turretid/lethal{
+	req_access = list(18);
+	check_access = 0;
+	check_arrest = 0;
+	check_records = 0
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"jb" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 6
+	},
+/obj/effect/turf_decal/delivery/partial,
+/obj/effect/turf_decal/arrows/black,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"jm" = (
+/obj/machinery/shuttle_manipulator,
+/turf/simulated/floor/light,
+/area/ruin/space/pirx/main_chamber)
+"jH" = (
+/obj/structure/table/reinforced,
+/obj/machinery/photocopier/faxmachine/longrange,
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"jR" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/engineering)
+"jZ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"kD" = (
+/obj/machinery/hologram/holopad,
+/obj/effect/turf_decal/delivery/hollow,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"kE" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 6
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"kG" = (
+/obj/structure/marker_beacon/dock_marker,
+/obj/effect/turf_decal/stripes/box,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/bridge)
+"lc" = (
+/obj/structure/closet/crate/radiation,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"ld" = (
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"lv" = (
+/obj/structure/chair/wood/wings{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"lE" = (
+/obj/machinery/atmospherics/trinary/filter{
+	dir = 4;
+	filter_type = 2;
+	name = "Gas filter (N2 tank)";
+	on = 1
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"mL" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chem_dispenser/soda/upgraded{
+	dir = 1
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"mV" = (
+/obj/effect/turf_decal/tiles/department/medical/corner{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"no" = (
+/obj/machinery/door/airlock/atmos{
+	name = "Atmospherics";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/atmospherics)
+"nI" = (
+/obj/effect/turf_decal/tiles/department/cargo/corner{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"nQ" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/turf_decal/tiles/department/cargo/side,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"nU" = (
+/obj/machinery/suit_storage_unit/industrial/engine/secure,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"om" = (
+/obj/structure/table,
+/obj/item/storage/briefcase/inflatable{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/grenade/gas/oxygen{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/grenade/gas/oxygen{
+	pixel_x = 8;
+	pixel_y = -2
+	},
+/obj/item/grenade/gas/oxygen{
+	pixel_x = 13;
+	pixel_y = 13
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/atmospherics)
+"op" = (
+/obj/structure/shuttle/engine/large{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/engineering)
+"oH" = (
+/obj/machinery/computer/crew,
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"oI" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"oL" = (
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"pu" = (
+/obj/machinery/computer/monitor{
+	dir = 1;
+	name = "Grid Power Monitoring Computer"
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"pS" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"pV" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"pW" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 6
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"qa" = (
+/obj/machinery/atmospherics/pipe/simple/visible/universal{
+	dir = 4
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"qd" = (
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"qk" = (
+/obj/structure/table,
+/obj/machinery/cooking/grill/loaded,
+/obj/effect/turf_decal/tiles/dark/checker,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"qn" = (
+/obj/machinery/door/airlock{
+	id_tag = "Cryogenics";
+	name = "Cryodorms"
+	},
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"qD" = (
+/obj/structure/shuttle/engine/heater{
+	dir = 4
+	},
+/obj/structure/window/plasmareinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"qN" = (
+/obj/effect/turf_decal/woodsiding{
+	dir = 4
+	},
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"ra" = (
+/obj/structure/sign/public/cryo,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/cryo)
+"rg" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"rA" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 1;
+	autolink_id = "o2_outlet_scrubber"
+	},
+/turf/simulated/floor/engine/o2,
+/area/ruin/space/pirx/atmospherics)
+"rF" = (
+/obj/structure/sign/engineering/atmos,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/atmospherics)
+"rL" = (
+/obj/effect/turf_decal/woodsiding{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"rO" = (
+/obj/effect/turf_decal/tiles/dark/checker,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/main_chamber)
+"rY" = (
+/obj/structure/table/wood,
+/obj/item/lighter/zippo{
+	pixel_x = -10;
+	pixel_y = 10
+	},
+/obj/item/paicard{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"st" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 8
+	},
+/obj/machinery/economy/vending/medical,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"tG" = (
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"tK" = (
+/obj/machinery/clonepod/upgraded,
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"tN" = (
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/engineering)
+"uc" = (
+/obj/structure/chair/office/dark,
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"uj" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/portable/scrubber/huge,
+/obj/machinery/power/apc/critical/directional/south,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"un" = (
+/obj/machinery/power/port_gen/pacman/super/upgraded,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"uq" = (
+/obj/structure/shuttle/engine/large{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"uK" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 5
+	},
+/obj/machinery/recharge_station,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"uO" = (
+/obj/machinery/computer/card{
+	dir = 4
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"uS" = (
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"uT" = (
+/obj/effect/turf_decal/tiles/department/cargo/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"vq" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Telecommunications Access"
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"vP" = (
+/obj/effect/turf_decal/tiles/department/engineering/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"vQ" = (
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"vX" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"wi" = (
+/obj/structure/chair/sofa/right,
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"wm" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"xc" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"xU" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/medical)
+"xZ" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 4
+	},
+/obj/machinery/mineral/ore_redemption,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"ym" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"yx" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/engineering)
+"zc" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"zl" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"zI" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"zN" = (
+/obj/structure/closet/wardrobe/pjs,
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 5
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"Af" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"AC" = (
+/obj/effect/turf_decal/tiles/department/cargo/corner{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"AL" = (
+/obj/machinery/atmospherics/trinary/filter{
+	dir = 4;
+	filter_type = 1;
+	name = "Gas filter (O2 tank)";
+	on = 1
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"AV" = (
+/obj/effect/turf_decal/tiles/department/cargo/corner{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"Bj" = (
+/obj/effect/spawner/window/reinforced/plasma/grilled,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"By" = (
+/obj/machinery/mineral/equipment_vendor/explorer,
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"BP" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/exit)
+"CB" = (
+/obj/machinery/clonescanner,
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"CI" = (
+/obj/effect/turf_decal/woodsiding{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"Dy" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/pen/multi/fountain{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"Ek" = (
+/obj/effect/turf_decal/stripes/box,
+/obj/machinery/atmospherics/air_sensor/pirx,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/engineering)
+"EF" = (
+/obj/machinery/computer/communications{
+	dir = 4
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"ET" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/atmospherics)
+"Fa" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 10
+	},
+/obj/machinery/suit_storage_unit/industrial/pirx,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"Fe" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/medical)
+"Fh" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/eva)
+"Fp" = (
+/obj/effect/turf_decal/tiles/dark/checker,
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"FZ" = (
+/obj/effect/turf_decal/stripes/box,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/bridge)
+"Gi" = (
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"Gs" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/suit_storage_unit/industrial/engine/secure,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"Hf" = (
+/obj/effect/turf_decal/tiles/department/medical/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"Hq" = (
+/obj/effect/map_effect/dynamic_airlock,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/exit)
+"HR" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"HS" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"Ie" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 9
+	},
+/obj/machinery/suit_storage_unit/cmo/sec_storage,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"Ir" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"Iy" = (
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 8
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"IJ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"IN" = (
+/obj/effect/spawner/window/shuttle,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/bridge)
+"JK" = (
+/turf/simulated/floor/light,
+/area/ruin/space/pirx/main_chamber)
+"JW" = (
+/obj/machinery/cooking/deepfryer/loaded,
+/obj/effect/turf_decal/tiles/dark/checker,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"KE" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 9
+	},
+/obj/machinery/computer/general_air_control/large_tank_control/pirx_air{
+	dir = 1
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"Ld" = (
+/obj/machinery/computer/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"LB" = (
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/atmospherics)
+"LH" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"LK" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"Mg" = (
+/obj/structure/cable/yellow,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"Ml" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 1
+	},
+/obj/machinery/mineral/equipment_vendor,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"Mp" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 5
+	},
+/obj/machinery/power/apc/critical/directional/west,
+/obj/structure/cable,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"Mr" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"MJ" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid,
+/area/ruin/space/pirx/main_chamber)
+"MP" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 0
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"MS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"Ng" = (
+/obj/structure/chair/office/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tiles/department/command/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"Nv" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/obj/effect/turf_decal/tiles/department/virology/side{
+	dir = 10
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/cryo)
+"Nw" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 4
+	},
+/obj/machinery/optable,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"NO" = (
+/obj/effect/map_effect/dynamic_airlock,
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/exit)
+"NP" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 4
+	},
+/obj/machinery/bodyscanner,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"Oa" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 4
+	},
+/obj/structure/table,
+/obj/item/storage/box/donkpockets{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/machinery/economy/vending/wallmed/directional/east,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"Oo" = (
+/obj/structure/closet/walllocker/emerglocker/directional/east,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/storage/briefcase/inflatable{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"OC" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 6
+	},
+/obj/machinery/computer/operating{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"Pb" = (
+/obj/machinery/computer/robotics,
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 5
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"Pi" = (
+/obj/effect/turf_decal/woodsiding{
+	dir = 1
+	},
+/obj/machinery/economy/vending/snack,
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"Pj" = (
+/obj/effect/map_effect/dynamic_airlock/door/interior,
+/obj/machinery/door/airlock/external/glass,
+/obj/machinery/access_button/offset/north,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/exit)
+"Pw" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"Qe" = (
+/obj/machinery/economy/vending/cigarette,
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"Qh" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 4
+	},
+/obj/effect/turf_decal/loading_area,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"Qk" = (
+/obj/machinery/atmospherics/trinary/mixer/flipped{
+	dir = 8;
+	name = "Gas mixer (N2/O2)";
+	node1_concentration = .8;
+	node2_concentration = .2;
+	on = 1
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"Ql" = (
+/obj/effect/turf_decal/delivery/blue/hollow,
+/obj/machinery/atmospherics/portable/canister/oxygen,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"Qr" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"QH" = (
+/obj/effect/turf_decal/tiles/department/medical/corner{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"QK" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/cryo)
+"QX" = (
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"QY" = (
+/obj/effect/turf_decal/tiles/department/command/corner{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"QZ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"Rj" = (
+/obj/effect/turf_decal/tiles/department/cargo/corner,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"Ru" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/main_chamber)
+"RA" = (
+/obj/structure/table/wood,
+/obj/item/ashtray/bronze{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_robustgold{
+	pixel_x = -5;
+	pixel_y = -4
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_robustgold{
+	pixel_x = 6;
+	pixel_y = 11
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_robustgold{
+	pixel_x = -11;
+	pixel_y = 13
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"RL" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 5
+	},
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"RV" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/eva)
+"RY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"Se" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 1;
+	autolink_id = "n2_outlet_scrubber"
+	},
+/turf/simulated/floor/engine/n2,
+/area/ruin/space/pirx/atmospherics)
+"Sl" = (
+/obj/effect/turf_decal/stripes/box,
+/obj/structure/marker_beacon/dock_marker,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+"Sw" = (
+/obj/machinery/cooking/oven/loaded,
+/obj/effect/turf_decal/tiles/dark/checker,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"Sz" = (
+/obj/structure/shuttle/engine/heater{
+	dir = 4
+	},
+/obj/structure/window/plasmareinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/engineering)
+"SB" = (
+/obj/machinery/power/apc/critical/directional/south,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"Tu" = (
+/obj/structure/chair/wood/wings{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"TC" = (
+/obj/effect/turf_decal/tiles/department/cargo/side,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"TD" = (
+/obj/machinery/atmospherics/pipe/simple/visible/universal,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/economy/vending/wallmed/directional/west,
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"TM" = (
+/obj/structure/sign/engineering/comms,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/engineering)
+"TV" = (
+/obj/effect/turf_decal/stripes/box,
+/obj/structure/marker_beacon/dock_marker,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/eva)
+"TZ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/engineering)
+"Up" = (
+/obj/effect/turf_decal/tiles/dark/checker,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"Ux" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/bridge)
+"UA" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge"
+	},
+/obj/effect/mapping_helpers/airlock/access/any/command/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"UK" = (
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Engineering";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"Vk" = (
+/obj/effect/turf_decal/tiles/dark/checker,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"VG" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/engineering)
+"VN" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 9
+	},
+/obj/structure/dispenser{
+	pixel_x = -1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"VQ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 10
+	},
+/obj/machinery/computer/area_atmos{
+	dir = 8
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"VU" = (
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"VZ" = (
+/obj/structure/chair/sofa/corner,
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"Wl" = (
+/obj/effect/turf_decal/tiles/department/cargo/side,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"Wz" = (
+/obj/machinery/computer/general_air_control/large_tank_control/pirx{
+	dir = 1
+	},
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 6
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"WC" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 4
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/space/pirx/atmospherics)
+"WJ" = (
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"WL" = (
+/obj/structure/dispenser,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/engineering)
+"Xa" = (
+/obj/structure/sign/engineering,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/engineering)
+"Xw" = (
+/obj/effect/map_effect/dynamic_airlock/door/interior,
+/obj/machinery/door/airlock/external/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/access_button/offset/northwest,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/exit)
+"Xz" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/bridge)
+"XA" = (
+/obj/effect/turf_decal/tiles/department/cargo/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/main_chamber)
+"Yq" = (
+/obj/effect/turf_decal/tiles/department/command/side{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/bridge)
+"Ys" = (
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/main_chamber)
+"Yt" = (
+/turf/simulated/floor/carpet,
+/area/ruin/space/pirx/main_chamber)
+"YB" = (
+/obj/effect/turf_decal/tiles/department/cargo/side{
+	dir = 8
+	},
+/obj/machinery/suit_storage_unit/industrial/pirx,
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/eva)
+"YY" = (
+/turf/simulated/floor/mech_bay_recharge_floor,
+/area/ruin/space/pirx/main_chamber)
+"Zf" = (
+/obj/machinery/economy/vending/dinnerware,
+/obj/effect/turf_decal/tiles/dark/checker,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/main_chamber)
+"Zp" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/dark,
+/area/ruin/space/pirx/exit)
+"Zv" = (
+/obj/machinery/porta_turret/ai_turret,
+/turf/simulated/wall/mineral/titanium,
+/area/ruin/space/pirx/exit)
+"ZF" = (
+/obj/effect/map_effect/dynamic_airlock,
+/obj/machinery/airlock_controller/air_cycler/directional/north,
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/exit)
+"ZH" = (
+/obj/machinery/computer/cloning{
+	dir = 4
+	},
+/obj/effect/turf_decal/tiles/department/medical/side{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/space/pirx/medical)
+"ZS" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ruin/space/pirx/atmospherics)
+
+(1,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+"}
+(2,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+aT
+kG
+Ux
+IN
+IN
+IN
+IN
+IN
+Ux
+kG
+aT
+aT
+aT
+aT
+aT
+aT
+"}
+(3,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+FZ
+Xz
+Xz
+Dy
+uO
+Ld
+EF
+iV
+Xz
+Xz
+FZ
+aT
+aT
+aT
+aT
+aT
+"}
+(4,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+Xz
+Xz
+jH
+aW
+qd
+ym
+qd
+qd
+mL
+Xz
+Xz
+aT
+aT
+aT
+aT
+aT
+"}
+(5,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+Xz
+oH
+Ng
+qd
+qd
+kD
+qd
+qd
+QY
+pu
+Xz
+aT
+aT
+aT
+aT
+aT
+"}
+(6,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+Xz
+Pb
+Yq
+Yq
+Oo
+Yq
+hf
+Yq
+uc
+Wz
+Xz
+aT
+aT
+aT
+aT
+aT
+"}
+(7,1,1) = {"
+aT
+aT
+aT
+aT
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+UA
+Xz
+Xz
+Xz
+Xz
+Xz
+Ys
+aT
+aT
+aT
+aT
+"}
+(8,1,1) = {"
+aT
+aT
+aT
+QK
+cX
+tG
+Nv
+cX
+cT
+zI
+zI
+zI
+HR
+Ys
+Up
+Zf
+Ys
+Ru
+aT
+aT
+aT
+"}
+(9,1,1) = {"
+aT
+aT
+aT
+cX
+cV
+eS
+MP
+cX
+zc
+ld
+ld
+ld
+Wl
+ld
+Vk
+Vk
+qk
+Ys
+aT
+aT
+aT
+"}
+(10,1,1) = {"
+aT
+aT
+aT
+cX
+zN
+ev
+pW
+cX
+zc
+Tu
+Tu
+Tu
+Wl
+ld
+Vk
+Vk
+JW
+Ys
+aT
+aT
+aT
+"}
+(11,1,1) = {"
+aT
+aT
+aT
+cX
+ra
+qn
+cX
+cX
+zc
+gH
+gH
+gH
+Wl
+Ys
+Fp
+Vk
+Sw
+Ys
+aT
+aT
+aT
+"}
+(12,1,1) = {"
+aT
+aT
+aT
+Ys
+cT
+zI
+zI
+zI
+XA
+gH
+jm
+gH
+Wl
+Ys
+Ys
+rO
+Ys
+Ys
+aT
+aT
+aT
+"}
+(13,1,1) = {"
+aT
+aT
+aT
+Ys
+qN
+rL
+rL
+rL
+ld
+gH
+JK
+gH
+AC
+zI
+zI
+zI
+HR
+Ys
+aT
+aT
+aT
+"}
+(14,1,1) = {"
+aT
+aT
+aT
+Ys
+wi
+Yt
+Yt
+Yt
+CI
+gH
+gH
+gH
+ld
+ld
+pS
+RL
+nQ
+Ys
+aT
+aT
+aT
+"}
+(15,1,1) = {"
+aT
+aT
+aT
+Ys
+al
+RA
+rY
+Yt
+CI
+lv
+lv
+lv
+ld
+ld
+eZ
+ld
+vP
+Ys
+aT
+aT
+aT
+"}
+(16,1,1) = {"
+aT
+aT
+aT
+Ys
+VZ
+ge
+hW
+Qe
+Pi
+LK
+LK
+LK
+LK
+LK
+aO
+YY
+MJ
+Ys
+aT
+aT
+aT
+"}
+(17,1,1) = {"
+aT
+aT
+RV
+Fh
+Fh
+Fh
+Fh
+Fh
+Fh
+Fh
+ig
+xU
+xU
+xU
+xU
+xU
+xU
+xU
+Fe
+aT
+aT
+"}
+(18,1,1) = {"
+aT
+TV
+Fh
+Fh
+VN
+YB
+YB
+YB
+Fa
+Fh
+ld
+xU
+Ie
+st
+st
+CB
+ZH
+tK
+xU
+fm
+aT
+"}
+(19,1,1) = {"
+aT
+Fh
+Fh
+By
+uT
+Rj
+AV
+QX
+TC
+Iy
+ld
+hb
+WJ
+Gi
+eJ
+QH
+Gi
+eY
+xU
+xU
+aT
+"}
+(20,1,1) = {"
+aT
+Fh
+Fh
+Ml
+QX
+nI
+uT
+QX
+TC
+oI
+ld
+Mr
+WJ
+Gi
+mV
+Hf
+Gi
+eY
+xU
+xU
+aT
+"}
+(21,1,1) = {"
+aT
+Fh
+Fh
+uK
+vX
+Oa
+Qh
+xZ
+jb
+Fh
+ld
+xU
+hQ
+cG
+NP
+ce
+Nw
+OC
+xU
+xU
+aT
+"}
+(22,1,1) = {"
+aT
+yx
+VG
+VG
+VG
+VG
+VG
+VG
+VG
+BP
+Pw
+BP
+ET
+ET
+ET
+ET
+ET
+ET
+ET
+dG
+aT
+"}
+(23,1,1) = {"
+aT
+VG
+VG
+LH
+Qr
+jZ
+gk
+wm
+UK
+Af
+Zp
+zl
+no
+MS
+TD
+Mp
+kE
+Bj
+eF
+ET
+aT
+"}
+(24,1,1) = {"
+aT
+VG
+un
+Mg
+oL
+Ir
+uS
+TZ
+Xa
+xc
+VU
+HS
+rF
+qa
+LB
+Qk
+IJ
+bW
+Se
+ET
+aT
+"}
+(25,1,1) = {"
+aT
+VG
+lc
+gD
+hv
+ed
+uS
+SB
+VG
+am
+RY
+uj
+ET
+lE
+rg
+WC
+KE
+ET
+ET
+ET
+aT
+"}
+(26,1,1) = {"
+aT
+VG
+Ql
+oL
+uS
+Gs
+TM
+vq
+BP
+BP
+Xw
+BP
+BP
+AL
+rg
+WC
+rg
+ct
+hN
+ET
+aT
+"}
+(27,1,1) = {"
+aT
+VG
+WL
+oL
+uS
+nU
+VG
+gM
+BP
+Hq
+bN
+Hq
+BP
+QZ
+om
+VQ
+pV
+at
+rA
+ET
+aT
+"}
+(28,1,1) = {"
+aT
+yx
+VG
+Sz
+Sz
+Sz
+VG
+VG
+BP
+Hq
+NO
+Hq
+BP
+ix
+ET
+qD
+qD
+qD
+ET
+dG
+aT
+"}
+(29,1,1) = {"
+aT
+gy
+tN
+op
+jR
+tN
+op
+Ek
+BP
+ZF
+Hq
+Hq
+BP
+eM
+vQ
+uq
+ZS
+vQ
+uq
+Sl
+aT
+"}
+(30,1,1) = {"
+aT
+aT
+tN
+tN
+aT
+tN
+tN
+aT
+Zv
+BP
+Pj
+BP
+Zv
+aT
+vQ
+vQ
+aT
+vQ
+vQ
+aT
+aT
+"}
+(31,1,1) = {"
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+"}
