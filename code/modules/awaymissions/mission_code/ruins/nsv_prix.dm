@@ -23,31 +23,32 @@
 	autolink_sensors = list("pirx_n2", "pirx_o2")
 
 // MARK: AREAS
-/area/ruin/space/pirx/
+/area/shuttle/pirx/
 	requires_power = TRUE
+	icon_state = "shuttle"
 
-/area/ruin/space/pirx/bridge
+/area/shuttle/pirx/bridge
 	name = "NSV Pirx Bridge"
 
-/area/ruin/space/pirx/main_chamber
+/area/shuttle/pirx/main_chamber
 	name = "NSV Pirx Main Chamber"
 
-/area/ruin/space/pirx/eva
+/area/shuttle/pirx/eva
 	name = "NSV Pirx EVA Storage"
 
-/area/ruin/space/pirx/medical
+/area/shuttle/pirx/medical
 	name = "NSV Pirx Medical Bay"
 
-/area/ruin/space/pirx/engineering
+/area/shuttle/pirx/engineering
 	name = "NSV Pirx Engineering"
 
-/area/ruin/space/pirx/atmospherics
+/area/shuttle/pirx/atmospherics
 	name = "NSV Pirx Atmopsherics"
 
-/area/ruin/space/pirx/cryo
+/area/shuttle/pirx/cryo
 	name = "NSV Pirx Cryogenics"
 
-/area/ruin/space/pirx/exit
+/area/shuttle/pirx/exit
 	name = "NSV Pirx Exit"
 
 // MARK: CAMERA NETWORK
