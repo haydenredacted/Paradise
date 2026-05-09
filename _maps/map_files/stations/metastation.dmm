@@ -72560,13 +72560,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/science/misc_lab)
-"rHu" = (
-/obj/docking_port/stationary/trader{
-	name = "Docking bay 4 at NSS Cerebron";
-	dir = 8
-	},
-/turf/space,
-/area/space)
 "rHF" = (
 /obj/machinery/light,
 /obj/effect/turf_decal/tiles/department/medical/side,
@@ -83521,6 +83514,14 @@
 /obj/effect/mapping_helpers/turfs/damage,
 /turf/simulated/floor/plasteel,
 /area/station/supply/warehouse)
+"vmP" = (
+/obj/docking_port/stationary/trader{
+	name = "Docking bay 4 at NSS Cerebron";
+	dir = 8
+	},
+/obj/docking_port/stationary/pirx/station,
+/turf/space,
+/area/space)
 "vmT" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance,
@@ -102174,8 +102175,8 @@ aaa
 aaa
 aaa
 aaa
-rHu
 aaa
+vmP
 aaa
 aaa
 aaa
@@ -102430,8 +102431,8 @@ arB
 arB
 arB
 abq
+abq
 oGA
-biC
 biC
 nlB
 aaa
@@ -102687,9 +102688,9 @@ aaa
 aaa
 aaa
 aaa
+aaa
 ayy
 uLU
-jUw
 nlB
 abq
 abq
@@ -102944,8 +102945,8 @@ aaa
 aaa
 aaa
 aaa
+aaa
 ayy
-jUw
 jUw
 nlB
 nlB
@@ -103202,7 +103203,7 @@ ayy
 ayy
 ayy
 ayy
-biC
+ayy
 biC
 nlB
 wTV
