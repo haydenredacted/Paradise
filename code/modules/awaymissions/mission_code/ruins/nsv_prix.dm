@@ -51,8 +51,35 @@
 /area/shuttle/pirx/exit
 	name = "NSV Pirx Exit"
 
+/obj/docking_port/stationary/pirx/planet
+	id = "pirx_planet"
+	name = "Icy planet dock"
+	dir = WEST
+
+/obj/docking_port/stationary/pirx/station
+	id = "pirx_station"
+	name = "Station dock"
+	dir = WEST
+
+/obj/docking_port/mobile/pirx_shuttle
+	dir = WEST
+	dwidth = 11
+	height = 30
+	id = "pirx"
+	name = "pirx shuttle"
+	width = 22
+	preferred_direction = EAST
+	timid = TRUE
+
+/obj/machinery/computer/shuttle/pirx
+	name = "NSV Pirx shuttle console"
+	shuttleId = "pirx"
+	possible_destinations = "pirx_station;pirx_planet"
+	resistance_flags = INDESTRUCTIBLE
+	flags = NODECONSTRUCT
+
 // MARK: CAMERA NETWORK
-/obj/machinery/computer/security/telescreen
+/obj/machinery/computer/security/telescreen/pirx
 	network = list("PIRX")
 
 /obj/machinery/camera
