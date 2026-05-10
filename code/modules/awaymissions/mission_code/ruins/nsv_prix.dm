@@ -60,14 +60,15 @@
 	id = "pirx_station"
 	name = "Station dock"
 	dir = WEST
+	dwidth = 29
 
 /obj/docking_port/mobile/pirx_shuttle
 	dir = WEST
-	dwidth = 11
-	height = 30
+	dwidth = 9
+	height = 28
 	id = "pirx"
 	name = "pirx shuttle"
-	width = 22
+	width = 19
 	preferred_direction = EAST
 	timid = TRUE
 
