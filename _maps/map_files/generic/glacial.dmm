@@ -2,50 +2,46 @@
 "ab" = (
 /obj/structure/chair/sofa/corner,
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "am" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
-"ar" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "at" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "aB" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "aG" = (
 /obj/machinery/clonescanner,
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "aH" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "bg" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "bl" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
@@ -54,13 +50,13 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "bm" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 6
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "bC" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -72,7 +68,7 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "bH" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 9
@@ -85,15 +81,15 @@
 /obj/item/grenade/jaunter_grenade,
 /obj/structure/shelf/supply,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "bI" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "bZ" = (
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "ca" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 4
@@ -103,7 +99,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "cc" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
 	dir = 8;
@@ -113,49 +109,45 @@
 	},
 /obj/effect/turf_decal/stripes/box,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
-"cj" = (
-/obj/effect/turf_decal/tiles/dark/checker,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "co" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Telecommunications Access"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "cE" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 8
 	},
 /obj/machinery/economy/vending/medical,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "cH" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 4
 	},
 /obj/machinery/sleeper,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "dc" = (
 /obj/effect/turf_decal/woodsiding{
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "dd" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "dh" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/turf_decal/delivery/hollow,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "di" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Engineering";
@@ -170,19 +162,15 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "dN" = (
 /obj/structure/dispenser,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
-"dP" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "dR" = (
 /obj/machinery/tcomms/relay/pirx,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "eq" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 4
@@ -191,14 +179,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "ev" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 10
 	},
 /obj/machinery/suit_storage_unit/industrial/pirx,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "ez" = (
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/machinery/door/firedoor{
@@ -208,22 +196,17 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "eJ" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "eK" = (
 /turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/cryo)
-"eS" = (
-/obj/effect/turf_decal/stripes/box,
-/obj/structure/marker_beacon/dock_marker,
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "eT" = (
 /obj/effect/turf_decal/tiles/department/virology/side{
 	dir = 9
@@ -233,12 +216,12 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "eW" = (
 /obj/machinery/economy/vending/dinnerware,
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "fb" = (
 /obj/structure/table/wood,
 /obj/item/lighter/zippo{
@@ -250,34 +233,20 @@
 	pixel_y = -2
 	},
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
-"fs" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "fy" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "fD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/light,
-/area/shuttle/pirx/main_chamber)
-"fI" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
-"fM" = (
-/obj/effect/turf_decal/stripes/box,
-/obj/structure/marker_beacon/dock_marker,
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "fX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -287,13 +256,13 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "gd" = (
 /obj/structure/chair/sofa/left{
 	dir = 8
 	},
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "gq" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -301,12 +270,12 @@
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "gz" = (
 /obj/effect/turf_decal/tiles/dark/checker,
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "gL" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -314,31 +283,26 @@
 /obj/machinery/suit_storage_unit/industrial/pirx,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "gN" = (
 /obj/effect/turf_decal/tiles/department/engineering/side{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
-"gS" = (
-/obj/effect/turf_decal/stripes/box,
-/obj/structure/marker_beacon/dock_marker,
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "gT" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "hj" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "hm" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /obj/machinery/atmospherics/pipe/simple/visible/green{
@@ -346,13 +310,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "hu" = (
-/turf/simulated/floor/plating/asteroid/snow,
-/area/space)
-"ie" = (
-/obj/docking_port/stationary/pirx/planet,
-/turf/simulated/floor/plating/asteroid/snow,
+/turf/simulated/floor/plating/asteroid/snow/glacial,
 /area/space)
 "iN" = (
 /obj/machinery/cryopod{
@@ -363,23 +323,20 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "iW" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
-"jf" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "jm" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1;
 	autolink_id = "o2_outlet_scrubber"
 	},
 /turf/simulated/floor/engine/o2,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "jp" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -392,7 +349,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "jE" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -404,41 +361,41 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "jN" = (
 /obj/structure/chair/wood/wings{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "jU" = (
 /obj/effect/turf_decal/tiles/department/medical/side,
 /obj/machinery/light,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "kd" = (
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "kW" = (
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "ls" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "lE" = (
 /obj/effect/turf_decal/tiles/dark/checker,
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "lU" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 1
@@ -447,12 +404,12 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "mv" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "mA" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -461,11 +418,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "mD" = (
 /obj/machinery/economy/vending/cigarette,
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "mH" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 4
@@ -475,7 +432,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "no" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 5
@@ -492,23 +449,19 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "nI" = (
 /obj/effect/turf_decal/tiles/department/cargo/side,
 /obj/machinery/power/apc/critical/directional/south,
 /obj/structure/cable,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
-"nT" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "nY" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "og" = (
 /obj/structure/closet/crate/radiation,
 /obj/item/stack/sheet/mineral/uranium/twenty,
@@ -516,7 +469,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "oo" = (
 /obj/machinery/door/firedoor{
 	dir = 4
@@ -525,7 +478,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "op" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 9
@@ -534,7 +487,7 @@
 	pixel_x = -1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "oS" = (
 /obj/machinery/computer/cryopod{
 	pixel_y = 32
@@ -545,7 +498,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "pe" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -555,7 +508,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "pF" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 4
@@ -565,25 +518,25 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "pQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "pV" = (
 /obj/effect/turf_decal/stripes/box,
 /obj/machinery/atmospherics/air_sensor/pirx,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "pW" = (
 /obj/machinery/power/apc/critical/directional/south,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "qw" = (
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 4
@@ -593,11 +546,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "qH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "qS" = (
 /obj/machinery/computer/communications{
 	dir = 4
@@ -606,11 +559,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "qY" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "rg" = (
 /obj/effect/turf_decal/tiles/department/virology/side{
 	dir = 4
@@ -619,14 +572,10 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "ri" = (
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
-"rl" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "rq" = (
 /obj/structure/chair/office/dark,
 /obj/effect/turf_decal/tiles/department/command/side{
@@ -637,7 +586,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "ru" = (
 /obj/effect/turf_decal/tiles/department/cargo/corner{
 	dir = 1
@@ -647,7 +596,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "ry" = (
 /obj/effect/turf_decal/woodsiding{
 	dir = 1
@@ -657,28 +606,22 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
-"rG" = (
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "rT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "rV" = (
 /obj/structure/table/wood,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
-"rY" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "sm" = (
 /obj/structure/sign/engineering/atmos,
 /turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "so" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -687,14 +630,14 @@
 	dir = 6
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "sq" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "sz" = (
 /obj/effect/turf_decal/tiles/department/virology/corner{
 	dir = 1
@@ -703,24 +646,20 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
-"sM" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "ti" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 4
 	},
 /obj/machinery/bodyscanner,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "tn" = (
 /obj/machinery/cooking/deepfryer/loaded,
 /obj/effect/turf_decal/tiles/dark/checker,
 /obj/machinery/light,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "ts" = (
 /obj/machinery/computer/monitor{
 	dir = 1;
@@ -730,7 +669,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "tL" = (
 /obj/effect/turf_decal/tiles/department/cargo/side,
 /obj/structure/cable{
@@ -738,7 +677,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "tO" = (
 /obj/effect/map_effect/dynamic_airlock/door/interior,
 /obj/machinery/door/airlock/external/glass,
@@ -747,7 +686,7 @@
 	},
 /obj/machinery/access_button/offset/northwest,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "tP" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -755,36 +694,36 @@
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/tiles/department/cargo/side,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "ue" = (
 /obj/machinery/computer/robotics,
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 5
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "uy" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "uA" = (
 /obj/effect/turf_decal/tiles/department/medical/side,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "ve" = (
 /obj/structure/closet/wardrobe/pjs,
 /obj/effect/turf_decal/tiles/department/virology/side{
 	dir = 5
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "vB" = (
 /obj/effect/map_effect/dynamic_airlock,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "vF" = (
 /obj/machinery/door/airlock{
 	id_tag = "Cryogenics";
@@ -796,7 +735,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "vN" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin{
@@ -811,28 +750,21 @@
 	dir = 9
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "wc" = (
 /obj/effect/turf_decal/tiles/dark/checker,
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
-"wp" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "wI" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/structure/closet/walllocker/emerglocker/directional/north,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "wX" = (
 /obj/structure/sign/engineering,
 /turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/exit)
-"xh" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "xX" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Bridge"
@@ -844,12 +776,12 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "yc" = (
 /obj/machinery/cooking/oven/loaded,
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "yf" = (
 /obj/machinery/computer/cloning{
 	dir = 4
@@ -858,13 +790,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "ys" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "yD" = (
 /obj/structure/table,
 /obj/item/storage/briefcase/inflatable{
@@ -887,12 +819,12 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "yI" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/structure/closet/walllocker/emerglocker/directional/south,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "yK" = (
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 4
@@ -903,15 +835,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "yR" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
-"yU" = (
-/obj/effect/turf_decal/stripes/box,
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "yV" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -920,7 +848,7 @@
 /obj/machinery/power/apc/critical/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "yY" = (
 /obj/structure/chair/sofa{
 	dir = 8
@@ -929,7 +857,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "zY" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 4
@@ -950,7 +878,7 @@
 /obj/machinery/economy/vending/wallmed/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "zZ" = (
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/machinery/door/airlock/multi_tile/glass{
@@ -960,10 +888,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Aa" = (
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Ae" = (
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 4
@@ -972,37 +900,32 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Aj" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
 	dir = 1;
 	autolink_id = "n2_in"
 	},
 /turf/simulated/floor/engine/n2,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "Aw" = (
 /obj/machinery/porta_turret/ai_turret,
 /turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "AA" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
-"AW" = (
-/obj/effect/turf_decal/stripes/box,
-/obj/structure/marker_beacon/dock_marker,
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Bi" = (
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Bq" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1011,44 +934,38 @@
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "BW" = (
 /obj/machinery/power/port_gen/pacman/super/upgraded,
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Cb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Cl" = (
 /obj/effect/spawner/window/reinforced/plasma/grilled,
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "Cq" = (
 /obj/machinery/clonepod/upgraded,
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 10
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
-"Cu" = (
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/engineering)
-"Cw" = (
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "CC" = (
 /obj/effect/turf_decal/tiles/department/cargo/corner{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "CD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1060,7 +977,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "CI" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1070,34 +987,30 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
-"CL" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "CN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "Dw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Dz" = (
 /obj/structure/table/wood,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "DH" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Eb" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -1106,15 +1019,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
-"Ew" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/main_chamber)
-"EB" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "EC" = (
 /obj/machinery/computer/card{
 	dir = 4
@@ -1123,18 +1028,18 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "EJ" = (
 /obj/effect/turf_decal/stripes/box,
 /obj/structure/marker_beacon/dock_marker,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Fd" = (
 /obj/structure/table,
 /obj/machinery/cooking/grill/loaded,
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Fi" = (
 /obj/machinery/computer/general_air_control/large_tank_control/pirx{
 	dir = 1
@@ -1143,23 +1048,23 @@
 	dir = 6
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Fx" = (
 /obj/structure/sign/engineering/comms,
 /turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "FA" = (
 /obj/structure/marker_beacon/dock_marker,
 /obj/effect/turf_decal/stripes/box,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "FR" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 9
 	},
 /obj/machinery/suit_storage_unit/cmo/sec_storage,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "FU" = (
 /obj/structure/chair/wood/wings{
 	dir = 4
@@ -1169,7 +1074,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Ge" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 5
@@ -1177,7 +1082,7 @@
 /obj/machinery/power/apc/critical/directional/west,
 /obj/structure/cable,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "GC" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -1186,7 +1091,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "GI" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 6
@@ -1199,23 +1104,17 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "GY" = (
 /obj/structure/chair/sofa,
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
-"Ha" = (
-/obj/structure/shuttle/engine/large{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Hu" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Hv" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 8
@@ -1225,17 +1124,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
-"HK" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "Ic" = (
 /obj/structure/cable/yellow,
 /obj/machinery/power/terminal{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "It" = (
 /obj/structure/table/reinforced,
 /obj/machinery/photocopier/faxmachine/longrange,
@@ -1243,13 +1139,13 @@
 	dir = 9
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "IK" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 10
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "IR" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -1258,11 +1154,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "IU" = (
 /obj/machinery/atmospherics/unary/tank/air,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "IW" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 1
@@ -1272,11 +1168,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
-"Jl" = (
-/obj/effect/turf_decal/tiles/department/cargo/side,
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Jn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1286,11 +1178,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "Js" = (
 /obj/effect/turf_decal/tiles/department/cargo/side,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "JH" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1302,11 +1194,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "Kd" = (
 /obj/structure/chair/sofa/right,
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Kf" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/structure/cable{
@@ -1314,7 +1206,7 @@
 	},
 /obj/machinery/economy/vending/wallmed/directional/west,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "Ki" = (
 /obj/machinery/door/firedoor{
 	dir = 4
@@ -1323,11 +1215,11 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "Ku" = (
 /obj/structure/table/wood,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "KQ" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -1336,18 +1228,18 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "KZ" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "La" = (
 /obj/machinery/suit_storage_unit/industrial/engine/secure,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "LQ" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 1
@@ -1358,7 +1250,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Ml" = (
 /obj/machinery/economy/vending/wallmed/directional/east,
 /obj/effect/turf_decal/tiles/department/command/side{
@@ -1366,16 +1258,16 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Mp" = (
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "MH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "ML" = (
 /obj/machinery/door/airlock/atmos{
 	name = "Atmospherics";
@@ -1391,7 +1283,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "MS" = (
 /obj/machinery/atmospherics/trinary/filter{
 	dir = 4;
@@ -1400,12 +1292,12 @@
 	on = 1
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "Ne" = (
 /obj/effect/map_effect/dynamic_airlock,
 /obj/machinery/airlock_controller/air_cycler/directional/north,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
+/area/shuttle/pirx)
 "Nh" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1415,27 +1307,27 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Nr" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "NV" = (
 /obj/machinery/computer/crew,
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 9
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Ob" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Oo" = (
 /obj/structure/table/reinforced,
 /obj/item/megaphone{
@@ -1452,20 +1344,20 @@
 	dir = 10
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "OA" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "OK" = (
 /obj/effect/turf_decal/tiles/department/engineering/side{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "ON" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/soda/upgraded{
@@ -1475,14 +1367,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
-"OO" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/eva)
-"Pd" = (
-/obj/machinery/porta_turret/ai_turret,
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "Ph" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -1491,44 +1376,33 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "PE" = (
 /obj/effect/turf_decal/tiles/department/command/corner{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "PG" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/industrial/engine/secure,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "PQ" = (
-/obj/effect/map_effect/dynamic_airlock/door/interior,
 /obj/machinery/door/airlock/external/glass,
 /obj/machinery/access_button/offset/north,
-/obj/docking_port/mobile/pirx_shuttle,
+/obj/effect/map_effect/dynamic_airlock/door/exterior,
+/obj/docking_port/stationary/pirx/planet,
+/obj/docking_port/mobile/pirx/shuttle,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/exit)
-"PV" = (
-/obj/structure/shuttle/engine/heater{
-	dir = 4
-	},
-/obj/structure/window/plasmareinforced{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
-"PY" = (
-/turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Qg" = (
 /obj/effect/spawner/window/plasma/grilled,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Qu" = (
 /obj/effect/turf_decal/tiles/department/command/side{
 	dir = 8
@@ -1537,12 +1411,12 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "QF" = (
 /obj/effect/turf_decal/delivery/blue/hollow,
 /obj/machinery/atmospherics/portable/canister/oxygen,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "QL" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 5
@@ -1550,7 +1424,7 @@
 /obj/machinery/recharge_station,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Rj" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/autoname,
@@ -1558,7 +1432,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Rp" = (
 /obj/effect/turf_decal/woodsiding{
 	dir = 4
@@ -1567,23 +1441,23 @@
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "RT" = (
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 1
 	},
 /turf/simulated/floor/bluegrid,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "RZ" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 4
 	},
 /obj/machinery/mineral/ore_redemption,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "SB" = (
 /turf/simulated/floor/mech_bay_recharge_floor,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "SO" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 4
@@ -1594,18 +1468,18 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "Te" = (
 /obj/structure/sign/public/cryo,
 /turf/simulated/wall/mineral/titanium,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "To" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "Tw" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -1614,7 +1488,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/cryo)
+/area/shuttle/pirx)
 "TE" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 9
@@ -1623,13 +1497,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "TI" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 1
 	},
 /turf/simulated/floor/bluegrid,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "TR" = (
 /obj/effect/turf_decal/tiles/department/medical/side{
 	dir = 6
@@ -1638,9 +1512,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/medical)
+/area/shuttle/pirx)
 "Uo" = (
-/turf/simulated/floor/chasm,
+/turf/simulated/floor/chasm/pirx,
 /area/space)
 "Up" = (
 /obj/structure/closet/walllocker/emerglocker/directional/east,
@@ -1656,7 +1530,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "US" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 8
@@ -1666,43 +1540,43 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Vj" = (
 /obj/effect/spawner/window/shuttle,
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/bridge)
+/area/shuttle/pirx)
 "Vo" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
 	dir = 1;
 	autolink_id = "o2_in"
 	},
 /turf/simulated/floor/engine/o2,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "VP" = (
 /obj/effect/turf_decal/tiles/department/cargo/side{
 	dir = 9
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "WC" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Xe" = (
 /obj/effect/turf_decal/tiles/department/cargo/corner{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/eva)
+/area/shuttle/pirx)
 "Xq" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1;
 	autolink_id = "n2_outlet_scrubber"
 	},
 /turf/simulated/floor/engine/n2,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "XK" = (
 /obj/machinery/shuttle_manipulator,
 /obj/structure/cable{
@@ -1715,20 +1589,20 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/light,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "XO" = (
 /obj/effect/turf_decal/woodsiding{
 	dir = 1
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "XV" = (
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "Yr" = (
 /obj/structure/table/wood,
 /obj/item/ashtray/bronze{
@@ -1748,7 +1622,7 @@
 	pixel_y = 13
 	},
 /turf/simulated/floor/carpet,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Yw" = (
 /obj/machinery/atmospherics/trinary/filter{
 	dir = 4;
@@ -1757,20 +1631,17 @@
 	on = 1
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "YA" = (
 /obj/structure/shuttle/engine/large{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/pirx/atmospherics)
-"YE" = (
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "YG" = (
 /obj/effect/turf_decal/tiles/dark/checker,
 /turf/simulated/floor/plasteel/white,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "Zn" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1783,10 +1654,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/exit)
-"Zq" = (
-/turf/simulated/floor/plasteel/dark,
-/area/shuttle/pirx/main_chamber)
+/area/shuttle/pirx)
 "ZA" = (
 /obj/machinery/atmospherics/trinary/mixer/flipped{
 	dir = 8;
@@ -1796,7 +1664,7 @@
 	on = 1
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 "ZG" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1804,7 +1672,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/economy/vending/wallmed/directional/west,
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/engineering)
+/area/shuttle/pirx)
 "ZX" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 10
@@ -1813,7 +1681,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/catwalk,
-/area/shuttle/pirx/atmospherics)
+/area/shuttle/pirx)
 
 (1,1,1) = {"
 Uo
@@ -10250,13 +10118,13 @@ hu
 hu
 hu
 FA
-EB
+Aw
 Vj
 Vj
 Vj
 Vj
 Vj
-EB
+Aw
 FA
 hu
 hu
@@ -10505,17 +10373,17 @@ hu
 hu
 hu
 hu
-yU
-PY
-PY
+EJ
+eK
+eK
 vN
 EC
 Qu
 qS
 Oo
-PY
-PY
-yU
+eK
+eK
+EJ
 hu
 hu
 hu
@@ -10762,17 +10630,17 @@ hu
 hu
 hu
 hu
-PY
-PY
+eK
+eK
 It
 Eb
-rl
+rT
 Bi
-rG
-rG
+Aa
+Aa
 ON
-PY
-PY
+eK
+eK
 hu
 hu
 hu
@@ -11019,17 +10887,17 @@ hu
 hu
 hu
 hu
-PY
+eK
 NV
 mA
-rl
-rl
+rT
+rT
 dh
-rl
-rG
+rT
+Aa
 PE
 ts
-PY
+eK
 hu
 hu
 hu
@@ -11275,8 +11143,8 @@ hu
 hu
 hu
 hu
-eS
-PY
+EJ
+eK
 ue
 qw
 yK
@@ -11286,8 +11154,8 @@ Ml
 kd
 rq
 Fi
-PY
-eS
+eK
+EJ
 hu
 hu
 hu
@@ -11535,16 +11403,16 @@ hu
 eK
 eK
 eK
-fs
-fs
-fs
+eK
+eK
+eK
 xX
-fs
-fs
-fs
-fs
-fs
-fs
+eK
+eK
+eK
+eK
+eK
+eK
 hu
 hu
 hu
@@ -11788,21 +11656,21 @@ hu
 hu
 hu
 hu
-Pd
+Aw
 eK
 eT
 GC
-fs
+eK
 am
 hj
 pe
 OA
 IK
-fs
+eK
 gz
 eW
-fs
-Ew
+eK
+Aw
 hu
 hu
 hu
@@ -12049,17 +11917,17 @@ eK
 oS
 sz
 iN
-fs
+eK
 Hu
-Zq
+Aa
 Ob
 rT
-Jl
+Js
 YG
 YG
 YG
 Fd
-fs
+eK
 hu
 hu
 hu
@@ -12306,17 +12174,17 @@ eK
 ve
 rg
 Tw
-fs
+eK
 Hu
 jN
 FU
 jN
-Jl
+Js
 YG
 wc
 YG
 tn
-fs
+eK
 hu
 hu
 hu
@@ -12559,21 +12427,21 @@ hu
 hu
 hu
 hu
-fs
+eK
 Te
 vF
-fs
-fs
+eK
+eK
 IW
 WC
 rV
 Ku
-Jl
-fs
+Js
+eK
 lE
 YG
 yc
-fs
+eK
 hu
 hu
 hu
@@ -12816,7 +12684,7 @@ hu
 hu
 hu
 hu
-fs
+eK
 VP
 Ph
 KQ
@@ -12826,11 +12694,11 @@ Dz
 XK
 Dz
 nI
-fs
-fs
-cj
-fs
-fs
+eK
+eK
+eK
+eK
+eK
 hu
 hu
 hu
@@ -13340,7 +13208,7 @@ WC
 rV
 Ku
 rT
-Zq
+Aa
 bg
 bC
 tP
@@ -13597,7 +13465,7 @@ uy
 bl
 nY
 rT
-Zq
+Aa
 OK
 rT
 gN
@@ -13844,7 +13712,7 @@ hu
 hu
 hu
 hu
-fs
+eK
 ab
 yY
 gd
@@ -13858,7 +13726,7 @@ sq
 RT
 SB
 TI
-fs
+eK
 hu
 hu
 hu
@@ -14100,23 +13968,23 @@ hu
 hu
 hu
 hu
-Ew
-fs
-fs
-fs
-fs
-fs
-fs
-fs
+Aw
+eK
+eK
+eK
+eK
+eK
+eK
+eK
 Rj
-fs
-fs
-fs
-fs
-fs
-fs
-fs
-sM
+eK
+eK
+eK
+eK
+eK
+eK
+eK
+Aw
 hu
 hu
 hu
@@ -14357,24 +14225,24 @@ hu
 hu
 hu
 EJ
-OO
-OO
+eK
+eK
 op
 gL
 US
 gL
 ev
-OO
+eK
 Bq
-wp
+eK
 FR
 Hv
 cE
 aG
 yf
 Cq
-wp
-fM
+eK
+EJ
 hu
 hu
 hu
@@ -14613,13 +14481,13 @@ hu
 hu
 hu
 hu
-OO
-OO
+eK
+eK
 bH
 Xe
-ar
-ar
-ar
+rT
+rT
+rT
 Js
 zZ
 Ob
@@ -14630,8 +14498,8 @@ bZ
 bZ
 bZ
 jU
-wp
-wp
+eK
+eK
 hu
 hu
 hu
@@ -14870,13 +14738,13 @@ hu
 hu
 hu
 hu
-OO
-OO
+eK
+eK
 LQ
-ar
+rT
 Aa
-ar
-ar
+rT
+rT
 tL
 oo
 CD
@@ -14887,8 +14755,8 @@ bZ
 bZ
 bZ
 uA
-wp
-wp
+eK
+eK
 hu
 hu
 hu
@@ -15127,25 +14995,25 @@ hu
 hu
 hu
 hu
-OO
-OO
+eK
+eK
 QL
 iW
 zY
 mH
 RZ
 GI
-OO
+eK
 gq
-wp
+eK
 no
 cH
 ti
 SO
 pF
 TR
-wp
-wp
+eK
+eK
 hu
 hu
 hu
@@ -15384,25 +15252,25 @@ hu
 hu
 hu
 hu
-xh
-OO
-OO
-OO
-OO
-OO
-OO
-OO
-OO
+Aw
+eK
+eK
+eK
+eK
+eK
+eK
+eK
+eK
 CI
-jf
-HK
-HK
-HK
-HK
-HK
-HK
-HK
-dP
+eK
+eK
+eK
+eK
+eK
+eK
+eK
+eK
+Aw
 hu
 hu
 hu
@@ -15641,8 +15509,8 @@ hu
 hu
 hu
 hu
-rY
-rY
+eK
+eK
 XV
 Nr
 so
@@ -15659,7 +15527,7 @@ Ge
 bm
 yR
 Aj
-HK
+eK
 hu
 hu
 hu
@@ -15898,25 +15766,25 @@ hu
 hu
 hu
 hu
-rY
+eK
 BW
 Ic
-YE
+Aa
 Dw
 Mp
 at
 wX
 aB
-nT
+rT
 Jn
 sm
 ys
-Cw
+Aa
 ZA
 To
 hm
 Xq
-HK
+eK
 hu
 hu
 hu
@@ -16155,25 +16023,25 @@ hu
 hu
 hu
 hu
-rY
+eK
 og
 DH
 Cb
 MH
 Mp
 pW
-jf
+eK
 IU
 CN
 yV
-HK
+eK
 MS
 qH
 ls
 TE
-HK
-HK
-HK
+eK
+eK
+eK
 hu
 hu
 hu
@@ -16412,25 +16280,25 @@ hu
 hu
 hu
 hu
-rY
+eK
 QF
-YE
+Aa
 Mp
 PG
 Fx
 co
-jf
-jf
+eK
+eK
 tO
-jf
-HK
+eK
+eK
 Yw
 qH
 ls
 qH
 gT
 Vo
-HK
+eK
 hu
 hu
 hu
@@ -16669,25 +16537,25 @@ hu
 hu
 hu
 hu
-rY
+eK
 dN
-YE
+Aa
 Mp
 La
-rY
+eK
 dR
-jf
+eK
 wI
 AA
 yI
-HK
+eK
 pQ
 yD
 ZX
 qY
 mv
 jm
-HK
+eK
 hu
 hu
 hu
@@ -16926,25 +16794,25 @@ hu
 hu
 hu
 hu
-CL
-rY
+Aw
+eK
 eq
 eq
 eq
-rY
-rY
-jf
+eK
+eK
+eK
 bI
 KZ
 eJ
-HK
+eK
 Cl
-HK
-PV
-PV
-PV
-HK
-dP
+eK
+eq
+eq
+eq
+eK
+Aw
 hu
 hu
 hu
@@ -17183,25 +17051,25 @@ hu
 hu
 hu
 hu
-AW
-Cu
-Ha
+EJ
+ri
+YA
 dd
-Cu
-Ha
+ri
+YA
 pV
-jf
+eK
 Ne
 vB
 vB
-HK
+eK
 cc
 ri
 YA
-fI
+dd
 ri
 YA
-gS
+EJ
 hu
 hu
 hu
@@ -17441,17 +17309,17 @@ hu
 hu
 hu
 hu
-Cu
-Cu
+ri
+ri
 hu
-Cu
-Cu
+ri
+ri
 hu
 Aw
-jf
+eK
 PQ
-jf
-dP
+eK
+Aw
 hu
 ri
 ri
@@ -17706,7 +17574,7 @@ hu
 hu
 hu
 hu
-ie
+hu
 hu
 hu
 hu
