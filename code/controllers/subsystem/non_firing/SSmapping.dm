@@ -90,6 +90,7 @@ SUBSYSTEM_DEF(mapping)
 	environments[ENVIRONMENT_LAVALAND] = create_environment(oxygen = LAVALAND_OXYGEN, nitrogen = LAVALAND_NITROGEN, temperature = LAVALAND_TEMPERATURE)
 	environments[ENVIRONMENT_TEMPERATE] = create_environment(oxygen = MOLES_O2STANDARD, nitrogen = MOLES_N2STANDARD, temperature = T20C)
 	environments[ENVIRONMENT_COLD] = create_environment(oxygen = MOLES_O2STANDARD, nitrogen = MOLES_N2STANDARD, temperature = 180)
+	environments[ENVIRONMENT_ICEPLANET] = create_environment(carbon_dioxide = MOLES_O2STANDARD, temperature = 180)
 
 	var/datum/lavaland_theme/lavaland_theme_type = pick(subtypesof(/datum/lavaland_theme))
 	ASSERT(lavaland_theme_type)
@@ -189,6 +190,7 @@ SUBSYSTEM_DEF(mapping)
 /datum/controller/subsystem/mapping/proc/generate_zlevels()
 	generate_space_zlevels()
 	generate_lavaland_zlevels()
+	generate_glacial_zlevels()
 
 	// Setup the Z-level linkage
 	GLOB.space_manager.do_transition_setup()
@@ -310,6 +312,26 @@ SUBSYSTEM_DEF(mapping)
 	space_ruins_placer.place_ruins(levels_by_trait(SPAWN_RUINS))
 	log_startup_progress("Placed space ruins in [stop_watch(watch)]s.")
 	seed_space_salvage(levels_by_trait(SPAWN_RUINS))
+
+/datum/controller/subsystem/mapping/proc/generate_glacial_zlevels()
+	var/zlevel_count = 1
+	if(!GLOB.configuration.ruins.enable_lavaland || zlevel_count == 0)
+		log_startup_progress("Skipping glacial levels...")
+		return
+
+	log_startup_progress("Loading glacial...")
+	var/watch = start_watch()
+	for(var/i in 1 to zlevel_count)
+		var/glacial_zlevel = GLOB.space_manager.add_new_zlevel(
+			"GLACIAL",
+			linkage = SELFLOOPING,
+			traits = list(ORE_LEVEL, REACHABLE_BY_CREW, HAS_WEATHER, AI_OK),
+			transition_tag = TRANSITION_TAG_SPACE,
+			level_type = /datum/space_level/lavaland
+		)
+		GLOB.maploader.load_map(file("_maps/map_files/generic/glacial.dmm"), z_offset = glacial_zlevel)
+		CHECK_TICK
+	log_startup_progress("Added [zlevel_count] glacial levels in [stop_watch(watch)]s")
 
 // Loads in the station
 /datum/controller/subsystem/mapping/proc/loadStation()

@@ -55,17 +55,22 @@
 	id = "pirx_planet"
 	name = "Icy planet dock"
 	dir = WEST
+	dwidth = 9
+	width = 19
+	height = 29
 
 /obj/docking_port/stationary/pirx/station
 	id = "pirx_station"
 	name = "Station dock"
 	dir = WEST
-	dwidth = 29
+	dwidth = 9
+	width = 19
+	height = 29
 
-/obj/docking_port/mobile/pirx_shuttle
+/obj/docking_port/mobile/pirx/shuttle
 	dir = WEST
 	dwidth = 9
-	height = 28
+	height = 29
 	id = "pirx"
 	name = "pirx shuttle"
 	width = 19
@@ -91,3 +96,12 @@
 	name = "NSV Pirx modsuit storage unit"
 	mask_type = /obj/item/clothing/mask/gas/explorer
 	suit_type = /obj/item/mod/control/pre_equipped/standard/explorer
+
+// MARK: PLANET
+/turf/simulated/floor/plating/asteroid/snow/glacial
+	atmos_mode = ATMOS_MODE_EXPOSED_TO_ENVIRONMENT
+	atmos_environment = ENVIRONMENT_ICEPLANET
+
+/turf/simulated/floor/chasm/pirx
+	atmos_mode = ATMOS_MODE_EXPOSED_TO_ENVIRONMENT
+	atmos_environment = ENVIRONMENT_ICEPLANET
