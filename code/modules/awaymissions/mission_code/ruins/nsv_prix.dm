@@ -51,6 +51,12 @@
 /area/shuttle/pirx/exit
 	name = "NSV Pirx Exit"
 
+/area/iceplanet
+	name = "Ice Planet"
+	always_unpowered = TRUE
+	poweralm = FALSE
+	apc_starts_off = TRUE
+
 /obj/docking_port/stationary/pirx/planet
 	id = "pirx_planet"
 	name = "Icy planet dock"
