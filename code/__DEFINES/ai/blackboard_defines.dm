@@ -197,6 +197,8 @@
 #define BB_OWNER_FRIENDLY_FIRE_APOLOGIES "BB_FF_APOLOGIES"
 
 // Hivebot keys
+///the machine we must go to repair
+#define BB_MACHINE_TARGET "BB_machine_target"
 /// the hivebot partner we will go communicate with
 #define BB_HIVE_PARTNER "BB_HIVE_PARTNER"
 

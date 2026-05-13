@@ -121,11 +121,8 @@
 	var/warp_chance = 2
 
 /datum/ai_planning_subtree/warpbots/select_behaviors(datum/ai_controller/controller, seconds_per_tick)
-
 	if(!SPT_PROB(warp_chance, seconds_per_tick))
 		return
-
-	if(controller.blackboard_key_exists(BB_BASIC_MOB_CURRENT_TARGET))
-		var/mob/living/basic/hivebot/tele/beacon = controller.pawn
-		beacon.warpbots()
-		return SUBTREE_RETURN_FINISH_PLANNING
+	var/mob/living/basic/hivebot/tele/beacon = controller.pawn
+	beacon.warpbots()
+	return SUBTREE_RETURN_FINISH_PLANNING
