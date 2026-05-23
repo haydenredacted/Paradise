@@ -39,9 +39,9 @@
 			"icon_state": "qm",
 			"rarity": "Uncommon",
 			"level": "5",
-			"attack": "",
-			"defense": "",
-			"effect": "",
+			"attack": "1600",
+			"defense": "1600",
+			"effect": "When this card is Normal Summoned, add one Supply Unit from your Morgue to your hand.",
 			"rules": ""
 		},
 		{
@@ -52,9 +52,9 @@
 			"icon_state": "cargo_tech",
 			"rarity": "Common",
 			"level": "2",
-			"attack": "",
-			"defense": "",
-			"effect": "",
+			"attack": "800",
+			"defense": "800",
+			"effect": "You can Normal Summon this card without it counting towards your one Normal Summon limit per turn. When this card is Normal Summoned, search your Deck for an Item card and add it to your hand.",
 			"rules": ""
 		},
 		{
@@ -65,9 +65,9 @@
 			"icon_state": "miner",
 			"rarity": "Common",
 			"level": "4",
-			"attack": "",
-			"defense": "",
-			"effect": "",
+			"attack": "1500",
+			"defense": "1000",
+			"effect": "When this card destroys a Unit in battle, draw 1 card. Once per turn, you can send this card to the Morgue and add a Supply Unit from your Deck to your hand.",
 			"rules": ""
 		},
 		{
@@ -78,9 +78,9 @@
 			"icon_state": "explorer",
 			"rarity": "Common",
 			"level": "3",
-			"attack": "",
-			"defense": "",
-			"effect": "",
+			"attack": "1200",
+			"defense": "1100",
+			"effect": "When this card is Normal Summoned, search your Deck for an Item card and add it to your hand.",
 			"rules": ""
 		},
 		{
@@ -91,9 +91,9 @@
 			"icon_state": "smith",
 			"rarity": "Common",
 			"level": "3",
-			"attack": "",
-			"defense": "",
-			"effect": "",
+			"attack": "1000",
+			"defense": "1300",
+			"effect": "Once per turn, you may move one Continuous Item card from one of your Units to another Unit you control. When this card is destroyed, add one Continuous Item card from your Morgue to your hand.",
 			"rules": ""
 		},
 		{
@@ -105,9 +105,9 @@
 			"rarity": "Uncommon",
 			"level": "5",
 			"attack": "0",
-			"defense": "15",
-			"effect": "nice",
-			"rules": "ph gods"
+			"defense": "2000",
+			"effect": "Once per turn, move one Item card from your Morgue to your Item Zone facedown.",
+			"rules": ""
 		},
 		{
 			"template": "supply",
@@ -117,8 +117,8 @@
 			"icon_state": "brad",
 			"rarity": "Uncommon",
 			"level": "3",
-			"attack": "",
-			"defense": "",
+			"attack": "600",
+			"defense": "800",
 			"effect": "This card cannot be destroyed by card effects.",
 			"rules": ""
 		}
