@@ -1,12 +1,13 @@
-#warn make a vendor for the cardpacks
 #warn add the booster boxes to said vendor
 #warn add the new pack to the vendor
+#warn add coins to the vendor, along with D&D die, and the other cards
 #warn make deck boxes
 #warn make premade decks
 #warn add deck searching functionality
 #warn make card values able to be changed
 #warn using a card in hand flips it over
-#warn make card pack loot spawner and put it in maint
+#warn add the syndicate booster to the uplink
+#warn fix the empty Card Hand thing
 
 #define ROTATED_ANGLE 90
 #define UNROTATED_ANGLE 0
@@ -64,6 +65,10 @@
 		. += "Effect: [data.rules]"
 	if(illegal)
 		. += "<span class='warning'>This card is a low-quality copy. You surely won't get any respect from this card.</span>"
+
+/obj/item/tcg_card/Initialize(mapload)
+	. = ..()
+	transform = matrix(0.5,0,0,0,0.5,0)
 
 /obj/item/tcg_card/equipped(mob/user, slot, initial)
 	. = ..()
@@ -196,51 +201,62 @@
 		"Legendary" = 1
 	)
 
+/obj/item/cardpack/Initialize(mapload)
+	. = ..()
+	transform = matrix(0.5,0,0,0,0.5,0)
+
 /obj/item/cardpack/series_command
 	name = "Battles of Orion: Commendable Command"
 	desc = "Contains five cards from the Command Command series of Battles of Orion! Collect them all!"
+	icon_state = "command"
 	series = "pack_command"
 	contains_coin = 30 // there's a 30% a coin is included in the pack
 
 /obj/item/cardpack/series_engineering
 	name = "Battles of Orion: Electrifying Engineering"
 	desc = "Contains five cards from the Electrifying Engeineering series of Battles of Orion! Collect them all!"
+	icon_state = "engineering"
 	series = "pack_engineering"
 	contains_coin = 10 // there's a 30% a coin is included in the pack
 
 /obj/item/cardpack/series_medical
 	name = "Battles of Orion: Marvelous Medical"
 	desc = "Contains five cards from the Marvelous Medical series of Battles of Orion! Collect them all!"
+	icon_state = "medical"
 	series = "pack_medical"
 	contains_coin = 10
 
 /obj/item/cardpack/series_research
 	name = "Battles of Orion: Reckless Research"
-	desc = "Contains five cards the Reckless Research series of Battles of Orion! Collecet them all!"
+	desc = "Contains five cards the Reckless Research series of Battles of Orion! Collect them all!"
+	icon_state = "research"
 	series = "pack_research"
 	contains_coin = 10
 
 /obj/item/cardpack/series_security
 	name = "Battles of Orion: Stalwart Security"
-	desc = "Contains five cards the series of Battles of Orion! Collecet them all!"
+	desc = "Contains five cards the series of Battles of Orion! Collect them all!"
+	icon_state = "security"
 	series = "pack_security"
 	contains_coin = 10
 
 /obj/item/cardpack/series_service
 	name = "Battles of Orion: Stellar Service"
-	desc = "Contains five cards the Stellar Service series of Battles of Orion! Collecet them all!"
+	desc = "Contains five cards the Stellar Service series of Battles of Orion! Collect them all!"
+	icon_state = "service"
 	series = "pack_service"
 	contains_coin = 10
 
 /obj/item/cardpack/series_supply
 	name = "Battles of Orion: Solid Supply"
-	desc = "Contains five cards the Solid Supply series of Battles of Orion! Collecet them all!"
+	desc = "Contains five cards the Solid Supply series of Battles of Orion! Collect them all!"
+	icon_state = "supply"
 	series = "pack_supply"
 	contains_coin = 10
 
 /obj/item/cardpack/series_miscellaneous
 	name = "Battles of Orion: Mystery Miscellaneous"
-	desc = "Contains five cards the Mystery Miscellaneous series of Battles of Orion! Collecet them all!"
+	desc = "Contains five cards the Mystery Miscellaneous series of Battles of Orion! Collect them all!"
 	series = "pack_miscellaneous"
 	contains_coin = 10
 

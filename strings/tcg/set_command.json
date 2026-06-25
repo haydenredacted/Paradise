@@ -89,7 +89,7 @@
 			"name": "Strongly Worded Fax",
 			"desc": "Sometimes you just gotta report things to your higher-ups.",
 			"icon_state": "fax",
-			"rarity": "Uncommon",
+			"rarity": "Rare",
 			"effect": ""
 		},
 		{
@@ -98,7 +98,7 @@
 			"name": "Command Headset",
 			"desc": "A headset with the ability to hear the illustrious Command channel.",
 			"icon_state": "command_headset",
-			"rarity": "Common",
+			"rarity": "Rare",
 			"effect": "Once during your turn, you may look at the top card of your deck. If it is a Command Unit, add it to your hand. If not, place it back on the top of your deck."
 		},
 		{
@@ -107,7 +107,7 @@
 			"name": "Nuclear Authentication Disk",
 			"desc": "A highly sought out disk containing unique cryptographic data, the Nuclear Authentication Disk is used to detonate nuclear fission devices.",
 			"icon_state": "nad",
-			"rarity": "Uncommon",
+			"rarity": "Rare",
 			"effect": "While this card is on the field and you control a Command Unit, your opponent may not Special Summon a Unit that is Level 6 or higher. If this card is destroyed, your opponent draws 2 cards."
 		},
 		{

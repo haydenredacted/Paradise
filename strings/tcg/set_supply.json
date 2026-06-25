@@ -74,7 +74,7 @@
 			"template": "supply",
 			"id": "explorer",
 			"name": "Explorer",
-			"desc": "",
+			"desc": "Traveling out into the depths of space, Explorers are tasked with finding and conquering dangerous ruins and fauna.",
 			"icon_state": "explorer",
 			"rarity": "Common",
 			"level": "3",
