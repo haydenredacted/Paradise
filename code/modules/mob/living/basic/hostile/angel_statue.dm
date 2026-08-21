@@ -1,15 +1,16 @@
 /datum/ai_controller/basic_controller/statue
 	blackboard = list(
-		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic/ignore_sight,
 	)
 
-	// ai_movement = /datum/ai_movement/basic_avoidance
 	ai_movement = /datum/ai_movement/jps
+
 	planning_subtrees = list(
+		#warn why are you running
 		// /datum/ai_planning_subtree/escape_captivity,
+		/datum/ai_planning_subtree/find_and_hunt_target/look_for_light_fixtures,
 		/datum/ai_planning_subtree/simple_find_target,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
-		/datum/ai_planning_subtree/find_and_hunt_target/look_for_light_fixtures,
 	)
 
 /mob/living/basic/hostile/statue

@@ -126,3 +126,6 @@
 
 /datum/targeting_strategy/basic/of_size/smaller
 	inclusive = FALSE
+
+/datum/targeting_strategy/basic/ignore_sight
+	ignore_sight = TRUE
