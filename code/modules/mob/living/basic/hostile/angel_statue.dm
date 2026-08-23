@@ -1,17 +1,42 @@
+#define BB_STATUE_SPELL_COOLDOWN "BB_STATUE_SPELL_COOLDOWN"
+#define BB_STATUE_FLICKER_LIGHTS_ACTION "BB_STATUE_FLICKER_LIGHTS_ACTION"
+#define BB_STATUE_BLINDNESS_ACTION "BB_STATUE_BLINDNESS_ACTION"
+#define BB_STATUE_NIGHT_VISION_ACTION "BB_STATUE_NIGHT_VISION_ACTION"
+
 /datum/ai_controller/basic_controller/statue
 	blackboard = list(
-		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic/ignore_sight,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 	)
 
-	ai_movement = /datum/ai_movement/jps
-
+	ai_movement = /datum/ai_movement/basic_avoidance
+	idle_behavior = /datum/idle_behavior/idle_random_walk
+	max_target_distance = 15
 	planning_subtrees = list(
-		#warn why are you running
-		// /datum/ai_planning_subtree/escape_captivity,
 		/datum/ai_planning_subtree/find_and_hunt_target/look_for_light_fixtures,
 		/datum/ai_planning_subtree/simple_find_target,
+		/datum/ai_planning_subtree/targeted_mob_ability/cause_darkness,
+		/datum/ai_planning_subtree/attack_obstacle_in_path,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
-	)
+		/datum/ai_planning_subtree/find_and_hunt_target/prowl,
+		)
+
+/datum/ai_planning_subtree/targeted_mob_ability/cause_darkness
+	#warn this might need to be increased but testing is required
+	var/darkness_spellcasting_delay = 5 SECONDS
+
+/datum/ai_planning_subtree/targeted_mob_ability/cause_darkness/select_behaviors(datum/ai_controller/controller, seconds_per_tick)
+	if(controller.blackboard[BB_STATUE_SPELL_COOLDOWN] >= world.time)
+		return
+	var/list/ability_keys = list(BB_STATUE_FLICKER_LIGHTS_ACTION, BB_STATUE_BLINDNESS_ACTION, BB_STATUE_NIGHT_VISION_ACTION)
+	var/ability_key = pick_n_take(ability_keys)
+	var/datum/action/cooldown/mob_cooldown/selected_action = controller.blackboard[ability_key]
+	while(selected_action && !selected_action.IsAvailable())
+		if(!ability_keys.len)
+			return
+		ability_key = pick_n_take(ability_keys)
+		selected_action = controller.blackboard[ability_key]
+	controller.set_blackboard_key(BB_STATUE_SPELL_COOLDOWN, world.time + darkness_spellcasting_delay)
+	return ..()
 
 /mob/living/basic/hostile/statue
 	name = "statue" // matches the name of the statue with the flesh-to-stone spell
