@@ -360,10 +360,10 @@
 /turf/simulated/floor/mineral/plastitanium,
 /area/shuttle/freegolem)
 "EB" = (
-/obj/machinery/autolathe,
 /obj/effect/turf_decal/tiles/white/corner{
 	dir = 4
 	},
+/obj/machinery/autolathe/loaded,
 /turf/simulated/floor/plasteel,
 /area/shuttle/freegolem)
 "EE" = (
