@@ -90,7 +90,7 @@ impl GasSet {
         let mut heat_capacity = 0.0;
         for i in 0..GAS_COUNT {
             moles += self.values[i];
-            heat_capacity += self.values[i] * SPECIFIC_HEATS[i];
+            heat_capacity += self.values[i] * GAS_METADATA[i].specific_heat;
         }
         self.moles_cache.store(moles, Relaxed);
         self.heat_capacity_cache.store(heat_capacity, Relaxed);
@@ -566,6 +566,25 @@ impl Buffers {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn gas_metadata_match() {
+        let expected = [
+            (GAS_OXYGEN, "oxygen", 20.0),
+            (GAS_CARBON_DIOXIDE, "carbon_dioxide", 30.0),
+            (GAS_NITROGEN, "nitrogen", 20.0),
+            (GAS_TOXINS, "toxins", 200.0),
+            (GAS_SLEEPING_AGENT, "sleeping_agent", 40.0),
+            (GAS_AGENT_B, "agent_b", 300.0),
+            (GAS_HYDROGEN, "hydrogen", 15.0),
+            (GAS_WATER_VAPOR, "water_vapor", 33.0),
+        ];
+
+        for (index, name, specific_heat) in expected {
+            assert_eq!(index, GAS_METADATA.iter().position(|metadata| metadata.name == name).unwrap());
+            assert_eq!(GAS_METADATA[index].specific_heat, specific_heat);
+        }
+    }
 
     // The model should start empty.
     #[test]

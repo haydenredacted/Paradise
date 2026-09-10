@@ -3,14 +3,6 @@ What are the archived variables for?
 	Calculations are done using the archived variables with the results merged into the regular variables.
 	This prevents race conditions that arise based on the order of tile processing.
 */
-#define SPECIFIC_HEAT_TOXIN		200
-#define SPECIFIC_HEAT_AIR		20
-#define SPECIFIC_HEAT_CDO		30
-#define SPECIFIC_HEAT_N2O		40
-#define SPECIFIC_HEAT_AGENT_B	300
-#define SPECIFIC_HEAT_HYDROGEN  15
-#define SPECIFIC_HEAT_WATER_VAPOR  33
-
 #define HEAT_CAPACITY_CALCULATION(oxygen, carbon_dioxide, nitrogen, toxins, sleeping_agent, agent_b, hydrogen, water_vapor, innate_heat_capacity) \
 	(carbon_dioxide * SPECIFIC_HEAT_CDO + \
 	(oxygen + nitrogen) * SPECIFIC_HEAT_AIR + \
@@ -24,6 +16,142 @@ What are the archived variables for?
 #define MINIMUM_HEAT_CAPACITY	0.0003
 #define MINIMUM_MOLE_COUNT		0.01
 #define QUANTIZE(variable)		(round(variable, 0.0001))
+
+#define GAS_FLAG_BREATHABLE				(1 << 0)
+#define GAS_FLAG_SUPPORTS_COMBUSTION	(1 << 1)
+#define GAS_FLAG_VISIBLE				(1 << 2)
+
+#define GAS_ID_OXYGEN "oxygen"
+#define GAS_ID_CARBON_DIOXIDE "carbon_dioxide"
+#define GAS_ID_NITROGEN "nitrogen"
+#define GAS_ID_TOXINS "toxins"
+#define GAS_ID_SLEEPING_AGENT "sleeping_agent"
+#define GAS_ID_AGENT_B "agent_b"
+#define GAS_ID_HYDROGEN "hydrogen"
+#define GAS_ID_WATER_VAPOR "water_vapor"
+
+/datum/gas
+	var/id
+	var/name
+	var/display_class
+	var/specific_heat
+	var/flags = 0
+	var/visibility_threshold = 0
+	var/milla_index
+	var/mixture_field
+	var/airalarm_key
+
+/datum/gas/proc/moles(datum/gas_mixture/air)
+	return air.vars[mixture_field]
+
+/datum/gas/oxygen
+	id = GAS_ID_OXYGEN
+	name = "Oxygen"
+	display_class = "oxygen"
+	specific_heat = SPECIFIC_HEAT_AIR
+	flags = GAS_FLAG_BREATHABLE | GAS_FLAG_SUPPORTS_COMBUSTION
+	milla_index = MILLA_INDEX_OXYGEN
+	mixture_field = "private_oxygen"
+	airalarm_key = "oxygen"
+
+/datum/gas/carbon_dioxide
+	id = GAS_ID_CARBON_DIOXIDE
+	name = "Carbon Dioxide"
+	display_class = "carbon_dioxide"
+	specific_heat = SPECIFIC_HEAT_CDO
+	milla_index = MILLA_INDEX_CARBON_DIOXIDE
+	mixture_field = "private_carbon_dioxide"
+	airalarm_key = "carbon dioxide"
+
+/datum/gas/nitrogen
+	id = GAS_ID_NITROGEN
+	name = "Nitrogen"
+	display_class = "nitrogen"
+	specific_heat = SPECIFIC_HEAT_AIR
+	milla_index = MILLA_INDEX_NITROGEN
+	mixture_field = "private_nitrogen"
+	airalarm_key = "nitrogen"
+
+/datum/gas/toxins
+	id = GAS_ID_TOXINS
+	name = "Plasma"
+	display_class = "plasma"
+	flags = GAS_FLAG_SUPPORTS_COMBUSTION
+	visibility_threshold = 0.5
+	specific_heat = SPECIFIC_HEAT_TOXIN
+	milla_index = MILLA_INDEX_TOXINS
+	mixture_field = "private_toxins"
+	airalarm_key = "plasma"
+
+/datum/gas/sleeping_agent
+	id = GAS_ID_SLEEPING_AGENT
+	name = "Nitrous Oxide"
+	display_class = "sleeping_agent"
+	specific_heat = SPECIFIC_HEAT_N2O
+	milla_index = MILLA_INDEX_SLEEPING_AGENT
+	mixture_field = "private_sleeping_agent"
+	airalarm_key = "nitrous oxide"
+
+/datum/gas/agent_b
+	id = GAS_ID_AGENT_B
+	name = "Agent B"
+	display_class = "agent_b"
+	specific_heat = SPECIFIC_HEAT_AGENT_B
+	milla_index = MILLA_INDEX_AGENT_B
+	mixture_field = "private_agent_b"
+
+/datum/gas/hydrogen
+	id = GAS_ID_HYDROGEN
+	name = "Hydrogen"
+	display_class = "hydrogen"
+	flags = GAS_FLAG_SUPPORTS_COMBUSTION
+	specific_heat = SPECIFIC_HEAT_HYDROGEN
+	milla_index = MILLA_INDEX_HYDROGEN
+	mixture_field = "private_hydrogen"
+	airalarm_key = "hydrogen"
+
+/datum/gas/water_vapor
+	id = GAS_ID_WATER_VAPOR
+	name = "Water Vapor"
+	display_class = "water_vapor"
+	visibility_threshold = 4.0
+	specific_heat = SPECIFIC_HEAT_WATER_VAPOR
+	milla_index = MILLA_INDEX_WATER_VAPOR
+	mixture_field = "private_water_vapor"
+	airalarm_key = "water vapor"
+
+GLOBAL_LIST_INIT(gas_definitions, list(
+	new /datum/gas/oxygen,
+	new /datum/gas/carbon_dioxide,
+	new /datum/gas/nitrogen,
+	new /datum/gas/toxins,
+	new /datum/gas/sleeping_agent,
+	new /datum/gas/agent_b,
+	new /datum/gas/hydrogen,
+	new /datum/gas/water_vapor
+))
+
+/proc/get_gas_definition(gas_id)
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		if(gas_definition.id == gas_id)
+			return gas_definition
+	return null
+
+/proc/validate_gas_definitions()
+	var/list/seen_ids = list()
+	var/list/seen_milla_indices = list()
+
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		if(!gas_definition.id || seen_ids[gas_definition.id])
+			CRASH("Invalid or duplicate gas ID: [gas_definition.id]")
+		seen_ids[gas_definition.id] = TRUE
+
+		if(!gas_definition.mixture_field || !gas_definition.specific_heat)
+			CRASH("Incomplete gas definition: [gas_definition.type]")
+
+		if(seen_milla_indices[gas_definition.milla_index])
+			CRASH("Duplicate MILLA index: [gas_definition.milla_index]")
+		seen_milla_indices[gas_definition.milla_index] = TRUE
 
 /datum/gas_mixture
 	/// The volume this gas mixture fills.
@@ -67,93 +195,61 @@ What are the archived variables for?
 /datum/gas_mixture/proc/set_dirty()
 	return
 
-/datum/gas_mixture/proc/oxygen()
-	return private_oxygen
-
-/datum/gas_mixture/proc/set_oxygen(value)
+/datum/gas_mixture/proc/validated_gas_value(value)
 	if(isnan(value) || !isnum(value))
 		CRASH("Bad value: [value]")
 	var/clamped = clamp(value, 0, 1e10)
 	if(value != clamped)
 		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_oxygen = clamped
+	return clamped
+
+/datum/gas_mixture/proc/oxygen()
+	return private_oxygen
+
+/datum/gas_mixture/proc/set_oxygen(value)
+	private_oxygen = validated_gas_value(value)
 
 /datum/gas_mixture/proc/carbon_dioxide()
 	return private_carbon_dioxide
 
 /datum/gas_mixture/proc/set_carbon_dioxide(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_carbon_dioxide = clamped
+	private_carbon_dioxide = validated_gas_value(value)
 
 /datum/gas_mixture/proc/nitrogen()
 	return private_nitrogen
 
 /datum/gas_mixture/proc/set_nitrogen(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_nitrogen = clamped
+	private_nitrogen = validated_gas_value(value)
 
 /datum/gas_mixture/proc/toxins()
 	return private_toxins
 
 /datum/gas_mixture/proc/set_toxins(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_toxins = clamped
+	private_toxins = validated_gas_value(value)
 
 /datum/gas_mixture/proc/sleeping_agent()
 	return private_sleeping_agent
 
 /datum/gas_mixture/proc/set_sleeping_agent(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_sleeping_agent = clamped
+	private_sleeping_agent = validated_gas_value(value)
 
 /datum/gas_mixture/proc/agent_b()
 	return private_agent_b
 
 /datum/gas_mixture/proc/set_agent_b(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_agent_b = clamped
+	private_agent_b = validated_gas_value(value)
 
 /datum/gas_mixture/proc/hydrogen()
 	return private_hydrogen
 
 /datum/gas_mixture/proc/set_hydrogen(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_hydrogen = clamped
+	private_hydrogen = validated_gas_value(value)
 
 /datum/gas_mixture/proc/water_vapor()
 	return private_water_vapor
 
 /datum/gas_mixture/proc/set_water_vapor(value)
-	if(isnan(value) || !isnum(value))
-		CRASH("Bad value: [value]")
-	var/clamped = clamp(value, 0, 1e10)
-	if(value != clamped)
-		stack_trace("Out-of-bounds value [value] clamped to [clamped].")
-	private_water_vapor = clamped
+	private_water_vapor = validated_gas_value(value)
 
 
 /datum/gas_mixture/proc/temperature()
@@ -362,7 +458,7 @@ What are the archived variables for?
 		return 0
 	/// Don't make calculations if there is no difference.
 	if(private_oxygen_archived == sharer.private_oxygen_archived && private_carbon_dioxide_archived == sharer.private_carbon_dioxide_archived && private_nitrogen_archived == sharer.private_nitrogen_archived &&\
-	private_toxins_archived == sharer.private_toxins_archived && private_sleeping_agent_archived == sharer.private_sleeping_agent_archived && private_agent_b_archived == sharer.private_agent_b_archived && private_temperature_archived == sharer.private_temperature_archived)
+	private_toxins_archived == sharer.private_toxins_archived && private_sleeping_agent_archived == sharer.private_sleeping_agent_archived && private_agent_b_archived == sharer.private_agent_b_archived && private_hydrogen_archived == sharer.private_hydrogen_archived && private_water_vapor_archived == sharer.private_water_vapor_archived && private_temperature_archived == sharer.private_temperature_archived)
 		return 0
 	var/delta_oxygen = QUANTIZE(private_oxygen_archived - sharer.private_oxygen_archived) / (atmos_adjacent_turfs + 1)
 	var/delta_carbon_dioxide = QUANTIZE(private_carbon_dioxide_archived - sharer.private_carbon_dioxide_archived) / (atmos_adjacent_turfs + 1)
@@ -795,7 +891,8 @@ What are the archived variables for?
 		if(new_heat_capacity > MINIMUM_HEAT_CAPACITY)
 			private_temperature = (private_temperature * old_heat_capacity + energy_released) / new_heat_capacity
 
-		if(fuel_burnt)
+		fuel_burnt += burned_hydrogen
+		if(burned_hydrogen)
 			reacting = TRUE
 
 	set_dirty()
@@ -939,13 +1036,6 @@ What are the archived variables for?
 /datum/gas_mixture/proc/hotspot_expose(temperature, volume)
 	return
 
-#undef SPECIFIC_HEAT_TOXIN
-#undef SPECIFIC_HEAT_AIR
-#undef SPECIFIC_HEAT_CDO
-#undef SPECIFIC_HEAT_N2O
-#undef SPECIFIC_HEAT_AGENT_B
-#undef SPECIFIC_HEAT_HYDROGEN
-#undef SPECIFIC_HEAT_WATER_VAPOR
 #undef HEAT_CAPACITY_CALCULATION
 #undef MINIMUM_HEAT_CAPACITY
 #undef MINIMUM_MOLE_COUNT
@@ -1091,3 +1181,4 @@ What are the archived variables for?
 
 /datum/gas_mixture/readonly/set_temperature(value)
 	CRASH("Attempted to modify a readonly gas_mixture.")
+

@@ -162,14 +162,7 @@
 	var/volume = 0
 	var/heat_capacity = 0
 	var/thermal_energy = 0
-	var/oxygen = 0
-	var/nitrogen = 0
-	var/toxins
-	var/carbon_dioxide = 0
-	var/sleeping_agent = 0
-	var/agent_b = 0
-	var/hydrogen = 0
-	var/water_vapor = 0
+	var/list/gas_amounts = list()
 
 	if(detailed)// Present all mixtures one by one
 		for(var/datum/gas_mixture/air as anything in airs)
@@ -180,22 +173,10 @@
 			thermal_energy = air.thermal_energy()
 			if(total_moles)
 				message += SPAN_NOTICE("Total: [round(total_moles, 0.01)] moles")
-				if(air.oxygen() && (milla_turf_details || air.oxygen() / total_moles > 0.01))
-					message += "  [SPAN_OXYGEN("Oxygen: [round(air.oxygen(), 0.01)] moles ([round(air.oxygen() / total_moles * 100, 0.01)] %)")]"
-				if(air.nitrogen() && (milla_turf_details || air.nitrogen() / total_moles > 0.01))
-					message += "  [SPAN_NITROGEN("Nitrogen: [round(air.nitrogen(), 0.01)] moles ([round(air.nitrogen() / total_moles * 100, 0.01)] %)")]"
-				if(air.carbon_dioxide() && (milla_turf_details || air.carbon_dioxide() / total_moles > 0.01))
-					message += "  [SPAN_CARBON_DIOXIDE("Carbon Dioxide: [round(air.carbon_dioxide(), 0.01)] moles ([round(air.carbon_dioxide() / total_moles * 100, 0.01)] %)")]"
-				if(air.toxins() && (milla_turf_details || air.toxins() / total_moles > 0.01))
-					message += "  [SPAN_PLASMA("Plasma: [round(air.toxins(), 0.01)] moles ([round(air.toxins() / total_moles * 100, 0.01)] %)")]"
-				if(air.sleeping_agent() && (milla_turf_details || air.sleeping_agent() / total_moles > 0.01))
-					message += "  [SPAN_SLEEPING_AGENT("Nitrous Oxide: [round(air.sleeping_agent(), 0.01)] moles ([round(air.sleeping_agent() / total_moles * 100, 0.01)] %)")]"
-				if(air.agent_b() && (milla_turf_details || air.agent_b() / total_moles > 0.01))
-					message += "  [SPAN_AGENT_B("Agent B: [round(air.agent_b(), 0.01)] moles ([round(air.agent_b() / total_moles * 100, 0.01)] %)")]"
-				if(air.hydrogen() && (milla_turf_details || air.hydrogen() / total_moles > 0.01))
-					message += "  [SPAN_HYDROGEN("Hydrogen: [round(air.hydrogen(), 0.01)] moles ([round(air.hydrogen() / total_moles * 100, 0.01)] %)")]"
-				if(air.water_vapor() && (milla_turf_details || air.water_vapor() / total_moles > 0.01))
-					message += "  [SPAN_WATER_VAPOR("Water Vapor: [round(air.water_vapor(), 0.01)] moles ([round(air.water_vapor() / total_moles * 100, 0.01)] %)")]"
+				for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+					var/gas_amount = gas_definition.moles(air)
+					if(gas_amount && (milla_turf_details || gas_amount / total_moles > 0.01))
+						message += "  <span class='[gas_definition.display_class]'>[gas_definition.name]: [round(gas_amount, 0.01)] moles ([round(gas_amount / total_moles * 100, 0.01)] %)</span>"
 				message += SPAN_NOTICE("Temperature: [round(air.temperature()-T0C)] &deg;C ([round(air.temperature())] K)")
 				message += SPAN_NOTICE("Volume: [round(volume)] Liters")
 				message += SPAN_NOTICE("Pressure: [round(pressure, 0.1)] kPa")
@@ -213,36 +194,18 @@
 			volume += air.return_volume()
 			heat_capacity += air.heat_capacity()
 			thermal_energy += air.thermal_energy()
-			oxygen += air.oxygen()
-			nitrogen += air.nitrogen()
-			toxins += air.toxins()
-			carbon_dioxide += air.carbon_dioxide()
-			sleeping_agent += air.sleeping_agent()
-			agent_b += air.agent_b()
-			hydrogen += air.hydrogen()
-			water_vapor += air.water_vapor()
+			for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+				gas_amounts[gas_definition.id] += gas_definition.moles(air)
 
 		var/temperature = heat_capacity ? thermal_energy / heat_capacity : 0
 		pressure = volume ? total_moles * R_IDEAL_GAS_EQUATION * temperature / volume : 0
 
 		if(total_moles)
 			message += SPAN_NOTICE("Total: [round(total_moles, 0.01)] moles")
-			if(oxygen && (milla_turf_details || oxygen / total_moles > 0.01))
-				message += "  [SPAN_OXYGEN("Oxygen: [round(oxygen, 0.01)] moles ([round(oxygen / total_moles * 100, 0.01)] %)")]"
-			if(nitrogen && (milla_turf_details || nitrogen / total_moles > 0.01))
-				message += "  [SPAN_NITROGEN("Nitrogen: [round(nitrogen, 0.01)] moles ([round(nitrogen / total_moles * 100, 0.01)] %)")]"
-			if(carbon_dioxide && (milla_turf_details || carbon_dioxide / total_moles > 0.01))
-				message += "  [SPAN_CARBON_DIOXIDE("Carbon Dioxide: [round(carbon_dioxide, 0.01)] moles ([round(carbon_dioxide / total_moles * 100, 0.01)] %)")]"
-			if(toxins && (milla_turf_details || toxins / total_moles > 0.01))
-				message += "  [SPAN_PLASMA("Plasma: [round(toxins, 0.01)] moles ([round(toxins / total_moles * 100, 0.01)] %)")]"
-			if(sleeping_agent && (milla_turf_details || sleeping_agent / total_moles > 0.01))
-				message += "  [SPAN_SLEEPING_AGENT("Nitrous Oxide: [round(sleeping_agent, 0.01)] moles ([round(sleeping_agent / total_moles * 100, 0.01)] %)")]"
-			if(agent_b && (milla_turf_details || agent_b / total_moles > 0.01))
-				message += "  [SPAN_AGENT_B("Agent B: [round(agent_b, 0.01)] moles ([round(agent_b / total_moles * 100, 0.01)] %)")]"
-			if(hydrogen && (milla_turf_details || hydrogen / total_moles > 0.01))
-				message += "  [SPAN_HYDROGEN("Hydrogen: [round(hydrogen, 0.01)] moles ([round(hydrogen / total_moles * 100, 0.01)] %)")]"
-			if(water_vapor && (milla_turf_details || (water_vapor / total_moles > 0.01)))
-				message += "  [SPAN_WATER_VAPOR("Water Vapor: [round(water_vapor, 0.01)] moles ([round(water_vapor / total_moles * 100, 0.01)] %)")]"
+			for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+				var/gas_amount = gas_amounts[gas_definition.id]
+				if(gas_amount && (milla_turf_details || gas_amount / total_moles > 0.01))
+					message += "  <span class='[gas_definition.display_class]'>[gas_definition.name]: [round(gas_amount, 0.01)] moles ([round(gas_amount / total_moles * 100, 0.01)] %)</span>"
 			message += SPAN_NOTICE("Temperature: [round(temperature-T0C)] &deg;C ([round(temperature)] K)")
 			message += SPAN_NOTICE("Volume: [round(volume)] Liters")
 			message += SPAN_NOTICE("Pressure: [round(pressure, 0.1)] kPa")

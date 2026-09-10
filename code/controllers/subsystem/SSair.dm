@@ -171,6 +171,7 @@ SUBSYSTEM_DEF(air)
 
 /datum/controller/subsystem/air/Initialize()
 	in_milla_safe_code = TRUE
+	validate_gas_definitions()
 
 	setup_overlays() // Assign icons and such for gas-turf-overlays
 	setup_turfs()

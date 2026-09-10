@@ -32,6 +32,15 @@
 #define BREATH_VOLUME			1
 #define BREATH_PERCENTAGE		(BREATH_VOLUME/CELL_VOLUME)					//Amount of air to take a from a tile
 
+// Gas specific heats, in joules per kelvin-mole.
+#define SPECIFIC_HEAT_TOXIN			200
+#define SPECIFIC_HEAT_AIR			20
+#define SPECIFIC_HEAT_CDO			30
+#define SPECIFIC_HEAT_N2O			40
+#define SPECIFIC_HEAT_AGENT_B		300
+#define SPECIFIC_HEAT_HYDROGEN		15
+#define SPECIFIC_HEAT_WATER_VAPOR	33
+
 //EXCITED GROUPS
 #define MINIMUM_AIR_RATIO_TO_SUSPEND				0.005	//Minimum ratio of air that must move to/from a tile to suspend group processing
 #define MINIMUM_AIR_TO_SUSPEND						(MOLES_CELLSTANDARD*MINIMUM_AIR_RATIO_TO_SUSPEND)	//Minimum amount of air that has to move before a group processing can be suspended

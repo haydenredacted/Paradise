@@ -94,43 +94,25 @@ pub(crate) const GAS_FLOW_IN: usize = 0;
 /// Index for outgoing gas.
 pub(crate) const GAS_FLOW_OUT: usize = 1;
 
-// The numbers here are completely wrong for actual gases, but they're what LINDA used, so we'll
-// keep them for now.
+/// Metadata for a gas represented in MILLA's fixed-width gas array.
+///
+/// These values must stay aligned with the BYOND gas definitions and indices above.
+pub(crate) struct GasMetadata {
+    pub(crate) name: &'static str,
+    pub(crate) specific_heat: f32,
+}
 
-// The specific heat of oxygen, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_OXYGEN: f32 = 20.0;
-
-// The specific heat of carbon dioxide, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_CARBON_DIOXIDE: f32 = 30.0;
-
-// The specific heat of nitrogen, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_NITROGEN: f32 = 20.0;
-
-// The specific heat of toxins, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_TOXINS: f32 = 200.0;
-
-// The specific heat of sleeping agent, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_SLEEPING_AGENT: f32 = 40.0;
-
-// The specific heat of agent b, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_AGENT_B: f32 = 300.0;
-
-// The specific heat of hydrogen, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_HYDROGEN: f32 = 15.0;
-
-// The specific heat of water vapor, in joules per kelvin-mole.
-pub(crate) const SPECIFIC_HEAT_WATER_VAPOR: f32 = 33.0;
-
-// Convenience array, so we can add loop through gases and calculate heat capacity.
-pub(crate) const SPECIFIC_HEATS: [f32; GAS_COUNT] = [
-    SPECIFIC_HEAT_OXYGEN,
-    SPECIFIC_HEAT_CARBON_DIOXIDE,
-    SPECIFIC_HEAT_NITROGEN,
-    SPECIFIC_HEAT_TOXINS,
-    SPECIFIC_HEAT_SLEEPING_AGENT,
-    SPECIFIC_HEAT_AGENT_B,
-    SPECIFIC_HEAT_HYDROGEN,
-    SPECIFIC_HEAT_WATER_VAPOR,
+// The specific heats are intentionally kept as compile-time data. The numbers are inherited
+// from LINDA and are not intended to be physically accurate.
+pub(crate) const GAS_METADATA: [GasMetadata; GAS_COUNT] = [
+    GasMetadata { name: "oxygen", specific_heat: 20.0 },
+    GasMetadata { name: "carbon_dioxide", specific_heat: 30.0 },
+    GasMetadata { name: "nitrogen", specific_heat: 20.0 },
+    GasMetadata { name: "toxins", specific_heat: 200.0 },
+    GasMetadata { name: "sleeping_agent", specific_heat: 40.0 },
+    GasMetadata { name: "agent_b", specific_heat: 300.0 },
+    GasMetadata { name: "hydrogen", specific_heat: 15.0 },
+    GasMetadata { name: "water_vapor", specific_heat: 33.0 },
 ];
 
 /// How hot does it need to be for a plasma fire to start?

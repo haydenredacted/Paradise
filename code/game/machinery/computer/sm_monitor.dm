@@ -60,24 +60,13 @@
 		//data["SM_EPR"] = round((air.total_moles / air.group_multiplier) / 23.1, 0.01)
 		var/list/gasdata = list()
 		var/TM = air.total_moles()
-		if(TM)
-			gasdata.Add(list(list("name"= "Oxygen", "amount" = air.oxygen(), "portion" = round(100 * air.oxygen() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Carbon Dioxide", "amount" = air.carbon_dioxide(), "portion" = round(100 * air.carbon_dioxide() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Nitrogen", "amount" = air.nitrogen(), "portion" = round(100 * air.nitrogen() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Plasma", "amount" = air.toxins(), "portion" = round(100 * air.toxins() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Nitrous Oxide", "amount" = air.sleeping_agent(), "portion" = round(100 * air.sleeping_agent() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Agent B", "amount" = air.agent_b(), "portion" = round(100 * air.agent_b() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Hydrogen", "amount" = air.hydrogen(), "portion" = round(100 * air.hydrogen() / TM, 0.01))))
-			gasdata.Add(list(list("name"= "Water Vapor", "amount" = air.water_vapor(), "portion" = round(100 * air.water_vapor() / TM, 0.01))))
-		else
-			gasdata.Add(list(list("name"= "Oxygen", "amount" = 0, "portion" = 0)))
-			gasdata.Add(list(list("name"= "Carbon Dioxide", "amount" = 0,"portion" = 0)))
-			gasdata.Add(list(list("name"= "Nitrogen", "amount" = 0,"portion" = 0)))
-			gasdata.Add(list(list("name"= "Plasma", "amount" = 0,"portion" = 0)))
-			gasdata.Add(list(list("name"= "Nitrous Oxide", "amount" = 0,"portion" = 0)))
-			gasdata.Add(list(list("name"= "Agent B", "amount" = 0,"portion" = 0)))
-			gasdata.Add(list(list("name"= "Hydrogen", "amount" = 0,"portion" = 0)))
-			gasdata.Add(list(list("name"= "Water Vapor", "amount" = 0,"portion" = 0)))
+		for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+			var/gas_amount = gas_definition.moles(air)
+			gasdata += list(list(
+				"name" = gas_definition.name,
+				"amount" = gas_amount,
+				"portion" = TM ? round(100 * gas_amount / TM, 0.01) : 0
+			))
 		data["gases"] = gasdata
 	else
 		var/list/SMS = list()

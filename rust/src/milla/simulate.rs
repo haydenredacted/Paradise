@@ -253,7 +253,7 @@ pub(crate) fn flow_air_once_at_index(
             // summing together this tile's value from the last iteration with the incoming values
             // from other tiles this tick.
             my_new_tile.gases.values[i] += gas_flow_in * new_neighbor.gases.values[i];
-            let temperature_weight = gas_flow_in * new_neighbor.gases.values[i] * SPECIFIC_HEATS[i];
+            let temperature_weight = gas_flow_in * new_neighbor.gases.values[i] * GAS_METADATA[i].specific_heat;
 
             // Track the outgoing values as well.
             outgoing_gas_mult[i] += gas_flow_out;

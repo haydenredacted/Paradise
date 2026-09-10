@@ -294,26 +294,12 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 		mode = AALARM_MODE_FILTERING
 		apply_mode()
 
-	cur_tlv = TLV["oxygen"]
-	var/oxygen_dangerlevel = cur_tlv.get_danger_level(environment.oxygen() * GET_PP)
-
-	cur_tlv = TLV["nitrogen"]
-	var/nitrogen_dangerlevel = cur_tlv.get_danger_level(environment.nitrogen() * GET_PP)
-
-	cur_tlv = TLV["carbon dioxide"]
-	var/co2_dangerlevel = cur_tlv.get_danger_level(environment.carbon_dioxide() * GET_PP)
-
-	cur_tlv = TLV["plasma"]
-	var/plasma_dangerlevel = cur_tlv.get_danger_level(environment.toxins() * GET_PP)
-
-	cur_tlv = TLV["nitrous oxide"]
-	var/sleeping_agent_dangerlevel = cur_tlv.get_danger_level(environment.sleeping_agent() * GET_PP)
-
-	cur_tlv = TLV["hydrogen"]
-	var/hydrogen_dangerlevel = cur_tlv.get_danger_level(environment.hydrogen() * GET_PP)
-
-	cur_tlv = TLV["water vapor"]
-	var/water_vapor_dangerlevel = cur_tlv.get_danger_level(environment.water_vapor() * GET_PP)
+	var/gas_danger_level = ATMOS_ALARM_NONE
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		if(!gas_definition.airalarm_key)
+			continue
+		cur_tlv = TLV[gas_definition.airalarm_key]
+		gas_danger_level = max(gas_danger_level, cur_tlv.get_danger_level(gas_definition.moles(environment) * GET_PP))
 
 	cur_tlv = TLV["other"]
 	var/other_dangerlevel = cur_tlv.get_danger_level(environment.total_trace_moles() * GET_PP)
@@ -322,18 +308,7 @@ GLOBAL_LIST_INIT(aalarm_modes, list(
 	var/temperature_dangerlevel = cur_tlv.get_danger_level(environment.temperature())
 
 	var/old_danger_level = danger_level
-	danger_level = max(
-		pressure_dangerlevel,
-		oxygen_dangerlevel,
-		nitrogen_dangerlevel,
-		co2_dangerlevel,
-		plasma_dangerlevel,
-		sleeping_agent_dangerlevel,
-		hydrogen_dangerlevel,
-		water_vapor_dangerlevel,
-		other_dangerlevel,
-		temperature_dangerlevel
-	)
+	danger_level = max(pressure_dangerlevel, gas_danger_level, other_dangerlevel, temperature_dangerlevel)
 
 	if(old_danger_level != danger_level)
 		apply_danger_level()
