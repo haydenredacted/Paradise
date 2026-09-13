@@ -139,7 +139,9 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 
 /proc/validate_gas_definitions()
 	var/list/seen_ids = list()
+	var/list/seen_fields = list()
 	var/list/seen_milla_indices = list()
+	var/datum/gas_mixture/field_check = new
 
 	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
 		if(!gas_definition.id || seen_ids[gas_definition.id])
@@ -148,6 +150,14 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 
 		if(!gas_definition.mixture_field || !gas_definition.specific_heat)
 			CRASH("Incomplete gas definition: [gas_definition.type]")
+		if(!(gas_definition.mixture_field in field_check.vars))
+			CRASH("Gas definition [gas_definition.id] references missing mixture field [gas_definition.mixture_field].")
+		if(seen_fields[gas_definition.mixture_field])
+			CRASH("Duplicate mixture field: [gas_definition.mixture_field]")
+		seen_fields[gas_definition.mixture_field] = TRUE
+
+		if(gas_definition.milla_index < MILLA_INDEX_OXYGEN || gas_definition.milla_index > MILLA_INDEX_WATER_VAPOR)
+			CRASH("Gas definition [gas_definition.id] has an invalid MILLA index: [gas_definition.milla_index].")
 
 		if(seen_milla_indices[gas_definition.milla_index])
 			CRASH("Duplicate MILLA index: [gas_definition.milla_index]")
@@ -315,6 +325,28 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 
 	return TRUE
 
+/datum/gas_mixture/proc/copy_gases_from(datum/gas_mixture/source)
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		var/field = gas_definition.mixture_field
+		vars[field] = source.vars[field]
+
+/datum/gas_mixture/proc/add_gases_from(datum/gas_mixture/source, multiplier = 1)
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		var/field = gas_definition.mixture_field
+		vars[field] += source.vars[field] * multiplier
+
+/datum/gas_mixture/proc/scale_gases(multiplier)
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		var/field = gas_definition.mixture_field
+		vars[field] = QUANTIZE(vars[field] * multiplier)
+
+/datum/gas_mixture/proc/subtract_gases_from(datum/gas_mixture/source, clamp_to_zero = FALSE)
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		var/field = gas_definition.mixture_field
+		vars[field] -= source.vars[field]
+		if(clamp_to_zero)
+			vars[field] = max(vars[field], 0)
+
 	///Merges all air from giver into self. Deletes giver. Returns: TRUE if we are mutable, FALSE otherwise
 /datum/gas_mixture/proc/merge(datum/gas_mixture/giver)
 	if(!giver)
@@ -328,14 +360,7 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 		if(combined_heat_capacity != 0)
 			private_temperature = (giver.private_temperature * giver_heat_capacity + private_temperature * self_heat_capacity) / combined_heat_capacity
 
-	private_oxygen += giver.private_oxygen
-	private_carbon_dioxide += giver.private_carbon_dioxide
-	private_nitrogen += giver.private_nitrogen
-	private_toxins += giver.private_toxins
-	private_sleeping_agent += giver.private_sleeping_agent
-	private_agent_b += giver.private_agent_b
-	private_hydrogen += giver.private_hydrogen
-	private_water_vapor += giver.private_water_vapor
+	add_gases_from(giver)
 
 	set_dirty()
 	return TRUE
@@ -358,23 +383,9 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 	var/datum/gas_mixture/removed = new
 
 
-	removed.private_oxygen = QUANTIZE((private_oxygen / sum) * amount)
-	removed.private_nitrogen = QUANTIZE((private_nitrogen/  sum) * amount)
-	removed.private_carbon_dioxide = QUANTIZE((private_carbon_dioxide / sum) * amount)
-	removed.private_toxins = QUANTIZE((private_toxins / sum) * amount)
-	removed.private_sleeping_agent = QUANTIZE((private_sleeping_agent / sum) * amount)
-	removed.private_agent_b = QUANTIZE((private_agent_b / sum) * amount)
-	removed.private_hydrogen = QUANTIZE((private_hydrogen / sum) * amount)
-	removed.private_water_vapor = QUANTIZE((private_water_vapor / sum) * amount)
-
-	private_oxygen = max(private_oxygen - removed.private_oxygen, 0)
-	private_nitrogen = max(private_nitrogen - removed.private_nitrogen, 0)
-	private_carbon_dioxide = max(private_carbon_dioxide - removed.private_carbon_dioxide, 0)
-	private_toxins = max(private_toxins - removed.private_toxins, 0)
-	private_sleeping_agent = max(private_sleeping_agent - removed.private_sleeping_agent, 0)
-	private_agent_b = max(private_agent_b - removed.private_agent_b, 0)
-	private_hydrogen = max(private_hydrogen - removed.private_hydrogen, 0)
-	private_water_vapor = max(private_water_vapor - removed.private_water_vapor, 0)
+	removed.copy_gases_from(src)
+	removed.scale_gases(amount / sum)
+	subtract_gases_from(removed, TRUE)
 
 	removed.private_temperature = private_temperature
 
@@ -392,23 +403,9 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 
 	var/datum/gas_mixture/removed = new
 
-	removed.private_oxygen = QUANTIZE(private_oxygen * ratio)
-	removed.private_nitrogen = QUANTIZE(private_nitrogen * ratio)
-	removed.private_carbon_dioxide = QUANTIZE(private_carbon_dioxide * ratio)
-	removed.private_toxins = QUANTIZE(private_toxins * ratio)
-	removed.private_sleeping_agent = QUANTIZE(private_sleeping_agent * ratio)
-	removed.private_agent_b = QUANTIZE(private_agent_b * ratio)
-	removed.private_hydrogen = QUANTIZE(private_hydrogen * ratio)
-	removed.private_water_vapor = QUANTIZE(private_water_vapor * ratio)
-
-	private_oxygen = max(private_oxygen - removed.private_oxygen, 0)
-	private_nitrogen = max(private_nitrogen - removed.private_nitrogen, 0)
-	private_carbon_dioxide = max(private_carbon_dioxide - removed.private_carbon_dioxide, 0)
-	private_toxins = max(private_toxins - removed.private_toxins, 0)
-	private_sleeping_agent = max(private_sleeping_agent - removed.private_sleeping_agent, 0)
-	private_agent_b = max(private_agent_b - removed.private_agent_b, 0)
-	private_hydrogen = max(private_hydrogen - removed.private_hydrogen, 0)
-	private_water_vapor = max(private_water_vapor - removed.private_water_vapor, 0)
+	removed.copy_gases_from(src)
+	removed.scale_gases(ratio)
+	subtract_gases_from(removed, TRUE)
 
 	removed.private_temperature = private_temperature
 	set_dirty()
@@ -417,14 +414,7 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 
 	//Copies variables from sample
 /datum/gas_mixture/proc/copy_from(datum/gas_mixture/sample)
-	private_oxygen = sample.private_oxygen
-	private_carbon_dioxide = sample.private_carbon_dioxide
-	private_nitrogen = sample.private_nitrogen
-	private_toxins = sample.private_toxins
-	private_sleeping_agent = sample.private_sleeping_agent
-	private_agent_b = sample.private_agent_b
-	private_hydrogen = sample.private_hydrogen
-	private_water_vapor = sample.private_water_vapor
+	copy_gases_from(sample)
 
 	private_temperature = sample.private_temperature
 	set_dirty()
@@ -434,14 +424,9 @@ GLOBAL_LIST_INIT(gas_definitions, list(
 	///Copies all gas info from the turf into the gas list along with temperature
 	///Returns: TRUE if we are mutable, FALSE otherwise
 /datum/gas_mixture/proc/copy_from_turf(turf/model)
-	private_oxygen = model.oxygen
-	private_carbon_dioxide = model.carbon_dioxide
-	private_nitrogen = model.nitrogen
-	private_toxins = model.toxins
-	private_sleeping_agent = model.sleeping_agent
-	private_agent_b = model.agent_b
-	private_hydrogen = model.hydrogen
-	private_water_vapor = model.water_vapor
+	for(var/datum/gas/gas_definition in GLOB.gas_definitions)
+		var/field = gas_definition.mixture_field
+		vars[field] = model.vars[field]
 
 	//acounts for changes in temperature
 	var/turf/model_parent = model.parent_type
