@@ -23,7 +23,7 @@
 	can_unwrench = TRUE
 
 	target_pressure = ONE_ATMOSPHERE
-	/// The type of gas we want to filter. Valid values that go here are from the `FILTER` defines at the top of the file.
+	/// The type, or types, of gas we want to filter. Valid values that go here are from the `FILTER` defines at the top of the file.
 	var/filter_type = FILTER_TOXINS
 	/// A list of available filter options. Used with `ui_data`.
 	var/list/filter_list = list(
@@ -105,7 +105,14 @@
 
 	var/output_starting_pressure = air3.return_pressure()
 
-	if(output_starting_pressure >= target_pressure || (filter_type != FILTER_NOTHING && air2.return_pressure() >= target_pressure))
+	var/list/selected_filters = list()
+	if(islist(filter_type))
+		for(var/selected_filter in filter_type)
+			if(selected_filter != FILTER_NOTHING)
+				selected_filters += selected_filter
+	else if(filter_type != FILTER_NOTHING)
+		selected_filters += filter_type
+	if(output_starting_pressure >= target_pressure || (length(selected_filters) && air2.return_pressure() >= target_pressure))
 		//No need to mix if target is already full!
 		return TRUE
 
@@ -124,46 +131,45 @@
 
 		if(!removed)
 			return
-		var/datum/gas_mixture/filtered_out = new
-		filtered_out.set_temperature(removed.temperature())
+		var/datum/gas_mixture/filtered_out
+		if(length(selected_filters))
+			filtered_out = new
+			filtered_out.set_temperature(removed.temperature())
 
-		switch(filter_type)
-			if(FILTER_TOXINS)
-				filtered_out.set_toxins(removed.toxins())
-				removed.set_toxins(0)
+			for(var/selected_filter in selected_filters)
+				switch(selected_filter)
+					if(FILTER_TOXINS)
+						filtered_out.set_toxins(filtered_out.toxins() + removed.toxins())
+						removed.set_toxins(0)
 
-				filtered_out.set_agent_b(removed.agent_b())
-				removed.set_agent_b(0)
+						filtered_out.set_agent_b(filtered_out.agent_b() + removed.agent_b())
+						removed.set_agent_b(0)
 
-			if(FILTER_OXYGEN)
-				filtered_out.set_oxygen(removed.oxygen())
-				removed.set_oxygen(0)
+					if(FILTER_OXYGEN)
+						filtered_out.set_oxygen(filtered_out.oxygen() + removed.oxygen())
+						removed.set_oxygen(0)
 
-			if(FILTER_NITROGEN)
-				filtered_out.set_nitrogen(removed.nitrogen())
-				removed.set_nitrogen(0)
+					if(FILTER_NITROGEN)
+						filtered_out.set_nitrogen(filtered_out.nitrogen() + removed.nitrogen())
+						removed.set_nitrogen(0)
 
-			if(FILTER_CO2)
-				filtered_out.set_carbon_dioxide(removed.carbon_dioxide())
-				removed.set_carbon_dioxide(0)
+					if(FILTER_CO2)
+						filtered_out.set_carbon_dioxide(filtered_out.carbon_dioxide() + removed.carbon_dioxide())
+						removed.set_carbon_dioxide(0)
 
-			if(FILTER_N2O)
-				filtered_out.set_sleeping_agent(removed.sleeping_agent())
-				removed.set_sleeping_agent(0)
+					if(FILTER_N2O)
+						filtered_out.set_sleeping_agent(filtered_out.sleeping_agent() + removed.sleeping_agent())
+						removed.set_sleeping_agent(0)
 
-			if(FILTER_H2)
-				filtered_out.set_hydrogen(removed.hydrogen())
-				removed.set_hydrogen(0)
+					if(FILTER_H2)
+						filtered_out.set_hydrogen(filtered_out.hydrogen() + removed.hydrogen())
+						removed.set_hydrogen(0)
 
-			if(FILTER_H2O)
-				filtered_out.set_water_vapor(removed.water_vapor())
-				removed.set_water_vapor(0)
+					if(FILTER_H2O)
+						filtered_out.set_water_vapor(filtered_out.water_vapor() + removed.water_vapor())
+						removed.set_water_vapor(0)
 
-			else
-				filtered_out = null
-
-
-		air2.merge(filtered_out)
+			air2.merge(filtered_out)
 		air3.merge(removed)
 
 	if(!QDELETED(parent1))
@@ -205,7 +211,7 @@
 		"on" = on,
 		"pressure" = round(target_pressure),
 		"max_pressure" = round(MAX_OUTPUT_PRESSURE),
-		"filter_type" = filter_type
+		"filter_type" = islist(filter_type) ? filter_type : list(filter_type)
 	)
 	data["filter_type_list"] = list()
 	for(var/label in filter_list)
@@ -224,7 +230,21 @@
 			return TRUE
 
 		if("set_filter")
-			filter_type = text2num(params["filter"])
+			var/filter = text2num(params["filter"])
+			var/list/selected_filters = list()
+			if(islist(filter_type))
+				for(var/selected_filter in filter_type)
+					if(selected_filter != FILTER_NOTHING)
+						selected_filters += selected_filter
+			else if(filter_type != FILTER_NOTHING)
+				selected_filters += filter_type
+			if(filter == FILTER_NOTHING)
+				selected_filters.Cut()
+			else if(selected_filters.Find(filter))
+				selected_filters -= filter
+			else
+				selected_filters += filter
+			filter_type = selected_filters
 			investigate_log("was set to filter [filter_type] by [key_name(usr)]", INVESTIGATE_ATMOS)
 			return TRUE
 

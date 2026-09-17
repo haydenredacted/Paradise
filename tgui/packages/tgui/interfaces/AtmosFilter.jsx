@@ -8,7 +8,7 @@ export const AtmosFilter = (props) => {
   const { on, pressure, max_pressure, filter_type, filter_type_list } = data;
 
   return (
-    <Window width={380} height={160}>
+    <Window width={380} height={220}>
       <Window.Content>
         <Section>
           <LabeledList>
@@ -55,9 +55,9 @@ export const AtmosFilter = (props) => {
             </LabeledList.Item>
             <LabeledList.Item label="Filter">
               {filter_type_list.map((filter) => (
-                <Button
+                <Button.Checkbox
                   key={filter.label}
-                  selected={filter.gas_type === filter_type}
+                  checked={filter_type.includes(filter.gas_type)}
                   content={filter.label}
                   onClick={() =>
                     act('set_filter', {
