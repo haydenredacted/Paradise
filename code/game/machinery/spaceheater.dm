@@ -179,7 +179,8 @@
 			if(panel_open)
 				return TRUE
 			on = !on
-			user.visible_message(SPAN_NOTICE("[user] switches [on ? "on" : "off"] [src]."), SPAN_NOTICE("You switch [on ? "on" : "off"] [src]."))
+			user.visible_message(SPAN_NOTICE("[user] switches [on ? "on" : "off"] [src]."),
+								SPAN_NOTICE("You switch [on ? "on" : "off"] [src]."))
 			update_icon()
 			return TRUE
 
