@@ -31,6 +31,20 @@
 		cell = P
 		return
 
+/obj/machinery/space_heater/upgraded/Initialize(mapload)
+	. = ..()
+	component_parts = list()
+	component_parts += new /obj/item/stock_parts/capacitor/quadratic(null)
+	component_parts += new /obj/item/stock_parts/micro_laser/quadultra(src)
+	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
+
+/obj/machinery/space_heater/infinite/Initialize(mapload)
+	. = ..()
+	component_parts = list()
+	component_parts += new /obj/item/stock_parts/capacitor/quadratic(null)
+	component_parts += new /obj/item/stock_parts/micro_laser/quadultra(src)
+	component_parts += new /obj/item/stock_parts/cell/infinite(null)
+
 /obj/machinery/space_heater/deconstruct(disassembled)
 	if(cell)
 		cell.forceMove(loc)
@@ -56,6 +70,17 @@
 		. += "The power cell is [cell ? "installed" : "missing"]."
 	else
 		. += "The charge meter reads [cell ? round(cell.percent(),1) : 0]%"
+	. += SPAN_NOTICE("You can <b>Alt-Click</b> [src] to toggle it [on ? "off" : "on"].")
+
+/obj/machinery/space_heater/AltClick(mob/living/user)
+	if(!can_use_shortcut(user))
+		return
+	if(panel_open)
+		return
+	on = !on
+	user.visible_message(SPAN_NOTICE("[user] switches [on ? "on" : "off"] [src]."),
+						SPAN_NOTICE("You switch [on ? "on" : "off"] [src]."))
+	update_icon()
 
 /obj/machinery/space_heater/emp_act(severity)
 	if(stat & (BROKEN|NOPOWER))
@@ -119,89 +144,92 @@
 
 /obj/machinery/space_heater/attack_hand(mob/user as mob)
 	src.add_fingerprint(user)
-	interact(user)
+	ui_interact(user)
 
-/obj/machinery/space_heater/interact(mob/user as mob)
-	if(panel_open)
-		var/dat
-		dat = "Power cell: "
-		if(cell)
-			dat += "<a href='byond://?src=[UID()];op=cellremove'>Installed</a><br>"
-		else
-			dat += "<a href='byond://?src=[UID()];op=cellinstall'>Removed</a><br>"
+/obj/machinery/space_heater/ui_state(mob/user)
+	return GLOB.default_state
 
-		dat += "Power Level: [cell ? round(cell.percent(),1) : 0]%<br><br>"
+/obj/machinery/space_heater/ui_interact(mob/user, datum/tgui/ui = null)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "SpaceHeater", name)
+		ui.open()
 
-		dat += "Set Temperature: "
+/obj/machinery/space_heater/ui_data(mob/user)
+	var/list/data = list()
+	data["on"] = on
+	data["panel_open"] = panel_open
+	data["set_temperature"] = set_temperature
+	data["cell_present"] = !!cell
+	data["cell_charge"] = cell ? round(cell.percent(), 1) : 0
+	return data
 
-		dat += "<a href='byond://?src=[UID()];op=temp;val=-5'>-</a>"
-
-		dat += " [set_temperature]&deg;C "
-		dat += "<a href='byond://?src=[UID()];op=temp;val=5'>+</a><br>"
-
-		user.set_machine(src)
-		user << browse("<!DOCTYPE html><meta charset='utf-8'><head><title>Space Heater Control Panel</title></head><tt>[dat]</tt>", "window=spaceheater")
-		onclose(user, "spaceheater")
-
-	else
-		on = !on
-		user.visible_message(SPAN_NOTICE("[user] switches [on ? "on" : "off"] [src]."),SPAN_NOTICE("You switch [on ? "on" : "off"] [src]."))
-		update_icon()
-	return
-
-/obj/machinery/space_heater/Topic(href, href_list)
+/obj/machinery/space_heater/ui_act(action, params, datum/tgui/ui)
 	if(..())
 		return TRUE
 
-	if((in_range(src, usr) && isturf(src.loc)) || (issilicon(usr)))
-		usr.set_machine(src)
+	var/mob/user = ui.user
+	if(!user)
+		return TRUE
 
-		switch(href_list["op"])
+	add_fingerprint(user)
 
-			if("temp")
-				var/value = text2num(href_list["val"])
+	switch(action)
+		if("toggle_power")
+			if(panel_open)
+				return TRUE
+			on = !on
+			user.visible_message(SPAN_NOTICE("[user] switches [on ? "on" : "off"] [src]."), SPAN_NOTICE("You switch [on ? "on" : "off"] [src]."))
+			update_icon()
+			return TRUE
 
-				// limit to 20-90 degC
-				set_temperature = dd_range(0, 90, set_temperature + value)
+		if("temp")
+			if(!panel_open)
+				return TRUE
+			var/value = text2num(params["value"])
+			set_temperature = dd_range(0, 90, set_temperature + value)
+			return TRUE
 
-			if("cellremove")
-				if(panel_open && cell && !usr.get_active_hand())
-					cell.update_icon()
-					cell.forceMove(loc)
-					if(Adjacent(usr) && !issilicon(usr))
-						usr.put_in_hands(cell)
-					cell.add_fingerprint(usr)
-				for(var/obj/item/stock_parts/cell/C in component_parts)
-					component_parts -= C
-				cell = null
-				RefreshParts()
-				usr.visible_message(
-					SPAN_NOTICE("[usr] removes the power cell from [src]."),
-					SPAN_NOTICE("You remove the power cell from [src].")
-					)
+		if("remove_cell")
+			if(!panel_open || !cell)
+				return TRUE
+			if(user.get_active_hand())
+				to_chat(user, SPAN_WARNING("You need an empty hand to take the power cell out!"))
+				return TRUE
+			cell.update_icon()
+			cell.forceMove(loc)
+			if(Adjacent(user) && !issilicon(user))
+				user.put_in_hands(cell)
+			cell.add_fingerprint(user)
+			for(var/obj/item/stock_parts/cell/C in component_parts)
+				component_parts -= C
+			cell = null
+			RefreshParts()
+			user.visible_message(
+				SPAN_NOTICE("[user] removes the power cell from [src]."),
+				SPAN_NOTICE("You remove the power cell from [src].")
+			)
+			return TRUE
 
-			if("cellinstall")
-				if(panel_open && !cell)
-					var/obj/item/stock_parts/cell/C = usr.get_active_hand()
-					if(istype(C))
-						if(usr.drop_item())
-							component_parts += C
-							RefreshParts()
-							C.forceMove(src)
-							C.add_fingerprint(usr)
-
-							usr.visible_message(
-								SPAN_NOTICE("[usr] inserts a power cell into [src]."),
-								SPAN_NOTICE("You insert the power cell into [src].")
-								)
-						else
-							to_chat(usr, SPAN_WARNING("[C] is stuck to your hand!"))
-
-		updateDialog()
-	else
-		usr << browse(null, "window=spaceheater")
-		usr.unset_machine()
-	return
+		if("insert_cell")
+			if(!panel_open || cell)
+				return TRUE
+			var/obj/item/stock_parts/cell/C = user.get_active_hand()
+			if(!istype(C))
+				return TRUE
+			if(!user.drop_item())
+				to_chat(user, SPAN_WARNING("[C] is stuck to your hand!"))
+				return TRUE
+			component_parts += C
+			RefreshParts()
+			C.forceMove(src)
+			C.add_fingerprint(user)
+			user.visible_message(
+				SPAN_NOTICE("[user] inserts a power cell into [src]."),
+				SPAN_NOTICE("You insert the power cell into [src].")
+			)
+			return TRUE
+	return FALSE
 
 /obj/machinery/space_heater/process()
 	var/datum/milla_safe/space_heater_process/milla = new()
