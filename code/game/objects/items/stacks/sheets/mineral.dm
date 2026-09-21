@@ -656,3 +656,36 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list(
 /obj/item/stack/sheet/mineral/snow/Initialize(mapload, new_amount, merge)
 	. = ..()
 	recipes = GLOB.snow_recipes
+
+/*
+ * Metallic hydrogen
+ */
+/obj/item/stack/sheet/mineral/metal_hydrogen
+	name = "metal hydrogen"
+	icon_state = "sheet-metalhydrogen"
+	inhand_icon_state = null
+	singular_name = "metal hydrogen sheet"
+	w_class = WEIGHT_CLASS_NORMAL
+	resistance_flags = FIRE_PROOF | LAVA_PROOF | ACID_PROOF | INDESTRUCTIBLE
+	point_value = 100
+	materials = list(MAT_METAL = MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/mineral/metal_hydrogen
+
+/obj/item/stack/sheet/mineral/metal_hydrogen/ten
+	amount = 10
+
+/obj/item/stack/sheet/mineral/metal_hydrogen/fifty
+	amount = 50
+
+#warn mmm recipe
+// GLOBAL_LIST_INIT(metalhydrogen_recipes, list(
+// 	new /datum/stack_recipe("incomplete servant golem shell", /obj/item/golem_shell/servant, req_amount=20, res_amount=1, check_density = FALSE, category = CAT_ROBOT),
+// 	new /datum/stack_recipe("ancient armor", /obj/item/clothing/suit/armor/elder_atmosian, req_amount = 5, res_amount = 1, check_density = FALSE, category = CAT_CLOTHING),
+// 	new /datum/stack_recipe("ancient helmet", /obj/item/clothing/head/helmet/elder_atmosian, req_amount = 3, res_amount = 1, check_density = FALSE, category = CAT_CLOTHING),
+// 	new /datum/stack_recipe("metallic hydrogen axe", /obj/item/fireaxe/metal_h2_axe, req_amount = 15, res_amount = 1, check_density = FALSE, category = CAT_WEAPON_MELEE),
+// 	new /datum/stack_recipe("metallic hydrogen bolts", /obj/item/ammo_casing/rebar/hydrogen, req_amount = 1, res_amount = 1, check_density = FALSE, category = CAT_WEAPON_AMMO),
+// 	))
+
+// /obj/item/stack/sheet/mineral/metal_hydrogen/Initialize(mapload, new_amount, merge)
+// 	. = ..()
+// 	recipes = GLOB.metalhydrogen_recipes
