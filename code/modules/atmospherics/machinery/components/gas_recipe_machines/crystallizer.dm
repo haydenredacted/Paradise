@@ -188,31 +188,9 @@
 			quality_loss = min(quality_loss + 10, 100)
 		transfer_gas(internal, air2, gas_type, amount_consumed)
 
-	var/total_quality = clamp(50 - quality_loss, 0, 100)
-	var/quality_control = "Oh God why"
-	switch(total_quality)
-		if(100)
-			quality_control = "Masterwork"
-		if(95 to 99)
-			quality_control = "Supreme"
-		if(75 to 94)
-			quality_control = "Good"
-		if(65 to 74)
-			quality_control = "Decent"
-		if(55 to 64)
-			quality_control = "Average"
-		if(35 to 54)
-			quality_control = "Ok"
-		if(15 to 34)
-			quality_control = "Poor"
-		if(5 to 14)
-			quality_control = "Ugly"
-		if(1 to 4)
-			quality_control = "Cracked"
 	for(var/path in selected_recipe.products)
 		for(var/i in 1 to selected_recipe.products[path])
 			var/obj/creation = new path(get_step(src, SOUTH))
-			creation.name = "[quality_control] [creation.name]"
 			if(selected_recipe.dangerous)
 				investigate_log("has been created in the crystallizer.", INVESTIGATE_ATMOS)
 				message_admins("[src] has been created in the crystallizer [ADMIN_JMP(src)].")
