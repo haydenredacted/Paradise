@@ -7,6 +7,7 @@
 #define MODE_CREW 6
 // #define PINPOINTER_MODE_DET 7 // This mode is not defined here because it is used across multiple files, but it still exists.
 #define MODE_TENDRIL 8
+#define MODE_ASTEROID_BEACON 9
 #define SETTING_DISK 0
 #define SETTING_LOCATION 1
 #define SETTING_OBJECT 2
@@ -103,6 +104,8 @@
 			return "You turn on the pinpointer."
 		if(MODE_TENDRIL)
 			return "High energy scanner active"
+		if(MODE_ASTEROID_BEACON)
+			return "Beacon locator active."
 
 /obj/item/pinpointer/proc/activate_mode(mode, mob/user) // For crew pinpointer.
 	return
@@ -572,6 +575,52 @@
 	if(mode == MODE_TENDRIL)
 		. += "Number of high energy signatures remaining: [length(GLOB.tendrils)]"
 
+/obj/item/pinpointer/asteroid_beacon
+	name = "asteroid pinpointer"
+	desc = "Tracks the nearest subsurface asteroid beacon that can be decrypted for a cache."
+	modes = list(MODE_ASTEROID_BEACON)
+	shows_nuke_timer = FALSE
+	var/obj/structure/asteroid_beacon/target
+
+/obj/item/pinpointer/asteroid_beacon/Destroy()
+	target = null
+	return ..()
+
+/obj/item/pinpointer/asteroid_beacon/process()
+	if(mode != MODE_ASTEROID_BEACON)
+		return
+	scan_for_beacons()
+	point_at_target(target)
+
+/obj/item/pinpointer/asteroid_beacon/proc/scan_for_beacons()
+	target = null
+	var/turf/our_turf = get_turf(src)
+	if(!our_turf)
+		return
+	var/closest_distance = 1000
+	for(var/obj/structure/asteroid_beacon/beacon as anything in GLOB.asteroid_beacons)
+		if(beacon.z != our_turf.z)
+			continue
+		var/distance = get_dist(beacon, our_turf)
+		if(distance < closest_distance)
+			target = beacon
+			closest_distance = distance
+
+/obj/item/pinpointer/asteroid_beacon/interact_with_atom(atom/target_atom, mob/living/user, list/modifiers)
+	var/obj/structure/asteroid_beacon/beacon = target_atom
+	if(!istype(beacon) || beacon.buried)
+		return NONE
+	user.visible_message(SPAN_NOTICE("[user] starts decrypting [beacon] with [src]."), SPAN_NOTICE("You start decrypting [beacon]..."))
+	if(!do_after(user, 5 SECONDS, target = beacon) || QDELETED(beacon) || beacon.buried)
+		return ITEM_INTERACT_COMPLETE
+	to_chat(user, SPAN_NOTICE("You decrypt [beacon]!"))
+	beacon.decrypt(user)
+	return ITEM_INTERACT_COMPLETE
+
+/obj/item/pinpointer/asteroid_beacon/examine(mob/user)
+	. = ..()
+	if(mode == MODE_ASTEROID_BEACON)
+		. += "Number of asteroid beacon signals remaining: [length(GLOB.asteroid_beacons)]"
 
 #undef MODE_OFF
 #undef MODE_DISK
@@ -581,6 +630,7 @@
 #undef MODE_OPERATIVE
 #undef MODE_CREW
 #undef MODE_TENDRIL
+#undef MODE_ASTEROID_BEACON
 #undef SETTING_DISK
 #undef SETTING_LOCATION
 #undef SETTING_OBJECT

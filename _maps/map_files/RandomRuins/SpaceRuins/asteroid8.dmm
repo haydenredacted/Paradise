@@ -74,6 +74,11 @@
 /obj/effect/decal/cleanable/glass,
 /turf/simulated/floor/plating,
 /area/ruin/space/unpowered)
+"J" = (
+/obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
+/obj/structure/asteroid_beacon,
+/turf/simulated/floor/plating/asteroid/airless,
+/area/ruin/space/unpowered)
 "K" = (
 /obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
 /turf/simulated/floor/plating/asteroid/airless,
@@ -411,7 +416,7 @@ l
 F
 l
 l
-K
+J
 l
 l
 l

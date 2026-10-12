@@ -43,6 +43,10 @@
 "Q" = (
 /turf/space,
 /area/space)
+"S" = (
+/obj/structure/asteroid_beacon,
+/turf/simulated/mineral/random/space,
+/area/ruin/space/unpowered)
 "V" = (
 /turf/simulated/floor/plating/asteroid,
 /area/ruin/space/unpowered)
@@ -989,7 +993,7 @@ V
 L
 n
 n
-Y
+S
 h
 h
 y

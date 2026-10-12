@@ -31,6 +31,8 @@
 	icon_state = "[environment_type]_dug"
 	SSblackbox.record_feedback("tally", "ore_mined", 5, "[digResult]")
 	dug = TRUE
+	for(var/obj/structure/asteroid_beacon/beacon in src)
+		beacon.unearth()
 
 /turf/simulated/floor/plating/asteroid/proc/can_dig(mob/user)
 	if(!dug)

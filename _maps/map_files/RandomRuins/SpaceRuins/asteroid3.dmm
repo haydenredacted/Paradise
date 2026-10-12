@@ -30,6 +30,10 @@
 /obj/structure/spawner/mining/basilisk/space,
 /turf/simulated/floor/plating/asteroid/airless,
 /area/ruin/space/unpowered)
+"M" = (
+/obj/structure/asteroid_beacon,
+/turf/simulated/floor/plating/asteroid/airless,
+/area/ruin/space/unpowered)
 "N" = (
 /obj/structure/spawner/mining/hivelord/space,
 /turf/simulated/floor/plating/asteroid/airless,
@@ -262,7 +266,7 @@ b
 b
 c
 c
-b
+M
 b
 b
 b

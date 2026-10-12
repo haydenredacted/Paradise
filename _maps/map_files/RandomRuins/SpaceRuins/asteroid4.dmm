@@ -44,6 +44,10 @@
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/simulated/wall/mineral/titanium,
 /area/ruin/space/unpowered)
+"o" = (
+/obj/structure/asteroid_beacon,
+/turf/simulated/mineral/clown,
+/area/ruin/space/unpowered)
 "p" = (
 /obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
 /turf/simulated/floor/plating,
@@ -341,7 +345,7 @@ a
 c
 c
 e
-e
+o
 h
 j
 k

@@ -13,6 +13,10 @@
 /obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
 /turf/simulated/floor/plating/asteroid/airless,
 /area/ruin/space/unpowered)
+"T" = (
+/obj/structure/asteroid_beacon,
+/turf/simulated/mineral/random/high_chance/space,
+/area/ruin/space/unpowered)
 "V" = (
 /turf/template_noop,
 /area/template_noop)
@@ -112,7 +116,7 @@ V
 V
 b
 c
-c
+T
 c
 V
 V

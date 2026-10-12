@@ -11,6 +11,10 @@
 "o" = (
 /turf/simulated/mineral/random/low_chance/space,
 /area/ruin/space/unpowered)
+"p" = (
+/obj/structure/asteroid_beacon,
+/turf/simulated/mineral/random/space,
+/area/ruin/space/unpowered)
 "r" = (
 /turf/simulated/floor/plating/asteroid/airless,
 /area/ruin/space/unpowered)
@@ -222,7 +226,7 @@ o
 o
 f
 n
-f
+p
 n
 f
 f

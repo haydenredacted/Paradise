@@ -5,6 +5,11 @@
 "k" = (
 /turf/simulated/floor/plating/asteroid/airless,
 /area/ruin/space/unpowered)
+"n" = (
+/obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
+/obj/structure/asteroid_beacon,
+/turf/simulated/floor/plating/asteroid/airless,
+/area/ruin/space/unpowered)
 "o" = (
 /obj/effect/spawner/random/pool/spaceloot/syndicate/mixed,
 /turf/simulated/floor/plating/asteroid/airless,
@@ -229,7 +234,7 @@ w
 w
 B
 B
-o
+n
 B
 B
 w
