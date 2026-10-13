@@ -1,9 +1,7 @@
-
-
 /obj/machinery/power/solar
 	name = "solar panel"
 	desc = "A solar panel. Generates electricity when in contact with sunlight."
-	icon = 'icons/goonstation/objects/power.dmi'
+	icon = 'icons/obj/solars.dmi'
 	icon_state = "sp_base"
 	density = TRUE
 	max_integrity = 150
@@ -15,6 +13,9 @@
 	var/ndir = SOUTH // target dir
 	var/turn_angle = 0
 	var/obj/machinery/power/solar_control/control = null
+	var/solar_type = SOLAR_TYPE_GLASS
+
+	var/default_glass = /obj/item/stack/sheet/glass
 
 /obj/machinery/power/solar/Initialize(mapload, obj/item/solar_assembly/S)
 	. = ..()
@@ -42,14 +43,20 @@
 /obj/machinery/power/solar/proc/Make(obj/item/solar_assembly/S)
 	if(!S)
 		S = new /obj/item/solar_assembly(src)
-		S.glass_type = /obj/item/stack/sheet/glass
+		S.glass_type = new default_glass(src)
 		S.anchored = TRUE
 	S.loc = src
-	if(S.glass_type == /obj/item/stack/sheet/rglass) //if the panel is in reinforced glass
-		max_integrity *= 2 								 //this need to be placed here, because panels already on the map don't have an assembly linked to
-		obj_integrity = max_integrity
+	max_integrity *= S.glass_type.solar_mult
+	obj_integrity = max_integrity
+	solar_type = S.glass_type.solar_type
 	update_icon(UPDATE_OVERLAYS)
 
+/obj/machinery/power/solar/examine(mob/user)
+	. = ..()
+	var/obj/item/solar_assembly/S = locate() in src
+	if(S.glass_type)
+		var/obj/item/stack/sheet/G = S.glass_type
+		. += SPAN_NOTICE("It's constructed out of [G.name].")
 
 /obj/machinery/power/solar/crowbar_act(mob/user, obj/item/I)
 	. = TRUE
@@ -93,10 +100,12 @@
 
 /obj/machinery/power/solar/update_overlays()
 	. = ..()
+	if(!solar_type)
+		solar_type = SOLAR_TYPE_GLASS
 	if(stat & BROKEN)
-		. += image('icons/goonstation/objects/power.dmi', icon_state = "solar_panel-b", layer = FLY_LAYER)
+		. += image('icons/obj/solars.dmi', icon_state = "[solar_type]-b", layer = FLY_LAYER)
 	else
-		var/image/panel = image('icons/goonstation/objects/power.dmi', icon_state = "solar_panel", layer = FLY_LAYER)
+		var/image/panel = image('icons/obj/solars.dmi', icon_state = solar_type, layer = FLY_LAYER)
 		var/matrix/M = matrix()
 		M.Turn(adir)
 		panel.transform = M
@@ -128,7 +137,7 @@
 		if(powernet == control.powernet)//check if the panel is still connected to the computer
 			if(obscured) //get no light from the sun, so don't generate power
 				return
-			var/sgen = SSsun.solar_gen_rate * sunfrac
+			var/sgen = SSsun.solar_gen_rate * sunfrac * obj_integrity
 			produce_direct_power(sgen)
 			control.gen += sgen
 		else //if we're no longer on the same powernet, remove from control computer
@@ -177,12 +186,13 @@
 /obj/item/solar_assembly
 	name = "solar panel assembly"
 	desc = "A solar panel assembly kit, allows constructions of a solar panel, or with a tracking circuit board, a solar tracker."
-	icon = 'icons/goonstation/objects/power.dmi'
+	icon = 'icons/obj/solars.dmi'
 	icon_state = "sp_base"
 	inhand_icon_state = "electropack"
 	w_class = WEIGHT_CLASS_BULKY // Pretty big!
-	var/tracker = 0
-	var/glass_type = null
+	var/tracker = FALSE
+	var/obj/item/stack/sheet/glass_type = null
+	new_attack_chain = TRUE
 
 /obj/item/solar_assembly/attack_hand(mob/user)
 	if(!anchored)
@@ -191,48 +201,65 @@
 // Give back the glass type we were supplied with
 /obj/item/solar_assembly/proc/give_glass()
 	if(glass_type)
-		var/obj/item/stack/sheet/S = new glass_type(src.loc)
+		var/obj/item/stack/sheet/S = glass_type
 		S.amount = 2
+		S.forceMove(src.loc)
 		glass_type = null
 
 /obj/item/solar_assembly/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("The solar assembly is <b>[anchored ? "wrenched into place" : "unwrenched"]</b>.")
+	. += SPAN_NOTICE("[src] is <b>[anchored ? "wrenched into place" : "unwrenched"]</b>.")
 	if(tracker)
-		. += SPAN_NOTICE("The solar assembly has a tracking circuit installed. It can be <b>pried out</b>.")
+		. += SPAN_NOTICE("It has a tracking circuit installed. It can be <b>pried out</b>.")
 	else
-		. += SPAN_NOTICE("The solar assembly has a slot for a <i>tracking circuit</i> board.")
+		. += SPAN_NOTICE("It has a slot for a <i>tracking circuit</i> board.")
 	if(anchored)
-		.+= SPAN_NOTICE("The solar assembly needs <i>glass</i> to be completed.")
+		. += SPAN_NOTICE("It needs <i>glass</i> to be completed.")
 
-/obj/item/solar_assembly/attackby__legacy__attackchain(obj/item/W, mob/user, params)
+/obj/item/solar_assembly/item_interaction(mob/user, obj/item/used, list/modifiers)
+	if(istype(used, /obj/item/tracker_electronics))
+		if(tracker)
+			to_chat(user, SPAN_WARNING("There are already tracker electronics in [src]!"))
+			return ITEM_INTERACT_COMPLETE
+		if(!user.drop_item())
+			to_chat(user, SPAN_WARNING("[used] is stuck to your hand!"))
+			return ITEM_INTERACT_COMPLETE
+		tracker = TRUE
+		qdel(used)
+		user.visible_message(
+			SPAN_NOTICE("[user] inserts [used] into [src]."),
+			SPAN_NOTICE("You insert [used] into [src]."),
+			SPAN_NOTICE("You hear electronics click into place.")
+		)
+		add_fingerprint(user)
+		return ITEM_INTERACT_COMPLETE
 
-	if(anchored || !isturf(loc))
-		if(istype(W, /obj/item/stack/sheet/glass) || istype(W, /obj/item/stack/sheet/rglass))
-			var/obj/item/stack/sheet/S = W
-			if(S.use(2))
-				glass_type = S.merge_type
-				playsound(loc, S.usesound, 50, 1)
-				user.visible_message("[user] places the glass on the solar assembly.", SPAN_NOTICE("You place the glass on the solar assembly."))
-				if(tracker)
-					new /obj/machinery/power/tracker(get_turf(src), src)
-				else
-					new /obj/machinery/power/solar(get_turf(src), src)
-			else
-				to_chat(user, SPAN_WARNING("You need two sheets of glass to put them into a solar panel."))
-				return
-			return TRUE
+	if(istype(used, /obj/item/stack/sheet))
+		var/obj/item/stack/sheet/sheets = used
+		if(!sheets.solar_mult)
+			to_chat(user, SPAN_WARNING("You cannot use this to make a solar panel!"))
+			return ITEM_INTERACT_COMPLETE
+		if(!anchored || !isturf(loc))
+			to_chat(user, SPAN_WARNING("You need to anchor [src] with a wrench before you can add glass!"))
+			return ITEM_INTERACT_COMPLETE
 
-	if(!tracker)
-		if(istype(W, /obj/item/tracker_electronics))
-			if(!user.drop_item())
-				return
-			tracker = TRUE
-			qdel(W)
-			user.visible_message("[user] inserts the electronics into the solar assembly.", SPAN_NOTICE("You insert the electronics into the solar assembly."))
-			return TRUE
-	else
-		return ..()
+		if(!sheets.use(2))
+			to_chat(user, SPAN_WARNING("You need two sheets of glass to finish [src]."))
+			return ITEM_INTERACT_COMPLETE
+		glass_type = new sheets.merge_type(src)
+		playsound(loc, sheets.usesound, 50, 1)
+		user.visible_message(
+			SPAN_NOTICE("[user] places [used] on [src]."),
+			SPAN_NOTICE("You place [used] on [src]."),
+			SPAN_HEAR("You hear glass panels click into place.")
+		)
+		if(tracker)
+			new /obj/machinery/power/tracker(get_turf(src), src)
+		else
+			new /obj/machinery/power/solar(get_turf(src), src)
+		return ITEM_INTERACT_COMPLETE
+
+	return ..()
 
 /obj/item/solar_assembly/crowbar_act(mob/living/user, obj/item/I)
 	if(!tracker)
@@ -242,18 +269,18 @@
 		return
 	new /obj/item/tracker_electronics(loc)
 	tracker = FALSE
-	user.visible_message("[user] takes out the electronics from the solar assembly.", SPAN_NOTICE("You take out the electronics from the solar assembly."))
+	CROWBAR_PRY_CIRCUIT_SUCCESS_MESSAGE
 
 /obj/item/solar_assembly/wrench_act(mob/living/user, obj/item/I)
 	if(!anchored && isturf(loc))
 		if(I.use_tool(src, user, I.tool_volume))
 			anchored = TRUE
-			user.visible_message("[user] wrenches the solar assembly into place.", SPAN_NOTICE("You wrench the solar assembly into place."))
+			WRENCH_ANCHOR_MESSAGE
 			return TRUE
 	else
 		if(I.use_tool(src, user, I.tool_volume))
 			anchored = FALSE
-			user.visible_message("[user] unwrenches the solar assembly from its place.", SPAN_NOTICE("You unwrench the solar assembly from its place."))
+			WRENCH_UNANCHOR_MESSAGE
 			return TRUE
 
 //
@@ -505,10 +532,20 @@
 	stat |= BROKEN
 	update_icon()
 
-//
-// MISC
-//
+// MARK: Subtypes
+/obj/machinery/power/solar/r_glass
+	default_glass = /obj/item/stack/sheet/rglass
 
+/obj/machinery/power/solar/plasma
+	default_glass = /obj/item/stack/sheet/plasmaglass
+
+/obj/machinery/power/solar/plasma_r_glass
+	default_glass = /obj/item/stack/sheet/plasmarglass
+
+/obj/machinery/power/solar/plastitanium
+	default_glass = /obj/item/stack/sheet/plastitaniumglass
+
+// MARK: Misc
 /obj/item/paper/solar
 	name = "paper- 'Going green! Setup your own solar array instructions.'"
 	info = "<h1>Welcome</h1><p>At greencorps we love the environment, and space. With this package you are able to help mother nature and produce energy without any usage of fossil fuel or plasma! Singularity energy is dangerous while solar energy is safe, which is why it's better. Now here is how you setup your own solar array.</p><p>You can make a solar panel by wrenching the solar assembly onto a cable node. Adding a glass panel, reinforced or regular glass will do, will finish the construction of your solar panel. It is that easy!</p><p>Now after setting up 19 more of these solar panels you will want to create a solar tracker to keep track of our mother nature's gift, the sun. These are the same steps as before except you insert the tracker equipment circuit into the assembly before performing the final step of adding the glass. You now have a tracker! Now the last step is to add a computer to calculate the sun's movements and to send commands to the solar panels to change direction with the sun. Setting up the solar computer is the same as setting up any computer, so you should have no trouble in doing that. You do need to put a wire node under the computer, and the wire needs to be connected to the tracker.</p><p>Congratulations, you should have a working solar array. If you are having trouble, here are some tips. Make sure all solar equipment are on a cable node, even the computer. You can always deconstruct your creations if you make a mistake.</p><p>That's all to it, be safe, be green!</p>"

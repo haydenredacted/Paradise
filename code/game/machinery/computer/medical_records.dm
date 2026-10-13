@@ -182,7 +182,7 @@
 					data["goals"] += list(payload)
 			if(MED_DATA_MEDBOT)
 				data["medbots"] = list()
-				for(var/mob/living/simple_animal/bot/medbot/M in GLOB.bots_list)
+				for(var/mob/living/basic/bot/medbot/M in GLOB.bots_list)
 					if(M.z != z)
 						continue
 					var/turf/T = get_turf(M)
@@ -193,7 +193,7 @@
 						medbot["area"] = A.name
 						medbot["x"] = T.x
 						medbot["y"] = T.y
-						medbot["on"] = M.on
+						medbot["on"] = M.bot_mode_flags & BOT_MODE_ON
 						if(!isnull(M.reagent_glass) && M.use_beaker)
 							medbot["use_beaker"] = 1
 							medbot["total_volume"] = M.reagent_glass.reagents.total_volume
@@ -340,6 +340,8 @@
 					var/choices = field_edit_choices[field]
 					if(length(choices))
 						ui_modal_choice(src, id, question, arguments = arguments, value = arguments["value"], choices = choices)
+					else if(field == "notes")
+						ui_modal_textarea(src, id, question, arguments = arguments, value = arguments["value"])
 					else
 						ui_modal_input(src, id, question, arguments = arguments, value = arguments["value"])
 				if("add_comment")
@@ -410,7 +412,7 @@
 		<br>\nCurrent Diseases: [active2.fields["cdi"]] (per disease info placed in log/comment section)
 		<br>\nDetails: [active2.fields["cdi_d"]]<br>\n
 		<br>\nImportant Notes:
-		<br>\n\t[active2.fields["notes"]]<br>\n
+		<br>\n\t[replacetext(active2.fields["notes"], "\n", "<BR>")]<br>\n
 		<br>\n
 		<center><b>Comments/Log</b></center><br>"}
 		for(var/c in active2.fields["comments"])

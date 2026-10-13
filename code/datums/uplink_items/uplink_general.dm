@@ -182,6 +182,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/dangerous
 	category = "Highly Visible and Dangerous Weapons"
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/dangerous/pistol
 	name = "FK-69 Stechkin Pistol"
@@ -218,6 +219,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "DSRD"
 	item = /obj/item/dualsaber
 	cost = 60
+	can_discount = FALSE // Already discounted by buying in bulk.
 
 /datum/uplink_item/dangerous/snakefang
 	name = "Snakesfang"
@@ -243,7 +245,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/chainsaw/syndie
 	cost = 65
 	surplus = 0 // This has caused major problems with un-needed chainsaw massacres. Bwoink bait.
-	excludefrom = list(UPLINK_TYPE_NUCLEAR)
+	excludefrom = list(UPLINK_TYPE_NUCLEAR, UPLINK_TYPE_NINJA)
 	can_discount = FALSE // Too gamer.
 
 /datum/uplink_item/dangerous/universal_gun_kit
@@ -275,6 +277,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	category = "Ammunition"
 	surplus = 0 // Getting these in a discount or surplus is not a good time.
 	can_discount = FALSE
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/ammo/pistol
 	name = "Stechkin - 10mm Magazine"
@@ -317,6 +320,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_weapons
 	category = "Stealthy and Inconspicuous Weapons"
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/stealthy_weapons/garrote
 	name = "Fiber Wire Garrote"
@@ -325,6 +329,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/garrote
 	reference = "GAR"
 	cost = 30
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_weapons/cameraflash
 	name = "Camera Flash"
@@ -342,6 +347,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "STK"
 	item = /obj/item/storage/box/syndie_kit/throwing_weapons
 	cost = 15
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_weapons/edagger
 	name = "Energy Dagger"
@@ -349,6 +355,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "EDP"
 	item = /obj/item/pen/edagger
 	cost = 10
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_weapons/foampistol
 	name = "Toy Gun (with Stun Darts)"
@@ -387,6 +394,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/reagent_containers/glass/bottle/traitor
 	cost = 10
 	surplus = 0 // Requires another item to function.
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_weapons/silencer
 	name = "Universal Suppressor"
@@ -416,6 +424,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/explosives
 	category = "Grenades and Explosives"
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/explosives/plastic_explosives
 	name = "Composition C-4"
@@ -487,6 +496,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "TARG"
 	item = /obj/item/grenade/chem_grenade/tar
 	cost = 7
+	excludefrom = list()
 
 ////////////////////////////////////////
 // MARK: STEALTHY TOOLS
@@ -494,6 +504,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_tools
 	category = "Stealth and Camouflage Items"
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/stealthy_tools/forgers_kit
 	name = "Forger's Kit"
@@ -526,6 +537,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "THIG"
 	item = /obj/item/clothing/glasses/chameleon/thermal
 	cost = 15
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_tools/night
 	name = "Nightvision Chameleon Glasses"
@@ -533,6 +545,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "TNIG"
 	item = /obj/item/clothing/glasses/chameleon/night
 	cost = 5
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_tools/agent_card
 	name = "Agent ID Card"
@@ -547,6 +560,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "CP"
 	item = /obj/item/chameleon
 	cost = 25
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_tools/chameleon_counter
 	name = "Chameleon Counterfeiter"
@@ -562,6 +576,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/syndie_kit/camera_bug
 	cost = 5
 	surplus = 90
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_tools/dnascrambler
 	name = "DNA Scrambler"
@@ -569,6 +584,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "DNAS"
 	item = /obj/item/dnascrambler
 	cost = 7
+	excludefrom = list()
 
 /datum/uplink_item/stealthy_tools/smugglersatchel
 	name = "Smuggler's Satchel"
@@ -615,6 +631,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "HM"
 	item = /obj/item/handheld_mirror
 	cost = 5
+	excludefrom = list()
 
 ////////////////////////////////////////
 // MARK: DEVICES AND TOOLS
@@ -623,6 +640,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/device_tools
 	category = "Devices and Tools"
 	abstract = 1
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/device_tools/emag
 	name = "Cryptographic Sequencer"
@@ -658,6 +676,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "NCAI"
 	item = /obj/item/reagent_containers/hypospray/autoinjector/nanocalcium
 	cost = 10
+	excludefrom = list()
 
 /datum/uplink_item/device_tools/syndicate_teleporter
 	name = "Experimental Syndicate Teleporter"
@@ -692,6 +711,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "TAR"
 	item = /obj/item/reagent_containers/spray/sticky_tar
 	cost = 10
+	excludefrom = list()
 
 /datum/uplink_item/device_tools/binary
 	name = "Binary Translator Key"
@@ -739,6 +759,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Advanced Pinpointer"
 	desc = "A pinpointer that tracks any specified coordinates, DNA string, high value item or the nuclear authentication disk."
 	reference = "ADVP"
+	excludefrom = list()
 	item = /obj/item/pinpointer/advpinpointer
 	cost = 10
 	can_discount = FALSE
@@ -749,6 +770,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "AID"
 	item = /obj/item/multitool/ai_detect
 	cost = 5
+	excludefrom = list()
 
 /datum/uplink_item/device_tools/jammer
 	name = "Radio Jammer"
@@ -756,6 +778,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "RJ"
 	item = /obj/item/jammer
 	cost = 20
+	excludefrom = list()
 
 /datum/uplink_item/device_tools/decoy_nade
 	name = "Decoy Grenade Kit"
@@ -763,6 +786,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "DCY"
 	item = /obj/item/storage/box/syndie_kit/decoy
 	cost = 20
+	excludefrom = list()
 
 ////////////////////////////////////////
 // MARK: SPACE SUITS AND HARDSUITS
@@ -771,6 +795,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/suits
 	category = "Space Suits and MODsuits"
 	surplus = 10 //I am setting this to 10 as there are a bunch of modsuit parts in here that should be weighted to 10. Suits and modsuits adjusted below.
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/suits/space_suit
 	name = "Syndicate Space Suit"
@@ -787,6 +812,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "MSTV"
 	item = /obj/item/mod/module/visor/thermal
 	cost = 15 // Don't forget, you need to get a modsuit to go with this
+	excludefrom = list()
 
 /datum/uplink_item/suits/night
 	name = "MODsuit Night Visor Module"
@@ -794,6 +820,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "MSNV"
 	item = /obj/item/mod/module/visor/night
 	cost = 5 // It's night vision, rnd pumps out those goggles for anyone man.
+	excludefrom = list()
 
 /datum/uplink_item/suits/plate_compression
 	name = "MODsuit Plate Compression Module"
@@ -809,6 +836,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "MSCM"
 	item = /obj/item/mod/module/chameleon
 	cost = 10
+	excludefrom = list()
 
 /datum/uplink_item/suits/noslip
 	name = "MODsuit Anti-Slip Module"
@@ -816,6 +844,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "MSNS"
 	item = /obj/item/mod/module/noslip
 	cost = 5
+	excludefrom = list()
 
 /datum/uplink_item/suits/springlock_module
 	name = "Heavily Modified Springlock MODsuit Module"
@@ -831,6 +860,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "FNAF"
 	item = /obj/item/mod/module/springlock/bite_of_87
 	cost = 5
+	excludefrom = list()
 
 /datum/uplink_item/suits/hidden_holster
 	name = "Hidden Holster Module"
@@ -845,6 +875,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "SGM"
 	item = /obj/item/mod/module/dispenser/smoke
 	cost = 10
+	excludefrom = list()
 
 ////////////////////////////////////////
 // MARK: IMPLANTS
@@ -852,6 +883,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/bio_chips
 	category = "Bio-chips"
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/bio_chips/freedom
 	name = "Freedom Bio-chip"
@@ -873,6 +905,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "ESI"
 	item = /obj/item/bio_chip_implanter/storage
 	cost = 40
+	excludefrom = list()
 
 /datum/uplink_item/bio_chips/mindslave
 	name = "Mindslave Bio-chip"
@@ -917,6 +950,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/cyber_implants
 	category = "Cybernetic Implants"
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/cyber_implants/hackerman_deck
 	name = "Binyat Wireless Hacking System Autoimplanter"
@@ -935,6 +969,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "RZR"
 	item = /obj/item/autosurgeon/organ/syndicate/oneuse/razorwire
 	cost = 20
+	excludefrom = list()
 
 /datum/uplink_item/cyber_implants/scope_eyes
 	name = "Hardened Kaleido Optics Eyes Autoimplanter"
@@ -944,6 +979,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	reference = "KOE"
 	item = /obj/item/autosurgeon/organ/syndicate/oneuse/scope_eyes
 	cost = 10
+	excludefrom = list()
 
 /datum/uplink_item/cyber_implants/mantis_kit
 	name = "'Naginata' Mantis Blades Kit"
@@ -956,7 +992,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 50
 	surplus = 0
 	can_discount = FALSE
-	excludefrom = list(UPLINK_TYPE_NUCLEAR)
+	excludefrom = list(UPLINK_TYPE_NUCLEAR, UPLINK_TYPE_NINJA)
 
 ////////////////////////////////////////
 // MARK: POINTLESS BADASSERY
@@ -965,6 +1001,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/badass
 	category = "(Pointless) Badassery"
 	surplus = 0
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/badass/pen
 	name = "Syndicate Fountain Pen"
@@ -1025,6 +1062,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	category = "Bundles and Telecrystals"
 	surplus = 0
 	can_discount = FALSE
+	excludefrom = list(UPLINK_TYPE_NINJA)
 
 /datum/uplink_item/bundles_tc/telecrystal
 	name = "Raw Telecrystal"

@@ -30,6 +30,10 @@
 	updatehealth("apply damage")
 	return TRUE
 
+/// return the total damage of all types which update your health
+/mob/living/proc/get_total_damage()
+	return round(getBruteLoss() + getFireLoss() + getToxLoss() + getOxyLoss())
+
 /mob/living/proc/apply_damage_type(damage = 0, damagetype = BRUTE) //like apply damage except it always uses the damage procs
 	switch(damagetype)
 		if(BRUTE)
@@ -62,6 +66,10 @@
 		if(STAMINA)
 			return getStaminaLoss()
 
+/mob/living/proc/get_damage_percent()
+	var/max = getMaxHealth()
+	var/loss = getBruteLoss() + getFireLoss() + getToxLoss() + getCloneLoss() + getOxyLoss()
+	return ceil((max - loss) / max * 100)
 
 /mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, def_zone = null, blocked = 0, stamina = 0)
 	if(blocked >= 100)	return 0

@@ -29,6 +29,8 @@
 #define COMSIG_BODY_TRANSFER_TO "body_transfer_to"
 ///called when the mind is initialized (called every time the mob logins)
 #define COMSIG_MIND_INITIALIZE "mind_initialize"
+/// called when character creation robotic limbs are applied
+#define COMSIG_HUMAN_ROBOTIC_LIMBS_APPLIED "human_robotic_limbs_applied"
 
 // Sent from a surgery step when blood is being splashed. (datum/surgery, mob/user, mob/target, zone, obj/item/tool)
 #define COMSIG_SURGERY_BLOOD_SPLASH "surgery_blood_splash"
@@ -144,3 +146,7 @@
 #define SPATIAL_GRID_CELL_ENTERED(contents_type) "spatial_grid_cell_entered_[contents_type]"
 /// Called from base of /datum/controller/subsystem/spatial_grid/proc/exit_cell: (/atom/movable)
 #define SPATIAL_GRID_CELL_EXITED(contents_type) "spatial_grid_cell_exited_[contents_type]"
+
+/// from base of /datum/wires/proc/cut : (wire)
+#define COMSIG_CUT_WIRE(wire) "cut_wire [wire]"
+#define COMSIG_MEND_WIRE(wire) "mend_wire [wire]"

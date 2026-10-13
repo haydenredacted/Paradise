@@ -247,10 +247,12 @@
 				available_channels.Add(":n")
 			if("Medical")
 				available_channels.Add(":m")
-			if("Mining")
-				available_channels.Add(":d")
-			if("Cargo")
-				available_channels.Add(":q")
+			if("Supply")
+				available_channels.Add(":u")
+			if("Service")
+				available_channels.Add(":z")
+			if("Procedure")
+				available_channels.Add(":x")
 
 	if(ears.translate_binary)
 		available_channels.Add(":b")
@@ -557,7 +559,7 @@
 			visible_message(SPAN_NOTICE("[src] grabs [held_item]!"), SPAN_NOTICE("You grab [held_item]!"), "You hear the sounds of wings flapping furiously.")
 			return held_item
 
-	to_chat(src, "<span class = 'warning'>There is nothing of interest to take.</span>")
+	to_chat(src, SPAN_WARNING("There is nothing of interest to take."))
 	return FALSE
 
 /mob/living/simple_animal/parrot/proc/steal_from_mob()
@@ -759,7 +761,6 @@
 		"The reactor is going supercritical!",
 		"Danger! Reactor core chamber meltdown in progress! Integrity: 79.47%"
 		)
-	unique_pet = TRUE
 	gold_core_spawnable = NO_SPAWN
 	available_channels = list(":e")
 

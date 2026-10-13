@@ -121,6 +121,22 @@ GLOBAL_LIST_EMPTY(airlock_emissive_underlays)
 /obj/machinery/door/airlock/welded
 	welded = TRUE
 
+/// Special case so spawners with doors autorotate, otherwise identicle
+/obj/machinery/door/airlock/spawner
+
+/obj/machinery/door/airlock/spawner/Initialize(mapload)
+	. = ..()
+	return INITIALIZE_HINT_LATELOAD
+
+/// Lateint required to actually rotate
+/obj/machinery/door/airlock/spawner/LateInitialize()
+	. = ..()
+	var/direction = get_current_direction()
+	dir = direction
+
+/obj/machinery/door/airlock/spawner/welded
+	welded = TRUE
+
 /*
  * reimp, imitate an access denied event.
  */
@@ -160,6 +176,8 @@ GLOBAL_LIST_EMPTY(airlock_emissive_underlays)
 		max_integrity = normal_integrity
 	if(damage_deflection == AIRLOCK_DAMAGE_DEFLECTION_N && security_level > AIRLOCK_SECURITY_METAL)
 		damage_deflection = AIRLOCK_DAMAGE_DEFLECTION_R
+	var/direction = get_current_direction()
+	dir = direction ? direction : NORTH
 	update_icon()
 	prepare_huds()
 	for(var/hud_key, hud in GLOB.huds)
@@ -664,7 +682,8 @@ GLOBAL_LIST_EMPTY(airlock_emissive_underlays)
 			. += "There's a [note.name] pinned to the front..."
 			note.examine(user)
 			. += SPAN_NOTICE("Use an empty hand on the airlock on grab mode to remove [note.name].")
-
+	if(welded)
+		. += SPAN_WARNING("It's welded shut!")
 	if(panel_open)
 		switch(security_level)
 			if(AIRLOCK_SECURITY_NONE)
@@ -1014,6 +1033,17 @@ GLOBAL_LIST_EMPTY(airlock_emissive_underlays)
 	add_fingerprint(user)
 	if(!headbutt_shock_check(user))
 		return ITEM_INTERACT_COMPLETE
+	if(istype(used, /obj/item/katana/energy) && user.a_intent == INTENT_HELP)
+		if(locked)
+			if(!do_after_once(user, 5 SECONDS, TRUE, src, allow_moving = FALSE, must_be_held = FALSE))
+				return ITEM_INTERACT_COMPLETE
+			unlock()
+			return ITEM_INTERACT_COMPLETE
+		else
+			if(!do_after_once(user, 2.5 SECONDS, TRUE, src, allow_moving = FALSE, must_be_held = FALSE))
+				return ITEM_INTERACT_COMPLETE
+			open()
+			return ITEM_INTERACT_COMPLETE
 	if(panel_open)
 		if(istype(used, /obj/item/kitchen/utensil/fork))
 			return NONE
@@ -1401,28 +1431,32 @@ GLOBAL_LIST_EMPTY(airlock_emissive_underlays)
 	if(!operating && density && arePowerSystemsOn() && !emagged)
 		operating = DOOR_MALF
 		update_icon(AIRLOCK_EMAG, 1)
-		sleep(6)
-		if(QDELETED(src))
-			return
-		electronics = new /obj/item/airlock_electronics/destroyed()
-		operating = NONE
-		if(!open())
-			update_icon(AIRLOCK_CLOSED, 1)
-		emagged = TRUE
+		addtimer(CALLBACK(src, PROC_REF(finish_emag_act)), 0.6 SECONDS)
 		return TRUE
+
+/obj/machinery/door/airlock/finish_emag_act()
+	if(QDELETED(src))
+		return
+	electronics = new /obj/item/airlock_electronics/destroyed()
+	operating = NONE
+	if(!open())
+		update_icon(AIRLOCK_CLOSED, 1)
+	emagged = TRUE
 
 /obj/machinery/door/airlock/cmag_act(mob/user)
 	if(operating || HAS_TRAIT(src, TRAIT_CMAGGED) || !density || !arePowerSystemsOn())
 		return FALSE
 	operating = DOOR_MALF
 	update_icon(AIRLOCK_EMAG, 1)
-	sleep(6)
+	addtimer(CALLBACK(src, PROC_REF(finish_cmag_act)), 0.6 SECONDS)
+	return TRUE
+
+/obj/machinery/door/airlock/finish_cmag_act()
 	if(QDELETED(src))
-		return FALSE
+		return
 	operating = NONE
 	update_icon(AIRLOCK_CLOSED, 1)
 	ADD_TRAIT(src, TRAIT_CMAGGED, CLOWN_EMAG)
-	return TRUE
 
 /obj/machinery/door/airlock/emp_act(severity)
 	. = ..()

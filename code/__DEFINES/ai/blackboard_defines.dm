@@ -22,6 +22,10 @@
 #define BB_BASIC_MOB_FLEE_DISTANCE "BB_BASIC_FLEE_DISTANCE"
 #define DEFAULT_BASIC_FLEE_DISTANCE 9
 
+/// Path we should use next time we use the JPS movement datum
+#define BB_PATH_TO_USE "BB_path_to_use"
+/// Max path length we should use next time we use the JPS movement datum
+#define BB_PATH_MAX_LENGTH "BB_path_max_length"
 // Searching
 
 /// key holding a range to look for stuff in
@@ -147,6 +151,17 @@
 #define BB_STATIONARY_TARGETS "BB_STATIONARY_TARGETS"
 /// How often can we get spooked by a target?
 #define BB_STATIONARY_COOLDOWN "BB_STATIONARY_COOLDOWN"
+
+/// Text we display when we befriend someone
+#define BB_FRIENDLY_MESSAGE "friendly_message"
+
+// stealing
+/// chance we steal something
+#define BB_STEAL_CHANCE "steal_chance"
+/// chance we develop a guilty concious and leave our stolen item behind
+#define BB_GUILTY_CONSCIOUS_CHANCE "guilty_concious_rate"
+/// the item we will steal
+#define BB_ITEM_TO_STEAL "item_to_steal"
 
 // minebot keys
 /// key that stores our toggle light ability

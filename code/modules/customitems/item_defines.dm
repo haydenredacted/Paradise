@@ -46,34 +46,34 @@
 /obj/item/fluff/tattoo_gun/attack__legacy__attackchain(mob/living/carbon/M as mob, mob/user as mob)
 	if(user.a_intent == INTENT_HARM)
 		user.visible_message(SPAN_WARNING("[user] stabs [M] with [src]!"), SPAN_WARNING("You stab [M] with [src]!"))
-		to_chat(M, SPAN_USERDANGER("[user] stabs you with [src]!<br></span><span class = 'warning'>You feel a tiny prick!"))
+		to_chat(M, "[SPAN_USERDANGER("[user] stabs you with [src]!")] [SPAN_WARNING("You feel a tiny prick!")]")
 		return
 
 	if(used)
-		to_chat(user, "<span class= 'notice'>[src] is out of ink.</span>")
+		to_chat(user, SPAN_WARNING("[src] is out of ink."))
 		return
 
 	if(!ishuman(M))
-		to_chat(user, "<span class= 'notice'>You don't think tattooing [M] is the best idea.</span>")
+		to_chat(user, SPAN_WARNING("You don't think tattooing [M] is the best idea."))
 		return
 
 	var/mob/living/carbon/human/target = M
 
 	if(ismachineperson(target))
-		to_chat(user, "<span class= 'notice'>[target] has no skin, how do you expect to tattoo [target.p_them()]?</span>")
+		to_chat(user, SPAN_WARNING("[target] has no skin, how do you expect to tattoo [target.p_them()]?"))
 		return
 
 	if(target.m_styles["body"] != "None")
-		to_chat(user, "<span class= 'notice'>[target] already has body markings, any more would look silly!</span>")
+		to_chat(user, SPAN_WARNING("[target] already has body markings, any more would look silly!"))
 		return
 
 	var/datum/sprite_accessory/body_markings/tattoo/temp_tatt = GLOB.marking_styles_list[tattoo_icon]
 	if(!(target.dna.species.name in temp_tatt.species_allowed))
-		to_chat(user, "<span class= 'notice'>You can't think of a way to make the [tattoo_name] design work on [target == user ? "your" : "[target]'s"] body type.</span>")
+		to_chat(user, SPAN_WARNING("You can't think of a way to make the [tattoo_name] design work on [target == user ? "your" : "[target]'s"] body type."))
 		return
 
 	if(target == user)
-		to_chat(user, "<span class= 'notice'>You use [src] to apply a [tattoo_name] to yourself!</span>")
+		to_chat(user, SPAN_NOTICE("You use [src] to apply a [tattoo_name] to yourself!"))
 
 	else
 		user.visible_message(SPAN_NOTICE("[user] begins to apply a [tattoo_name] [target] with [src]."), SPAN_NOTICE("You begin to tattoo [target] with [src]!"))
@@ -631,6 +631,7 @@
 	desc = "A worn down visor from a vox raider's gear, crudely ripped from its helmet and linked into the security systems of the station. The word 'Kask' is scratched into the side."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "hud-spartan"
+	icon_monitor = null
 
 //////////// Hats ////////////
 /// Regens: Heather Winceworth
@@ -1755,6 +1756,21 @@
 	sprite_sheets = list("Grey" = 'icons/mob/clothing/species/grey/neck.dmi',
 		"Kidan" = 'icons/mob/clothing/species/kidan/neck.dmi',
 		"Vox" = 'icons/mob/clothing/species/vox/neck.dmi')
+
+/obj/item/clothing/neck/necklace/reward/brass_watch
+	name = "brass pocketwatch"
+	desc = "A classy brass pocketwatch, complete with a matching chain to attach it to your uniform. It has \"Event Extravaganza '26\" engraved on the inside of the lid."
+	icon = 'icons/obj/custom_items.dmi'
+	icon_state = "brass_pocketwatch"
+	sprite_sheets = list("Drask" = 'icons/mob/clothing/species/drask/neck.dmi',
+		"Grey" = 'icons/mob/clothing/species/grey/neck.dmi',
+		"Kidan" = 'icons/mob/clothing/species/kidan/neck.dmi',
+		"Skkulakin" = 'icons/mob/clothing/species/skkulakin/neck.dmi',
+		"Vox" = 'icons/mob/clothing/species/vox/neck.dmi')
+
+/obj/item/clothing/neck/necklace/reward/brass_watch/examine(mob/user)
+	. = ..()
+	. += "It is currently [station_time_timestamp()]."
 
 #undef USED_MOD_HELM
 #undef USED_MOD_SUIT

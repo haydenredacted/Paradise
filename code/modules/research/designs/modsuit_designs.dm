@@ -285,6 +285,13 @@
 	materials = list(MAT_METAL = 10000, MAT_GLASS = 4000, MAT_SILVER = 2000)
 	build_path = /obj/item/mod/module/defibrillator
 
+/datum/design/module/analyzer
+	name = "Health Analyzer Module"
+	id = "mod_analyzer"
+	req_tech = list("biotech" = 3, "materials" = 5)
+	materials = list(MAT_METAL = 4000, MAT_GLASS = 4000)
+	build_path = /obj/item/mod/module/analyzer
+
 /datum/design/module/mod_bikehorn
 	name = "Bike Horn Module"
 	id = "mod_bikehorn"
@@ -340,6 +347,13 @@
 	req_tech = list("materials" = 6, "powerstorage" = 5, "engineering" = 5)
 	materials = list(MAT_METAL = 12500, MAT_SILVER = 12000, MAT_GOLD = 2500, MAT_PLASMA = 5000)
 	build_path = /obj/item/mod/module/active_sonar
+
+/datum/design/module/mod_springlock
+	name = "Springlock Module"
+	id = "mod_springlock"
+	req_tech = list("engineering" = 4, "combat" = 4, "syndicate" = 3)
+	materials = list(MAT_METAL = 10000, MAT_SILVER = 4000, MAT_GOLD = 4000, MAT_PLASMA = 5000)
+	build_path = /obj/item/mod/module/springlock
 
 /datum/design/module/pathfinder
 	name = "Pathfinder Module"

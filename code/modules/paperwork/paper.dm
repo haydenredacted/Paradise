@@ -71,6 +71,7 @@
 /obj/item/paper/examine(mob/user)
 	. = ..()
 	. += SPAN_NOTICE("<b>Alt-Click</b> [src] with a pen in hand to rename it.")
+	. += SPAN_NOTICE("<b>Alt-Click</b> [src] inhand to fold it into an airplane.")
 	if(user.is_literate())
 		if(in_range(user, src) || isobserver(user))
 			show_content(user)
@@ -550,7 +551,10 @@
 
 	if(!stamped)
 		stamped = new
-	stamped += S.type
+	if(istype(S, /obj/item/stamp/mod))
+		stamped += S.icon_state == "stamp-ok" ? /obj/item/stamp/granted : /obj/item/stamp/denied
+	else
+		stamped += S.type
 	stamp_overlays += stampoverlay
 	update_icon(UPDATE_OVERLAYS)
 
@@ -1032,7 +1036,7 @@
 				if(fax)
 					var/turf/T = get_turf(fax)
 					new /obj/effect/portal(T)
-					new /mob/living/simple_animal/bot/secbot(T)
+					new /mob/living/basic/bot/secbot(T)
 			else if(myeffect == "Revoke Fax Access")
 				GLOB.fax_blacklist += target.real_name
 				if(fax)

@@ -578,7 +578,7 @@
 	name = "medical winter coat"
 	icon_state = "wintercoat_med"
 	inhand_icon_state = "coatmedical"
-	allowed = list(/obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator,/obj/item/healthanalyzer,/obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic)
+	allowed = list(/obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator,/obj/item/healthanalyzer,/obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper, /obj/item/melee/classic_baton/telescopic)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, RAD = 0, FIRE = 0, ACID = 40)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical
 
@@ -589,7 +589,7 @@
 	name = "science winter coat"
 	icon_state = "wintercoat_sci"
 	inhand_icon_state = "coatscience"
-	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator,/obj/item/healthanalyzer,/obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic)
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator,/obj/item/healthanalyzer,/obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper, /obj/item/melee/classic_baton/telescopic)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 5, RAD = 0, FIRE = 0, ACID = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/science
 
@@ -673,7 +673,7 @@
 	name = "chemist winter coat"
 	icon_state = "wintercoat_chem"
 	inhand_icon_state = "coatchem"
-	allowed = list(/obj/item/reagent_scanner, /obj/item/reagent_scanner/adv, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper)
+	allowed = list(/obj/item/reagent_scanner, /obj/item/reagent_scanner/adv, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 5, RAD = 0, FIRE = 0, ACID = 40)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/chemistry
 
@@ -1196,35 +1196,35 @@
 	name = "medical bomber jacket"
 	desc = "A stain-resistant and stylish option for any member of the medical department."
 	icon_state = "bombermed"
-	allowed = list(/obj/item/bodyanalyzer, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper)
+	allowed = list(/obj/item/bodyanalyzer, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, RAD = 5, FIRE = 0, ACID = 20)
 
 /obj/item/clothing/suit/jacket/bomber/chem
 	name = "chemistry bomber jacket"
 	desc = "An exclusive and stylish variant of the medical bomber, for chemists only."
 	icon_state = "bomberchem"
-	allowed = list(/obj/item/reagent_scanner, /obj/item/reagent_scanner/adv, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper)
+	allowed = list(/obj/item/reagent_scanner, /obj/item/reagent_scanner/adv, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 5, RAD = 0, FIRE = 0, ACID = 40)
 
 /obj/item/clothing/suit/jacket/bomber/coroner
 	name = "coroner's bomber jacket"
 	desc = "An extremely exclusive and stylish jacket. Coroner's use only!"
 	icon_state = "bombercoroner"
-	allowed = list(/obj/item/autopsy_scanner, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper)
+	allowed = list(/obj/item/autopsy_scanner, /obj/item/analyzer, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, RAD = 5, FIRE = 0, ACID = 20)
 
 /obj/item/clothing/suit/jacket/bomber/sci
 	name = "science bomber jacket"
 	desc = "A stylish and slightly bomb-resistant jacket for warmth within the sterile labs."
 	icon_state = "bombersci"
-	allowed = list(/obj/item/slime_scanner, /obj/item/reagent_scanner/adv, /obj/item/reagent_scanner, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper)
+	allowed = list(/obj/item/slime_scanner, /obj/item/reagent_scanner/adv, /obj/item/reagent_scanner, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 5, RAD = 0, FIRE = 0, ACID = 20)
 
 /obj/item/clothing/suit/jacket/bomber/robo
 	name = "robotics bomber jacket"
 	desc = "A stylish jacket to warm you up after handling cold robotic limbs."
 	icon_state = "bomberrobo"
-	allowed = list(/obj/item/robotanalyzer, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/paper)
+	allowed = list(/obj/item/robotanalyzer, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/applicator, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/storage/pill_bottle, /obj/item/storage/mesh_pack, /obj/item/storage/suture_pack, /obj/item/paper)
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 5, RAD = 0, FIRE = 0, ACID = 20)
 
 //End of bombers
@@ -1677,3 +1677,50 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
 	species_restricted = list("Skkulakin")
+
+/obj/item/clothing/suit/oversuit
+	name = "oversuit"
+	desc = "A Haroldson-braded oversuit, worn over your existing clothing. It's also neatly foldable and dyeable!"
+	sprite_sheets = list(
+		"Drask" = 'icons/mob/clothing/species/drask/suit.dmi',
+		"Grey" = 'icons/mob/clothing/species/grey/suit.dmi',
+		"Kidan" = 'icons/mob/clothing/species/kidan/suit.dmi',
+		"Vox" = 'icons/mob/clothing/species/vox/suit.dmi',
+		"Nian" = 'icons/mob/clothing/species/nian/suit.dmi',
+		"Skkulakin" = 'icons/mob/clothing/species/skkulakin/suit.dmi',
+	)
+	icon_state = "oversuit"
+	dyeable = TRUE
+	dyeing_key = DYE_REGISTRY_OVERSUIT
+
+/obj/item/clothing/suit/oversuit/black
+	name = "black oversuit"
+	color = "#4A4A4B" //Grey but it looks black
+
+/obj/item/clothing/suit/oversuit/red
+	name = "red oversuit"
+	color = "#D91414" //Red
+
+/obj/item/clothing/suit/oversuit/green
+	name = "green oversuit"
+	color = "#5C9E54" //Green
+
+/obj/item/clothing/suit/oversuit/darkblue
+	name = "dark blue oversuit"
+	color = "#1E85BC" //Blue
+
+/obj/item/clothing/suit/oversuit/purple
+	name = "purple oversuit"
+	color = "#9557C5" //purple
+
+/obj/item/clothing/suit/oversuit/yellow
+	name = "yellow oversuit"
+	color = "#E0C14F" //Yellow
+
+/obj/item/clothing/suit/oversuit/orange
+	name = "orange oversuit"
+	color = "#C67A4B" //orange
+
+/obj/item/clothing/suit/oversuit/cyan
+	name = "cyan oversuit"
+	color = "#54A3CE" //Cyan (Or close to it)

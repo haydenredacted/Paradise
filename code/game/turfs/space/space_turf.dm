@@ -1,6 +1,7 @@
 /turf/space
 	icon = 'icons/turf/space.dmi'
 	name = "\proper space"
+	desc = "The infinite expanse of space. It's hazardous to traverse without proper protection."
 	icon_state = "0"
 
 	temperature = TCMB
@@ -55,6 +56,7 @@
 
 	if(light_sources) // Turn off starlight, if present
 		set_light(0)
+		GLOB.starlight -= src
 
 /turf/space/proc/update_starlight()
 	if(GLOB.configuration.general.starlight)
@@ -63,6 +65,7 @@
 				//let's NOT update this that much pls
 				continue
 			set_light(2)
+			GLOB.starlight += src
 			return
 		set_light(0)
 
@@ -241,3 +244,12 @@
 	underlay_appearance.icon_state = SPACE_ICON_STATE
 	underlay_appearance.plane = PLANE_SPACE
 	return TRUE
+
+/turf/space/can_cross_safely(atom/movable/crossing)
+	return HAS_TRAIT(crossing, TRAIT_SPACEWALK)
+
+/turf/space/proc/has_valid_support()
+	for(var/direction in GLOB.cardinal)
+		if(istype(get_step(src, direction), /turf/simulated/floor))
+			return TRUE
+	return FALSE

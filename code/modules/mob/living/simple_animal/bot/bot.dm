@@ -119,7 +119,7 @@
 	/// Type of bot, one of the *_BOT defines.
 	var/bot_type
 	/// The type of data HUD the bot uses. Diagnostic by default.
-	var/data_hud_type = DATA_HUD_DIAGNOSTIC_BASIC
+	var/data_hud_type = DATA_HUD_DIAGNOSTIC_ADVANCED
 	// This holds text for what the bot is mode doing, reported on the remote bot control interface.
 	var/list/mode_name = list("In Pursuit","Preparing to Arrest", "Arresting", \
 	"Beginning Patrol", "Patrolling", "Summoned by PDA", \
@@ -182,7 +182,7 @@
 
 	var/datum/atom_hud/data_hud = GLOB.huds[data_hud_type]
 	if(data_hud)
-		data_hud.remove_hud_from(src)
+		data_hud.remove_hud_from(src, "bot")
 
 	GLOB.bots_list -= src
 	QDEL_NULL(path)
@@ -208,6 +208,14 @@
 				B.radio_config.Insert(1, "[B.radio_channel]")
 				B.radio_config["[B.radio_channel]"] = 1
 		config(B.radio_config)
+	var/mob/living/basic/bot/BB = loc
+	if(istype(BB))
+		if(!BB.radio_config)
+			BB.radio_config = list("AI Private" = 1)
+			if(!(BB.radio_channel in BB.radio_config)) // Put it first so it's the :h channel
+				BB.radio_config.Insert(1, "[BB.radio_channel]")
+				BB.radio_config["[BB.radio_channel]"] = 1
+		config(BB.radio_config)
 
 /mob/living/simple_animal/bot/proc/try_chasing_target(mob/target)
 	if(target in view(12, src))
@@ -329,6 +337,8 @@
 	else
 		. += "[src] is in pristine condition."
 
+	. += SPAN_NOTICE("You can <b>Alt-Click</b> to quickly swipe your ID.")
+
 /mob/living/simple_animal/bot/adjustHealth(amount, updating_health = TRUE)
 	if(amount > 0 && prob(10))
 		new /obj/effect/decal/cleanable/blood/oil(loc)
@@ -362,8 +372,6 @@
 		remove_ignored_atom(A)
 
 /mob/living/simple_animal/bot/handle_automated_action()
-	diag_hud_set_botmode()
-
 	if(COOLDOWN_FINISHED(src, ignore_list_cleanup_cd))
 		clear_ignore_list()
 		COOLDOWN_START(src, ignore_list_cleanup_cd, 20 SECONDS)
@@ -381,7 +389,7 @@
 		if(BOT_SUMMON)		// Called by PDA
 			bot_summon()
 			return
-		if(BOT_PATHING)
+		if(BOT_MOVING)
 			return FALSE
 	return TRUE // Successful completion. Used to prevent child process() continuing if this one is ended early.
 
@@ -422,18 +430,26 @@
 /mob/living/simple_animal/bot/proc/interact(mob/user)
 	show_controls(user)
 
+/mob/living/simple_animal/bot/AltClick(mob/user)
+	if(Adjacent(user))
+		toggle_lock(user)
+
+/mob/living/simple_animal/bot/proc/toggle_lock(mob/user)
+	if(allowed(user) && !open && !emagged)
+		locked = !locked
+		to_chat(user, "Controls are now [locked ? "locked." : "unlocked."]")
+		return TRUE
+	if(emagged)
+		to_chat(user, SPAN_DANGER("ERROR"))
+	if(open)
+		to_chat(user, SPAN_WARNING("Please close the access panel before locking it."))
+	else
+		to_chat(user, SPAN_WARNING("Access denied."))
+	return FALSE
+
 /mob/living/simple_animal/bot/item_interaction(mob/living/user, obj/item/W, list/modifiers)
 	if(istype(W, /obj/item/card/id) || istype(W, /obj/item/pda))
-		if(allowed(user) && !open && !emagged)
-			locked = !locked
-			to_chat(user, "Controls are now [locked ? "locked." : "unlocked."]")
-			return ITEM_INTERACT_COMPLETE
-		if(emagged)
-			to_chat(user, SPAN_DANGER("ERROR"))
-		if(open)
-			to_chat(user, SPAN_WARNING("Please close the access panel before locking it."))
-		else
-			to_chat(user, SPAN_WARNING("Access denied."))
+		toggle_lock(user)
 		return ITEM_INTERACT_COMPLETE
 
 	if(istype(W, /obj/item/paicard))
@@ -1067,7 +1083,7 @@ Pass a positive integer as an argument to override a bot's default speed.
 
 	var/datum/atom_hud/data_hud = GLOB.huds[data_hud_type]
 	if(data_hud)
-		data_hud.add_hud_to(src)
+		data_hud.add_hud_to(src, "bot")
 
 	diag_hud_set_botmode()
 	show_laws()

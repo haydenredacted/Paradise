@@ -300,6 +300,8 @@
 					var/choices = field_edit_choices[field]
 					if(length(choices))
 						ui_modal_choice(src, id, question, arguments = arguments, value = arguments["value"], choices = choices)
+					else if(field == "notes")
+						ui_modal_textarea(src, id, question, arguments = arguments, value = arguments["value"])
 					else
 						ui_modal_input(src, id, question, arguments = arguments, value = arguments["value"])
 				if("comment_add")
@@ -419,7 +421,7 @@
 		<br>\nMajor Crimes: [record_security.fields["ma_crim"]]
 		<br>\nDetails: [record_security.fields["ma_crim_d"]]<br>\n
 		<br>\nImportant Notes:
-		<br>\n\t[record_security.fields["notes"]]<br>\n<br>\n<center><B>Comments/Log</B></center><br>"}
+		<br>\n\t[replacetext(record_security.fields["notes"], "\n", "<BR>")]<br>\n<br>\n<center><B>Comments/Log</B></center><br>"}
 		for(var/c in record_security.fields["comments"])
 			if(islist(c))
 				P.info += "\"[c["text"]]\" Comment [c["header"]]<br>"

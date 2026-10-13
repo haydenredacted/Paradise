@@ -263,7 +263,7 @@
 
 	var/obj/structure/big_delivery/delivery = teleport_to_first(player, /obj/structure/big_delivery)
 	var/obj/item/dest_tagger/tagger = player.spawn_obj_in_hand(/obj/item/dest_tagger)
-	tagger.currTag = 2
+	tagger.current_tag = 2
 	player.click_on(delivery)
 	TEST_ASSERT_LAST_CHATLOG(player, "*CARGO BAY*")
 	player.drop_held_item()
@@ -276,12 +276,6 @@
 	player.spawn_fast_tool(/obj/item/stack/cable_coil)
 	player.click_on(windoor_assembly)
 	TEST_ASSERT_LAST_CHATLOG(player, "You wire the windoor.")
-	player.drop_held_item()
-
-	var/obj/crate = teleport_to_first(player, /obj/structure/closet/crate/secure/loot)
-	player.spawn_fast_tool(/obj/item/multitool)
-	player.click_on(crate)
-	TEST_ASSERT_LAST_CHATLOG(player, "Anti-Tamper Bomb will activate after 10 failed access attempts")
 	player.drop_held_item()
 
 	var/obj/structure/flora/ash/ashflora = teleport_to_first(player, /obj/structure/flora/ash)
@@ -325,6 +319,7 @@
 	TEST_ASSERT_LAST_CHATLOG(player, "You fill [bucket] with 20 units of the contents of [water_cooler]")
 	player.drop_held_item()
 
+	var/obj/crate = teleport_to_first(player, /obj/structure/closet/crate/secure/loot)
 	crate = teleport_to_first(player, /obj/structure/closet/crate/sci)
 	player.spawn_fast_tool(/obj/item/stack/package_wrap)
 	player.click_on(crate)

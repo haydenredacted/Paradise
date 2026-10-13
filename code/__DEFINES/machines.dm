@@ -136,3 +136,8 @@
 /// Salvage machine point defines
 #define SALVAGE_REDEMPTION_BASE_POINT_MULT 0.6
 #define SALVAGE_REDEMPTION_POINT_MULT_ADD_PER_RATING 0.1
+
+/// Solar panel material sprite defines
+#define SOLAR_TYPE_GLASS "solar_panel"
+#define SOLAR_TYPE_PLASMA "solar_panel_p"
+#define SOLAR_TYPE_PLASTITANIUM "solar_panel_t"

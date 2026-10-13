@@ -23,8 +23,8 @@
 	new /obj/item/food/rawcutlet(src)
 	new /obj/item/food/rawcutlet(src)
 	user.visible_message(
-		"<span class ='notice'>[user] cuts [src] with [used]!</span>",
-		"<span class ='notice'>You cut [src] with [used]!</span>"
+		SPAN_NOTICE("[user] cuts [src] with [used]!"),
+		SPAN_NOTICE("You cut [src] with [used]!")
 	)
 	qdel(src)
 	return ITEM_INTERACT_COMPLETE
@@ -109,8 +109,8 @@
 		return NONE
 
 	user.visible_message(
-		"<span class ='notice'>[user] cuts the raw cutlet with [used]!</span>",
-		"<span class ='notice'>You cut the raw cutlet with [used]!</span>"
+		SPAN_NOTICE("[user] cuts the raw cutlet with [used]!"),
+		SPAN_NOTICE("You cut the raw cutlet with [used]!")
 	)
 	var/obj/item/food/raw_bacon/bacon = new(get_turf(src))
 	if(ishuman(loc))
@@ -520,10 +520,10 @@
 	var/obj/item/toy/crayon/C = used
 	var/clr = C.dye_color
 	if(!(clr in list("red", "orange", "yellow", "green", "blue", "purple", "rainbow", "mime")))
-		to_chat(usr, "<span class ='warning'>The egg refuses to take on this color!</span>")
+		to_chat(usr, SPAN_WARNING("The egg refuses to take on this color!"))
 		return ITEM_INTERACT_COMPLETE
 
-	to_chat(usr, "<span class ='notice'>You color \the [src] [clr]</span>")
+	to_chat(usr, SPAN_NOTICE("You color [src] [clr]."))
 	icon_state = "egg-[clr]"
 	return ITEM_INTERACT_COMPLETE
 
@@ -696,3 +696,69 @@
 	filling_color = "#FF1C1C"
 	bitesize = 3
 	goal_difficulty = FOOD_GOAL_NORMAL
+
+////////////////////////
+// 		Hispania!		//
+////////////////////////
+
+/obj/item/food/rawmouse
+	name = "raw mouse"
+	desc = "A raw mouse, what did you expect? Disgusting!"
+	icon_state = "raw_mouse"
+	filling_color = "#FF1C1C"
+	list_reagents = list("protein" = 3)
+	tastes = list("nasty" = 1)
+
+/obj/item/food/peach_meat
+	name = "Steak in Peach Sauce"
+	desc = "A good steak dipped in peach sauce with an avocado base."
+	icon_state = "peach_meat"
+	trash = /obj/item/trash/plate
+	bitesize = 3
+	list_reagents = list("nutriment" = 5, "protein" = 1, "vitamin" = 1)
+	tastes = list("sweet" = 1, "beefy" = 1)
+
+/obj/item/food/baconrolled
+	name = "Avocado Bacon Rolls"
+	desc = "Rolls of bacon filled up with avocado!"
+	icon_state = "bacon_roll"
+	list_reagents = list("protein" = 1, "nutriment" = 2)
+	tastes = list("meat with vegetables" = 1)
+
+/obj/item/food/meatsteak_cactus
+	name = "cactus steak"
+	desc = "A piece of hot spicy meat. With some prickly pear cactus on top."
+	icon_state = "meatstake_cactus"
+	trash = /obj/item/trash/plate
+	filling_color = "#7A3D11"
+	bitesize = 3
+	list_reagents = list("nutriment" = 5, "vitamin" = 1)
+	tastes = list("meat" = 1, "cactus" = 1)
+
+/obj/item/food/syntisteak_cactus
+	name = "cactus synthisteak"
+	desc = "A synthetic slab of flesh. With some prickly pear cactus on top."
+	icon_state = "meatstake_cactus"
+	trash = /obj/item/trash/plate
+	filling_color = "#7A3D11"
+	bitesize = 3
+	list_reagents = list("nutriment" = 5, "vitamin" = 1)
+	tastes = list("meat" = 1, "cactus" = 1)
+
+/obj/item/food/filetmignon
+	name = "Filet Mignon"
+	desc = "Sirloin wrapped in bacon served with mushroom sauce"
+	icon_state = "filetmignon"
+	bitesize = 3
+	list_reagents = list("nutriment" = 5, "vitamin" = 1, "protein" = 1)
+	tastes = list("winey" = 1, "beefy" = 1)
+
+/obj/item/food/hotdog/butter
+	name = "butter dog"
+	desc = "Made of butter instead of real dogs."
+	icon_state = "butter_dog"
+	filling_color = "#fff98f"
+	list_reagents = list("nutriment" = 6, "vitamin" = 6, "butter" = 5)
+	tastes = list("bread" = 1)
+
+// ---------- END of imports from Hispania!

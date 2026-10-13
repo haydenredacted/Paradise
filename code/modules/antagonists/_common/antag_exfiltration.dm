@@ -93,7 +93,8 @@
 		/area/station/telecomms/chamber,
 		/area/station/engineering/secure_storage
 	)
-	while(length(extractable_areas) < 3)
+
+	while(length(extractable_areas) < 3 && length(possible_areas))
 		var/area/selected_area = pick_n_take(possible_areas)
 		for(var/area/potential in SSmapping.existing_station_areas)
 			if(potential.type != selected_area)
@@ -109,6 +110,10 @@
 			. += SPAN_WARNING(" - [A.name]")
 
 /obj/item/wormhole_jaunter/extraction/activate(mob/user)
+	if(!isAntag(user))
+		to_chat(user, SPAN_WARNING("No matter how much you try, you can't get [src] to ignite!"))
+		return
+
 	if(!turf_check(user))
 		return
 
