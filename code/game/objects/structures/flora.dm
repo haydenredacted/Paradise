@@ -28,6 +28,49 @@
 	name = "xmas tree"
 	icon_state = "pine_c"
 
+/obj/structure/flora/tree/pine/xmas/Initialize(mapload)
+	. = ..()
+	icon_state = "pine_c"
+
+/obj/structure/flora/tree/pine/xmas/presentless
+	icon_state = "pinepresents"
+	desc = "A wondrous decorated Christmas tree. It has presents, though none of them seem to have your name on them."
+
+/obj/structure/flora/tree/pine/xmas/presents
+	icon_state = "pinepresents"
+	desc = "A wondrous decorated Christmas tree. It has presents!"
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF //protected by the christmas spirit
+	var/gift_type = /obj/item/small_delivery/gift/random
+	var/unlimited = FALSE
+	var/static/list/took_presents //shared between all xmas trees
+
+/obj/structure/flora/tree/pine/xmas/presents/Initialize(mapload)
+	. = ..()
+	if(!took_presents)
+		took_presents = list()
+
+/obj/structure/flora/tree/pine/xmas/presents/attack_hand(mob/living/user, list/modifiers)
+	. = ..()
+	if(.)
+		return
+	if(!user.ckey)
+		return
+
+	if(took_presents[user.ckey] && !unlimited)
+		to_chat(user, SPAN_WARNING("There are no presents with your name on."))
+		return
+	to_chat(user, SPAN_WARNING("After a bit of rummaging, you locate a gift with your name on it!"))
+
+	if(!unlimited)
+		took_presents[user.ckey] = TRUE
+
+	var/obj/item/G = new gift_type(src)
+	user.put_in_hands(G)
+
+/obj/structure/flora/tree/pine/xmas/presents/unlimited
+	desc = "A wonderous decorated Christmas tree. It has a seemly endless supply of presents!"
+	unlimited = TRUE
+
 /obj/structure/flora/tree/dead
 	icon = 'icons/obj/flora/deadtrees.dmi'
 	icon_state = "tree_1"
