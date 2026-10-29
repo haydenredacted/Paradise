@@ -20,42 +20,62 @@
 /obj/machinery/mineral/stacking_unit_console/Destroy()
 	if(machine)
 		machine.console = null
+	SStgui.close_uis(src)
 	machine = null
 	return ..()
 
 /obj/machinery/mineral/stacking_unit_console/attack_hand(mob/user)
-	var/obj/item/stack/sheet/s
-	var/dat
+	ui_interact(user)
 
-	if(!machine)
-		return
+/obj/machinery/mineral/stacking_unit_console/ui_data(mob/user)
+	var/list/data = list()
+	var/list/ores = list()
+	if(src.machine)
+		for(var/O in src.machine.stack_list)
+			var/obj/item/stack/sheet/s = src.machine.stack_list[O]
+			if(s.amount > 0)
+				ores += list(list(
+					"id" = "[O]",
+					"name" = initial(s.name),
+					"amount" = s.amount,
+					"icon" = initial(s.icon),
+					"icon_state" = initial(s.icon_state),
+				))
+	data["ores"] = ores
+	return data
 
-	dat += "<b>Stacking unit console</b><br><br>"
-
-	for(var/O in machine.stack_list)
-		s = machine.stack_list[O]
-		if(s.amount > 0)
-			dat += "[capitalize(s.name)]: [s.amount] <A href='byond://?src=[UID()];release=[s.type]'>Release</A><br>"
-
-	dat += "<br>Stacking: [machine.stack_amt]<br><br>"
-
-	user << browse("[dat]", "window=console_stacking_machine")
-
-/obj/machinery/mineral/stacking_unit_console/Topic(href, href_list)
+/obj/machinery/mineral/stacking_unit_console/ui_act(action, list/params)
 	if(..())
 		return
-	usr.set_machine(src)
-	add_fingerprint(usr)
-	if(href_list["release"])
-		if(!(text2path(href_list["release"]) in machine.stack_list))
-			return //someone tried to spawn materials by spoofing hrefs
-		var/obj/item/stack/sheet/inp = machine.stack_list[text2path(href_list["release"])]
-		var/obj/item/stack/sheet/out = new inp.type()
-		out.amount = inp.amount
-		inp.amount = 0
-		machine.unload_mineral(out)
+	. = TRUE
+	switch(action)
+		if("release")
+			if(!src.machine)
+				return FALSE
+			var/type = params["id"]
+			if(!(text2path(type) in src.machine.stack_list))
+				return FALSE
+			var/obj/item/stack/sheet/inp = src.machine.stack_list[text2path(type)]
+			var/obj/item/stack/sheet/out = new inp.type()
+			out.amount = inp.amount
+			inp.amount = 0
+			src.machine.unload_mineral(out)
+			add_fingerprint(usr)
+		else
+			return FALSE
 
-	updateUsrDialog()
+/obj/machinery/mineral/stacking_unit_console/ui_state(mob/user)
+	return GLOB.default_state
+
+/obj/machinery/mineral/stacking_unit_console/ui_interact(mob/user, datum/tgui/ui = null)
+	user.set_machine(src)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "StackingConsole", name)
+		ui.open()
+
+/obj/machinery/mineral/stacking_unit_console/ui_assets(mob/user)
+	return list()
 
 /**********************Mineral stacking unit**************************/
 
